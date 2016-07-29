@@ -4,11 +4,10 @@ body {
   font-family: 'Slabo 27px', serif;
 }
 .site {
-  padding: 40px 15px;
   text-align: center;
 }
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -24,5 +23,15 @@ body {
   margin: 20px 0;
 }
 .bio {
-  padding-top: 20px;
+  padding: 20px;
+}
+.reading-list {
+  list-style: none;
+}
+.title {
+  font-size: 24px;
+}
+img {
+  width: 40%;
+  height: auto;
 }
