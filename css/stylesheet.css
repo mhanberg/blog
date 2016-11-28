@@ -35,3 +35,6 @@ img {
   width: 40%;
   height: auto;
 }
+.bottom-border {
+  border-bottom: 1px solid #eee;
+}
