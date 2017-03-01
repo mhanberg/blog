@@ -1,0 +1,11 @@
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+  - jekyll-coffeescript
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+paginate: 5

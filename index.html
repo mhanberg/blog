@@ -1,75 +1,43 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-		<link href="css/stylesheet.css" rel="stylesheet" >
-		<link rel="canonical" href="https://www.mitchellhanberg.com" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
-		<title>Mitchell Hanberg</title>
-	</head>
+---
+layout: default
+---
 
-	<body>
-	    <div class="container">
-	    	<div class="site">
-	    		<div class="row">
-	    			<h1>Mitchell Hanberg</h1>
-	    		</div>
-	    		<div class="row bio bottom-border" >
-					<p class="lead">Software Engineer for <a href="https://www.sep.com/" target="_blank">SEP</a>.</p>
-					<p class="lead"><a href="https://github.com/mhanberg" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/mitchell-hanberg" target="_blank">LinkedIn</a></p>
-					<p class="lead">Photographer</p>
-					<p class="lead"><a href="https://www.instagram.com/mitchhanberg/" target="_blank">Instagram</a></p>
-				</div>
-				<div class="row bio">
-					<h2 onclick="toggleReadList(17)">2017 Reading List <i id="chevron17" class="glyphicon glyphicon-chevron-down"></i></h2>
-					<div id="readList17" class="bio">
-						<div id="readList" class="bio">
-							<div class="row bio">
-								<div class="col-xs-6">
-									<p class="lead"><a href="https://www.amazon.com/Passionate-Programmer-Remarkable-Development-Pragmatic/dp/1934356344" target="_blank">The Passionate Programmer: Creating a Remarkable Career in Software Development</a></p>
-									<img src="https://images-na.ssl-images-amazon.com/images/I/51XKIz6CzVL._SX331_BO1,204,203,200_.jpg">
-								</div>
-								<div class="col-xs-6"></div>
-							</div>
-						</div>
-					</div>
-					<h2 onclick="toggleReadList(16)">2016 Reading List <i id="chevron16" class="glyphicon glyphicon-chevron-right"></i></h2>
-					<div id="readList16" class="bio" style="display: none">
-						<div class="row bio">
-							<div class="col-xs-6">
-								<p class="lead"><a href="https://www.amazon.com/dp/B00KWG9M2E/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1" target="_blank">Getting Things Done</a></p>
-								<img src="https://images-na.ssl-images-amazon.com/images/I/51yXw%2BL-KdL._SX327_BO1,204,203,200_.jpg">
-							</div>
-							<div class="col-xs-6">
-								<p class="lead"><a href="https://www.amazon.com/Mastering-Cloud-Development-using-Microsoft-ebook/dp/B01FWFHVJU/ref=sr_1_1?ie=UTF8&qid=1469760317&sr=8-1&keywords=mastering+cloud+development+using+microsoft+azure" target="_blank">Mastering Cloud Development using Microsoft Azure</a></p>
-								<img src="https://www.packtpub.com/sites/default/files/3335EN_1972_Mastering%20Cloud%20Development%20using%20Microsoft%20Azure_1.jpg">
-							</div>
-						</div>
-					</div>
-				</div>
+
+<section >
+  <!-- This loops through the paginated posts -->
+	{% for post in paginator.posts %}
+		<article id='postInList'>
+			<div>
+				<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+				<p>{{ post.date | date: "%b %d, %Y" }}</p>
 			</div>
-	    </div>
+  		</article>
+		<hr>
+	{% endfor %}
 
-	    <footer class="footer">
-      		<div class="container">
-       			<p class="text-muted">www.mitchellhanberg.com</p>
-      		</div>
-    	</footer>
+	<!-- Pagination links -->
+	{% if paginator.total_pages > 1 %}
+		<div class="pagination center">
+			{% if paginator.previous_page %}
+				<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+			{% endif %}
 
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-	    <script src="/js/bootstrap.min.js"></script>
-	</body>
-</html>
-<script type="text/javascript">
-	function toggleReadList(year) {
-		$('#readList' + year).fadeToggle('slow');
-		$('#chevron' + year).toggleClass('glyphicon glyphicon-chevron-down');
-		$('#chevron' + year).toggleClass('glyphicon glyphicon-chevron-right');
-	}
-</script>
+			{% for page in (1..paginator.total_pages) %}
+				{% if page == paginator.page %}
+					<em>{{ page }}</em>
+				{% elsif page == 1 %}
+					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+				{% else %}
+					<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+				{% endif %}
+			{% endfor %}
+
+			{% if paginator.next_page %}
+				<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+			{% endif %}
+		</div>
+	{% endif %}
+	{% if paginator.page == paginator.total_pages %}
+		<div class='center'> You've reached the end ¯\_(ツ)_/¯</div>
+	{% endif %}
+</section>

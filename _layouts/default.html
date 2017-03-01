@@ -1,0 +1,25 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="/css/site.js"></script>
+  <script src="https://use.fontawesome.com/7a164a8db0.js"></script>
+  {% if site.github %}
+    <link rel="stylesheet" href="/css/site.css?sha={{ site.github.build_revision }}">
+  {% else %}
+    <link rel="stylesheet" href="/css/site.css">
+  {% endif %}
+</head>
+<html>
+  <body>
+    <section>
+      <div class="wrapper-for-content-outside-of-footer">
+        {% include header.html %}
+        <div id='main-content'>
+          {{ content }}
+        </div>
+      </div>
+      {% include footer.html %}
+    </section>
+  </body>
+</html>
