@@ -9,3 +9,5 @@ exclude:
   - Gemfile.lock
 
 paginate: 5
+
+author: Mitchell Hanberg

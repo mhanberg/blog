@@ -4,10 +4,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="/css/site.js"></script>
   <script src="https://use.fontawesome.com/7a164a8db0.js"></script>
+  {% feed_meta %}
   {% if jekyll.environment == 'production' %}
     <link rel="stylesheet" href="/css/site.css?sha={{ site.github.build_revision }}">
   {% else %}
     <link rel="stylesheet" href="/css/site.css">
+  {% endif %}
+  {% if page.title %}
+    <title>{{ page.title }}</title>
+  {% else %}
+    <title>Mitchell Hanberg</title>
   {% endif %}
 </head>
 <html>
