@@ -3,9 +3,12 @@ layout: default
 ---
 
 <h1>{{ page.title }}</h1>
-<div style='width: 100%; text-align: right;'>{{ page.date | date: "%B %d, %Y" }}</div>
+<div>By Mitchell Hanberg on {{ page.date | date: "%B %d, %Y" }}</div>
+<hr style='padding-bottom: 10px'>
 <article>
-  {{ content }}
+  <div>
+    {{ content }}
+  </div>
 
   {% include blurb.html %}
 </article>
