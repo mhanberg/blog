@@ -1,11 +1,10 @@
 ---
 ---
 
-@import "bourbon/bourbon";
-@import "neat/neat";
-@import "base/base";
-
-
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'base/base';
+@import 'syntax';
 
 .centered-navigation {
   $base-border-radius: 3px !default;
@@ -178,7 +177,7 @@
     > a::after {
       @include position(absolute, auto -0.4em auto auto);
       color: $centered-navigation-color;
-      content: "\25BE";
+      content: '\25BE';
     }
   }
 
@@ -199,7 +198,7 @@
       }
 
       &::after {
-        content: "›";
+        content: '›';
         font-size: 1.2em;
         position: absolute;
         right: $centered-navigation-submenu-padding / 2;
@@ -346,7 +345,7 @@ html, body {
 }
 
 .wrapper-for-content-outside-of-footer::after {
-  content: "";
+  content: '';
   display: block;
 }
 

@@ -1,5 +1,8 @@
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
 gems:
   - jekyll-feed
   - jekyll-coffeescript
@@ -9,5 +12,6 @@ exclude:
   - Gemfile.lock
 
 paginate: 5
+excerpt_separator: ""
 
 author: Mitchell Hanberg
