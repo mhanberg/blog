@@ -10,7 +10,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-
+future: false
 paginate: 5
 excerpt_separator: ""
 
