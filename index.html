@@ -14,29 +14,35 @@ layout: default
 		<hr>
 	{% endfor %}
 
-	<!-- Pagination links -->
-	{% if paginator.total_pages > 1 %}
-		<div class="pagination center">
-			{% if paginator.previous_page %}
-				<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-			{% endif %}
-
-			{% for page in (1..paginator.total_pages) %}
-				{% if page == paginator.page %}
-					<em>{{ page }}</em>
-				{% elsif page == 1 %}
-					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-				{% else %}
-					<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-				{% endif %}
-			{% endfor %}
-
-			{% if paginator.next_page %}
-				<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-			{% endif %}
-		</div>
-	{% endif %}
 	{% if paginator.page == paginator.total_pages %}
 		<div class='center'> You've reached the end ¯\_(ツ)_/¯</div>
+	{% endif %}
+
+	<br>
+
+	<!-- Pagination links -->
+	{% if paginator.total_pages > 1 %}
+		<div class="pagination">
+			<ul>
+				{% if paginator.previous_page %}
+					<li class='page=rev'><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
+				{% endif %}
+				<ul>
+					{% for page in (1..paginator.total_pages) %}
+						{% if page == paginator.page %}
+							<li><em>{{ page }}</em></li>
+						{% elsif page == 1 %}
+							<li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+						{% else %}
+							<li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+
+				{% if paginator.next_page %}
+				<li class='page=rev'><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
+				{% endif %}
+			</ul>
+		</div>
 	{% endif %}
 </section>
