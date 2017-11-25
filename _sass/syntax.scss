@@ -59,3 +59,12 @@
 .highlight .vi { color: #3333bb } /* Name.Variable.Instance */
 .highlight .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 .highlight { overflow: auto; background: #f7f9fc; padding: 1em; border: 1px solid #d2ddee; border-radius: 0.25em}
+
+code.highlighter-rouge {
+    background-color: #f2f2f2;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    font-size: 0.8em;
+    padding: 1px 4px;
+}
