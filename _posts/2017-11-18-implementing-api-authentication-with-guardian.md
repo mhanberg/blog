@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Implementing API Authentication with Guardian in Phoenix
-date: 2017-11-28 11:00:00 -04:00
+date: 2017-11-28 09:00:00 -04:00
 categories: post
 permalink: /:categories/:year/:month/:day/:title/
 ---
