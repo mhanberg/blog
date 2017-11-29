@@ -12,12 +12,18 @@
   {% endif %}
   {% if page.title %}
     <title>{{ page.title }}</title>
+    <meta name="twitter:title" content="{{ page.title }}" />
   {% else %}
     <title>Mitchell Hanberg</title>
+    <meta name="twitter:title" content="Mitchell Hanberg" />
   {% endif %}
 
   <meta name="author" content="Mitchell Hanberg" />
   <meta name="description" content="Mitchell Hanberg's blog" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@mitchhanberg" />
+  <meta name="twitter:description" content="Mitchell Hanberg's blog" />
 </head>
 <html>
   <body>
