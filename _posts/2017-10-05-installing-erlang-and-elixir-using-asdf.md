@@ -3,6 +3,7 @@ layout: post
 title: Installing Erlang+Elixir with asdf
 date: 2017-10-05 11:30:00 -04:00
 categories: post
+desc: asdf is a multi-language version manager, making it an ideal choice for managing Erlang and Elixir versions. A guide on installing asdf, Erlang, and Elixir.
 permalink: /:categories/:year/:month/:day/:title/
 ---
 
