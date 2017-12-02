@@ -19,6 +19,7 @@ layout: post
 title:
 date: ${DATE} 09:00:00 -04:00
 categories: post
+desc:
 permalink: /:categories/:year/:month/:day/:title/
 ---
 EOM
