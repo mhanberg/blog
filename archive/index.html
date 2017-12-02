@@ -1,0 +1,13 @@
+---
+layout: page
+title: Archive
+permalink: /archive/
+---
+
+<h2 class='center'>Archive</h2>
+
+<ul class='no-link-decoration xlg-font'>
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
