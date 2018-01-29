@@ -7,6 +7,9 @@ gem 'bitters'
 gem 'bourbon'
 gem 'neat'
 gem 'refills'
+gem 'guard'
+gem 'guard-livereload'
+gem 'foreman'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
