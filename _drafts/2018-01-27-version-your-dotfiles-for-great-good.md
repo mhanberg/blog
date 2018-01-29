@@ -111,7 +111,7 @@ This is the part we've been working towards, and thanks to our efforts, this par
 # Install git if not installed
 # Install rcm
 
-$ git clone <url> ~/.dotfiles
+$ git clone --recursive <url> ~/.dotfiles
 $ rcup -v
 ```
 
