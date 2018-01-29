@@ -97,7 +97,7 @@ $ rcup -v
 
 The submodule is set up to track the master branch, has been cloned into your repository, and a symlink to your home directory has been made using the [rcup](http://thoughtbot.github.io/rcm/rcup.1.html) tool provided by rcm.
 
-I you wish to update it at any time, you only need to move into the directory of the submodule and do a `git pull`, followed by  returning to the parent repository and committing the change.
+If you wish to update it at any time, you only need to move into the directory of the submodule and do a `git pull`, followed by  returning to the parent repository and committing the change.
 
 ### Final Steps
 
