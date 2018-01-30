@@ -1,2 +1,2 @@
-web: bundle exec jekyll serve
+web: bundle exec jekyll serve --drafts
 reload: bundle exec guard
