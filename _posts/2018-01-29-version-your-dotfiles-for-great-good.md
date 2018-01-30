@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Version Your Dotfiles for Great Good
-date: 2018-01-27 09:00:00 -04:00
+date: 2018-01-29 09:00:00 -04:00
 categories: post
 desc: Guide on how to set up a versioned (using git) set of dotfiles.
 permalink: /:categories/:year/:month/:day/:title/
@@ -49,7 +49,7 @@ At this point, rcm has copied these files to your `~/.dotfiles` directory with t
 
 For most vim plugin managers, you are probably going to be cloning at least one git repository somewhere in your `~/.vim` directory. If you don't plan on ever updating these repos, you can go ahead and run `mkrc .vim`. 
 
-If you want to be able to update these plugins (or any other tool you use which relies on a git repo), you'll need to use [git submodules](http://www.vogella.com/tutorials/GitSubmodules/article.html). I attempted to turn my existing vim plugins into submodules within my `.dotfiles` repository, but I wasn't successful.
+If you want to be able to update these plugins (or any other tool you use which relies on a git repo), you'll need to use [git submodules](http://www.vogella.com/tutorials/GitSubmodules/article.html). I attempted to turn my existing vim plugins into submodules within my `.dotfiles` repository, but I wasn't successful. So instead of re-cloning each plugin as a submodule, I decided to switch to a vim plugin manager that doesn't require manually cloning repos.
 
 I opted to start using [vim-plug](https://github.com/junegunn/vim-plug) over [pathogen](https://github.com/tpope/vim-pathogen), which requires less boilerplate and all of the configuration goes in your `.vimrc`. 
 
@@ -84,7 +84,7 @@ call plug#end()
 
 #### Yeah, but what about the submodules I can't avoid making?
 
-Thought you might ask that, I encountered the same challenge. I use [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for [zsh](https://en.wikipedia.org/wiki/Z_shell) customizations (mostly the themes¯\\\_(ツ)\_/¯ ), which relies on a git repopository in your home directory `.oh-my-zsh`.
+Thought you might ask that, I encountered the same challenge. I use [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for [zsh](https://en.wikipedia.org/wiki/Z_shell) customizations (mostly the themes¯\\\_(ツ)\_/¯ ), which relies on a git repository in your home directory `.oh-my-zsh`.
 
 While I wasn't able to transfer the existing directory to my new `.dotfiles` directory, I was able to reclone it as a git submodule.
 
