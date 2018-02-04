@@ -1,0 +1,5 @@
+[context.production.environment]
+  JEKYLL_ENV = "production"
+
+[context.draft.environment]
+  JEKYLL_ENV = "draft"
