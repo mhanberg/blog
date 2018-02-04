@@ -3,7 +3,7 @@ markdown: kramdown
 kramdown:
   input: GFM
 highlighter: rouge
-gems:
+plugins:
   - jekyll-feed
   - jekyll-coffeescript
   - jekyll-paginate
