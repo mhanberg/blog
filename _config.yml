@@ -5,7 +5,6 @@ kramdown:
 highlighter: rouge
 plugins:
   - jekyll-feed
-  - jekyll-coffeescript
   - jekyll-paginate
 exclude:
   - Gemfile
