@@ -7,6 +7,13 @@
 @import 'syntax';
 @import 'pagination';
 
+$my-font-family: $font-stack-verdana;
+
+html, body {
+  font-family: $my-font-family;
+  height: 100%;
+}
+
 .centered-navigation {
   $base-border-radius: 3px !default;
   $dark-gray: #333 !default;
@@ -22,7 +29,7 @@
   $centered-navigation-submenu-padding: 1em;
   $centered-navigation-submenu-width: 12em;
   $centered-navigation-item-nudge: 2.2em;
-  $horizontal-bar-mode: $large-screen;
+  $horizontal-bar-mode: $medium-screen;
 
   background-color: $centered-navigation-background;
   border-bottom: 1px solid darken($centered-navigation-background, 6%);
@@ -293,6 +300,12 @@ h3 {
 h4 {
   font-size: 1.3em;
 }
+h1,
+h2,
+h3,
+h4 {
+ font-family: $my-font-family;
+}
 
 .no-link-decoration {
   a, a:visited, a:active {
@@ -314,7 +327,13 @@ body {
   background-color: #fafafa;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: $large-screen) and (min-width: $medium-screen) {
+  #main-content {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: $medium-screen) {
   #main-content {
       width: 300px;
   }
@@ -330,9 +349,16 @@ blockquote {
 
 #main-content {
   padding: 10px 0;
-  margin-left: auto;
   margin-right: auto;
-  max-width: 720px;
+  margin-left: auto;
+  max-width: 820px;
+  article {
+    font-size: 1.2em;
+    line-height: 1.9em;
+  }
+  code {
+    line-height: 1.5em;
+  }
 }
 
 #postInList {
@@ -354,9 +380,7 @@ blockquote {
   margin: 0 auto -8em;
 }
 
-html, body {
- height: 100%;
-}
+
 
 .wrapper-for-content-outside-of-footer::after {
   content: '';
@@ -381,11 +405,14 @@ html, body {
 
   .footer-logo {
     text-align: center;
+
     img {
       height: 3em;
     }
+
     a {
       padding: 0 5px;
+
       i {
         font-size: 35px;
       }
