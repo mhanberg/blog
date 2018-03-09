@@ -12,7 +12,7 @@ layout: default
             <a
               class="external {{ post.external_site }}"
               href="{{ post.external_url }}"
-              onclick="ga('send','event','pageview','{{ post.url }}')">
+              onclick="ga('send', 'pageview','{{ post.url }}')">
               {{ post.title }}
             </a>
           {% else %}
