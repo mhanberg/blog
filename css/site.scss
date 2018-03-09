@@ -304,7 +304,7 @@ h1,
 h2,
 h3,
 h4 {
- font-family: $my-font-family;
+  font-family: $my-font-family;
 }
 
 .no-link-decoration {
@@ -335,7 +335,7 @@ body {
 
 @media screen and (max-width: $medium-screen) {
   #main-content {
-      width: 300px;
+    width: 300px;
   }
 }
 
@@ -365,6 +365,25 @@ blockquote {
   padding: 10px 0;
 }
 
+@media screen and (min-width: 800px) {
+  .external {
+    display: block;
+
+    &.sep {
+      &:before {
+        background: url("/images/sep-logo.png") no-repeat;
+        background-size: cover;
+        content: " ";
+        display: inline-block;
+        height: 20px;
+        margin-left: -3em;
+        margin-top: 14px;
+        position: absolute;
+        width: 73px;
+      }
+    }
+  }
+}
 .center {
   text-align: center;
 }
@@ -379,8 +398,6 @@ blockquote {
   height: 100%;
   margin: 0 auto -8em;
 }
-
-
 
 .wrapper-for-content-outside-of-footer::after {
   content: '';
