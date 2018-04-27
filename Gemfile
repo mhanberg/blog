@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 ruby RUBY_VERSION
 
-#gem 'github-pages', '175', group: :jekyll_plugins
 gem 'jekyll'
 gem 'jekyll-feed'
-gem 'jekyll-paginate'
 
-gem 'guard'
-gem 'guard-livereload'
-gem 'foreman'
+group :development do
+  gem 'guard'
+  gem 'guard-livereload'
+  gem 'foreman'
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
