@@ -5,12 +5,10 @@ kramdown:
 highlighter: rouge
 plugins:
   - jekyll-feed
-  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
 future: false
-paginate: 5
 excerpt_separator: ""
 
 author: Mitchell Hanberg

@@ -1,16 +1,14 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="/css/site.js"></script>
-  <script src="https://use.fontawesome.com/7a164a8db0.js"></script>
   {% feed_meta %}
-  {% if jekyll.environment == 'production' %}
-    <link rel="stylesheet" href="/css/site.css?sha={{ site.github.build_revision }}">
-  {% else %}
-    <link rel="stylesheet" href="/css/site.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css">
+
+  {% if jekyll.environment == 'development' %}
     <script src="http://localhost:35729/livereload.js"></script>
   {% endif %}
+
   {% if page.title %}
     <title>{{ page.title }}</title>
     <meta name="twitter:title" content="{{ page.title }}" />
@@ -28,13 +26,12 @@
   <meta name="twitter:image" content="{{ 'images/256_m_black_white_background.png' | absolute_url }}" />
 </head>
 <html>
-  <body>
-    <section>
-      <div class="wrapper-for-content-outside-of-footer">
-        {% include header.html %}
-        <div id='main-content'>
-          {{ content }}
-        </div>
+  <body class='font-sans'>
+    <div class='top-border'></div>
+    <section class='container px-6 mx-auto'>
+      {% include header.html %}
+      <div class='max-w-md m-auto'>
+        {{ content }}
       </div>
       {% include footer.html %}
     </section>
@@ -44,3 +41,4 @@
     {% endif %}
   </body>
 </html>
+
