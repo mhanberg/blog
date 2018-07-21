@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 raise 'Missing argument: Filename' if ARGV.empty?
 
 require 'Date'
@@ -24,3 +26,5 @@ File.open file_path, "w+" do |file|
 end
 
 puts "Succesfully created #{file_path}!"
+
+system "mvim #{file_path}"
