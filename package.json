@@ -1,0 +1,10 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "repository": "git@github.com:mhanberg/blog.git",
+  "author": "Mitchell Hanberg <the.mitch.hanberg@gmail.com>",
+  "devDependencies": {
+    "stylelint": "^9.2.1",
+    "stylelint-config-standard": "^18.2.0"
+  }
+}
