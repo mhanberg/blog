@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo $@
+
+bundle exec foreman start $@
