@@ -1,2 +1,2 @@
-web: bundle exec jekyll serve --drafts --port $PORT
+web: bundle exec jekyll serve --drafts --future --port $PORT
 reload: bundle exec guard
