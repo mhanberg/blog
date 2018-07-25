@@ -9,9 +9,9 @@ permalink: /:categories/:year/:month/:day/:title/
 
 >At what level of complexity will my React application require Redux?
 
-React developers have been asking this question for a long time, and answers still vary wildly. The truth is there is quite a bit you can do before needing to pull in Redux, and even then, _**Redux**_ isn't your only option! 
+React developers have been asking this question for a long time, and answers still vary wildly. The truth is there is quite a bit we can do before needing to pull in Redux, and even then, _**Redux**_ isn't our only option! 
 
-Even the creator of Redux, [Dan Abramov](https://twitter.com/dan_abramov?lang=en) thinks that you might not need Redux (although, I think the spirit this statement applies to all 3rd-party libraries meant to help reduce complexity of state).
+Even the creator of Redux, [Dan Abramov](https://twitter.com/dan_abramov?lang=en) thinks that we might not need Redux (although, I think the spirit this statement applies to all 3rd-party libraries meant to help reduce complexity of state).
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">You Might Not Need Redux <a href="https://t.co/3zBPrbhFeL">https://t.co/3zBPrbhFeL</a></p>&mdash; Dan Abramov (@dan_abramov) <a href="https://twitter.com/dan_abramov/status/777983404914671616?ref_src=twsrc%5Etfw">September 19, 2016</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -20,7 +20,7 @@ In this series, we'll explore a few different patterns you can introduce to your
 
 ## Container/Presenter Components
 
-This pattern separates what might be a single component into two (or three or four), a Container component(s) to maintain state and a Presenter component to render visual markup. 
+This pattern separates what might be a single component into two: a Container component to maintain state and a Presenter component to render visual markup. 
 
 ```jsx
 const Cart = props => (
@@ -95,23 +95,29 @@ class CartContainer extends React.Component {
 [![Edit wo7y9voowk](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/wo7y9voowk)
 &nbsp;
 
-Here you can see that we have a Container component that handles controlling component state with the `addItem`, `removeItem`, and `onNewItemChange` callbacks, and fetching a list of discounts from an external REST api. This enables us to write `Cart` as a Pure Functional component. 
+Here we can see that we have a Container component, `CartContainer`, that handles controlling component state with the `addItem`, `removeItem`, and `onNewItemChange` callbacks, and fetching a list of discounts from an external REST api. This enables us to write `Cart`, our Presenter component, as a Pure Functional component. 
+
+After extracting a Container and a Presenter from one of our bigger components, we might find the Container to still be fairly large, or handling several concerns, potentially signaling that we can break down our Container even further. 
+
+In our case, we might extract a `DiscountContainer` from `CartContainer` to segregate the logic of maintaining the contents of the cart from the logic of fetching the discounts for those items.
+
+The hierarchy of this would look like `CartContainer` -> `DiscountContainer` -> `Cart`, having `CartContainer` pass the discount-less items to the `DiscountContainer`, which will fetch the discounts and then pass the now discounted items to the `Cart`.
 
 ## Benefits
 
-Partitioning your components on their state boundary will help reduce complexity by simply having less code to work with at a time, while still staying "inside React".
+Partitioning our components on their state boundary will help reduce complexity by simply having less code to work with at a time, while still staying "inside React".
 
-I think this pattern really starts to pay dividends when you have a lifecycle method, like `componentDidUpdate`, doing a lot of asynchronous work (like making HTTP requests). Given the asynchronous nature, this sort of code tends to be very difficult to test (with both automated unit testing and manual testing), so breaking this stateful logic into separate components helps keeps you sane and your code focused. 
+I think this pattern really starts to pay dividends when we have a lifecycle method, like `componentDidUpdate`, doing a lot of asynchronous work (like making HTTP requests). Given the asynchronous nature, this sort of code tends to be very difficult to test (with both automated unit testing and manual testing), so breaking this stateful logic into separate components helps keeps us sane and our code focused. 
 
-It's helpful to remind yourself that when unit testing a React component, you are essentially testing the `render` function. Given the inputs (`props`), what is the output? You've probably noticed tests are painful to write if there is a lot of setup, especially if the setup is required for a feature of the component that you aren't even testing.
+It's helpful to remind ourselves that when unit testing a React component, we are essentially testing the `render` function. Given the inputs (`props`), what is the output? You've probably noticed tests are painful to write if there is a lot of setup, especially if the setup is required for a feature of the component that you aren't even testing.
 
-Keeping your components small and focused will go a long way for keeping yourself happy and productive!
+Keeping our components small and focused will go a long way for keeping ourselves happy and productive!
 
 ## Drawbacks
 
-While the Container/Presenter pattern is not always one-for-one (Cart <-> CartContainer), you will encounter a lot of similarly named components. This can sometimes cause a communication breakdown amongst the team, as you will trip over your own words attempting to say things like "The CartContainer passes the products to the Cart which then passes them to the Checkout component, or is it the CheckoutContainer component?".
+While the Container/Presenter pattern is not always one-for-one (`Cart` <-> `CartContainer`), you will encounter a lot of similarly named components. This can sometimes cause a communication breakdown amongst the team, as you will trip over your own words attempting to say things like "The CartContainer passes the products to the Cart which then passes them to the Checkout component, or is it the CheckoutContainer component?".
 
-If you can think of better names, I would suggest using them! Your code will still be following the pattern even if they don't have the word Component in the name. 😏
+If you can think of better names, I would suggest using them! Your code will still be following the pattern even if they don't have the word Container in the name. 😏
 
 ## Wrapping Up
 
