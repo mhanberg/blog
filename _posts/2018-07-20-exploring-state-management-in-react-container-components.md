@@ -59,7 +59,7 @@ class CartContainer extends React.Component {
     }
   }
 
-  onNewItemChange = ({target:{value: newItem}}) => this.setState({newItem});
+  onNewItemChange = event => this.setState({ newItem: event.target.value });
 
   addItem = () => {
     this.setState(prevState => ({
