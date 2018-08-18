@@ -18,11 +18,15 @@
   {% endif %}
 
   <meta name="author" content="Mitchell Hanberg" />
-  <meta name="description" content="Mitchell Hanberg's blog" />
+  <meta name="description" content="Mitchell Hanberg's Blog" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@mitchhanberg" />
-  <meta name="twitter:description" content="Mitchell Hanberg's blog" />
+  {% if page.desc %}
+    <meta name="twitter:description" content="{{ page.desc }}" />
+  {% else %}
+    <meta name="twitter:description" content="Mitchell Hanberg's Blog" />
+  {% endif %}
   <meta name="twitter:image" content="{{ 'images/256_m_black_white_background.png' | absolute_url }}" />
 </head>
 <html>
