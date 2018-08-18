@@ -27,7 +27,7 @@ This book (a member of the [Pragmatic exPress](https://pragprog.com/pragmatic-ex
 
 _Metaprogramming Elixir_ guides you through the basics of defining macros, but quickly dives into best practices and how you can use these techniques to improve your real life code. 
 
-In addition to showing you when it's most appropriate to utilize a macro, Chris teaches you how to test macros and what aspect of metaprogramming are worth testing. As practitioner of [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development), I find this incredibly valuable.
+In addition to showing you when it's most appropriate to utilize a macro, Chris teaches you how to test macros and what aspects of metaprogramming are worth testing. As a practitioner of [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development), I find this incredibly valuable.
 
 I thoroughly enjoyed this book and will definitely be referencing it in the future. 
 
