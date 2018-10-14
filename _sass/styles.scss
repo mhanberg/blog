@@ -111,3 +111,15 @@ hr {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+
+.mobile-nav {
+  overflow-y: hidden;
+  max-height: 10rem;
+  transition-property: all;
+  transition-duration: 150ms;
+}
+
+.closed {
+  max-height: 0;
+}
+
