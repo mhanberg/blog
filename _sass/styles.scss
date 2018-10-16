@@ -45,15 +45,6 @@ h4 {
   font-size: 1.3rem;
 }
 
-a {
-  color: #333;
-  word-wrap: break-word;
-
-  :hover {
-    text-decoration: underline;
-  }
-}
-
 body {
   background-color: #fafafa;
   color: #333;
@@ -65,6 +56,22 @@ blockquote {
   font-style: italic;
   margin: 1.5em 0;
   padding-left: 0.75em;
+}
+
+a {
+  color: #333;
+  word-wrap: break-word;
+  text-decoration: none;
+}
+
+.posts {
+  > article:nth-child(odd) .post-item:hover {
+    border-bottom: #4286f4 solid 4px;
+  }
+
+  > article:nth-child(even) .post-item:hover {
+    border-bottom: #e3342f solid 4px;
+  }
 }
 
 .post {
@@ -83,6 +90,10 @@ blockquote {
   ul,
   ol {
     line-height: 2;
+  }
+
+  a {
+    border-bottom: #4286f4 solid 2px;
   }
 }
 
