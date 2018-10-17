@@ -9,7 +9,7 @@ permalink: /:categories/:year/:month/:day/:title/
 
 ### What is Elixir LS?
 
-[Elixir LS]() by Jake Becker is the language server implementation for Elixir.
+[Elixir LS](https://github.com/JakeBecker/elixir-ls) by Jake Becker is the language server implementation for Elixir.
 
 ### What is a language server?
 
@@ -21,9 +21,9 @@ This allows creators to build universal "language servers" that can be used by a
 
 ### How to integrate with Vim
 
-Using a language server requires a client implementation for your editor and we are going to use [ALE]() by w0rp.
+Using a language server requires a client implementation for your editor and we are going to use [ALE](https://github.com/w0rp/ale) by w0rp.
 
-If you're using [vim-plug]() you can install ALE by adding the following to your `.vimrc` and running `:PlugInstall`. Otherwise, consult your plugin manager's documentation.
+If you're using [vim-plug](https://github.com/junegunn/vim-plug) you can install ALE by adding the following to your `.vimrc` and running `:PlugInstall`. Otherwise, consult your plugin manager's documentation.
 
 ```vim
 " .vimrc
@@ -54,4 +54,4 @@ let g:ale_elixir_elixir_ls_release = '<your path to elixir-ls>/rel'
 
 ### Now what?
 
-I would familiarize yourself with the [features of ALE]() and decide how you want to use incorporate them into your workflow. ALE doesn't prescribe any keymappings, so feel free to experiment to see what works best for you!
+I would familiarize yourself with the [features of ALE](https://github.com/w0rp/ale#usage) and decide how you want to use incorporate them into your workflow. ALE doesn't prescribe any keymappings, so feel free to experiment to see what works best for you!
