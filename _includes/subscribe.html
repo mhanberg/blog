@@ -1,0 +1,39 @@
+<!-- Begin Mailchimp Signup Form -->
+<div class="max-w-sm mx-auto" id="mc_embed_signup">
+  {% if jekyll.environment == 'production' %}
+    <form action="https://mitchellhanberg.us19.list-manage.com/subscribe/post?u=67fd268e3a3c997cf71adc99c&amp;id=a51ed9b39a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div class="flex flex-col" id="mc_embed_signup_scroll">
+        <label
+          aria-hidden='true' 
+          for="mce-EMAIL"
+          class="hidden text-center pb-4 font-bold">
+          Subscribe to stay updated!
+        </label>
+        <section class="flex flex-col md:flex-row my-2">
+          <input 
+                 class="bg-grey-lighter 
+                 shadow-lg p-4 mb-2 md:mb-0 
+                 rounded-lg md:rounded-none md:rounded-l-lg flex-grow"
+                 type="email"
+                 value=""
+                 name="EMAIL"
+                 class="email"
+                 id="mce-EMAIL"
+                 placeholder="you@example.com"
+                 required>
+          <div class="hidden" aria-hidden="true"> <input type="text" name="b_67fd268e3a3c997cf71adc99c_a51ed9b39a" tabindex="-1" value=""> </div>
+          <input
+            type="submit"
+            value="Subscribe"
+            name="subscribe"
+            id="mc-embedded-subscribe"
+            class="p-4 rounded-lg md:rounded-none md:rounded-r-lg bg-my-blue hover-bg-my-blue-light text-white
+            cursor-pointer shadow-lg flex-no-shrink">
+      </div>
+    </form>
+  {% else %}
+    <div class='h-16 text-center text-white mb-4 bg-pink'>MAILCHIMP SIGNUP FORM</div>
+  {% endif %}
+</div>
+
+<!--End mc_embed_signup-->
