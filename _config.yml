@@ -5,6 +5,8 @@ kramdown:
 highlighter: rouge
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -14,3 +16,8 @@ excerpt_separator: ""
 author: Mitchell Hanberg
 url: https://www.mitchellhanberg.com
 title: Mitchell Hanberg's Blog
+description: Mitchell Hanberg's Blog
+twitter:
+  username: mitchhanberg
+  card: summary
+logo: images/256_m_black_white_background.png

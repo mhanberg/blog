@@ -3,6 +3,8 @@ ruby RUBY_VERSION
 
 gem 'jekyll'
 gem 'jekyll-feed'
+gem 'jekyll-sitemap'
+gem 'jekyll-seo-tag'
 
 group :development do
   gem 'guard'

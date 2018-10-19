@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.mitchellhanberg.com/sitemap.xml
