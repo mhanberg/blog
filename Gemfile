@@ -7,8 +7,6 @@ gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
 
 group :development do
-  gem 'guard'
-  gem 'guard-livereload'
   gem 'foreman'
 end
 
