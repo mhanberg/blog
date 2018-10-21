@@ -1,4 +1,6 @@
 @import "syntax";
+$my-blue: #4286f4;
+$my-blue-light: #6fbdff;
 
 @media (min-width: 1200px) {
   .container {
@@ -18,27 +20,27 @@
 }
 
 .my-blue {
-  color: #4286f4;
+  color: $my-blue;
 }
 
 .my-blue-light {
-  color: #6fbdff;
+  color: $my-blue-light;
 }
 
 .border-my-blue {
-  border: 1px solid #4286f4;
+  border: 1px solid $my-blue;
 }
 
 .bg-my-blue {
-  background-color: #4286f4;
+  background-color: $my-blue;
 }
 
 .hover-bg-my-blue:hover {
-  background-color: #4286f4;
+  background-color: $my-blue;
 }
 
 .hover-bg-my-blue-light:hover {
-  background-color: #6fbdff;
+  background-color: $my-blue-light;
 }
 
 h1 {
@@ -63,7 +65,7 @@ body {
 }
 
 blockquote {
-  border-left: 3px solid #4286f4;
+  border-left: 3px solid $my-blue;
   font-size: 1.1em;
   font-style: italic;
   margin: 1.5em 0;
@@ -78,7 +80,7 @@ a {
 
 .posts {
   > article:nth-child(odd) .post-item:hover {
-    border-bottom: #4286f4 solid 4px;
+    border-bottom: $my-blue solid 4px;
   }
 
   > article:nth-child(even) .post-item:hover {
@@ -106,7 +108,7 @@ a {
   }
 
   a {
-    border-bottom: #4286f4 solid 2px;
+    border-bottom: $my-blue solid 2px;
   }
 }
 
