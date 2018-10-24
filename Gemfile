@@ -6,9 +6,6 @@ gem 'jekyll-feed'
 gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
 
-group :development do
-  gem 'foreman'
-end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
