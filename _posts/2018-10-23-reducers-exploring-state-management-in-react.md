@@ -124,6 +124,6 @@ If you're implementing this pattern and think to yourself (like how I felt writi
 
 ## Wrapping Up
 
-This isn't an original concept; [Dan Abramov]() has discussed this before and his [article](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367) is also worth reading. This post is mostly an exercise in exploring different ways to organize and transform React component state. 
+This isn't an original concept; [Dan Abramov](https://twitter.com/dan_abramov) has discussed this before and his [article](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367) is also worth reading. This post is mostly an exercise in exploring different ways to organize and transform React component state. 
 
 Next time you are working with a React component, try to think of new ways you can work with state and let me know what you come up with on Twitter: [@mitchhanberg](https://twitter.com/mitchhanberg).
