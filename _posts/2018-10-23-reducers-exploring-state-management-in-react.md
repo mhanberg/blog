@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reducers&#58; Exploring State Management in React (Part 2)
-date: 2018-10-20 09:00:00 -04:00
+date: 2018-10-23 23:00:00 -04:00
 categories: post
 desc: Let's explore how to extract React state transformations to better isolate and understand the way our component state changes.
 permalink: /:categories/:year/:month/:day/:title/
@@ -11,17 +11,19 @@ In a previous [post](https://www.mitchellhanberg.com/post/2018/07/25/exploring-s
 
 ## Reduce
 
-Reduce (also known as a [fold](https://en.wikipedia.org/wiki/Fold_%28higher-order_function%29)) is a functional programming concept that deals with the transformation of data structures using recursion and higher order functions. If you have used either the `Array.prototype.reduce` or `Array.prototype.map` functions, you already have experience with this technique.
+Reduce (also known as a [fold](https://en.wikipedia.org/wiki/Fold_%28higher-order_function%29)) is a functional programming concept that deals with the transformation of data structures using recursion and higher order functions. If you have used either the `Array.prototype.reduce` or `Array.prototype.map` [functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), you already have experience with this technique.
 
 ## The Approach
 
 The general approach is to have a `reduce` (can be named whatever you'd like) function that understands how to respond to certain messages and will output the transformed state. We'll normally call this `reduce` function from a `dispatch` function.
 
+This is essentially the same pattern you use with [Redux](https://redux.js.org), but we don't need to install any packages to use it.
+
 Let's examine the code snippet below.
 
 ```jsx
-function reduce(prevState, { type, payload }) {
-  switch (type) {
+function reduce(prevState, message) {
+  switch (message.type) {
     case "ADD":
       return {
         items: [...prevState.items, prevState.newItem],
@@ -30,13 +32,13 @@ function reduce(prevState, { type, payload }) {
     case "REMOVE":
       return {
         items: prevState.items.filter(
-          (i, idx, prevItems) => idx !== prevItems.indexOf(payload)
+          (i, idx, prevItems) => idx !== prevItems.indexOf(message.item)
         )
       };
     case "CHANGE":
-      return { newItem: payload };
+      return { newItem: message.item };
     case "DISCOUNTS":
-      return { discounts: payload };
+      return { discounts: message.discounts };
     case "INITIAL":
       return {
         newItem: "",
@@ -56,8 +58,9 @@ class Cart extends React.Component {
       const itemsQuery = this.state.items.join(",");
 
       ajax(`https://discountdb.com/?items=${itemsQuery}`)
-        .then(discounts => 
-          this.dispatch({ type: "DISCOUNTS", payload: discounts }));
+        .then(discounts => this.dispatch({
+          type: "DISCOUNTS", discounts 
+        }));
     }
   }
 
@@ -65,12 +68,11 @@ class Cart extends React.Component {
     this.setState(prevState => reduce(prevState, action));
 
   onNewItemChange = event =>
-    this.dispatch({ type: "CHANGE", payload: event.target.value });
+    this.dispatch({ type: "CHANGE", item: event.target.value });
 
   addItem = () => this.dispatch({ type: "ADD" });
 
-  removeItem = item => 
-    () => this.dispatch({ type: "REMOVE", payload: item });
+  removeItem = item => () => this.dispatch({ type: "REMOVE", item });
 
   render() {
     return (
@@ -98,7 +100,7 @@ class Cart extends React.Component {
 
 [![Edit zrww3wp57m](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/zrww3wp57m)
 
-Here our `reduce` function resolves to a switch statement which delegates according to certain messages. We call this function in two places; we call it directly to initialize our component state and we call it in our `dispatch` function to allow our event handlers to dynamically pass messages.
+Here our `reduce` function resolves to a switch statement which delegates according to certain messages. We call this function in two places: directly in our `state` initializer to bootstrap our component and in our `dispatch` function to allow our event handlers to dynamically pass messages.
 
 Unlike the function you pass to `Array.prototype.reduce`, our reduce only returns the changes to state and not the entire new state. This is because we only pass changes to `this.setState`.
 
@@ -110,13 +112,15 @@ What we have done is extract and enumerate the various transformations that can 
 
 Isolating our state transformations this way can be beneficial when it comes to unit testing; our reducer is just plain JavaScript (no React). We fully extracted all state transformations into the reducer, but you are free to only pull out the ones that can benefit from the indirection.
 
-This also allows you to get a taste for how Redux might feel in your codebase without having to add it to your project just yet.
+I have added this technique to a React codebase that was written with no state management patterns in mind, and I found that it really simplified and focused each component.
+
+By creating the `dispatch` function, we are able to pass only one function as a prop to child components if they need to manipulate their parent's state. I found that this drastically reduces [prop drilling](https://blog.kentcdodds.com/prop-drilling-bb62e02cb691).
 
 ## Drawbacks
 
-This increases indirection and adds boilerplate to your code, which can have negative consequences if not implemented for the right reasons.
+While this allows you to pass fewer callbacks to your child components, you will still need to thread it through your component tree if you want to modify top-level state from a leaf-node. 
 
-If you ever think to yourself (like how I felt writing the above contrived example), "Why am I even doing this?" your component might not be complex enough to warrant this.
+If you're implementing this pattern and think to yourself (like how I felt writing the above contrived example), "Why am I even doing this?" your component(s) might not be complex enough to warrant this.
 
 ## Wrapping Up
 
