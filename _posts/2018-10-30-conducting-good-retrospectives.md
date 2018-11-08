@@ -3,11 +3,13 @@ layout: post
 title: Conducting Good Retrospectives
 date: 2018-10-30 09:00:00 -04:00
 categories: post
-desc: An amazing blog post, truly one of the best! PS CHANGEME
+desc: Introduction to holding wildly productive and efficient team retrospectives.
 permalink: /:categories/:year/:month/:day/:title/
+image: https://res.cloudinary.com/mhanberg/image/upload/t_scale/v1541683676/jametlene-reskp-651411-unsplash.jpg
+image_desc: Photo by Jametlene Reskp on Unsplash
 ---
 
-Your team has probably experienced moments of success or failure, moments of working like a well-oiled-machine or not being able to stand the sound of each other's voice. What you've probably also done is pass these moments by without taking time to ponder "Why did these things happen"?
+Your team has probably experienced moments of success or failure, moments of working like a well-oiled-machine or not being able to stand the sound of each other's voices. What you've probably also done is pass these moments by without taking time to ponder "Why did these things happen"?
 
 This is when your team holds a __retrospective__.
 
@@ -17,9 +19,11 @@ A retrospective (or "retro") is a recurring meeting used by teams to look back a
 
 Setting aside dedicated time for these matters assures that they will get some attention and helps keep these conversations from spilling into normal work time (this isn't to say that you shouldn't discuss something when it happens).
 
+Along with **learning from your successes and failures**, one of the goals of a retrospective to **build trust amongst your team**. Teams perform better when they operate in an environment of [psychological safety](https://hbr.org/2017/08/high-performing-teams-need-psychological-safety-heres-how-to-create-it).
+
 ## How to conduct a retrospective
 
-Anyone can host a retrospective, but holding a _good_ retrospective takes some finesse. There are four key aspects that I believe are paramount to a good retrospective: Facilitation, Conversational Turn Taking, Format/Activity, and Action Items.
+Anyone can host a retrospective, but hosting a _good_ retrospective takes some finesse. There are four key aspects that I believe are paramount to a good retrospective: Facilitation, Conversational Turn Taking, Format/Activity, and Action Items.
 
 #### Facilitation
 
@@ -45,33 +49,62 @@ Picking a format gives the **meeting structure** and often an **objective**, all
 
 A necessary output of the meeting is a list of action items. An action item is a task that requires further action in order to accomplish it and is assigned to a specific person. You've probably experienced the situation where everyone agrees something should get done, but no one ever does it.
 
-Sometimes you run into an action item that isn't a specific task, but possibly a general change in behavior that is meant to be actioned by the whole team. In this case, the real action item would be the responsibility of shepherding the adoption of this new behavior for a couple weeks.
+Sometimes you run into an action item that isn't a specific task, but possibly a general change in behavior that is meant to be actioned by the whole team. In this case, the real action item would be bearing the responsibility of shepherding the adoption of this new behavior for a couple weeks.
 
-Leaving the meeting with a list of action items assures that the tasks you spent an hour finding, **actually get done**.
+Leaving the meeting with a list of action items ensures that the tasks you spent an hour finding, **actually get done**.
 
 ## Case Study
 
-For the last year, my team has had a weekly retro, alternating the format each week. We operate in two week sprints, so in the middle of the sprint we typically concentrate on interpersonal or morale issues and at the end of the sprint we focus on project-specific issues.
+For the last year, my team has had a weekly retro, alternating the format each week. We operate in two week sprints, so in the middle of the sprint we typically concentrate on interpersonal issues or other general frustrations and at the end of the sprint we focus on project-specific issues.
 
-However, at the beginning of any retrospective, we solicit the opportunity to suggest an alternate format.
+However, at the beginning of any retrospective, we solicit the opportunity to suggest an alternative format.
 
 #### Mid-Sprint Retrospective
 
-During the Mid-Sprint Retrospective we engage in the [Lean-Coffee](http://leancoffee.org) activity (unless someone suggests an alternate activity!). The chosen facilitator will explain the chosen activity and pass out the required supplies. 
+During the Mid-Sprint Retrospective, we engage in the [Lean Coffee](http://leancoffee.org) activity (unless someone suggests an alternate activity!). The chosen facilitator will explain the chosen activity and pass out the required supplies. 
 
-For Lean Coffee, we use sticky notes, sharpies, and a white board. 
+The basics of the Lean Coffee activity are:
 
-The facilitator sets a timer for 4 or 5 minutes and we all generate conversation topics using the sticky notes and sharpies. Once the timer goes off, the facilitator solicits the opportunity for more time and then each person places their stickies up on the white board, giving a very brief description of the topic.
+1. Generate discussion topics
+    - Limit to 5 minutes
+1. Vote on topics
+1. Discuss topics
+    - Limit to 5 minutes, then vote on continuing with a 2 minute extension, or else move on to next topic.
+    - Facilitator will take notes and track action items.
 
-Once everyone has placed their topics on the board, the facilitator places on leftover topics from the previous Mid-Sprint Retro on the board, and let their respective authors describe them.
-
-We then [dot vote](https://en.wikipedia.org/wiki/Dot-voting) the proposed topics, generally assigning everyone 3-4 votes depending on the number of topics. After which we discuss the topics according to the number of votes it received.
-
-The facilitator will set a timer for 4-5 minutes and discussion will start. Once the five minutes are up, everyone will give a thumb up, down, or neutral (sideways) indicating whether they would like to continue discussing the topic.
+Any topics that aren't discussed are carried over to the next meeting, unless the author states otherwise.
 
 #### Sprint Retrospective
 
+During the Sprint Retrospective we use the [Four Quadrant](http://www.funretrospectives.com/lessons-learned-quadrants-planning-vs-success/) activity. As with the Mid-Sprint retro, the chosen facilitator will explain the activity and pass out the required supplies.
 
+The basics of the Four Quadrant activity are:
+
+1. Enumerate events that happened during the last two weeks on sticky notes.
+    - Limit to 5 minutes
+1. The facilitator will draw a horizontal axis on the white board, with the left side indicating _bad_ and the right side _good_.
+1. Each person will give a brief description of their stickies and place them on the axis where they think they belong.
+1. The facilitator then draws a vertical axis, with the top indicating the event was _in the team's control_ and the bottom that it was _not in the team's control_.
+1. The facilitator quickly pulls each sticky to the appropriate place on the vertical axis. This is usually fairly obvious, but the rest of the team will signal where they think it should go in case of disagreement.
+
+At this point, the board should resemble something like this:
+
+![Diagram of a completed Four Quadrants diagram]({{ 'images/four-quadrants.png' | absolute_url }})
+
+Starting in the top right corner and moving counter clockwise, the team discusses the events in an attempt to learn. If your team is prone to drawing out discussions, consider using a Lean Coffee style discussion timer.
+
+**Keep doing** - good and in your control: give yourselves a quick pat on the back to celebrate good work.
+
+**Improve** - bad and in your control: these are events that your team has the power to avoid in the future. The facilitator will lead discussion on the topics, driving toward actions that can be taken in the future.
+
+**Escalate** - bad and out of your control: these events can only be addressed by someone external to your team. Now is the time to figure out with who to escalate the issue, or assign someone the action of figuring that out later.
+
+**Kudos** - good and out of your control: these are positive events that were caused by someone external to your team. Here the team will assign an action to someone to reach out and express the team's gratitude.
 
 ## Conclusion
 
+Done right, retrospectives can be a boon for successful and struggling teams alike. 
+
+The goal is to **build a culture of trust** amongst your team, where everyone has the freedom to express themselves without the fear of being punished for making a mistake or speaking their mind. If there are barriers to bringing up problems your team is having, you can never expect to be able to work through them and improve.
+
+If your team has never participated in a retrospective, **my challenge to you is to bring the idea to your team and get it on the calendar!**
