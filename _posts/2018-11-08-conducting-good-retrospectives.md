@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Conducting Good Retrospectives
-date: 2018-10-30 09:00:00 -04:00
+date: 2018-11-08 21:00:00 -05:00
 categories: post
 desc: Introduction to holding wildly productive and efficient team retrospectives.
 permalink: /:categories/:year/:month/:day/:title/
@@ -9,21 +9,23 @@ image: https://res.cloudinary.com/mhanberg/image/upload/t_scale/v1541683676/jame
 image_desc: Photo by Jametlene Reskp on Unsplash
 ---
 
-Your team has probably experienced moments of success or failure, moments of working like a well-oiled-machine or not being able to stand the sound of each other's voices. What you've probably also done is pass these moments by without taking time to ponder "Why did these things happen"?
+Your team has probably experienced moments of success or failure, moments of working like a well oiled machine or not being able to stand the sound of each other's voices. What you've probably also done is pass these moments by without taking time to ponder "Why did these things happen"?
 
 This is when your team holds a __retrospective__.
 
 ### What is a retrospective?
 
-A retrospective (or "retro") is a recurring meeting used by teams to look back at the last week or two in order to figure out what went well and what went poorly. The realm of topics is wide ranging: from missing deadlines to mishandled social interactions. These meetings aren't just to make you feel good or bad about yourselves, they're designed to curate items on which your team will take action after the meeting.
+A [retrospective](https://www.scrum.org/resources/what-is-a-sprint-retrospective) (or "retro") is a recurring meeting used by teams to look back at the last sprint, week, day or any major event in order to figure out what went well and what went poorly. 
 
-Setting aside dedicated time for these matters assures that they will get some attention and helps keep these conversations from spilling into normal work time (this isn't to say that you shouldn't discuss something when it happens).
+The realm of topics is wide ranging: from  mishandled social interactions to achieving a major milestone. These meetings aren't just to make you feel good or bad about yourselves, they're designed to curate items on which your team will take action after the meeting.
 
-Along with **learning from your successes and failures**, one of the goals of a retrospective to **build trust amongst your team**. Teams perform better when they operate in an environment of [psychological safety](https://hbr.org/2017/08/high-performing-teams-need-psychological-safety-heres-how-to-create-it).
+Setting aside dedicated time for these matters assures that they will get some attention, and helps keep these conversations from spilling into normal work time. However, this isn't to say that you shouldn't discuss something when it happens.
+
+Along with **learning from your successes and failures**, one of the goals of a retrospective to **build trust among your team**. Teams perform better when they operate in an environment of [psychological safety](https://hbr.org/2017/08/high-performing-teams-need-psychological-safety-heres-how-to-create-it).
 
 ## How to conduct a retrospective
 
-Anyone can host a retrospective, but hosting a _good_ retrospective takes some finesse. There are four key aspects that I believe are paramount to a good retrospective: Facilitation, Conversational Turn Taking, Format/Activity, and Action Items.
+Anyone can host a retrospective, but hosting a _good_ retrospective takes some finesse. There are five key aspects that I believe are paramount to a good retrospective: Facilitation, Conversational Turn Taking, Format/Activity, Action Items, and Trust.
 
 #### Facilitation
 
@@ -43,7 +45,7 @@ The primary motivation for the technique to is **avoid interruptions** and **tal
 
 Free form conversation is not conducive to reaching conclusions, so it helps to pick a meeting format that fits well with your team. At the beginning of the meeting, the facilitator will explain the format and confirm that everyone is okay with that decision. Different formats optimize for different aspects of your team: project performance, interpersonal communication, or general frustration.
 
-Picking a format gives the **meeting structure** and often an **objective**, allowing the team to work together towards a known and common goal.
+Picking a format gives the meeting **structure** and often an **objective**, allowing the team to work together towards a known and common goal.
 
 #### Action Items
 
@@ -52,6 +54,16 @@ A necessary output of the meeting is a list of action items. An action item is a
 Sometimes you run into an action item that isn't a specific task, but possibly a general change in behavior that is meant to be actioned by the whole team. In this case, the real action item would be bearing the responsibility of shepherding the adoption of this new behavior for a couple weeks.
 
 Leaving the meeting with a list of action items ensures that the tasks you spent an hour finding, **actually get done**.
+
+#### Trust
+
+Building trust will take some time, but it is the keystone to having productive retrospectives and becoming a great team. 
+
+People thrive when working in an environment where everyone has mutual respect and the freedom to speak their mind or take risks. Google conducted a study, [Project Aristotle](https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html), on hundreds of teams and determined that **Psychological Safety** is the most [important dynamic of a successful team](https://rework.withgoogle.com/blog/five-keys-to-a-successful-google-team/).
+
+The leader of the study, Julia Rozovksy, said:
+
+>Individuals on teams with higher psychological safety are less likely to leave Google, they’re more likely to harness the power of diverse ideas from their teammates, they bring in more revenue, and they’re rated as effective twice as often by executives.
 
 ## Case Study
 
@@ -72,13 +84,13 @@ The basics of the Lean Coffee activity are:
     - Limit to 5 minutes, then vote on continuing with a 2 minute extension, or else move on to next topic.
     - Facilitator will take notes and track action items.
 
-Any topics that aren't discussed are carried over to the next meeting, unless the author states otherwise.
+Any topics that aren't discussed are carried over to the next meeting if anyone still has interest.
 
 #### Sprint Retrospective
 
-During the Sprint Retrospective we use the [Four Quadrant](http://www.funretrospectives.com/lessons-learned-quadrants-planning-vs-success/) activity. As with the Mid-Sprint retro, the chosen facilitator will explain the activity and pass out the required supplies.
+During the Sprint Retrospective we use a variant of the [Four Quadrant](http://www.funretrospectives.com/lessons-learned-quadrants-planning-vs-success/) activity. As with the Mid-Sprint retro, the chosen facilitator will explain the activity and pass out the required supplies.
 
-The basics of the Four Quadrant activity are:
+The basics of our version of the Four Quadrant activity are:
 
 1. Enumerate events that happened during the last two weeks on sticky notes.
     - Limit to 5 minutes
@@ -105,6 +117,6 @@ Starting in the top right corner and moving counter clockwise, the team discusse
 
 Done right, retrospectives can be a boon for successful and struggling teams alike. 
 
-The goal is to **build a culture of trust** amongst your team, where everyone has the freedom to express themselves without the fear of being punished for making a mistake or speaking their mind. If there are barriers to bringing up problems your team is having, you can never expect to be able to work through them and improve.
+The goal is to **build a culture of trust** among your team, where everyone has the freedom to express themselves without the fear of being punished for making a mistake or speaking their mind. If there are barriers to bringing up problems your team is having, you can never expect to be able to work through them and improve.
 
 If your team has never participated in a retrospective, **my challenge to you is to bring the idea to your team and get it on the calendar!**
