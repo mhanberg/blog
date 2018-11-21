@@ -10,6 +10,13 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - package.json
+  - yarn.lock
+  - node_modules
+  - README.md
+  - postcss.config.js
+  - purgecss.config.js
+  - netlify.toml
 future: false
 excerpt_separator: ""
 

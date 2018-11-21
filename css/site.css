@@ -1,0 +1,117 @@
+---
+---
+
+@import "_includes/preflight";
+@import "_includes/components";
+@import "_includes/syntax";
+
+.top-border {
+  background: #d0021b;
+  background: linear-gradient(90deg, #d0021b 33%, #4286f4 66%);
+  height: 7px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+body {
+  background-color: #fafafa;
+  color: #333;
+}
+
+blockquote {
+  @apply border-blue border-l-3;
+
+  font-size: 1.1em;
+  font-style: italic;
+  margin: 1.5em 0;
+  padding-left: 0.75em;
+}
+
+a {
+  color: #333;
+  word-wrap: break-word;
+  text-decoration: none;
+}
+
+.posts > article:nth-child(odd) .post-item:hover {
+  @apply border-blue border-b-4;
+}
+
+.posts > article:nth-child(even) .post-item:hover {
+  border-bottom: #e3342f solid 4px;
+}
+
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post p,
+.post ul,
+.post ol,
+.post div.highlight,
+.about h1,
+.about h2,
+.about h3,
+.about h4,
+.about p,
+.about ul,
+.about ol,
+.about div.highlight {
+  margin-bottom: 1rem;
+}
+
+.post p,
+.post ul,
+.post ol,
+.about p,
+.about ul,
+.about ol {
+  line-height: 2;
+}
+
+.post li > ul,
+.post li > ol,
+.about li > ul,
+.about li > ol {
+  margin-bottom: 0;
+}
+
+.post a,
+.about a {
+  @apply border-blue border-b-2;
+}
+
+hr {
+  background: #ddd;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.mobile-nav {
+  overflow-y: hidden;
+  max-height: 10rem;
+  transition-property: all;
+  transition-duration: 150ms;
+}
+
+.closed {
+  max-height: 0;
+}
+
+@tailwind utilities;
