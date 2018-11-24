@@ -8,6 +8,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-postcss
+  - jekyll-purgecss
 exclude:
   - Gemfile
   - Gemfile.lock
