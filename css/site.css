@@ -5,10 +5,18 @@
 @import "_includes/components";
 @import "_includes/syntax";
 
-.top-border {
-  background: #d0021b;
+.gradient-background {
   background: linear-gradient(90deg, #d0021b 33%, #4286f4 66%);
-  height: 7px;
+}
+
+.gradient-border {
+  border-top-style: solid;
+  border-top-width: 7px;
+  border-image: linear-gradient(90deg, #d0021b 33%, #4286f4 66%) 1 100;
+}
+
+.full-screen {
+  min-height: calc(100vh - 7px);
 }
 
 h1 {

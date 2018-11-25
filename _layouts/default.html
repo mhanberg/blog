@@ -7,15 +7,16 @@
   {% seo %}
 </head>
 <html>
-  <body class='font-sans'>
-    <div class='top-border'></div>
-    <section class='container'>
-      {% include header.html %}
-      <div>
-        {{ content }}
-      </div>
-      {% include footer.html %}
-    </section>
+  <body class='gradient-border gradient-background font-sans'>
+    <main class="bg-white">
+      <section class='container flex flex-col full-screen'>
+        {% include header.html %}
+        <div class="flex-1">
+          {{ content }}
+        </div>
+        {% include footer.html %}
+      </section>
+    </main>
 
     {% if jekyll.environment == 'production' %}
       {% include analytics.html %}
