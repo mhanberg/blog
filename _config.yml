@@ -19,6 +19,7 @@ exclude:
   - postcss.config.js
   - purgecss.config.js
   - netlify.toml
+  - bin
 future: false
 excerpt_separator: ""
 
