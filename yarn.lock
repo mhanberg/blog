@@ -971,6 +971,13 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
+front-matter@^2.1.2:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/front-matter/-/front-matter-2.3.0.tgz#7203af896ce357ee04e2aa45169ea91ed7f67504"
+  integrity sha1-cgOviWzjV+4E4qpFFp6pHtf2dQQ=
+  dependencies:
+    js-yaml "^3.10.0"
+
 fs-extra@^4.0.2:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-4.0.3.tgz#0d852122e5bc5beb453fb028e9c0c9bf36340c94"
@@ -1530,6 +1537,14 @@ js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
+
+js-yaml@^3.10.0:
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.1.tgz#295c8632a18a23e054cf5c9d3cecafe678167600"
+  integrity sha512-um46hB9wNOKlwkHgiuyEVAybXBjwFUV0Z/RaHJblRd9DXltue9FTYvzCr9ErQrK9Adz5MU4gHWVaNUfdmrC8qA==
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
 
 js-yaml@^3.9.0:
   version "3.12.0"
@@ -2942,6 +2957,13 @@ stylelint-config-standard@18.2.0:
   integrity sha512-07x0TaSIzvXlbOioUU4ORkCIM07kyIuojkbSVCyFWNVgXMXYHfhnQSCkqu+oHWJf3YADAnPGWzdJ53NxkoJ7RA==
   dependencies:
     stylelint-config-recommended "^2.1.0"
+
+stylelint-processor-ignore-front-matter@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/stylelint-processor-ignore-front-matter/-/stylelint-processor-ignore-front-matter-0.1.0.tgz#d93ec751d6ae5196f4bb434d4f554239c843442f"
+  integrity sha1-2T7HUdauUZb0u0NNT1VCOchDRC8=
+  dependencies:
+    front-matter "^2.1.2"
 
 stylelint@9.8.0:
   version "9.8.0"

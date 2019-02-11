@@ -11,6 +11,7 @@
     "purgecss": "1.1.0",
     "stylelint": "9.8.0",
     "stylelint-config-standard": "18.2.0",
+    "stylelint-processor-ignore-front-matter": "^0.1.0",
     "tailwindcss": "0.7.2"
   }
 }
