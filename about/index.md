@@ -12,4 +12,8 @@ I am currently exploring, building, and writing about:
 - React and JavaScript
 - Building great products with effective teams.
 
-If you're interested in these topics, use the form below and I'll send you any articles I write or any interesting resources I come across.
+### Podcast Appearances
+
+#### [Elixir Mix - Ep. 37 The Elixir Language Service](https://devchat.tv/elixir-mix/emx-037-the-elixir-language-service-with-mitchell-hanberg/) 
+
+I joined [Mark Ericksen](https://twitter.com/brainlid) and [Josh Adams](https://twitter.com/knewter) in a conversation about using [ElixirLS](https://github.com/JakeBecker/elixir-ls) with [Vim](https://www.vim.org/).
