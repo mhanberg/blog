@@ -133,6 +133,10 @@ hr {
   margin-top: 1rem;
 }
 
+.post hr {
+  @apply max-w-1/2 my-8;
+}
+
 .mobile-nav {
   overflow-y: hidden;
   max-height: 10rem;
