@@ -5,6 +5,17 @@
 @import "_includes/components";
 @import "_includes/syntax";
 
+:root {
+  --background-color: #262b2f;
+  --text-color: config("colors.grey-darkest");
+}
+
+.theme {
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: all 250ms ease;
+}
+
 .gradient-background {
   background: linear-gradient(90deg, #d0021b 33%, #4286f4 66%);
 }
@@ -72,9 +83,11 @@ blockquote {
 }
 
 a {
-  color: #333;
+  color: var(--text-color);
   word-wrap: break-word;
   text-decoration: none;
+
+  transition: all 250ms ease;
 }
 
 .posts > article:nth-child(odd) .post-item:hover {

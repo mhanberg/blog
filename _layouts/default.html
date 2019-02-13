@@ -10,7 +10,20 @@
 </head>
 <html>
   <body class='gradient-border gradient-background font-sans'>
-    <main class="bg-white">
+    <script>
+      window.addEventListener("DOMContentLoaded", function() {
+        const theme = window.localStorage.getItem("theme");
+        const themeButton = document.getElementById("theme-btn");
+        const background = theme === "dark" ? "#262b2f" : "white";
+        const text = theme === "dark" ? "white" : "#262b2f";
+
+        themeButton.innerText = window.localStorage.getItem("theme") === 'dark' ? '🌝' : '🌚'
+
+        document.body.style.setProperty("--background-color", background);
+        document.body.style.setProperty("--text-color", text);
+      });
+    </script>
+    <main class="theme">
       <section class='container flex flex-col full-screen'>
         {% include header.html %}
         <div class="flex-1">
