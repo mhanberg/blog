@@ -98,6 +98,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Inter',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
