@@ -9,7 +9,7 @@ permalink: /:categories/:year/:month/:day/:title/
 
 ### What is Elixir LS?
 
-[Elixir LS](https://github.com/JakeBecker/elixir-ls) by Jake Becker is the language server implementation for Elixir.
+[Elixir LS](https://github.com/elixir-lsp/elixir-ls) by Jake Becker is the language server implementation for Elixir.
 
 ### What is a language server?
 
@@ -36,13 +36,15 @@ call plug#end()
 Now let's install Elixir LS!
 
 ```shell
-$ git clone git@github.com:JakeBecker/elixir-ls.git
+$ git clone git@github.com:elixir-lsp/elixir-ls.git
 $ cd elixir-ls && mkdir rel
 
 $ mix deps.get && mix compile
 
 $ mix elixir_ls.release -o rel
 ```
+
+>Note: As of writing, you will need to compile `elixir-ls` with the same Elixir and Erlang versions as your project.
 
 Perfect, our final step is to tell vim where our Elixir LS instance lives.
 
@@ -56,4 +58,4 @@ let g:ale_elixir_elixir_ls_release = '<your path to elixir-ls>/rel'
 
 I would familiarize yourself with the [features of ALE](https://github.com/w0rp/ale#usage) and decide how you want to incorporate them into your workflow. ALE doesn't prescribe any keymappings, so feel free to experiment to see what works best for you!
 
-Check out my [.vimrc](https://github.com/mhanberg/.dotfiles/blob/master/vimrc#L97) to see how I use ALE.
+Check out my [.vimrc](https://github.com/mhanberg/.dotfiles/blob/5fce37367204bb9d2a0ac257955c0d9c01b73fb5/vimrc#L131) to see how I use ALE.
