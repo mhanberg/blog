@@ -7,7 +7,9 @@ layout: default
   <p class='text-xl md:text-3xl py-4 tracking-wide'>Software Engineer</p>
 </section>
 
-{% include subscribe.html %}
+<div class="max-w-md m-auto">
+  {% include subscribe.html %}
+</div>
 
 <section class='posts border-t pt-4 max-w-md m-auto'>
   {% for post in site.posts %}
