@@ -11,7 +11,7 @@ layout: default
   {% include subscribe.html %}
 </div>
 
-<section class='posts border-t pt-4 max-w-md m-auto'>
+<section class='posts pt-4 max-w-md m-auto'>
   {% for post in site.posts %}
     <article class='border-b pb-4 md:mb-12'>
       <div class='text-xl md:text-2xl font-bold my-4'>
@@ -26,7 +26,6 @@ layout: default
           <a href="{{ post.url }}" class='post-item'>{{ post.title }}</a>
         {% endif %}
       </div>
-      <p class='leading-loose my-4'>{{ post.desc }}</p>
       <p class='my-4'>{{ post.date | date: "%b %d, %Y" }}</p>
     </article>
   {% endfor %}
