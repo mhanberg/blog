@@ -12,9 +12,9 @@ layout: default
       <img  src='{{ page.image | absolute_url }}' alt='Pointless hero image, reminiscent of medium posts'>
       <p class='text-center text-xs mb-16'>{{page.image_desc}}</p>
     </p>
-    <article class='post'>
+    <article class='post max-w-md mx-auto'>
   {% else %}
-    <article class='post my-4'>
+    <article class='post max-w-md mx-auto my-4'>
   {% endif %}
     {{ content }}
     </article>
