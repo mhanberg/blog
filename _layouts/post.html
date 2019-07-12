@@ -8,22 +8,22 @@ layout: default
     <p class='text-sm'>{{ page.date | date: "%B %d, %Y" }}</p>
   </div>
   {% if page.image %}
-    <p class='max-w-lg mx-auto mt-4 py-4'>
-    <img class='shadow-lg' src='{{ page.image | absolute_url }}' alt='Pointless hero image, reminiscent of medium posts'>
-    <p class='text-center text-xs mb-4'>{{page.image_desc}}</p>
+    <p class='max-w-lg mx-auto text-center mt-4 py-4'>
+      <img  src='{{ page.image | absolute_url }}' alt='Pointless hero image, reminiscent of medium posts'>
+      <p class='text-center text-xs mb-16'>{{page.image_desc}}</p>
     </p>
-    <article class='post max-w-md m-auto'>
-    {% else %}
-      <article class='post max-w-md m-auto my-4'>
-      {% endif %}
-      {{ content }}
-      </article>
-      <div class='max-w-md mx-auto'>
-        <hr>
+    <article class='post'>
+  {% else %}
+    <article class='post my-4'>
+  {% endif %}
+    {{ content }}
+    </article>
+    <div class='max-w-md mx-auto'>
+      <hr>
 
-        <h4 class='text-base md:text-xl mb-4 pt-4'>Enjoy this article?</h4>
-        <p class='leading-loose mb-4'>Subscribe to have them delivered straight to your inbox!</p>
-        {% include subscribe.html %}
-      </div>
+      <h4 class='text-base md:text-xl mb-4 pt-4'>Enjoy this article?</h4>
+      <p class='leading-loose mb-4'>Subscribe to have them delivered straight to your inbox!</p>
+      {% include subscribe.html %}
+    </div>
 </section>
 
