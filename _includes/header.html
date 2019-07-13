@@ -4,18 +4,20 @@
       {% include logo.html %}
     </a>
     <div class='flex items-center'>
-      <div id='hamburger' class='md:hidden' onclick='toggleNav()'>
-        <svg class='text-blue fill-current h-8 w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-      </div>
-      <div id='close' class='hidden' onclick='toggleNav()'>
-        <svg class='text-blue fill-current h-8 w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
-      </div>        
-      <button id="theme-btn" class="hover:cursor-pointer hover:shadow-lg" onclick="toggleTheme()" onload="function(btn){btn}(this)">Toggle Theme</button>
-      <div class='hidden md:block'>
+      <div class='hidden md:block mr-2'>
         <a class='text-blue px-3 tracking-wide no-underline hover:underline' href='https://github.com/mhanberg' target='_blank'>GITHUB</a>
         <a class='text-blue px-3 tracking-wide no-underline hover:underline' href='https://www.twitter.com/mitchhanberg' target='_blank'>TWITTER</a>
         <a class='text-blue px-3 tracking-wide no-underline hover:underline' href='/feed.xml'>RSS</a>
         <a class='text-blue px-3 tracking-wide no-underline hover:underline' href='/about'>ABOUT</a>
+      </div>
+      <button id="theme-btn" class="hover:cursor-pointer hover:shadow-lg" title="Dark Mode toggle"></button>
+      <div class="ml-4">
+        <div id='hamburger' class='md:hidden'>
+          <svg class='text-blue fill-current h-8 w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </div>
+        <div id='close' class='hidden'>
+          <svg class='text-blue fill-current h-8 w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
+        </div>        
       </div>
     </div>
   </div>
@@ -28,33 +30,8 @@
 </header>
 
 <script>
-  var hamburger = document.getElementById('hamburger');
-  var menu = document.getElementById('menu');
-  var close = document.getElementById('close');
-
-  function toggleNav() {
-    menu.classList.toggle('closed');
-    close.classList.toggle('hidden');
-    hamburger.classList.toggle('hidden');
-  }
-
-  function toggleTheme() {
-    const theme = window.localStorage.getItem("theme");
-    const themeButton = document.getElementById("theme-btn");
-
-    if (theme === "light") {
-      document.body.style.setProperty("--background-color", "#262b2f");
-      document.body.style.setProperty("--text-color", "white");
-      themeButton.innerText = "🌝";
-
-      window.localStorage.setItem("theme", "dark");
-    } else {
-      document.body.style.setProperty("--background-color", "white");
-      document.body.style.setProperty("--text-color", "#262b2f");
-      themeButton.innerText = "🌚";
-
-      window.localStorage.setItem("theme", "light");
-    }
-  }
+  document.getElementById("hamburger").addEventListener("click", Mitch.toggleNav);
+  document.getElementById("close").addEventListener("click", Mitch.toggleNav);
+  document.getElementById("theme-btn").addEventListener("click", Mitch.toggleTheme);
 </script>
 

@@ -6,22 +6,15 @@
   <link rel="stylesheet" href="/css/site.css">
 
   <meta property="og:image" content="{{ 'images/256_m_black_white_background.png' | absolute_url }}" />
+
+  <script src="/js/site.js"></script>
+
   {% seo %}
 </head>
 <html>
   <body class='gradient-border gradient-background font-sans'>
     <script>
-      window.addEventListener("DOMContentLoaded", function() {
-        const theme = window.localStorage.getItem("theme");
-        const themeButton = document.getElementById("theme-btn");
-        const background = theme === "dark" ? "#262b2f" : "white";
-        const text = theme === "dark" ? "white" : "#262b2f";
-
-        themeButton.innerText = window.localStorage.getItem("theme") === 'dark' ? '🌝' : '🌚'
-
-        document.body.style.setProperty("--background-color", background);
-        document.body.style.setProperty("--text-color", text);
-      });
+      window.Mitch.setInitialTheme();
     </script>
     <main class="theme">
       <section class='container flex flex-col full-screen'>

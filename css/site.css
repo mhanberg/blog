@@ -3,17 +3,32 @@
 
 @import "_includes/preflight";
 @import "_includes/components";
-@import "_includes/syntax";
+@import "_includes/thankful_eyes";
 
 :root {
-  --background-color: #262b2f;
-  --text-color: config("colors.grey-darkest");
+  --dark-background: config("colors.background");
+  --light-background: config("colors.white");
+  --light-text: config("colors.grey-darkest");
+  --dark-text: config("colors.white");
+  --light-input-background: config("colors.grey-lighter");
+  --dark-input-background: config("colors.grey-darkest");
+  --light-input-text: config("colors.grey-darkest");
+  --dark-input-text: config("colors.white");
+  --background-color: var(--light-background);
+  --text-color: var(--light-text);
+  --input-background-color: var(--light-input-background);
+  --input-text-color: var(--light-input-text);
 }
 
 .theme {
   background: var(--background-color);
   color: var(--text-color);
   transition: all 250ms ease;
+}
+
+.input-background {
+  background: var(--input-background-color);
+  color: var(--input-text-color);
 }
 
 .gradient-background {
@@ -68,11 +83,6 @@ ol,
   }
 }
 
-body {
-  background-color: #fafafa;
-  color: #333;
-}
-
 blockquote {
   @apply border-blue border-l-3;
 
@@ -86,8 +96,8 @@ a {
   color: var(--text-color);
   word-wrap: break-word;
   text-decoration: none;
-
-  transition: all 250ms ease;
+  transition: color 250ms ease;
+  transition: border 150ms ease;
 }
 
 .posts > article:nth-child(odd) .post-item:hover {
