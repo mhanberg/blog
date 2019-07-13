@@ -10,7 +10,7 @@
   --light-background: config("colors.white");
   --light-text: config("colors.grey-darkest");
   --dark-text: config("colors.white");
-  --light-input-background: config("colors.grey-lighter");
+  --light-input-background: config("colors.grey-light");
   --dark-input-background: config("colors.grey-darkest");
   --light-input-text: config("colors.grey-darkest");
   --dark-input-text: config("colors.white");

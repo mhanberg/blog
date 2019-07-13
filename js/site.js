@@ -7,9 +7,11 @@ const lightText = () => getComputedStyle(document.documentElement).getPropertyVa
 const lightInputBackground = () => getComputedStyle(document.documentElement).getPropertyValue("--light-input-background");
 const lightInputText = () => getComputedStyle(document.documentElement).getPropertyValue("--light-input-text");
 const rootStyle = () => document.documentElement.style;
+const getTheme = () => window.localStorage.getItem("theme") || "light";
+const setTheme = theme => window.localStorage.setItem("theme", theme);
 
 function setInitialTheme() {
-  const theme = window.localStorage.getItem("theme");
+  const theme = getTheme();
   const background = theme === "dark" ? darkBackground() : lightBackground();
   const inputBackground = theme === "dark" ? darkInputBackground() : lightInputBackground();
   const inputText = theme === "dark" ? darkInputText() : lightInputText();
@@ -22,22 +24,22 @@ function setInitialTheme() {
   window.addEventListener("DOMContentLoaded", function() {
     const themeButton = document.getElementById("theme-btn");
 
-    themeButton.innerText = window.localStorage.getItem("theme") === 'dark' ? '🌝' : '🌚'
+    themeButton.innerText = getTheme() === 'dark' ? '🌝' : '🌚'
   });
 }
 
 function toggleNav() {
-  const hamburger = document.getElementById('hamburger');
-  const menu = document.getElementById('menu');
-  const close = document.getElementById('close');
+  const menu = document.getElementById("menu");
+  const close = document.getElementById("close");
+  const hamburger = document.getElementById("hamburger");
 
-  menu.classList.toggle('closed');
-  close.classList.toggle('hidden');
-  hamburger.classList.toggle('hidden');
+  menu.classList.toggle("closed");
+  close.classList.toggle("hidden");
+  hamburger.classList.toggle("hidden");
 }
 
 function toggleTheme() {
-  const theme = window.localStorage.getItem("theme");
+  const theme = getTheme();
 
   theme === "light" ? setDarkTheme() : setLightTheme();
 }
@@ -49,7 +51,7 @@ function setDarkTheme() {
   rootStyle().setProperty("--input-text-color", darkInputText());
   document.getElementById("theme-btn").innerText = "🌝";
 
-  window.localStorage.setItem("theme", "dark");
+  setTheme("dark");
 }
 
 function setLightTheme() {
@@ -59,7 +61,7 @@ function setLightTheme() {
   rootStyle().setProperty("--input-text-color", lightInputText());
   document.getElementById("theme-btn").innerText = "🌚";
 
-  window.localStorage.setItem("theme", "light");
+  setTheme("light");
 }
 
 window.Mitch = {
