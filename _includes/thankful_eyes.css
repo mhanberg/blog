@@ -7,6 +7,15 @@ pre.highlight {
   font-size: 90%;
 }
 
+code.highlighter-rouge {
+  color: #faf6e4;
+  background-color: #021b2b;
+  border-radius: 2px;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 0.8em;
+  padding: 1px 4px;
+}
+
 .highlight .gl {
   color: #dee5e7;
   background-color: #4e5d62;
