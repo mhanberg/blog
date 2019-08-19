@@ -14,6 +14,6 @@ I am currently exploring, building, and writing about:
 
 ### Podcast Appearances
 
-#### [Elixir Mix - Ep. 37 The Elixir Language Service](https://devchat.tv/elixir-mix/emx-037-the-elixir-language-service-with-mitchell-hanberg/) 
+**[Elixir Mix - Ep. 37 The Elixir Language Service](https://devchat.tv/elixir-mix/emx-037-the-elixir-language-service-with-mitchell-hanberg/)**
 
 I joined [Mark Ericksen](https://twitter.com/brainlid) and [Josh Adams](https://twitter.com/knewter) in a conversation about using [ElixirLS](https://github.com/JakeBecker/elixir-ls) with [Vim](https://www.vim.org/).

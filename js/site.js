@@ -1,9 +1,11 @@
 const darkBackground = () => getComputedStyle(document.documentElement).getPropertyValue("--dark-background");
 const darkText = () => getComputedStyle(document.documentElement).getPropertyValue("--dark-text");
+const darkMenuText = () => getComputedStyle(document.documentElement).getPropertyValue("--dark-menu-text");
 const darkInputBackground = () => getComputedStyle(document.documentElement).getPropertyValue("--dark-input-background");
 const darkInputText = () => getComputedStyle(document.documentElement).getPropertyValue("--dark-input-text");
 const lightBackground = () => getComputedStyle(document.documentElement).getPropertyValue("--light-background");
 const lightText = () => getComputedStyle(document.documentElement).getPropertyValue("--light-text");
+const lightMenuText = () => getComputedStyle(document.documentElement).getPropertyValue("--light-menu-text");
 const lightInputBackground = () => getComputedStyle(document.documentElement).getPropertyValue("--light-input-background");
 const lightInputText = () => getComputedStyle(document.documentElement).getPropertyValue("--light-input-text");
 const rootStyle = () => document.documentElement.style;
@@ -18,6 +20,7 @@ function setInitialTheme() {
   const text = theme === "dark" ? darkText() : lightText();
   rootStyle().setProperty("--background-color", background);
   rootStyle().setProperty("--text-color", text);
+  rootStyle().setProperty("--text-menu-color", text);
   rootStyle().setProperty("--input-background-color", inputBackground);
   rootStyle().setProperty("--input-text-color", inputText);
 
@@ -47,6 +50,7 @@ function toggleTheme() {
 function setDarkTheme() {
   rootStyle().setProperty("--background-color", darkBackground());
   rootStyle().setProperty("--text-color", darkText());
+  rootStyle().setProperty("--text-menu-color", darkMenuText());
   rootStyle().setProperty("--input-background-color", darkInputBackground());
   rootStyle().setProperty("--input-text-color", darkInputText());
   document.getElementById("theme-btn").innerText = "🌝";
@@ -57,6 +61,7 @@ function setDarkTheme() {
 function setLightTheme() {
   rootStyle().setProperty("--background-color", lightBackground());
   rootStyle().setProperty("--text-color", lightText());
+  rootStyle().setProperty("--text-menu-color", lightMenuText());
   rootStyle().setProperty("--input-background-color", lightInputBackground());
   rootStyle().setProperty("--input-text-color", lightInputText());
   document.getElementById("theme-btn").innerText = "🌚";
