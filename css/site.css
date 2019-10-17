@@ -54,7 +54,13 @@ header svg {
 }
 
 form input[type='email'] {
-  @apply border-t border-b border-l border-blue-darkest;
+  @apply border border-blue-darkest;
+}
+
+@screen sm {
+  form input[type='email'] {
+    @apply border-l border-t border-b border-blue-darkest;
+  }
 }
 
 .gradient-background {
@@ -111,7 +117,7 @@ ol,
 
 blockquote {
   @apply border-l-3;
-  
+
   border-color: var(--text-menu-color);
   font-size: 1.1em;
   font-style: italic;
