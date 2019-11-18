@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<section class="container mb-8">
+  <div class="bg-evergreen-800 p-4 rounded mb-4">
+    <p>If you want to be notified in the future about new articles, as well as other interesting things I'm working on, join my mailing list!</p>
+
+    <p class="text-sm text-evergreen-400">I send emails quite infrequently, and I will <strong class="text-white">never</strong> share your email address with anyone else.</p>
+
+    {% include subscribe.html %} 
+  </div>
+
+  <h1>Articles</h1>
+
+  {% for post in site.posts %}
+  <article class="border-b pb-4 md:mb-12">
+    <div class="text-xl md:text-2xl font-bold text-white my-4">
+      {% if post.external_url %}
+      <a class="text-white no-underline font-semibold" href="{{ post.external_url }}">
+        {{ post.title }}
+      </a>
+      {% else %}
+      <a class="text-white no-underline font-semibold" href="{{ post.url }}">{{ post.title }}</a>
+      {% endif %}
+    </div>
+    <p class="my-4">{{ post.date | date: "%b %d, %Y" }}</p>
+  </article>
+  {% endfor %}
+</section>

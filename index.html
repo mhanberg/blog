@@ -2,31 +2,15 @@
 layout: default
 ---
 
-<section class='text-center md:m-12'>
-  <p class='text-2xl md:text-4xl font-bold tracking-wide'>MITCHELL HANBERG</p>
-  <p class='text-xl md:text-3xl py-4 tracking-wide'>Software Engineer</p>
-</section>
-
-<div class="max-w-md m-auto">
-  {% include subscribe.html %}
+<div class="container max-w-xs">
+  <img class="rounded shadow-xl" style="filter: grayscale(100%)" src="https://res.cloudinary.com/mhanberg/image/upload/v1574047220/Becca___Mitch-67_copy.jpg">
 </div>
 
-<section class='posts pt-4 max-w-md m-auto'>
-  {% for post in site.posts %}
-    <article class='border-b pb-4 md:mb-12'>
-      <div class='text-xl md:text-2xl font-bold my-4'>
-        {% if post.external_url %}
-          <a
-            class="post-item external {{ post.external_site }} no-underline"
-            href="{{ post.external_url }}"
-            onclick="ga('send', 'pageview','{{ post.url }}')">
-            {{ post.title }}
-          </a>
-        {% else %}
-          <a href="{{ post.url }}" class='post-item'>{{ post.title }}</a>
-        {% endif %}
-      </div>
-      <p class='my-4'>{{ post.date | date: "%b %d, %Y" }}</p>
-    </article>
-  {% endfor %}
-</section>
+<h1 class="text-center mt-12">Full Stack Developer</h1>
+
+<div class="container mt-4">
+  <p>Hello!</p>
+  <p>My name is Mitchell Hanberg and I am a full stack developer from Indianapolis, IN.</p>
+  <p>Lately I've been building web applications with a focus on team productivity, collaboration, and stellar client communication.</p>
+  <p>I currently maintain <a href="https://www.github.com/elixir-wallaby/wallaby" target="_blank">Wallaby</a> and am the creator of <a href="https://www.github.com/mhanberg/temple" target="_blank">Temple</a>.</p>
+</div>

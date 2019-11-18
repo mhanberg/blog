@@ -12,20 +12,13 @@
     <script src="/js/site.js"></script>
 
     {% seo %}
+
+    <script defer src="https://js.statickit.com/statickit.js"></script>
   </head>
-  <body class='gradient-border gradient-background font-sans'>
-    <script>
-      window.Mitch.setInitialTheme();
-    </script>
-    <main class="theme">
-      <section class='container flex flex-col full-screen'>
-        {% include header.html %}
-        <div class="flex-1">
-          {{ content }}
-        </div>
-        {% include footer.html %}
-      </section>
-    </main>
+  <body>
+    {% include header.html %}
+    <main>{{ content }}</main>
+    {% include footer.html %}
 
     {% if jekyll.environment == 'production' %}
       {% include analytics.html %}
