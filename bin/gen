@@ -8,6 +8,12 @@ pwd
 echo "==> ls"
 ls
 
+echo "==> ls /opt/build/cache/bundle"
+ls /opt/build/cache/bundle
+
+echo "==> command -v jekyll"
+command -v jeykyll
+
 if [ -f bin/generate-bookshelf ]; then
   echo "==> gem list"
   gem list
