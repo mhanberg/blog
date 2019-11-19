@@ -2,6 +2,9 @@
 
 $LOAD_PATH.unshift("/opt/build/cache/bundle")
 
+puts "==> $LOAD_PATH"
+puts $LOAD_PATH
+
 require "goodreads"
 require "active_support"
 require "psych"
