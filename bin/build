@@ -1,0 +1,11 @@
+#! /usr/bin/env sh
+
+set -e
+
+if [ -f bin/generate-bookshelf ]; then
+  bin/generate-bookshelf
+fi
+
+bundle exec jekyll build
+
+mv _site public
