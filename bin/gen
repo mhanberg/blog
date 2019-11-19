@@ -3,7 +3,11 @@
 set -e
 
 if [ -f bin/generate-bookshelf ]; then
+  echo "==> gem list"
   gem list
+
+  echo "==> bundle list"
+  bundle list
 
   bin/generate-bookshelf
 fi
