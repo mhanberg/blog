@@ -1,5 +1,7 @@
 {
-  "env": {
-    "GOODREADS_KEY": "@goodreads_key"
+  "build": {
+    "env": {
+      "GOODREADS_KEY": "@goodreads_key"
+    }
   }
 }
