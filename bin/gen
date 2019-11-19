@@ -2,6 +2,12 @@
 
 set -e
 
+echo "==> pwd"
+pwd
+
+echo "==> ls"
+ls
+
 if [ -f bin/generate-bookshelf ]; then
   echo "==> gem list"
   gem list
