@@ -2,26 +2,18 @@
 
 set -e
 
-echo "==> pwd"
-pwd
+# echo "==> pwd"
+# pwd
 
-echo "==> ls"
-ls
+# echo "==> ls"
+# ls
 
-echo "==> ls /opt/build/cache/bundle/ruby"
-ls /opt/build/cache/bundle/ruby
+# echo "==> ls /opt/build/cache/bundle/ruby"
+# ls /opt/build/cache/bundle/ruby
 
-echo "==> command -v jekyll"
-command -v jeykyll
+# if [ -f bin/generate-bookshelf ]; then
+#   bin/generate-bookshelf
+# fi
 
-if [ -f bin/generate-bookshelf ]; then
-  echo "==> gem list"
-  gem list
-
-  echo "==> bundle list"
-  bundle list
-
-  bin/generate-bookshelf
-fi
-
-bundle exec jekyll build
+# bundle exec jekyll build
+jekyll build
