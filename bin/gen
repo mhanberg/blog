@@ -3,6 +3,8 @@
 set -e
 
 if [ -f bin/generate-bookshelf ]; then
+  gem list
+
   bin/generate-bookshelf
 fi
 
