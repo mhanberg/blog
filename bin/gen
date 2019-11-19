@@ -8,8 +8,8 @@ pwd
 echo "==> ls"
 ls
 
-echo "==> ls /opt/build/cache/bundle"
-ls /opt/build/cache/bundle
+echo "==> ls /opt/build/cache/bundle/ruby"
+ls /opt/build/cache/bundle/ruby
 
 echo "==> command -v jekyll"
 command -v jeykyll
