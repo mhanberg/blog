@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+set -e
+
+if [ -f bin/generate-bookshelf ]; then
+  bin/generate-bookshelf
+fi
+
+bundle exec jekyll build
