@@ -11,9 +11,9 @@ set -e
 # echo "==> ls /opt/build/cache/bundle/ruby"
 # ls /opt/build/cache/bundle/ruby
 
-# if [ -f bin/generate-bookshelf ]; then
-#   bin/generate-bookshelf
-# fi
+if [ -f bin/generate-bookshelf ]; then
+  bin/generate-bookshelf
+fi
 
-# bundle exec jekyll build
-jekyll build
+bundle exec jekyll build
+# jekyll build

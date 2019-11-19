@@ -1,6 +1,6 @@
 #! /usr/bin/env ruby
 
-$LOAD_PATH.unshift("/opt/build/cache/bundle")
+$LOAD_PATH.unshift("/opt/build/cache/bundle/ruby/2.6.0")
 
 puts "==> $LOAD_PATH"
 puts $LOAD_PATH
