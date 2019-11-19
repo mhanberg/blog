@@ -1,19 +1,10 @@
-#! /usr/bin/env bash
+#! /usr/bin/env sh
 
 set -e
 
-# echo "==> pwd"
-# pwd
-
-# echo "==> ls"
-# ls
-
-# echo "==> ls /opt/build/cache/bundle/ruby"
-# ls /opt/build/cache/bundle/ruby
 
 if [ -f bin/generate-bookshelf ]; then
   bin/generate-bookshelf
 fi
 
 bundle exec jekyll build
-# jekyll build
