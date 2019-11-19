@@ -1,6 +1,7 @@
 #! /usr/bin/env ruby
 
-require "rubygems"
+$LOAD_PATH.unshift("/opt/build/cache/bundle")
+
 require "goodreads"
 require "active_support"
 require "psych"
