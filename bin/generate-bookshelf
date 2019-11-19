@@ -4,11 +4,7 @@ require "goodreads"
 require "active_support"
 require "psych"
 
-secret_name = "GOODREADS_KEY"
-
-api_key = ENV[secret_name] || ENV[secret_name.downcase]
-
-client = Goodreads::Client.new(api_key: api_key)
+client = Goodreads::Client.new(api_key: ENV["GOODREADS_KEY"])
 shelf = client.shelf("69703261-mitchell", "read", {per_page: 200})
 links = Psych.load_file("_data/links.yml")
 
