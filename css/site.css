@@ -16,6 +16,13 @@ img {
   @apply bg-white;
 }
 
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 20px;
+  justify-content: center;
+}
+
 p {
  @apply mb-4;
 }

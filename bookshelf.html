@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="container mb-4">
+  <h1 class="text-center">Bookshelf</h1>
+
+  <div class="max-w-sm md:max-w-3xl mx-auto mt-4">
+  {{ "
+  This is the canonical list of every book that I have ever read for pleasure (that I can remember).
+
+  I read a lot growing up, but got a little burnt out during college and have recently started reading again.
+
+  I pull this data from my [Goodreads](https://www.goodreads.com/review/list/69703261) account once a day.
+  " | markdownify }}
+  </div>
+
+  <div class="book-grid mt-8">
+    {% for book in site.data.books %}
+      <a class="p-4 flex justify-between rounded bg-evergreen-700 no-underline text-white font-normal"
+         href="{{ book.link | default: "#" }}" target="_blank">
+        <div class="max-w-xs2">
+          <span> {{ book.title }} </span>
+          <div class="text-sm italic">{{ book.author }}</div>
+          <div class="text-sm italic">Read {{ book.date_read | date_to_string: "ordinal", "US" }}</div>
+        </div>
+        <div class="ml-2 flex-shrink-0">
+          {% unless book.image contains '/nophoto/' %}
+            <img src="{{ book.image }}" alt="Book cover for {{ book.title }}" class="h-32">
+          {% else %}
+            <div class="h-32 w-24 bg-evergreen-500 text-evergreen-800 text-5xl flex items-center justify-center">
+              {{ book.title | split: "" | first }}
+            </div>
+          {% endunless %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</div>

@@ -10,18 +10,18 @@ layout: default
   </p>
 
   <p>
-  
+
   </p>
 
   {% for project in site.data.projects %}
     <div class="mt-8">
       <div class="flex justify-between">
         <a class="text-xl text-white no-underline" href="{{ project.link }}" target="_blank">
-          {{ project.name }} 
+          {{ project.name }}
         </a>
         <span class="text-sm italic">{{ project.role }}</span>
       </div>
-      
+
 
       <p>{{ project.description | markdownify }}</p>
     </div>
