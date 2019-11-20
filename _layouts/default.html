@@ -12,12 +12,10 @@
     <script src="/js/site.js"></script>
 
     {% seo %}
-
-    <script defer src="https://js.statickit.com/statickit.js"></script>
   </head>
-  <body>
+  <body class="container">
     {% include header.html %}
-    <main>{{ content }}</main>
+    <main >{{ content }}</main>
     {% include footer.html %}
 
     {% if jekyll.environment == 'production' %}

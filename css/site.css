@@ -3,13 +3,18 @@
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "_includes/thankful_eyes";
+@import "_includes/native";
+
+html {
+  scrollbar-color: theme("colors.evergreen.700") theme("colors.evergreen.900");
+}
 
 body {
   @apply font-sans bg-evergreen-900 text-white min-h-screen py-8;
 
   display: grid;
   grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
 }
 
 img {
@@ -21,14 +26,6 @@ img {
   grid-template-columns: repeat(auto-fill, 300px);
   grid-gap: 20px;
   justify-content: center;
-}
-
-p {
- @apply mb-4;
-}
-
-p:last-child {
-  @apply mb-0;
 }
 
 a {
@@ -61,96 +58,69 @@ ol {
   padding-left: theme('padding.4');
 }
 
+blockquote {
+  @apply bg-evergreen-700 rounded italic p-4 text-lg mt-4;
+}
+
+blockquote p::before {
+  content: "\"";
+}
+
+blockquote p::after {
+  content: "\"";
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply mt-6;
+}
+
 p,
-blockquote,
 ul,
 ol,
 .highlighter-rouge {
-  + h1 {
-    margin-top: 3rem;
-  }
-
-  + h2 {
-    margin-top: 3rem;
-  }
-
-  + h3 {
-    margin-top: 3rem;
-  }
-
-  + h4 {
-    margin-top: 3rem;
-  }
+  @apply mt-4;
 }
 
-blockquote {
-  /* @apply border-l-3; */
-
-  /* border-color: var(--text-menu-color); */
-  /* font-size: 1.1em; */
-  /* font-style: italic; */
-  /* margin: 1.5em 0; */
-  /* padding-left: 0.75em; */
+p,
+ul,
+ol {
+  @apply leading-loose;
 }
 
-.post h1,
-.post h2,
-.post h3,
-.post h4,
-.post p,
-.post ul,
-.post ol,
-.post div.highlight,
-.about h1,
-.about h2,
-.about h3,
-.about h4,
-.about p,
-.about ul,
-.about ol,
-.about div.highlight {
-  /* margin-bottom: 1rem; */
+li ul,
+li ol {
+  @apply mb-4;
 }
 
-.post p,
-.post ul,
-.post ol,
-.about p,
-.about ul,
-.about ol {
-  /* line-height: 2; */
-}
-
-.post li > ul,
-.post li > ol,
-.about li > ul,
-.about li > ol {
-  /* margin-bottom: 0; */
-}
-
-.post a,
-.about a {
-  /* @apply border-b-2; */
-
-  /* border-color: var(--menu-text-color); */
-  /* transition: all 150ms ease; */
-}
-
-.post a:hover,
-.about a:hover {
-  /* @apply pb-1; */
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+p:first-child,
+ul:first-child,
+ol:first-child,
+.highlighter-rouge:first-child {
+  @apply mt-0;
 }
 
 hr {
-  background: #ddd;
-  border: 0;
-  height: 1px;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  @apply bg-evergreen-400 border-none h-px my-4;
 }
 
+/* .post > p, */
+/* .post > h1, */
+/* .post > h2, */
+/* .post > h3, */
+/* .post > h4, */
+/* .post > .highlighter-rouge { */
+/*   @apply w-full; */
+/* } */
+
 .post hr {
-  /* @apply max-w-1/2 my-8; */
+  @apply max-w-md my-8;
 }
 
 .mobile-nav {
@@ -162,14 +132,6 @@ hr {
 
 .closed {
   max-height: 0;
-}
-
-.subscribe-input {
-  @apply py-2 px-4 text-evergreen-700 rounded-lg flex-grow;
-}
-
-.subscribe-button {
-  @apply py-2 px-8 bg-evergreen-700 text-white cursor-pointer flex-shrink-0;
 }
 
 @variants focus {
