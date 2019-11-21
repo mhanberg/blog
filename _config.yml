@@ -1,8 +1,4 @@
 # Build settings
-markdown: kramdown
-kramdown:
-  input: GFM
-highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
