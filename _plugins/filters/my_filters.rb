@@ -32,6 +32,12 @@ module Jekyll
       end
     end
 
+    def reading_time(post)
+      number_of_words(post["content"]).then do |words|
+        "#{words < 360 ?  1 : words / 180} minute read"
+      end
+    end
+
     private
 
     def site

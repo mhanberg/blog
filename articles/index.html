@@ -8,14 +8,14 @@ title: Articles
 
   {% for post in site.posts %}
   <article class="mt-8">
-    <div class="text-xl font-bold text-white">
-      <a class="text-white no-underline font-semibold"
-         href="{{ post | post_url }}"
-         target="{{ post | post_target }}">
-        {{ post.title }}
-      </a>
+    <a class="block text-xl md:text-2xl text-white no-underline"
+       href="{{ post | post_url }}"
+       target="{{ post | post_target }}">
+      {{ post.title }}
+    </a>
+    <div class="text-sm italic mb-4">
+      {{ post.date | date: "%b %d, %Y" }} • {{ post | reading_time }}
     </div>
-    <p class="mb-4">{{ post.date | date: "%b %d, %Y" }}</p>
   </article>
   {% endfor %}
 </section>
