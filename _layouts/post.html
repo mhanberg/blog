@@ -8,9 +8,9 @@ layout: default
     <div class="text-sm italic">{{ page.date | date: "%B %d, %Y" }} • {{ page | reading_time }}</div>
   </div>
   {% if page.image %}
-    <p class="text-center mt-4 py-4">
-      <img  src="{{ page.image | absolute_url }}" alt="Pointless hero image, reminiscent of medium posts">
-      <p class="text-center text-xs mb-16">{{page.image_desc}}</p>
+    <p class="mt-4 py-4 mb-16">
+      <img class="mx-auto bg-transparent" src="{{ page.image | absolute_url }}" alt="Pointless hero image, reminiscent of medium posts">
+      <p class="text-center text-xs">{{page.image_desc}}</p>
     </p>
     <article class="post mx-auto">
   {% else %}
@@ -22,7 +22,7 @@ layout: default
       <hr>
 
       <div class="bg-evergreen-800 p-4 rounded mb-4">
-        <p>If you want to be notified in the future about new articles, as well as other interesting things I"m working on, join my mailing list!</p>
+        <p>If you want to be notified about new articles, as well as other interesting things I'm working on, join my mailing list!</p>
 
         <p class="text-sm text-evergreen-400">I send emails quite infrequently, and I will <strong class="text-white">never</strong> share your email address with anyone else.</p>
 
