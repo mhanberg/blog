@@ -30,23 +30,37 @@ img {
 }
 
 a {
-  @apply text-evergreen-500 font-bold underline;
+  @apply text-evergreen-500 font-semibold underline;
 }
 
 h1 {
+  @apply font-semibold;
+
   font-size: 2rem;
 }
 
 h2 {
+  @apply font-semibold;
+
   font-size: 1.7rem;
 }
 
 h3 {
+  @apply font-semibold;
+
   font-size: 1.5rem;
 }
 
 h4 {
+  @apply font-semibold;
+
   font-size: 1.3rem;
+}
+
+h5 {
+  @apply font-semibold;
+
+  font-size: 1.1rem;
 }
 
 ul {
@@ -71,10 +85,15 @@ blockquote p::after {
   content: "\"";
 }
 
+p {
+  @apply font-light;
+}
+
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   @apply mt-6;
 }
 
@@ -100,6 +119,7 @@ h1:first-child,
 h2:first-child,
 h3:first-child,
 h4:first-child,
+h5:first-child,
 p:first-child,
 ul:first-child,
 ol:first-child,
