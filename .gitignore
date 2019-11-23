@@ -4,3 +4,6 @@ _site/
 .jekyll-metadata
 
 node_modules/
+.jekyll-cache/
+.env
+_data/books.yml

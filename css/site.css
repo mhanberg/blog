@@ -1,207 +1,156 @@
 ---
 ---
 
-@import "_includes/preflight";
-@import "_includes/components";
-@import "_includes/thankful_eyes";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "_includes/native";
 
-:root {
-  --dark-background: config("colors.background");
-  --light-background: config("colors.white");
-  --light-text: config("colors.grey-darkest");
-  --dark-text: config("colors.white");
-  --light-menu-text: config("colors.blue-darkest");
-  --dark-menu-text: config("colors.white");
-  --light-input-background: config("colors.grey-lighter");
-  --dark-input-background: config("colors.grey-darkest");
-  --light-input-text: config("colors.grey-darkest");
-  --dark-input-text: config("colors.white");
-
-  /* custom properties */
-  --background-color: var(--light-background);
-  --text-color: var(--light-text);
-  --text-menu-color: var(--light-menu-text);
-  --input-background-color: var(--light-input-background);
-  --input-text-color: var(--light-input-text);
+html {
+  scrollbar-color: theme("colors.evergreen.700") theme("colors.evergreen.900");
 }
 
-.theme {
-  background: var(--background-color);
-  color: var(--text-color);
-  transition: all 250ms ease;
-}
+body {
+  @apply font-sans bg-evergreen-900 text-white min-h-screen pb-8;
 
-.input-background {
-  background: var(--input-background-color);
-  color: var(--input-text-color);
+  font-size: 18px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
 }
 
 img {
   @apply bg-white;
 }
 
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 20px;
+  justify-content: center;
+}
+
 a {
-  color: var(--text-color);
-  word-wrap: break-word;
-  text-decoration: none;
-  transition: color 250ms ease;
-  transition: border 150ms ease;
-}
-
-header a,
-header svg {
-  color: var(--text-menu-color);
-}
-
-form input[type='email'] {
-  @apply border border-blue-darkest;
-}
-
-@screen sm {
-  form input[type='email'] {
-    @apply border-l border-t border-b border-blue-darkest;
-  }
-}
-
-.gradient-background {
-  background: linear-gradient(90deg, #d0021b 33%, #2c5282 66%);
-}
-
-.gradient-border {
-  border-top-style: solid;
-  border-top-width: 7px;
-  border-image: linear-gradient(90deg, #d0021b 33%, #2c5282 66%);
-}
-
-.full-screen {
-  min-height: calc(100vh - 7px);
+  @apply text-evergreen-500 font-semibold underline;
 }
 
 h1 {
+  @apply font-semibold;
+
   font-size: 2rem;
 }
 
 h2 {
+  @apply font-semibold;
+
   font-size: 1.7rem;
 }
 
 h3 {
+  @apply font-semibold;
+
   font-size: 1.5rem;
 }
 
 h4 {
+  @apply font-semibold;
+
   font-size: 1.3rem;
 }
 
-p,
-blockquote,
-ul,
-ol,
-.highlighter-rouge {
-  + h1 {
-    margin-top: 3rem;
-  }
+h5 {
+  @apply font-semibold;
 
-  + h2 {
-    margin-top: 3rem;
-  }
+  font-size: 1.1rem;
+}
 
-  + h3 {
-    margin-top: 3rem;
-  }
+ul {
+  list-style-type: disc;
+  padding-left: theme('padding.4');
+}
 
-  + h4 {
-    margin-top: 3rem;
-  }
+ol {
+  list-style-type: decimal;
+  padding-left: theme('padding.4');
 }
 
 blockquote {
-  @apply border-l-3;
-
-  border-color: var(--text-menu-color);
-  font-size: 1.1em;
-  font-style: italic;
-  margin: 1.5em 0;
-  padding-left: 0.75em;
+  @apply bg-evergreen-700 rounded italic p-4 text-lg mt-4;
 }
 
-.posts > article:nth-child(odd) .post-item:hover {
-  @apply border-blue-darkest border-b-4;
+blockquote p::before {
+  content: "\"";
 }
 
-.posts > article:nth-child(even) .post-item:hover {
-  border-bottom: #e3342f solid 4px;
+blockquote p::after {
+  content: "\"";
 }
 
-.post h1,
-.post h2,
-.post h3,
-.post h4,
-.post p,
-.post ul,
-.post ol,
-.post div.highlight,
-.about h1,
-.about h2,
-.about h3,
-.about h4,
-.about p,
-.about ul,
-.about ol,
-.about div.highlight {
-  margin-bottom: 1rem;
+p {
+  @apply font-light;
 }
 
-.post p,
-.post ul,
-.post ol,
-.about p,
-.about ul,
-.about ol {
-  line-height: 2;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply mt-6;
 }
 
-.post li > ul,
-.post li > ol,
-.about li > ul,
-.about li > ol {
-  margin-bottom: 0;
+p,
+ul,
+ol,
+.highlighter-rouge {
+  @apply mt-4;
 }
 
-.post a,
-.about a {
-  @apply border-b-2;
-
-  border-color: var(--menu-text-color);
-  transition: all 150ms ease;
+p,
+ul,
+ol {
+  @apply leading-loose;
 }
 
-.post a:hover,
-.about a:hover {
-  @apply pb-1;
+li ul,
+li ol {
+  @apply mb-4;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+p:first-child,
+ul:first-child,
+ol:first-child,
+.highlighter-rouge:first-child {
+  @apply mt-0;
 }
 
 hr {
-  background: #ddd;
-  border: 0;
-  height: 1px;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  @apply bg-evergreen-400 border-none h-px my-4;
 }
 
 .post hr {
-  @apply max-w-1/2 my-8;
+  @apply max-w-md my-8;
 }
 
 .mobile-nav {
   overflow-y: hidden;
-  max-height: 10rem;
+  max-height: 12rem;
   transition-property: all;
   transition-duration: 150ms;
 }
 
 .closed {
   max-height: 0;
+}
+
+@variants focus {
+  .focus-ring-400 {
+    outline: 0;
+    box-shadow: 0 0 0 3px theme("colors.evergreen.400");
+  }
 }
 
 @tailwind utilities;

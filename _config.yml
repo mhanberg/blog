@@ -1,8 +1,4 @@
 # Build settings
-markdown: kramdown
-kramdown:
-  input: GFM
-highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -25,8 +21,7 @@ excerpt_separator: ""
 
 author: Mitchell Hanberg
 url: https://www.mitchellhanberg.com
-title: Mitchell Hanberg's Blog
-description: Mitchell Hanberg's Blog
+title: Mitchell Hanberg
 twitter:
   username: mitchhanberg
   card: summary

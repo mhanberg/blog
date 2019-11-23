@@ -2,31 +2,32 @@
 layout: default
 ---
 
-<section class='text-center md:m-12'>
-  <p class='text-2xl md:text-4xl font-bold tracking-wide'>MITCHELL HANBERG</p>
-  <p class='text-xl md:text-3xl py-4 tracking-wide'>Software Engineer</p>
-</section>
+<div class="flex flex-col h-full items-center md:flex-row-reverse">
+  <div class="md:w-1/2 md:pl-4">
+    <div class="max-w-md mx-auto">
+      <img class="rounded shadow-xl" src="https://res.cloudinary.com/mhanberg/image/upload/v1574047220/Becca___Mitch-67_copy.jpg">
+    </div>
 
-<div class="max-w-md m-auto">
-  {% include subscribe.html %}
+  </div>
+
+  <div class="mt-4 max-w-lg md:w-1/2 md:pr-4">
+    <h1 class="text-center md:text-left mt-12 md:mt-auto md:text-3xl lg:text-5xl">Full Stack Developer</h1>
+{{"
+Hello!
+
+My name is Mitchell Hanberg and I am a full stack developer from Indianapolis, IN.
+
+Lately I've been building web applications with a focus on team productivity, collaboration and good design.
+
+I currently maintain [Wallaby](https://www.github.com/elixir-wallaby/wallaby) and am the creator of [Temple](https://www.github.com/mhanberg/temple).
+
+Sometimes I tweet 🔥 tips on [Twitter](https://twitter.com/i/moments/1197346199378022401?s=13).
+
+Check out what software and tools I use on my [Wes Bos](https://wesbos.com/uses) inspired [Uses](/uses) page.
+
+### Get in touch
+
+You can find me on [Twitter](https://twitter.com/mitchhanberg), [GitHub](https://github.com/mhanberg), and by [email](mailto:contact@mitchellhanberg.com).
+" | markdownify }}
+  </div>
 </div>
-
-<section class='posts pt-4 max-w-md m-auto'>
-  {% for post in site.posts %}
-    <article class='border-b pb-4 md:mb-12'>
-      <div class='text-xl md:text-2xl font-bold my-4'>
-        {% if post.external_url %}
-          <a
-            class="post-item external {{ post.external_site }} no-underline"
-            href="{{ post.external_url }}"
-            onclick="ga('send', 'pageview','{{ post.url }}')">
-            {{ post.title }}
-          </a>
-        {% else %}
-          <a href="{{ post.url }}" class='post-item'>{{ post.title }}</a>
-        {% endif %}
-      </div>
-      <p class='my-4'>{{ post.date | date: "%b %d, %Y" }}</p>
-    </article>
-  {% endfor %}
-</section>

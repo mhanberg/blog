@@ -10,7 +10,7 @@ book:
   author: Sasa Jurić
   cover: elixir-in-action-cover.jpeg
   cover_alt: Cover of the book Elixir in Action
-  link: https://www.manning.com/books/elixir-in-action-second-edition
+  goodreads_id: 20524444
   isbn: 978-1-61729-502-7
   recommendation: Essential if you are looking to explore all that Elixir has to offer.
 ---

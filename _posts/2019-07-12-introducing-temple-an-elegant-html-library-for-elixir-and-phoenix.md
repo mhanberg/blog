@@ -3,9 +3,10 @@ layout: post
 title: Introducing Temple&#58; An elegant HTML library for Elixir and Phoenix
 date: 2019-07-12 09:00:00 -04:00
 categories: post
-image: "images/temple.png"
 permalink: /:title/
 ---
+
+![Logo for the Elixir library Temple]({{ 'images/temple.png' | absolute_url }}){: class="mx-auto my-16 bg-transparent" style="filter: invert(100%);"}
 
 Temple is a macro DSL for writing HTML markup in [Elixir](https://elixir-lang.org) and a template engine for [Phoenix](https://phoenixframework.org/).
 
