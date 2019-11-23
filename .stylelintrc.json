@@ -6,7 +6,9 @@
       "ignoreAtRules": [
         "import",
         "tailwind",
-        "screen"
+        "variants",
+        "screen",
+        "responsive"
       ]
     }]
   }

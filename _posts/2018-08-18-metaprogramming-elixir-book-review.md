@@ -10,7 +10,7 @@ book:
   author: Chris McCord
   cover: metaprogramming-elixir-cover.jpg
   cover_alt: Cover of the book Metaprogramming Elixir
-  link: https://pragprog.com/book/cmelixir/metaprogramming-elixir
+  goodreads_id: 24791466
   isbn: 978-1-68050-041-7
   recommendation: A Must Read
 ---

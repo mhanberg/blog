@@ -1,0 +1,34 @@
+#! /usr/bin/env ruby
+
+require "goodreads"
+require "active_support"
+require "psych"
+
+client = Goodreads::Client.new(api_key: ENV["GOODREADS_KEY"])
+shelf = client.shelf("69703261-mitchell", "read", {per_page: 200})
+links = Psych.load_file("_data/links.yml")
+
+books = shelf.books
+  .map do |b|
+  link = links.find { |l| l.fetch("id") == b.book.id }&.fetch("link", nil)
+  title = b.book.title_without_series
+
+  {
+    "id" => b.book.id,
+    "title" => title,
+    "isbn" => b.book.isbn || b.book.isbn13,
+    "asin" => b.book.asin,
+    "image" => b.book.image_url,
+    "author" => b.book.authors.author.name,
+    "date_read" => Date.parse(b.read_at),
+    "link" => link || "https://amazon.com/s?k=#{CGI.escape(title)}",
+  }
+end
+  .sort_by { |b| b["date_read"] }
+  .reverse
+
+file = File.new("./_data/books.yml", "w")
+
+file << Psych.dump(books)
+
+file.close

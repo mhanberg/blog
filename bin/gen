@@ -3,7 +3,7 @@
 set -e
 
 if [ -f bin/generate-bookshelf ]; then
-  bin/generate-bookshelf
+  bundle exec bin/generate-bookshelf
 fi
 
 bundle exec jekyll build
