@@ -111,15 +111,6 @@ hr {
   @apply bg-evergreen-400 border-none h-px my-4;
 }
 
-/* .post > p, */
-/* .post > h1, */
-/* .post > h2, */
-/* .post > h3, */
-/* .post > h4, */
-/* .post > .highlighter-rouge { */
-/*   @apply w-full; */
-/* } */
-
 .post hr {
   @apply max-w-md my-8;
 }
