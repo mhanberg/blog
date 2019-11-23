@@ -1,0 +1,13 @@
+name: Netlify Deploy
+
+on:
+  schedule:
+  - cron: "0 15 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Trigger Netlify Hook
+      run: ${{ secrets.NETLIFY_DEPLOY_CMD }}
+
