@@ -16,7 +16,6 @@ layout: post
 title: #{post_title.gsub(/:/, "&#58;")}
 date: #{post_date} #{post_time}
 categories: post
-desc: An amazing blog post, truly one of the best! PS CHANGEME
 permalink: /:title/
 ---
 """
