@@ -27,9 +27,3 @@ twitter:
   username: mitchhanberg
   card: summary
 logo: https://res.cloudinary.com/mhanberg/image/upload/v1574047220/Becca___Mitch-67_copy.jpg
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      image: https://res.cloudinary.com/mhanberg/image/upload/v1574047220/Becca___Mitch-67_copy.jpg
