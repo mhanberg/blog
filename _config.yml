@@ -26,4 +26,10 @@ title: Mitchell Hanberg
 twitter:
   username: mitchhanberg
   card: summary
-logo: images/256_m_black_white_background.png
+logo: https://res.cloudinary.com/mhanberg/image/upload/v1574047220/Becca___Mitch-67_copy.jpg
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://res.cloudinary.com/mhanberg/image/upload/v1574047220/Becca___Mitch-67_copy.jpg
