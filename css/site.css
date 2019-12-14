@@ -9,8 +9,12 @@ html {
   scrollbar-color: theme("colors.evergreen.700") theme("colors.evergreen.900");
 }
 
+[x-cloak] {
+  @apply hidden;
+}
+
 body {
-  @apply font-sans bg-evergreen-900 text-white min-h-screen pb-8;
+  @apply font-sans font-light bg-evergreen-900 text-white min-h-screen pb-8;
 
   font-size: 18px;
   display: grid;
@@ -19,7 +23,7 @@ body {
 }
 
 img {
-  @apply bg-white;
+  @apply bg-white my-16;
 }
 
 .book-grid {
@@ -85,8 +89,14 @@ blockquote p::after {
   content: "\"";
 }
 
-p {
-  @apply font-light;
+b,
+strong {
+  @apply font-semibold;
+}
+
+ul,
+ol {
+  @apply ml-6;
 }
 
 h1,
@@ -132,7 +142,7 @@ hr {
 }
 
 .post hr {
-  @apply max-w-md my-8;
+  @apply max-w-md mt-16 mb-20 mx-auto;
 }
 
 .mobile-nav {
