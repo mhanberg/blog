@@ -3728,10 +3728,10 @@ stylelint-config-standard@19.0.0:
   dependencies:
     stylelint-config-recommended "^3.0.0"
 
-stylelint-processor-ignore-front-matter@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-processor-ignore-front-matter/-/stylelint-processor-ignore-front-matter-1.0.0.tgz#fcd958ef8121b881669a0ed6e2165747f81f3f3b"
-  integrity sha512-v8M2qSgSMneh+R6oQThP42GoDDs8aMLyACm5e+IdmBS5PfkO4ic0m+2nrCowyNa6VSQW88z7DjbuKyY82vK3zQ==
+stylelint-processor-ignore-front-matter@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/stylelint-processor-ignore-front-matter/-/stylelint-processor-ignore-front-matter-1.0.1.tgz#6dadeea0516ec7fb64fbf4d3a51b644eda2949bd"
+  integrity sha512-rTKidXOnPE+iw+i9KKiBSPBZLK3I+Wk7CtzAfn7Rh3LXuZSzYaIgm9PBuTgsFQ+duvqH3YFLnV3v1t4Wi2t8Bg==
   dependencies:
     front-matter "^3.0.0"
 
