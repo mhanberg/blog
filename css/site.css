@@ -89,6 +89,10 @@ p {
   @apply font-light;
 }
 
+strong {
+  @apply font-bold;
+}
+
 h1,
 h2,
 h3,
