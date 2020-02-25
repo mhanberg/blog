@@ -1,0 +1,17 @@
+- [ ] Intro
+    - Shell is hard to understand, but learning the basics can go a long way
+    - Lets learn how the prompt, aliases, completions, and plugins work
+- [ ] The Prompt
+    - Essentially a fancy format string
+    - Parameter expansion ${}
+    - Can run arbitrary code during prompt expansion
+    - There are hooks to run before the prompt is expanded
+    - [ ] VCS
+- [ ] Aliases/Functions
+    - aliases are shortcuts for other commands
+    - functions can act as aliases, but can take arguments and be multi line
+- [ ] Tab Completions
+    - You have to manually load completions
+    - tools define their own completions and are installed
+    - Homebrew will install these for you
+- [ ] Plugins
