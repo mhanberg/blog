@@ -13,7 +13,7 @@ raise 'File already exists' if File.exists? file_path
 
 front_matter = """---
 layout: post
-title: #{post_title.gsub(/:/, "&#58;")}
+title: \"#{post_title}\"
 date: #{post_date} #{post_time}
 categories: post
 permalink: /:title/
@@ -25,5 +25,3 @@ File.open file_path, "w+" do |file|
 end
 
 puts "Succesfully created #{file_path}!"
-
-system "mvim #{file_path}"
