@@ -27,9 +27,9 @@ module Jekyll
     end
 
     def group_by_year(books)
-      books.group_by do |book|
-        book["date_read"].year
-      end
+      books ? books.group_by do |book|
+          book["date_read"].year
+         end : Hash.new
     end
 
     def reading_time(post)
