@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./_site/**/*.html"],
+  content: ["./_site/**/*"],
   css: ["./_site/css/site.css"],
   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
 };
