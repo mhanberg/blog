@@ -1,6 +1,9 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
+  variants: {
+    visibility: ['responsive', 'group-hover'],
+  },
   theme: {
     extend: {
       colors: {
@@ -21,5 +24,5 @@ module.exports = {
       center: true,
       padding: "1rem",
     }
-  }
-}
+  },
+};

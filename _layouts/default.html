@@ -19,12 +19,15 @@
   </head>
   <body class="container">
     {% include header.html %}
-    <main >{{ content }}</main>
+    <main>{{ content }}</main>
     {% include footer.html %}
 
     {% if jekyll.environment == 'production' %}
       {% include analytics.html %}
     {% endif %}
   </body>
+  <script>
+    Mitch.anchorifyHeaders();
+  </script>
 </html>
 

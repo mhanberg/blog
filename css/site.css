@@ -63,6 +63,28 @@ h5 {
   font-size: 1.1rem;
 }
 
+h2 > span > a > svg,
+h3 > span > a > svg,
+h4 > span > a > svg,
+h5 > span > a > svg {
+  height: 1.5rem;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin: -120px 0 0;
+}
+
+figure.bg-transparent img {
+  @apply bg-transparent;
+}
+
+figcaption {
+  @apply italic text-sm text-center;
+}
+
 ul {
   list-style-type: disc;
   padding-left: theme('padding.4');
@@ -85,7 +107,10 @@ blockquote p::after {
   content: "\"";
 }
 
-p {
+p,
+ul,
+ol,
+li {
   @apply font-light;
 }
 
@@ -98,20 +123,23 @@ h2,
 h3,
 h4,
 h5 {
-  @apply mt-6;
-}
-
-p,
-ul,
-ol,
-.highlighter-rouge {
-  @apply mt-4;
+  @apply mt-10;
 }
 
 p,
 ul,
 ol {
-  @apply leading-loose;
+  @apply mt-4 leading-loose;
+}
+
+figure,
+.highlighter-rouge {
+  @apply mt-10;
+}
+
+figure + p,
+.highlighter-rouge + p {
+  @apply mt-10;
 }
 
 li ul,
@@ -132,7 +160,7 @@ ol:first-child,
 }
 
 hr {
-  @apply bg-evergreen-400 border-none h-px my-4;
+  @apply bg-evergreen-400 border-none h-px my-4 mx-auto;
 }
 
 .post hr {
