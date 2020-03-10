@@ -8,7 +8,7 @@
     "postcss-cli": "^7.1.0",
     "postcss-import": "^12.0.1",
     "purgecss": "^2.0.6",
-    "stylelint": "^13.0.0",
+    "stylelint": "^13.2.1",
     "stylelint-config-standard": "^19.0.0",
     "stylelint-processor-ignore-front-matter": "^1.0.0",
     "tailwindcss": "^1.2.0"
