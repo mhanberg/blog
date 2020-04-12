@@ -5,6 +5,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-postcss
   - jekyll-purgecss
+include:
+  - _redirects
 exclude:
   - Gemfile
   - Gemfile.lock
