@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+const postcss = require("postcss")
+const config = require("../postcss.config.js")
+
+const net = require("net")
+
+const server = net.createServer((c) => {
+  c.on('data', (data) => {
+    postcss(config.plugins)
+      .process(data, {from: "css/site.css"})
+      .then(result => { c.write(result.toString() + "ENDTRANSMISSION\n"); })
+      .catch(error => console.log(error.toString()));
+  });
+});
+
+server.on('error', (err) => {
+  throw err;
+});
+
+server.listen(8124, () => {
+  console.log("PostCSS Server listening on port 8124...");
+});

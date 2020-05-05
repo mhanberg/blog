@@ -3,30 +3,21 @@
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "_includes/native";
+@import "_includes/native.css";
 
 html {
   scrollbar-color: theme("colors.evergreen.700") theme("colors.evergreen.900");
 }
 
 body {
-  @apply font-sans bg-evergreen-900 text-white min-h-screen pb-8;
+  @apply grid grid-cols-1 font-sans bg-evergreen-900 text-white min-h-screen pb-8;
 
   font-size: 18px;
-  display: grid;
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
 }
 
 img {
   @apply bg-white;
-}
-
-.book-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
-  grid-gap: 20px;
-  justify-content: center;
 }
 
 a {
@@ -183,6 +174,12 @@ hr {
     outline: 0;
     box-shadow: 0 0 0 3px theme("colors.evergreen.400");
   }
+}
+
+.lost-text {
+  @apply absolute w-full left-0;
+
+  top: 200px;
 }
 
 @tailwind utilities;

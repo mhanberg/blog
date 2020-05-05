@@ -16,7 +16,7 @@ I pull this data from my [Goodreads](https://www.goodreads.com/review/list/69703
 {% for year in years %}
   <h2 class="text-center underline mt-16">{{ year[0] }}</h2>
 
-  <div class="book-grid mt-8">
+  <div class="grid gap-6 grid-cols-350 justify-center mt-8">
     {% for book in year[1] %}
         <div class="p-4 rounded bg-evergreen-700 flex flex-col justify-between">
           <div class="flex justify-between">

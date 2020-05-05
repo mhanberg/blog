@@ -1,5 +1,12 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
+function generateAutoFillColumns(config, px) {
+  return {
+    ...config,
+    [px]: `repeat(auto-fill, ${px}px)`
+    
+  }
+};
 module.exports = {
   variants: {
     visibility: ['responsive', 'group-hover'],
@@ -19,6 +26,19 @@ module.exports = {
       fontFamily: {
         "sans": ["Inter", ...defaultTheme.fontFamily.sans]
       },
+      gridTemplateColumns: {
+        ...[
+          100,
+          150,
+          200,
+          250,
+          300,
+          350,
+          400,
+          450,
+          500
+        ].reduce(generateAutoFillColumns, {})
+      }
     },
     container: {
       center: true,

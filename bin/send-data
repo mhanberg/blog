@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require "socket"
+
+css = $stdin.gets(nil).gsub(/---/, "")
+
+s = TCPSocket.open("localhost", 8124)
+
+s.puts css
+while line = s.gets
+  puts line
+  break if line.chomp == "ENDTRANSMISSION"
+end
+
+s.close
