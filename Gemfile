@@ -5,7 +5,6 @@ gem 'jekyll'
 gem 'jekyll-feed'
 gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
-gem 'jekyll-purgecss'
 gem 'jekyll-postcss'
 
 gem 'goodreads'

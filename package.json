@@ -4,16 +4,15 @@
   "repository": "git@github.com:mhanberg/blog.git",
   "author": "Mitchell Hanberg <mitch@mitchellhanberg.com>",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.2.0",
     "autoprefixer": "^9.7.6",
-    "postcss-cli": "^7.1.0",
+    "cssnano": "^4.1.10",
+    "postcss": "^7.0.27",
     "postcss-import": "^12.0.1",
-    "purgecss": "^2.1.0",
+    "prettier": "^2.0.5",
     "stylelint": "^13.3.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-processor-ignore-front-matter": "^1.0.0",
-    "tailwindcss": "^1.2.0"
-  },
-  "dependencies": {
-    "cssnano": "^4.1.10"
+    "tailwindcss": "^1.4.0"
   }
 }
