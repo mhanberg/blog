@@ -6,4 +6,8 @@ if [ -f bin/generate-bookshelf ]; then
   bundle exec bin/generate-bookshelf
 fi
 
+echo "#######################"
+echo "JEKYLL_ENV: $JEKYLL_ENV"
+echo "#######################"
+
 bundle exec jekyll build
