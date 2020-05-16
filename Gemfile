@@ -5,7 +5,7 @@ gem 'jekyll'
 gem 'jekyll-feed'
 gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
-gem 'jekyll-postcss'
+gem 'jekyll-postcss', git: "https://github.com/mhanberg/jekyll-postcss.git", branch: "server-fix"
 
 gem 'goodreads'
 gem 'activesupport'
