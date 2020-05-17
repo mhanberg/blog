@@ -1,10 +1,11 @@
+const jekyllEnv = process.env.JEKYLL_ENV || "development";
+
 module.exports = {
   plugins: [
     require("postcss-import"),
-    require("postcss-nested"),
     require("tailwindcss")("./_includes/tailwind.config.js"),
     require("autoprefixer"),
-    ...(process.env.JEKYLL_ENV == "production"
+    ...(jekyllEnv != "development"
       ? [
           require("@fullhuman/postcss-purgecss")({
             content: ["!(_site)/**/*.(html|js)", "*.html"],
