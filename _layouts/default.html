@@ -16,9 +16,9 @@
 
     {% seo %}
   </head>
-  <body class="container">
+  <body>
     {% include header.html %}
-    <main>{{ content }}</main>
+    <main class="container">{{ content }}</main>
     {% include footer.html %}
 
     {% if jekyll.environment == 'production' %}

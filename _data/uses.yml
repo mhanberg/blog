@@ -1,0 +1,199 @@
+- name: Development
+  entries:
+    - name: NeoVim
+      link: https://neovim.io
+      description: |
+        I started using Vim full time since the beginning of 2018 and I can't imagine my life without it. Vim is a gateway drug to the life of optimizing for productivity (even if it costs you some productivity up front!).
+
+        The primary reason why I love Vim is the keyboard focused design. It keeps my hands and arms in relatively the same position as I work, as I rarely need to reach for the mouse. It's not that the mouse is a bad input device, but the travel distance between the mouse and home row on your keyboard starts to become a problem the faster you work. You can cut down on this by getting a [tenkeyless](https://keyboardwhiz.com/tenkeyless/) or [60%](https://keyboardwhiz.com/60-percent/), but it can't beat not moving your hands at all!
+
+        **Plugins**
+
+        I use [vim-plug](https://github.com/junegunn/vim-plug) to manage my plugins; you can see all of the plugins I in my [dotfiles](https://github.com/mhanberg/.dotfiles/blob/master/vimrc#L41).
+    
+    - name: Forest Night Theme
+      link: https://github.com/sainnhe/forest-night
+      description: |
+        I like the subtle dark theme with hints of green. I use this in NeoVim, Alacritty, and Alfred.
+
+    - name: JetBrains Mono font
+      link: https://www.jetbrains.com/lp/mono/
+      description: |
+        I switched fonts every so often, and this is my current choice.
+
+    - name: Alacritty
+      link: https://github.com/alacritty/alacritty
+      description: |
+        I switched to Alacritty because I thought iTerm2 was causing my computer to crash (I think I have since concluded that it is a macOS bug).
+
+        I've kept using it, as it is super lightweight and is meant to be used with tmux
+
+    - name: Postico
+      link: https://eggerapps.at/postico/
+      description: |
+        Postico is a minimal Postgres GUI client and is an example of an amazing macOS application, amazing performance and has just the functionality that I need.
+
+    - name: Google Chrome
+      link: https://google.com/chrome/
+      description: |
+        Chrome simply gives the best performance and looks the best. I'm not a huge fan of Google products, but everything else sucks compared to Chrome.
+
+    - name: Sublime Merge
+      link: https://www.sublimemerge.com/
+      description: |
+        This is the best Git GUI application that I have ever used. 
+
+        The features that I enjoy the most is the three way merge, staging/unstaging individual lines of code, and the ability to search just about anything in the repository.
+
+
+    - name: Dash
+      link: https://kapeli.com/dash
+      description: |
+        Dash is an offline documentation repository with full text search. Combined with the Alfred Dash workflow, this is a must have application for anyone writing software on a Mac.
+
+    - name: Sketch
+      link: https://www.sketch.com/
+      description: |
+        I don't do a whole lot of designing, but when I do I like doing it in Sketch. 
+
+    - name: Figma
+      link: https://github.com/BurntSushi/ripgrep
+      description: |
+        I sometimes use Figma for design in addition to Sketch, but I end up using it as a cloud-enabled MS Paint.
+
+    - name: zsh
+      link: https://www.zsh.org/
+      description: |
+        zsh is pretty much an improved version of Bash. It is worth using because of the community that has been built up around it (see [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)) and the number of plugins available.
+
+        It's even the default shell on macOS now!
+
+    - name: zplug
+      link: https://github.com/zplug/zplug
+      description: |
+        zplug is a plugin manager for zsh that is inspired by vim-plug. I recently switched from ohmyzsh to zplug to get a better handle on my configuration and make it easier to install plugins.
+
+    - name: tmux
+      link: https://github.com/tmux/tmux#welcome-to-tmux
+      description: |
+        tmux is primarily what I use to manage terminal splits and windows. It follows the Vim philosophy of keyboard shortcuts and extensibility, so they make a fine pair.
+
+    - name: asdf
+      link: https://github.com/asdf-vm/asdf
+      description: |
+        Once I started programming in Elixir, I needed to be manage two languages at once (the other being Erlang) and asdf makes that super simple. It is based on a plugin architecture, so there is a plugin for just about every language you can think of.
+
+        I contributed to the [Io plugin](https://github.com/mracos/asdf-io/pull/5) when I was reading [Seven Languages in Seven Weeks](https://amzn.to/37lmG5E) by Bruce Tate.
+
+    - name: fzf
+      link: https://github.com/junegunn/fzf
+      description: |
+        fzf is a versatile tool that allows you to pipe in arbitrary text to form fuzzy pattern searching.
+
+    - name: gh
+      link: https://github.com/cli/cli
+      description: |
+        I use hub to easily create GitHub pull requests from the terminal. When you run `gh pr create`, it will open up a window in your `$EDITOR` (Vim for me) and allow you to craft your title and description for the new PR for the current branch.
+
+    - name: ripgrep
+      link: https://github.com/BurntSushi/ripgrep
+      description: |
+        This is a blazingly fast grep replacement. I use it for searching in the terminal and as my `grepprg` in vim.
+
+- name: Productivity
+  entries:
+    - name: Alfred
+      link: https://www.alfredapp.com/
+      description: |
+        Alfred is a workhorse of a tool. It's amazing for launching apps, searching your computer, managing your pasteboard, and snippets. It becomes really powerful when you start using workflows as it enables Alfred to integrate with other apps and run arbitrary scripts in any language.
+
+        It's definitely my #1 productivity tool for macOS.
+
+    - name: 1Password
+      link: https://1password.com/
+      description: |
+        1Password is some of the best money I've ever spent on software.
+
+    - name: Things 3
+      link: https://culturedcode.com/things/
+      description: |
+        I like Things for personal projects, but I don't actually use it that much in my daily life because my work projects already have a form of project management software.
+
+    - name: Fastmail
+      link: https://ref.fm/u20036168
+      description: |
+        I started using Fastmail as a cheap way to use my domain as my email address, then I learned of some of the powerful aliasing features which I now love.
+
+    - name: Itsycal
+      link: https://www.mowglii.com/itsycal/
+      description: |
+        This is a neat little menubar app that works really well for seeing what upcoming events you have over the next few days.
+
+    - name: Dropbox
+      link: https://db.tt/Y20mNcDT98
+      description: |
+        Dropbox is another service I've been using for years.
+
+        I originally used it as a way of syncing source code files between my computer and a tiny (I mean like the screen wouldn't expand larger than 400x300px) Linux VM that I had to use for a course in college.
+
+    - name: Licecap
+      link: https://www.cockos.com/licecap/
+      description: |
+        Licecap is a handy tool for taking quick video gifs of your screen. It looks arcane but it works.
+
+        I use it a lot for sharing new designs and how to reproduce bugs in pull requests.
+
+- name: Hardware
+  entries:
+    - name: 2013 13" MacBook Pro
+      link: https://support.apple.com/kb/SP691?locale=en_US
+      description: |
+        This was my first Apple computer and I am never going back. It's starting to reach the end of it's life, but I'm holding out for a MacBook Air with the new Magic keyboard (or a windfall of cash 😏).
+
+    - name: 2019 16" MacBook Pro
+      link: https://www.apple.com/macbook-pro-16/specs/
+      description: |
+        This is the computer I use at work. It is pretty much plugged into a Thunderbolt 3 docking station 24/7.
+
+    - name: Ergodoz EZ
+      link: https://ergodox-ez.com/
+      description: |
+        This is the best keyboard ever made.
+
+        It's a split ortholinear keyboard that is incredibly extensible, you can find my config [here](https://configure.ergodox-ez.com/ergodox-ez/layouts/GGYnj/latest/0).
+
+        I use this one at work.
+
+    - name: OLKB Preonic
+      link: https://drop.com/buy/preonic-mechanical-keyboard
+      description: |
+        This is second favorite keyboard. Just as extensible as the Ergodox, but in a tight form factor that is easy to carry.
+
+        You can find my config [here](https://github.com/mhanberg/.dotfiles/blob/master/mitch-preonic.json).
+
+        I use this one at home/travel.
+
+    - name: Kensington Expert Trackball Mouse
+      link: https://www.amazon.com/dp/B01936N73I/ref=twister_B07WMKFZKK?_encoding=UTF8&psc=1
+      description: |
+        This is a solid trackball mouse. I use it in between the two halves of my keyboard.
+
+    - name: CalDigit TS3 Plus
+      link: https://www.amazon.com/gp/product/B07CZPV8DF/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
+      description: |
+        I plug all my peripherals and both of my montiors into this little guy, and then plug my laptop into it with only a single cable!
+
+    - name: LG 27UD68-W
+      link: https://amzn.to/3389fCI
+      description: |
+        Solid 4K monitor I got on Prime Day.
+
+    - name: LG 24" UltraFine 4K
+      link: https://www.lg.com/us/monitors/lg-24MD4KL-B-4k-uhd-led-monitor
+      description: |
+        I use this as my secondary monitor in the portait mode. The display is nice, but it is actually annoying to have this mixed with a different monitor, because the brightness is controlled by the computer, and sometimes the difference can be stark.
+
+    - name: Philips Hue Bulbs
+      link: https://amzn.to/37mgzy2
+      description: |
+        I have these throughout my home. They're really nice in my office as it allows me to dim and change the warmth of the light to be easier on the eyes in the dark.

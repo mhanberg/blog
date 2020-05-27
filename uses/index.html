@@ -1,0 +1,25 @@
+---
+layout: page
+title: Uses
+---
+
+<section class="max-w-2xl m-auto">
+  <h1>Uses</h1> 
+
+  <p> No one ever asks me what font or syntax theme I use, but nevertheless here we are. </p>
+
+  {% for category in site.data.uses %}
+  <h2>{{ category.name }}</h2>
+  <ul>
+  {% for entry in category.entries %}
+    <li>
+      <p>
+        <div id="{{ entry.name | slugify }}"class="text-white font-semibold">{{ entry.name }}</div>
+        <p>{{entry.description | markdownify}}</p>
+        <p> <span>Link: <a href="{{entry.link}}">{{entry.link}}</a></span> </p>
+      </p>
+    </li>
+  {% endfor %}
+  </ul>
+  {% endfor %}
+</section>
