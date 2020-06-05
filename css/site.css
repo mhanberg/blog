@@ -19,15 +19,18 @@ body {
   grid-template-columns: 100%;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+#hits::-webkit-scrollbar {
   width: 14px;
 }
 
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track,
+#hits::-webkit-scrollbar-track {
   background: theme("colors.evergreen.900");
 }
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,
+#hits::-webkit-scrollbar-thumb {
   background-color: theme("colors.evergreen.700");
   border-radius: 6px;
   border: 3px solid theme("colors.evergreen.900");
@@ -184,7 +187,7 @@ hr {
 
 .mobile-nav {
   overflow-y: hidden;
-  max-height: 12rem;
+  max-height: 18rem;
   transition-property: all;
   transition-duration: 150ms;
 }
@@ -197,6 +200,36 @@ hr {
   .focus-ring-400 {
     outline: 0;
     box-shadow: 0 0 0 3px theme("colors.evergreen.400");
+  }
+
+  .focus-ring-500 {
+    outline: 0;
+    box-shadow: 0 0 0 3px theme("colors.evergreen.500");
+  }
+}
+
+mark {
+  @apply bg-evergreen-400 text-evergreen-900 font-semibold px-1 rounded shadow-xl;
+}
+
+.ais-Hits-list {
+  list-style: none;
+}
+
+.spin {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
 

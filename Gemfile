@@ -7,6 +7,10 @@ gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
 gem 'jekyll-postcss'
 
+group :jekyll_plugins do
+  gem 'jekyll-algolia'
+end
+
 gem 'goodreads'
 gem 'activesupport'
 

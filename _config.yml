@@ -4,6 +4,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-postcss
+  - jekyll-algolia
 include:
   - _redirects
 exclude:
