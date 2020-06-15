@@ -4,7 +4,7 @@
   "repository": "git@github.com:mhanberg/blog.git",
   "author": "Mitchell Hanberg <mitch@mitchellhanberg.com>",
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.2.0",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.7.6",
     "cssnano": "^4.1.10",
     "postcss": "^7.0.31",
