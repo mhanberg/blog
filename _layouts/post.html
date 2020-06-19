@@ -5,7 +5,11 @@ layout: default
 <section class="mt-4 max-w-2xl mx-auto">
   <div class="border-b pb-4">
     <h1 class="text-2xl md:text-3xl mb-4">{{ page.title }}</h1>
-    <div class="text-sm italic">{{ page.date | date: "%B %d, %Y" }} • {{ page | reading_time }}</div>
+    <div class="text-sm italic">{{ page.date | date: "%B %d, %Y" }} 
+      {% if page.updated %}
+        • Updated on {{ page.updated | date: "%B %d, %Y" }}
+      {% endif %}
+     • {{ page | reading_time }}</div>
   </div>
   {% if page.image %}
     <p class="mt-4 py-4 mb-16">
