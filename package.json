@@ -13,6 +13,6 @@
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-processor-ignore-front-matter": "^1.0.0",
-    "tailwindcss": "^1.4.0"
+    "tailwindcss": "^1.5.2"
   }
 }
