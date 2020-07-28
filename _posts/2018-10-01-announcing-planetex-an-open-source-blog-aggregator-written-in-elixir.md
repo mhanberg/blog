@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Announcing PlanetEx&#58; an open source blog aggregator written in Elixir
+title: "Announcing PlanetEx: an open source blog aggregator written in Elixir"
 date: 2018-10-01 13:00:00 -04:00
 categories: post
 desc: PlanetEx is a Phoenix application designed to aggregate employee personal and SharePoint blogs.
