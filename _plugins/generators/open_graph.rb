@@ -2,6 +2,10 @@ class OpenGraphGenerator < Jekyll::Generator
   safe true
 
   def generate(site)
+    site.pages.reject {|p| p.ext == ".css"}.each do |page|
+      site.pages << OpenGraphPage.new(site, site.source, page)
+    end
+
     site.posts.docs.each do |post|
       site.pages << OpenGraphPage.new(site, site.source, post)
     end
@@ -14,7 +18,7 @@ class OpenGraphPage < Jekyll::Page
 
     @site = site
     @base = base
-    @dir  = File.join(dir, post.data["title"])
+    @dir  = File.join(dir, post.data["title"].to_s)
     @name = 'index.html'
 
     self.process(@name)
