@@ -33,5 +33,5 @@ twitter:
 logo: https://res.cloudinary.com/mhanberg/image/upload/v1574047220/Becca___Mitch-67_copy.jpg
 
 algolia:
-  files_to_exlude:
+  files_to_exclude:
     - open_graph/**/*
