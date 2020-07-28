@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/mhanberg/jekyll-seo-tag.git
-  revision: 86787b0db4b890c96a2996d90190aab78f4a922e
+  revision: b379af3113d48967517efb911cc0dfc5b43c7cf7
   specs:
     jekyll-seo-tag (2.6.1)
       jekyll (>= 3.3, < 5.0)
@@ -30,7 +30,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
-    ffi (1.12.2)
+    ffi (1.13.1)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
     goodreads (0.7.0)
@@ -45,9 +45,9 @@ GEM
       domain_name (~> 0.5)
     http_parser.rb (0.6.0)
     httpclient (2.8.3)
-    i18n (1.8.2)
+    i18n (1.8.5)
       concurrent-ruby (~> 1.0)
-    jekyll (4.1.0)
+    jekyll (4.1.1)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -81,7 +81,7 @@ GEM
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     json (2.3.0)
-    kramdown (2.2.1)
+    kramdown (2.3.0)
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
@@ -112,9 +112,9 @@ GEM
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     rexml (3.2.4)
-    rouge (3.19.0)
+    rouge (3.21.0)
     safe_yaml (1.0.5)
-    sassc (2.3.0)
+    sassc (2.4.0)
       ffi (~> 1.9)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
