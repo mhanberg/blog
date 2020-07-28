@@ -1,6 +1,7 @@
 [build]
   command = "bin/gen && bundle exec jekyll algolia"
   publish = "_site"
+  functions = "functions/"
 
 [context.production.environment]
   JEKYLL_ENV = "production"

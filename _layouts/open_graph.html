@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="/css/open-graph.css">
+
+  </head>
+  <body>
+    <div class="bg-evergreen-900 rounded-lg p-8" style=" background: url('/images/og-template.png'); object-fit: cover;" >
+      <div class="flex flex-col justify-between h-full">
+        <div class="text-6xl italic" style="max-width: 728px">
+          {{ page.title }}
+        </div>
+      <div class="flex items-end justify-between" style="max-width: 580px">
+          <div>{% include logo.html %}</div>
+          <div class="italic">
+            www.mitchellhanberg.com
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

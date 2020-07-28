@@ -7,3 +7,8 @@ node_modules/
 .jekyll-cache/
 .env
 _data/books.yml
+
+functions/**/node_modules/
+
+# Local Netlify folder
+.netlify

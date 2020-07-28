@@ -14,5 +14,8 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-processor-ignore-front-matter": "^1.0.0",
     "tailwindcss": "^1.4.0"
+  },
+  "dependencies": {
+    "netlify-lambda": "^2.0.1"
   }
 }
