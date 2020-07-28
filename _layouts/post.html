@@ -11,9 +11,9 @@ layout: default
       {% endif %}
      • {{ page | reading_time }}</div>
   </div>
-  {% if page.image %}
+  {% if page.img %}
     <p class="mt-4 py-4 mb-16">
-      <img class="mx-auto bg-transparent" src="{{ page.image | absolute_url }}" alt="Pointless hero image, reminiscent of medium posts">
+      <img class="mx-auto bg-transparent" src="{{ page.img | absolute_url }}" alt="Pointless hero image, reminiscent of medium posts">
       <p class="text-center text-xs">{{page.image_desc}}</p>
     </p>
     <article class="post mx-auto">

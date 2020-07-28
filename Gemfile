@@ -4,7 +4,7 @@ ruby RUBY_VERSION
 gem 'jekyll'
 gem 'jekyll-feed'
 gem 'jekyll-sitemap'
-gem 'jekyll-seo-tag'
+gem 'jekyll-seo-tag', git: "https://github.com/mhanberg/jekyll-seo-tag.git"
 gem 'jekyll-postcss'
 
 group :jekyll_plugins do

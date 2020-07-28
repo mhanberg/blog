@@ -5,7 +5,7 @@ date: 2018-11-08 21:00:00 -05:00
 categories: post
 desc: Introduction to holding wildly productive and efficient team retrospectives.
 permalink: /:categories/:year/:month/:day/:title/
-image: https://res.cloudinary.com/mhanberg/image/upload/t_scale/v1541683676/jametlene-reskp-651411-unsplash.jpg
+img: https://res.cloudinary.com/mhanberg/image/upload/t_scale/v1541683676/jametlene-reskp-651411-unsplash.jpg
 image_desc: Photo by Jametlene Reskp on Unsplash
 ---
 

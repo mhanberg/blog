@@ -11,8 +11,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-    <meta property="og:image" content="{{ '/.netlify/functions/ogimage?page=' | append: page.title | absolute_url }}" />
-
     <script src="/js/site.js"></script>
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
@@ -20,6 +18,10 @@
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.0.0/dist/instantsearch.production.min.js" integrity="sha256-6S7q0JJs/Kx4kb/fv0oMjS855QTz5Rc2hh9AkIUjUsk=" crossorigin="anonymous"></script>
 
     {% seo %}
+
+    <meta property="og:image" content="{{ '/.netlify/functions/ogimage?page=' | append: page.title | absolute_url }}" />
+    <meta property="twitter:image" content="{{ '/.netlify/functions/ogimage?page=' | append: page.title | absolute_url }}" />
+
   </head>
   <body>
     <div id="the-universe">
