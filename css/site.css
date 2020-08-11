@@ -5,7 +5,7 @@
 @import "tailwindcss/components";
 @import "_includes/native";
 
-html {
+* {
   scrollbar-color: theme("colors.evergreen.700") theme("colors.evergreen.900");
   scrollbar-width: auto;
 }
@@ -19,18 +19,15 @@ body {
   grid-template-columns: 100%;
 }
 
-body::-webkit-scrollbar,
-#hits::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 14px;
 }
 
-body::-webkit-scrollbar-track,
-#hits::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   background: theme("colors.evergreen.900");
 }
 
-body::-webkit-scrollbar-thumb,
-#hits::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background-color: theme("colors.evergreen.700");
   border-radius: 6px;
   border: 3px solid theme("colors.evergreen.900");
