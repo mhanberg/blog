@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby RUBY_VERSION
 
-gem 'jekyll'
+gem 'jekyll', git: "https://github.com/jekyll/jekyll.git"
 gem 'jekyll-feed'
 gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag', git: "https://github.com/mhanberg/jekyll-seo-tag.git"
