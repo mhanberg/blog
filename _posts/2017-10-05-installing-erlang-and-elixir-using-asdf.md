@@ -51,7 +51,7 @@ $ brew install asdf coreutils curl git
 The next important bit is at the bottom of the output stating that you will need to initialize asdf whenever you start your shell session. I ran the following command to add that line to my .zshrc file, but you should add it to the approriate rc file for your shell.
 
 ```shell
-$ echo 'source /usr/local/opt/asdf/asdf.sh' >> .zshrc
+$ echo 'source $(brew --prefix asdf)/asdf.sh' >> .zshrc
 ```
 
 ## Installing Erlang and Elixir
