@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Temple, AST, and Protocols"
-date: 2021-04-10 11:00:00 -04:00
+date: 2021-04-12 10:00:00 -04:00
 categories: post
 permalink: /:title/
 ---
