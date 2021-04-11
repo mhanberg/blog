@@ -134,7 +134,7 @@ This brings us to our next topic, protocols!
 
 ## Protocols
 
-The EEX generator step utilizes a [protocol](https://elixir-lang.org/getting-started/protocols.html) to be able to compile Temple AST into an iolist that represents EEx.
+The EEX generator step utilizes a [protocol](https://elixir-lang.org/getting-started/protocols.html) to be able to compile Temple AST into an `iolist` that represents EEx.
 
 Each AST module implements this protocol and this allows any protocol implementation to generate any child nodes it contains without concerning itself with the shape of the children.
 
@@ -175,7 +175,7 @@ defmodule Temple.Parser.NonvoidElementsAliases do
 end
 {% endhl %}
 
-Since the implementation takes advantage of iolists, we can easily compute the final markup without maintaining any state or dealing with cumbersome return values. Once `to_eex` returns, we just run that through `:erlang.iolist_to_binary/1` and we're good to go!
+Since the implementation takes advantage of `iolist`s, we can easily compute the final markup without maintaining any state or dealing with cumbersome return values. Once `to_eex` returns, we just run that through `:erlang.iolist_to_binary/1` and we're good to go!
 
 ## What's Next
 
