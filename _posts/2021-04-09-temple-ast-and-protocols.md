@@ -6,11 +6,21 @@ categories: post
 permalink: /:title/
 ---
 
-To build the features I'd like to see in Temple, I decided that I need to create a more formal compilation process. The current (second) implementation is definitely more advanced than the first one, but it still is rather naive.
+As Temple has aged, my ambition for this little library has grown.
 
-I wound up implementing an actual abstract syntax tree (or AST) as an intermediate format (or IF), and then using a protocol to compile the final EEx markup.
+Temple started with the ability to produce HTML at runtime, but now includes:
 
-Let's briefly go over the (now) previous method. Temple would recursively traverse Elixir AST, prepending to a list of strings as it went in a global buffer.
+- EEx output target
+- LiveView support (it's just EEx after all!)
+- Basic component functionality (essentially just partials)
+
+If my goals for this project are going to evolve, so does the code base. So far I've been able to accomplish this with a rather naive and imperative compilation process.
+
+I figured that writing an actual abstract syntax tree (or AST) as an intermediate format (or IF) would be the next step, and along that journey I also found a nice use case for a [protocol](https://elixir-lang.org/getting-started/protocols.html).
+
+Before we look at how the AST works, let's go over the (now) previous method.
+
+The previous method would recursively traverse Elixir AST, storing the collected tokens in a global buffer (backed by an [Agent](https://hexdocs.pm/elixir/Agent.html)).
 
 ```elixir
 buffer = Agent.start_link(fn -> [] end)
@@ -24,7 +34,7 @@ markup =
   |> Enum.join("\n")
 ```
 
-The `Utils.traverse` function would call a certain parser based on what piece of code was located in the AST. The parser for lines that include anonymous functions looked something like this.
+The `Utils.traverse/2` function would call a certain parser based on the Elixir AST with which it was working. The parser that would be invoked for lines that include anonymous functions looked something like this.
 
 ```elixir
 {_do_and_else, args} =
@@ -72,9 +82,11 @@ else
 end
 ```
 
-This code shows us that I am compiling the Elixir AST into markup all in one pass and I utilizing some global state to store the compiled markup.
+This code illustrates that I am compiling the Elixir AST into markup all in one pass and utilizing some global state to store the compiled markup.
 
 Named Slots, the feature that I want to build before cutting the v0.6.0 release, would be extremely complex or impossible to write with the architecture I described above.
+
+Let's discuss the AST and the benefits.
 
 ## Temple AST
 
@@ -116,11 +128,15 @@ end
 }
 ```
 
+The biggest benefit to the AST is it's role as an _intermediate format_. Since we've explored the entire AST, we can now run it through another step if we'd like before generating the final output. The goal is to target EEx, but now that we have the IF, we could write a generator that targets ANSI sequences for a CLI or maybe even [Scenic](https://github.com/boydm/scenic)!
+
+This brings us to our next topic, protocols!
+
 ## Protocols
 
-I am utilizing a [protocol](https://elixir-lang.org/getting-started/protocols.html) to be able to compile Temple AST into an iolist that represents EEx.
+The EEX generator step utilizes a [protocol](https://elixir-lang.org/getting-started/protocols.html) to be able to compile Temple AST into an iolist that represents EEx.
 
-Each AST module implements this protocol and this allows any protocol implementation to compile any child nodes it contains without concerning itself with the shape of the children.
+Each AST module implements this protocol and this allows any protocol implementation to generate any child nodes it contains without concerning itself with the shape of the children.
 
 The impl for the `Text` node type is the easiest to understand.
 
@@ -128,7 +144,7 @@ The impl for the `Text` node type is the easiest to understand.
 defmodule Temple.Parser.Text do
   # ...
 
-  defimpl Temple.EEx do
+  defimpl Temple.Generator do
     def to_eex(%{text: text}) do
       [text, "\n"]
     end
@@ -142,14 +158,14 @@ The benefit of using a protocol becomes clear when we look at the `NonvoidElemen
 defmodule Temple.Parser.NonvoidElementsAliases do
   # ...
 
-  defimpl Temple.EEx do
+  defimpl Temple.Generator do
     def to_eex(%{name: name, attrs: attrs, children: children}) do
       [
         "<",
         name,
         Temple.Parser.Utils.compile_attrs(attrs),
         ">\n",
-        for(child <- children, do: Temple.EEx.to_eex(child)),
+        for(child <- children, do: Temple.Generator.to_eex(child)),
         "\n</",
         name,
         ">"
@@ -165,7 +181,7 @@ Since the implementation takes advantage of iolists, we can easily compute the f
 
 With a proper AST in place, I can now move forward with the Slots API, which is the missing piece of the puzzle to make the Component API _really_ slick.
 
-Eventually, you should be able to write something like this.
+Eventually, you should be able to write something like this. (The exact syntax is subject to change)
 
 ```elixir
 c Card, data: @person do
