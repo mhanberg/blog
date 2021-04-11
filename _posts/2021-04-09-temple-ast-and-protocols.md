@@ -16,9 +16,9 @@ Temple started with the ability to produce HTML at runtime, but now includes:
 
 If my goals for this project are going to evolve, so does the code base. So far I've been able to accomplish this with a rather naive and imperative compilation process.
 
-I figured that writing an actual abstract syntax tree (or AST) as an intermediate format (or IF) would be the next step, and along that journey I also found a nice use case for a [protocol](https://elixir-lang.org/getting-started/protocols.html).
+I figured that writing an actual abstract syntax tree (AST) as an intermediate format (IF) would be the next step, and along that journey I also found a nice use case for a [protocol](https://elixir-lang.org/getting-started/protocols.html).
 
-Before we look at how the AST works, let's go over the (now) previous method.
+Before we look at the new AST, let's go over how things used to work.
 
 The previous method would recursively traverse Elixir AST, storing the collected tokens in a global buffer (backed by an [Agent](https://hexdocs.pm/elixir/Agent.html)).
 
@@ -128,7 +128,7 @@ end
 }
 ```
 
-The biggest benefit to the AST is it's role as an _intermediate format_. Since we've explored the entire AST, we can now run it through another step if we'd like before generating the final output. The goal is to target EEx, but now that we have the IF, we could write a generator that targets ANSI sequences for a CLI or maybe even [Scenic](https://github.com/boydm/scenic)!
+The biggest benefit to the AST is its role as an _intermediate format_. Since we've explored the entire AST, we can now run it through another step before generating the final output. The goal is to target EEx, but now that we have the IF, we could write a generator that targets ANSI sequences for a CLI or maybe even [Scenic](https://github.com/boydm/scenic)!
 
 This brings us to our next topic, protocols!
 
@@ -138,7 +138,7 @@ The EEX generator step utilizes a [protocol](https://elixir-lang.org/getting-sta
 
 Each AST module implements this protocol and this allows any protocol implementation to generate any child nodes it contains without concerning itself with the shape of the children.
 
-The impl for the `Text` node type is the easiest to understand.
+The implementation for the `Text` node type is the easiest to understand.
 
 ```elixir
 defmodule Temple.Parser.Text do
@@ -179,7 +179,7 @@ Since the implementation takes advantage of iolists, we can easily compute the f
 
 ## What's Next
 
-With a proper AST in place, I can now move forward with the Slots API, which is the missing piece of the puzzle to make the Component API _really_ slick.
+With a proper AST in place, I can now move forward with the Named Slots API, which is the missing piece of the puzzle to make the Component API _really_ slick.
 
 Eventually, you should be able to write something like this. (The exact syntax is subject to change)
 
