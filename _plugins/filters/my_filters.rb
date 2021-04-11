@@ -38,6 +38,10 @@ module Jekyll
       end
     end
 
+    def tags(tags)
+      tags.map {|tag| "#".concat(tag)}.join(" ")
+    end
+
     private
 
     def site

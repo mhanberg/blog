@@ -158,8 +158,9 @@ ol {
 }
 
 figure,
+div.highlight,
 .highlighter-rouge {
-  @apply mt-10;
+  @apply my-10;
 }
 
 figure + p,

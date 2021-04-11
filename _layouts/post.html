@@ -9,7 +9,13 @@ layout: default
       {% if page.updated %}
         • Updated on {{ page.updated | date: "%B %d, %Y" }}
       {% endif %}
-     • {{ page | reading_time }}</div>
+      • {{ page | reading_time }}
+    </div>
+    {% if page.tags.size > 0 %}
+      <div class="mt-4 text-sm">
+        Tags: <span>{{ page.tags | tags | h }}</span>
+      </div>
+    {% endif %}
   </div>
   {% if page.img %}
     <p class="mt-4 py-4 mb-16">

@@ -1,12 +1,27 @@
-.highlight pre {
+.highlight > pre {
   @apply p-4 bg-evergreen-800 rounded text-sm overflow-auto;
+}
+
+div.highlight > pre {
+  @apply p-2 bg-evergreen-800 rounded text-sm overflow-auto;
+}
+
+pre.lineno {
+  @apply pr-4 pl-2;
 }
 
 code.highlighter-rouge {
   @apply p-1 bg-evergreen-400 text-evergreen-900 rounded text-sm;
 }
 
-.highlight .hll { background-color: #404040 }
+.hll {
+  @apply bg-evergreen-700 block px-2 border-l-4 border-white;
+}
+
+.highlight .hll {
+  @apply -mx-2;
+}
+
 .highlight .c { color: #999999; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .g { color: #d0d0d0 } /* Generic */
