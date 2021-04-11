@@ -9,7 +9,7 @@ module.exports = {
       ? [
           require("@fullhuman/postcss-purgecss")({
             content: ["!(_site|node_modules)/**/*.+(html|js|md)", "*.html"],
-            whitelistPatternsChildren: [/highlight/, /mark/],
+            whitelistPatternsChildren: [/highlight/, /mark/, /hll/],
             defaultExtractor: (content) =>
               content.match(/[\w-/:]+(?<!:)/g) || [],
           }),
