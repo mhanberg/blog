@@ -6,7 +6,7 @@ categories: post
 permalink: /:title/
 ---
 
-As Temple has aged, my ambition for this little library has grown.
+As [Temple](https://github.com/mhanberg/temple) has aged, my ambition for this little library has grown.
 
 Temple started with the ability to produce HTML at runtime, but now includes:
 
