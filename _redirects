@@ -1,5 +1,5 @@
+/js/foo.js https://plausible.io/js/plausible.js 200
+/api/event https://plausible.io/api/event 200
 https://mitchell-hanberg.netlify.com/* https://www.mitchellhanberg.com/:splat 301!
 /about/ /
 /about /
-/why-im-leaving-finch/ https://www.youtube.com/watch?v=dQw4w9WgXcQ 302
-/why-im-leaving-finch https://www.youtube.com/watch?v=dQw4w9WgXcQ 302
