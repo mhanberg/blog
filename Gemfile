@@ -5,7 +5,7 @@ gem 'jekyll', git: "https://github.com/jekyll/jekyll.git"
 gem 'jekyll-feed'
 gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag', git: "https://github.com/mhanberg/jekyll-seo-tag.git"
-gem 'jekyll-postcss'
+gem 'jekyll-postcss', "~> 0.4.1"
 
 group :jekyll_plugins do
   gem 'jekyll-algolia'
