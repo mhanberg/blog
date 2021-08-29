@@ -1,5 +1,5 @@
 [build]
-  command = "bin/gen && bundle exec jekyll algolia"
+  command = "mix local.hex --force && mix local.rebar --force && mix deps.get && MIX_ENV=prod mix tableau.build"
   publish = "_site"
   functions = "functions/"
 
