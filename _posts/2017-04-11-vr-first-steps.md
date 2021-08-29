@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: Blog.Layouts.Post
 title: First Dive into Development for VR
-date: 2017-04-11
+date: 2017-04-11T00:00:00-04:00
 categories: post
 permalink: /:categories/:year/:month/:day/:title/
 ---

@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: Blog.Layouts.Post
 title: Leaving Your Legacy
-date: 2017-03-09
+date: 2017-03-09T00:00:00-04:00
 categories: post
 permalink: /:categories/:year/:month/:day/:title/
 ---

@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: Blog.Layouts.Post
 title: "How I Handle Static Assets in my Phoenix apps"
-date: 2021-06-07 01:00:00 -04:00
+date: 2021-06-07T01:00:00-04:00
 categories: post
 permalink: /:title/
 ---
@@ -16,7 +16,7 @@ Now I use [esbuild](https://esbuild.github.io/), [postcss-cli](https://github.co
 
 Running each of these tools in development is just as easy as running Webpack.
 
-{% hl elixir hl="3,10,26" %}
+```
 # config/dev.exs
 
 esbuild = Path.expand("../assets/node_modules/.bin/esbuild", __DIR__)
@@ -52,12 +52,12 @@ config :my_app, MyAppWeb.Endpoint,
       cd: Path.expand("../assets", __DIR__)
     ]
   ]
-{% endhl %}
+```
 
 
 ## esbuild
 
-![esbuild home page](https://res.cloudinary.com/mhanberg/image/upload/v1622864248/Screen_Shot_2021-06-04_at_11.36.48_PM.png){:standalone .space-y-4}
+![esbuild home page](https://res.cloudinary.com/mhanberg/image/upload/v1622864248/Screen_Shot_2021-06-04_at_11.36.48_PM.png)
 
 esbuild is part of the newest generation of JavaScript tooling. It is built in [Go](https://golang.org/) and is _extremely_ fast. All I really need is my JavaScript to be bundled and transpiled to some degree, and esbuild does just that.
 

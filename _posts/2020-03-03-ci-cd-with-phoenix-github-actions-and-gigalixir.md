@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: Blog.Layouts.Post
 title: "CI/CD with Phoenix, GitHub Actions, and Gigalixir"
-date: 2020-03-03 09:00:00 -04:00
+date: 2020-03-03T09:00:00-04:00
 categories: post
 permalink: /:title/
 img: https://res.cloudinary.com/mhanberg/image/upload/v1583173677/ci-cd-with-phoenix-github-actions-gigalixir-hero-image.png
@@ -188,7 +188,7 @@ $ git push gigalixir master
 
 You should now be able to visit `<your app name>.gigalixirapp.com` and see our stock Phoenix application!
 
-![https://pipsqueak.gigalixirapp.com](https://res.cloudinary.com/mhanberg/image/upload/v1583205573/pipsqueak-gigalixirapp.png){:standalone .bg-transparent}
+![https://pipsqueak.gigalixirapp.com](https://res.cloudinary.com/mhanberg/image/upload/v1583205573/pipsqueak-gigalixirapp.png)
 
 While this is quick and easy when first starting out, it can be tedious and error prone in the long run.
 
@@ -220,7 +220,7 @@ $ cat gigalixir_rsa | pbcopy
 
 We also copied our private key to the clipboard so that we can add it as a GitHub secret.
 
-![Adding our SSH_PRIVATE_KEY as a secret](https://res.cloudinary.com/mhanberg/image/upload/v1583210165/pipsqueak-ssh-private-key.png){:standalone .bg-transparent}
+![Adding our SSH_PRIVATE_KEY as a secret](https://res.cloudinary.com/mhanberg/image/upload/v1583210165/pipsqueak-ssh-private-key.png)
 
 We also need to need to add our `GIGALIXIR_USERNAME` and `GIGALIXIR_PASSWORD` as secrets in the same way we added the `SSH_PRIVATE_KEY`.
 

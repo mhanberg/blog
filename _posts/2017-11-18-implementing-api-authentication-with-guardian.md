@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: Blog.Layouts.Post
 title: Implementing API Authentication with Guardian in Phoenix
-date: 2017-11-28 09:00:00 -04:00
+date: 2017-11-28T09:00:00-04:00
 categories: post
 desc: Guide on implementing authentication in an API-only Phoenix 1.3 application using Guardian 1.0.
 permalink: /:categories/:year/:month/:day/:title/

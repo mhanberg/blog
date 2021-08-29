@@ -1,9 +1,6 @@
----
----
-
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "_includes/native";
+@import "../_includes/native";
 
 * {
   scrollbar-color: theme("colors.evergreen.700") theme("colors.evergreen.900");

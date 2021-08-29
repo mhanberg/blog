@@ -1,3 +1,7 @@
+pre {
+  @apply p-4 bg-evergreen-800 rounded text-sm overflow-auto;
+}
+
 .highlight > pre {
   @apply p-4 bg-evergreen-800 rounded text-sm overflow-auto;
 }
@@ -8,6 +12,10 @@ div.highlight > pre {
 
 pre.lineno {
   @apply pr-4 pl-2;
+}
+
+pre > code {
+  @apply p-1 bg-evergreen-400 text-evergreen-900 rounded text-sm;
 }
 
 code.highlighter-rouge {

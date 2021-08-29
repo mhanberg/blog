@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: Blog.Layouts.Post
 title: How to Subscribe to SharePoint RSS Feeds Without NTLM Authentication 
-date: 2018-08-18 21:00:00 -04:00
+date: 2018-08-18T21:00:00-04:00
 categories: post
 desc: "How I used headless Chrome to access RSS feeds from an on-premise SharePoint instance during the Summer &#39;18 SEP: Makes hackathon."
 permalink: /:categories/:year/:month/:day/:title/

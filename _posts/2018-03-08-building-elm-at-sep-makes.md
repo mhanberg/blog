@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: Blog.Layouts.Post
 title: Building with Elm at SEP:Makes 
-date: 2018-03-08 09:00:00 -04:00
+date: 2018-03-08T09:00:00-04:00
 categories: post
 desc: The thrilling tale of my first hackathon at SEP.
 permalink: /:categories/:year/:month/:day/:title/

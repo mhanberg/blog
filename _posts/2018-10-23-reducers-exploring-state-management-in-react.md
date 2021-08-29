@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: Blog.Layouts.Post
 title: "Reducers: Exploring State Management in React (Part 2)"
-date: 2018-10-23 23:00:00 -04:00
+date: 2018-10-23T23:00:00-04:00
 categories: post
 desc: Let's explore how to extract React state transformations to better isolate and understand the way our component state changes.
 permalink: /:categories/:year/:month/:day/:title/

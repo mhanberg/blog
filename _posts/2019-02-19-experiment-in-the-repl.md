@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: Blog.Layouts.Post
 title: Experiment in the REPL
-date: 2019-02-19 11:00:00 -04:00
+date: 2019-02-19T11:00:00-04:00
 categories: post
 permalink: /:title/
 ---

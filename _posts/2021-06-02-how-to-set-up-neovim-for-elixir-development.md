@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: Blog.Layouts.Post
 title: "How to Set Up Neovim for Elixir Development"
-date: 2021-06-02 09:00:00 -04:00
+date: 2021-06-02T09:00:00-04:00
 categories: post
 permalink: /:title/
 ---
@@ -241,7 +241,7 @@ lspconfig.elixirls.setup({
 
 Elixir LS should be all set up now! Let's test it out by seeing if autocompletion, documentation on hover, and go to definition is working.
 
-![Gif demonstration of autocomplete, documentation on hover, and go to definition](https://res.cloudinary.com/mhanberg/image/upload/v1621999434/elixir-ls-demo.gif){:standalone}
+![Gif demonstration of autocomplete, documentation on hover, and go to definition](https://res.cloudinary.com/mhanberg/image/upload/v1621999434/elixir-ls-demo.gif)
 
 ## Integrating Credo
 

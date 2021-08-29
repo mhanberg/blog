@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: Blog.Layouts.Post
 title: If You Don't Have Anything Valuable To Say... Say It Anyways
-date: 2017-02-28
+date: 2017-02-28T00:00:00-04:00
 categories: post
 permalink: /:categories/:year/:month/:day/:title/
 ---
