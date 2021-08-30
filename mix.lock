@@ -20,7 +20,7 @@
   "plug_static_index_html": {:hex, :plug_static_index_html, "1.0.0", "840123d4d3975585133485ea86af73cb2600afd7f2a976f9f5fd8b3808e636a0", [:mix], [{:plug, "~> 1.0", [hex: :plug, repo: "hexpm", optional: false]}], "hexpm", "79fd4fcf34d110605c26560cbae8f23c603ec4158c08298bd4360fdea90bb5cf"},
   "ranch": {:hex, :ranch, "1.8.0", "8c7a100a139fd57f17327b6413e4167ac559fbc04ca7448e9be9057311597a1d", [:make, :rebar3], [], "hexpm", "49fbcfd3682fab1f5d109351b61257676da1a2fdbe295904176d5e521a2ddfe5"},
   "ssl_verify_fun": {:hex, :ssl_verify_fun, "1.1.6", "cf344f5692c82d2cd7554f5ec8fd961548d4fd09e7d22f5b62482e5aeaebd4b0", [:make, :mix, :rebar3], [], "hexpm", "bdb0d2471f453c88ff3908e7686f86f9be327d065cc1ec16fa4540197ea04680"},
-  "tableau": {:git, "https://github.com/mhanberg/tableau.git", "0b7268cfba58f24fba6d8034cb627a06f8f4ebbd", []},
+  "tableau": {:git, "https://github.com/mhanberg/tableau.git", "af16a4ff3d51b0f5ca48f9b52a86c1adcc7729e3", []},
   "telemetry": {:hex, :telemetry, "0.4.3", "a06428a514bdbc63293cd9a6263aad00ddeb66f608163bdec7c8995784080818", [:rebar3], [], "hexpm", "eb72b8365ffda5bed68a620d1da88525e326cb82a75ee61354fc24b844768041"},
   "temple": {:hex, :temple, "0.8.0", "5d08112e06fae7b65c46ed33182366f7110df3160ac452f44cccb6adbfdc56d2", [:mix], [{:phoenix_view, "~> 1.0", [hex: :phoenix_view, repo: "hexpm", optional: false]}], "hexpm", "a3f895816fff8eb8e84afb1c92778ca4e5c63d3df08086699949f7ef39acc66a"},
   "tzdata": {:hex, :tzdata, "1.1.0", "72f5babaa9390d0f131465c8702fa76da0919e37ba32baa90d93c583301a8359", [:mix], [{:hackney, "~> 1.17", [hex: :hackney, repo: "hexpm", optional: false]}], "hexpm", "18f453739b48d3dc5bcf0e8906d2dc112bb40baafe2c707596d89f3c8dd14034"},
