@@ -174,7 +174,7 @@ $ git checkout tags/v0.7.0
 
 $ mix deps.get && mix compile
 
-$ mix elixir_ls.release -o rel
+$ mix elixir_ls.release -o release
 ```
 
 Now that we have Elixir LS installed and compiled, let's get it set up in Neovim.
@@ -221,7 +221,7 @@ end
 local path_to_elixirls = vim.fn.expand("~/.cache/nvim/lspconfig/elixirls/elixir-ls/release/language_server.sh")
 
 lspconfig.elixirls.setup({
-  cmd = path_to_elixirls,
+  cmd = {path_to_elixirls},
   capabilities = capabilities,
   on_attach = on_attach,
   settings = {
