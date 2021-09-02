@@ -2,6 +2,7 @@
 layout: post
 title: "How to Set Up Neovim for Elixir Development"
 date: 2021-06-02 09:00:00 -04:00
+updated: 2021-09-02 09:00:00 -04:00
 categories: post
 permalink: /:title/
 ---
@@ -12,7 +13,7 @@ Since then, I've switched from Vim to the nightly release of [Neovim](https://gi
 
 This article will cover:
 
-- Installing Neovim Nightly
+- Installing Neovim
 - Getting started with the builtin LSP client
 - Setting up Elixir LS
 - Integrating [Credo](https://github.com/rrrene/credo)
@@ -21,7 +22,27 @@ _If you run into any problems with this guide, feel free to shoot me an [email](
 
 Let's get started!
 
-## Installing Neovim Nightly
+## Installing Neovim
+
+You can install Neovim with your package manager of choice, or [asdf](https://asdf-vm.com).
+
+### Homebrew
+
+```shell
+$ brew install neovim
+```
+
+### asdf
+
+```shell
+$ asdf plugin add neovim
+
+$ asdf install neovim stable
+```
+
+### Nightly
+
+> With the release of 0.5, you no longer need to use Neovim nightly. I will leave these instructions in case you still want to live on the edge.
 
 As of this writing, the builtin LSP client is only available on the nightly build of Neovim. Once 0.5 is released, you should be able to switch to a stable build, but for now, let's get nightly installed.
 
@@ -158,6 +179,8 @@ require "compe".setup {
   }
 }
 ```
+
+> nvim-compe has been deprecated and will no longer receive updates. I'll update this article to the current recommended plugin once I migrate my own config.
 
 That should be it for the basic LSP client configuration.
 
