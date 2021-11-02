@@ -2,7 +2,7 @@
 layout: post
 title: "How to Set Up Neovim for Elixir Development"
 date: 2021-06-02 09:00:00 -04:00
-updated: 2021-09-02 09:00:00 -04:00
+updated: 2021-11-02 09:00:00 -04:00
 categories: post
 permalink: /:title/
 ---
