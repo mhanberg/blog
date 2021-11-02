@@ -1,3 +1,5 @@
+require "active_support"
+
 module Jekyll
   module MyFilters
     def post_url(post)
@@ -40,6 +42,17 @@ module Jekyll
 
     def tags(tags)
       tags.map {|tag| "#".concat(tag)}.join(" ")
+    end
+
+    def details_class(description, klass)
+      puts description.inspect
+      puts klass
+
+      if description.present?
+        ""
+      else
+        klass
+      end
     end
 
     private

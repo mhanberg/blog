@@ -11,32 +11,32 @@
 
         I use [vim-plug](https://github.com/junegunn/vim-plug) to manage my plugins; you can see all of the plugins I in my [dotfiles](https://github.com/mhanberg/.dotfiles/blob/master/vimrc#L41).
     
-    - name: Forest Night Theme
-      link: https://github.com/sainnhe/forest-night
+    - name: Thicc Forest
+      link: https://github.com/mhanberg/.dotfiles/blob/main/config/nvim/lua/lush_theme/thicc_forest.lua
       description: |
         I like the subtle dark theme with hints of green. I use this in NeoVim, Alacritty, and Alfred.
+        
+        This is a fork of [Everforest](https://github.com/sainnhe/everforest)
 
     - name: JetBrains Mono font
       link: https://www.jetbrains.com/lp/mono/
       description: |
-        I switched fonts every so often, and this is my current choice.
+        I switched fonts every so often, and this is my current choice. I also use the patched nerd font version to get the fancy icons.
 
     - name: Alacritty
       link: https://github.com/alacritty/alacritty
       description: |
         I switched to Alacritty because I thought iTerm2 was causing my computer to crash (I think I have since concluded that it is a macOS bug).
 
-        I've kept using it, as it is super lightweight and is meant to be used with tmux
+        I've kept using it, as it is super lightweight and is meant to be used with tmux.
 
     - name: Postico
       link: https://eggerapps.at/postico/
       description: |
         Postico is a minimal Postgres GUI client and is an example of an amazing macOS application, amazing performance and has just the functionality that I need.
 
-    - name: Google Chrome
-      link: https://google.com/chrome/
-      description: |
-        Chrome simply gives the best performance and looks the best. I'm not a huge fan of Google products, but everything else sucks compared to Chrome.
+    - name: Firefox Developer Edition
+      link: https://www.mozilla.org/en-US/firefox/developer/
 
     - name: Sublime Merge
       link: https://www.sublimemerge.com/
@@ -53,13 +53,9 @@
 
     - name: Sketch
       link: https://www.sketch.com/
-      description: |
-        I don't do a whole lot of designing, but when I do I like doing it in Sketch. 
 
     - name: Figma
       link: https://github.com/BurntSushi/ripgrep
-      description: |
-        I sometimes use Figma for design in addition to Sketch, but I end up using it as a cloud-enabled MS Paint.
 
     - name: zsh
       link: https://www.zsh.org/
@@ -87,18 +83,12 @@
 
     - name: fzf
       link: https://github.com/junegunn/fzf
-      description: |
-        fzf is a versatile tool that allows you to pipe in arbitrary text to form fuzzy pattern searching.
 
     - name: gh
       link: https://github.com/cli/cli
-      description: |
-        I use hub to easily create GitHub pull requests from the terminal. When you run `gh pr create`, it will open up a window in your `$EDITOR` (Vim for me) and allow you to craft your title and description for the new PR for the current branch.
 
     - name: ripgrep
       link: https://github.com/BurntSushi/ripgrep
-      description: |
-        This is a blazingly fast grep replacement. I use it for searching in the terminal and as my `grepprg` in vim.
 
 - name: Productivity
   entries:
@@ -111,8 +101,6 @@
 
     - name: 1Password
       link: https://1password.com/
-      description: |
-        1Password is some of the best money I've ever spent on software.
 
     - name: Things 3
       link: https://culturedcode.com/things/
@@ -126,34 +114,27 @@
 
     - name: Itsycal
       link: https://www.mowglii.com/itsycal/
-      description: |
         This is a neat little menubar app that works really well for seeing what upcoming events you have over the next few days.
 
-    - name: Dropbox
-      link: https://db.tt/Y20mNcDT98
+    - name: iCloud Drive
+      link: https://www.icloud.com/iclouddrive
       description: |
-        Dropbox is another service I've been using for years.
-
-        I originally used it as a way of syncing source code files between my computer and a tiny (I mean like the screen wouldn't expand larger than 400x300px) Linux VM that I had to use for a course in college.
+        I used to use Dropbox, but switched to iCloud Drive because of it being baked into all of the Apple products and being able to share the storage space with my family.
 
     - name: Licecap
       link: https://www.cockos.com/licecap/
-      description: |
-        Licecap is a handy tool for taking quick video gifs of your screen. It looks arcane but it works.
-
-        I use it a lot for sharing new designs and how to reproduce bugs in pull requests.
 
 - name: Hardware
   entries:
-    - name: 2013 13" MacBook Pro
-      link: https://support.apple.com/kb/SP691?locale=en_US
+    - name: 2020 13" M1 MacBook Air
+      link: https://support.apple.com/kb/SP825?locale=en_US
       description: |
-        This was my first Apple computer and I am never going back. It's starting to reach the end of it's life, but I'm holding out for a MacBook Air with the new Magic keyboard (or a windfall of cash 😏).
+        Personal computer.
 
-    - name: 2019 16" MacBook Pro
+    - name: 20** 16" MacBook Pro
       link: https://www.apple.com/macbook-pro-16/specs/
       description: |
-        This is the computer I use at work. It is pretty much plugged into a Thunderbolt 3 docking station 24/7.
+        Work computer.
 
     - name: Ergodoz EZ
       link: https://ergodox-ez.com/
@@ -176,7 +157,7 @@
     - name: Kensington Expert Trackball Mouse
       link: https://www.amazon.com/dp/B01936N73I/ref=twister_B07WMKFZKK?_encoding=UTF8&psc=1
       description: |
-        This is a solid trackball mouse. I use it in between the two halves of my keyboard.
+        I use it in between the two halves of my keyboard.
 
     - name: CalDigit TS3 Plus
       link: https://www.amazon.com/gp/product/B07CZPV8DF/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
@@ -185,15 +166,67 @@
 
     - name: LG 27UD68-W
       link: https://amzn.to/3389fCI
-      description: |
-        Solid 4K monitor I got on Prime Day.
-
-    - name: LG 24" UltraFine 4K
-      link: https://www.lg.com/us/monitors/lg-24MD4KL-B-4k-uhd-led-monitor
-      description: |
-        I use this as my secondary monitor in the portait mode. The display is nice, but it is actually annoying to have this mixed with a different monitor, because the brightness is controlled by the computer, and sometimes the difference can be stark.
 
     - name: Philips Hue Bulbs
       link: https://amzn.to/37mgzy2
       description: |
         I have these throughout my home. They're really nice in my office as it allows me to dim and change the warmth of the light to be easier on the eyes in the dark.
+
+    - name: Fully Jarvis Dual Monitor Arm
+      link: https://www.fully.com/accessories/monitor-arms/jarvis-dual-monitor-arm.html
+      description: |
+        I use a monitor on one arm, and the laptop mounted on the other. I had to contact customer support to purchase the laptop holder by itself.
+
+    - name: Fully Jarvis Standing Desk
+      link: https://www.fully.com/standing-desks/jarvis/jarvis-frame-only.html
+      description: |
+        I use an old IKEA desktop as the desk surface. In the future I want to build my own desktop out of 2x4 lumber.
+
+        I have the caster wheels as well, which makes moving the desk a breeze for when I need to fidget with the cords behind the desk.
+
+    - name: Anker Power Strip
+      link: https://www.amazon.com/gp/product/B08FWXXBT3/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+      description: |
+        I have this attached to the bottom of my desktop.
+
+        It is nice because it has plenty of outlets that are spaced apart for plugs that have the big block on them, as well has 3 USB ports for charging things like my iPad without using a block.
+
+- name: Audio/Video
+  entries:
+    - name: Audio-Technica AT2035PK 
+      link: https://www.amazon.com/gp/product/B07JL8YRCV/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+    - name: Pop filter
+      link: https://www.amazon.com/gp/product/B01J5OTVTC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+    - name: Gator Frameworks Deluxe Boom Arm 
+      link: https://www.amazon.com/gp/product/B07JL8YRCV/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+      description: |
+        I use this screwed into the desktop. I found that the clamp mount would fall off frequently.
+
+    - name: Focusrite Scarlett Solo (3rd Gen)
+      link: https://www.amazon.com/gp/product/B07QR6Z1JB/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+    - name: ATH-M20x Professional Monitor Headphones 
+      link: https://www.amazon.com/Audio-Technica-ATH-M20x-Professional-Monitor-Headphones/dp/B00HVLUR18/ref=sr_1_2?dchild=1&keywords=ATH-M20x&qid=1635866818&s=musical-instruments&sr=1-2
+
+    - name: Anker Soundcore Life Q20
+      link: https://www.amazon.com/gp/product/B07NM3RSRQ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+    - name: Logitech C920S HD Pro Webcam
+      link: https://www.amazon.com/gp/product/B07K95WFWM/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+    - name: Logitech C920S HD Pro Webcam
+      link: https://www.amazon.com/gp/product/B07K95WFWM/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+    - name: LED Ring Light 10"
+      link: https://www.amazon.com/gp/product/B07Q3471S2/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+      description: |
+        Attached to the Elgato Master Mount L.
+
+        I have noticed it flickering a bit recently, so I'll probably replace it soon.
+
+    - name: Elgato Master Mount L
+      link: https://www.amazon.com/gp/product/B07X49967V/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+

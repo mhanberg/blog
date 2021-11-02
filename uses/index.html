@@ -10,14 +10,29 @@ title: Uses
 
   {% for category in site.data.uses %}
   <h2>{{ category.name }}</h2>
-  <ul>
+  <ul class="px-1">
   {% for entry in category.entries %}
-    <li>
-      <p>
-        <div id="{{ entry.name | slugify }}"class="text-white font-semibold">{{ entry.name }}</div>
-        <p>{{entry.description | markdownify}}</p>
-        <p> <span>Link: <a href="{{entry.link}}">{{entry.link}}</a></span> </p>
-      </p>
+    <li class="list-none">
+    {% if entry.description %}
+      <details>
+        <summary>
+          <span id="{{ entry.name | slugify }}"class="text-white font-semibold">
+            <a href="{{entry.link}}" target="_blank">{{ entry.name }}</a>
+          </span>
+        </summary>
+        <div class="pl-5">
+          <div class="bg-evergreen-400 my-2 py-2 px-4 rounded-md">
+            {{entry.description | markdownify}}
+          </div>
+        </div>
+      </details>
+    {% else %}
+      <div class="pl-5">
+        <span id="{{ entry.name | slugify }}"class="text-white font-semibold">
+          <a href="{{entry.link}}" target="_blank">{{ entry.name }}</a>
+        </span>
+      </div>
+    {% endif %}
     </li>
   {% endfor %}
   </ul>
