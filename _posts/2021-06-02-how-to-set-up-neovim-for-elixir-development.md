@@ -42,7 +42,7 @@ $ asdf install neovim stable
 
 ### Nightly
 
-> With the release of 0.5, you no longer need to use Neovim nightly. I will leave these instructions in case you still want to live on the edge.
+> With the release of 0.5, you no longer need to use Neovim nightly for this setup. I will leave these instructions in case you still want to live on the edge.
 
 As of this writing, the builtin LSP client is only available on the nightly build of Neovim. Once 0.5 is released, you should be able to switch to a stable build, but for now, let's get nightly installed.
 
@@ -135,9 +135,12 @@ startup(function(use)
   use "neovim/nvim-lspconfig"
 
   -- autocomplete and snippets
-  use "hrsh7th/nvim-compe"
-  use "hrsh7th/vim-vsnip"
-  use "hrsh7th/vim-vsnip-integ"
+  use("hrsh7th/nvim-cmp")
+  use("hrsh7th/cmp-nvim-lsp")
+  use("hrsh7th/cmp-vsnip")
+  use("hrsh7th/vim-vsnip")
+
+  use("onsails/lspkind-nvim")
 end)
 ```
 
@@ -153,34 +156,36 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 -- Setup our autocompletion. These configuration options are the default ones
 -- copied out of the documentation.
-require "compe".setup {
-  enabled = true,
-  autocomplete = true,
-  debug = false,
-  min_length = 1,
-  preselect = "disabled",
-  throttle_time = 80,
-  source_timeout = 200,
-  incomplete_delay = 400,
-  max_abbr_width = 100,
-  max_kind_width = 100,
-  max_menu_width = 100,
-  documentation = true,
-  source = {
-    path = true,
-    buffer = true,
-    calc = true,
-    vsnip = true,
-    nvim_lsp = true,
-    nvim_lua = true,
-    spell = true,
-    tags = true,
-    treesitter = true
-  }
-}
-```
+local cmp = require("cmp")
 
-> nvim-compe has been deprecated and will no longer receive updates. I'll update this article to the current recommended plugin once I migrate my own config.
+cmp.setup({
+  snippet = {
+    expand = function(args)
+      -- For `vsnip` user.
+      vim.fn["vsnip#anonymous"](args.body)
+    end,
+  },
+  mapping = {
+    ["<C-b>"] = cmp.mapping.scroll_docs(-4),
+    ["<C-f>"] = cmp.mapping.scroll_docs(4),
+    ["<C-Space>"] = cmp.mapping.complete(),
+    ["<C-e>"] = cmp.mapping.close(),
+    ["<C-y>"] = cmp.mapping.confirm({ select = true }),
+  },
+  sources = {
+    { name = "nvim_lsp" },
+    { name = "vsnip" },
+  },
+  formatting = {
+    format = require("lspkind").cmp_format({
+      with_text = true,
+      menu = {
+        nvim_lsp = "[LSP]",
+      },
+    }),
+  },
+})
+```
 
 That should be it for the basic LSP client configuration.
 
@@ -236,6 +241,9 @@ local on_attach = function(_, bufnr)
   vim.cmd [[inoremap <silent><expr> <C-e> compe#close('<C-e>')]]
   vim.cmd [[inoremap <silent><expr> <C-f> compe#scroll({ 'delta': +4 })]]
   vim.cmd [[inoremap <silent><expr> <C-d> compe#scroll({ 'delta': -4 })]]
+
+  -- tell nvim-cmp about our desired capabilities
+  require("cmp_nvim_lsp").update_capabilities(capabilities)
 end
 
 -- Finally, let's initialize the Elixir language server
