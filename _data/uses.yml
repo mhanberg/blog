@@ -216,14 +216,14 @@
     - name: Logitech C920S HD Pro Webcam
       link: https://www.amazon.com/gp/product/B07K95WFWM/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
-    - name: LED Ring Light 10"
-      link: https://www.amazon.com/gp/product/B07Q3471S2/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
-      description: |
-        Attached to the Elgato Master Mount L.
+    - name: Elgato Stream Deck MK.2
+      link: https://www.amazon.com/dp/B09738CV2G?ref=ppx_yo2_dt_b_product_details&th=1
 
-        I have noticed it flickering a bit recently, so I'll probably replace it soon.
+    - name: Elgato Key Light
+      link: https://www.amazon.com/Elgato-Key-Light-Professional-App-Enabled/dp/B07L755X9G
 
     - name: Elgato Master Mount L
       link: https://www.amazon.com/gp/product/B07X49967V/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
 
 
