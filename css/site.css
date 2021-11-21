@@ -10,6 +10,10 @@
   scrollbar-width: auto;
 }
 
+
+.formkit-powered-by-convertkit {
+  display: none !important;
+}
 body {
   @apply font-sans bg-evergreen-900 text-white;
 
