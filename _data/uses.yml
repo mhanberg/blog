@@ -9,7 +9,7 @@
 
         **Plugins**
 
-        I use [vim-plug](https://github.com/junegunn/vim-plug) to manage my plugins; you can see all of the plugins I in my [dotfiles](https://github.com/mhanberg/.dotfiles/blob/master/vimrc#L41).
+        I use [packer.nvim](https://github.com/wbthomason/packer.nvim) to manage my plugins; you can see all of the plugins I in my [dotfiles](https://github.com/mhanberg/.dotfiles/blob/0f1c4f83012c0e6ec73691e01d5b2c909f272024/config/nvim/lua/motch/plugins.lua).
     
     - name: Thicc Forest
       link: https://github.com/mhanberg/.dotfiles/blob/main/config/nvim/lua/lush_theme/thicc_forest.lua
@@ -44,7 +44,6 @@
         This is the best Git GUI application that I have ever used. 
 
         The features that I enjoy the most is the three way merge, staging/unstaging individual lines of code, and the ability to search just about anything in the repository.
-
 
     - name: Dash
       link: https://kapeli.com/dash
@@ -131,10 +130,10 @@
       description: |
         Personal computer.
 
-    - name: 20** 16" MacBook Pro
+    - name: 2021 16" MacBook Pro
       link: https://www.apple.com/macbook-pro-16/specs/
       description: |
-        Work computer.
+        The new one with the M1 Pro chip 🏎.
 
     - name: Ergodoz EZ
       link: https://ergodox-ez.com/
@@ -154,8 +153,8 @@
 
         I use this one at home/travel.
 
-    - name: Kensington Expert Trackball Mouse
-      link: https://www.amazon.com/dp/B01936N73I/ref=twister_B07WMKFZKK?_encoding=UTF8&psc=1
+    - name: Apple Magic Trackpad
+      link: https://www.apple.com/shop/product/MMMP3AM/A/magic-trackpad-black-multi-touch-surface?fnode=4d0def805c6db6de0fbae9052cb831ea2c102e18ffb2aa987ed6c12e24b77a45ed729f921edb95f34249a492de8d99aef8cc2fc9b698d9ad5a6bf0d44fa4a3f9c9a55b7d7d09597b4d76d5537ce323b3071c18b0a987d19c4fee9ca45a9a7e36
       description: |
         I use it in between the two halves of my keyboard.
 
@@ -224,6 +223,3 @@
 
     - name: Elgato Master Mount L
       link: https://www.amazon.com/gp/product/B07X49967V/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
-
-
-
