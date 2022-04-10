@@ -20,6 +20,7 @@ body {
   font-size: 18px;
 }
 
+
 #the-universe {
   @apply min-h-screen pb-8;
 
@@ -136,11 +137,24 @@ blockquote p::after {
   content: "\"";
 }
 
+.highlighter-rouge {
+  @apply max-w-4xl mx-auto;
+}
+
+article > :not(.table-wrapper):not(.highlighter-rouge) {
+  @apply max-w-2xl mx-auto;
+}
+
 p,
 ul,
 ol,
-li {
+li,
+td {
   @apply font-light;
+}
+
+th {
+  @apply font-semibold;
 }
 
 strong {
@@ -162,6 +176,7 @@ ol {
 }
 
 figure,
+.table-wrapper,
 div.highlight,
 .highlighter-rouge {
   @apply my-10;
@@ -222,6 +237,30 @@ hr {
 
 mark {
   @apply bg-evergreen-400 text-evergreen-900 font-semibold px-1 rounded shadow-xl;
+}
+
+.table-wrapper {
+  @apply overflow-x-scroll border border-white rounded;
+}
+table {
+  @apply p-2 w-full bg-evergreen-800;
+}
+
+thead {
+  @apply border-b border-white;
+}
+
+tr:not(:last-child) {
+  @apply border-b border-white;
+}
+
+th ~ th,
+td ~ td {
+  @apply border-l border-white;
+}
+
+td {
+  @apply pl-2;
 }
 
 .ais-Hits-list {

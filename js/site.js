@@ -4,7 +4,7 @@ function anchorifyHeaders() {
     ...Array.from(document.querySelectorAll("h3")),
     ...Array.from(document.querySelectorAll("h4")),
     ...Array.from(document.querySelectorAll("h5")),
-  ].forEach(header => {
+  ].forEach((header) => {
     header.classList.add("group");
 
     header.innerHTML = `
@@ -18,6 +18,17 @@ function anchorifyHeaders() {
   });
 }
 
+function wrapTable() {
+  Array.from(document.querySelectorAll("article > table")).forEach((table) => {
+    let parent = table.parentNode;
+    let wrapper = document.createElement("div");
+    wrapper.classList.add("table-wrapper");
+    parent.insertBefore(wrapper, table);
+    wrapper.appendChild(table);
+  });
+}
+
 window.Mitch = {
   anchorifyHeaders,
+  wrapTable,
 };
