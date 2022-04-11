@@ -20,7 +20,6 @@ body {
   font-size: 18px;
 }
 
-
 #the-universe {
   @apply min-h-screen pb-8;
 
@@ -242,6 +241,7 @@ mark {
 .table-wrapper {
   @apply overflow-x-scroll border border-white rounded;
 }
+
 table {
   @apply p-2 w-full bg-evergreen-800;
 }
