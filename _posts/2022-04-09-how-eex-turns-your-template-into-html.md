@@ -75,7 +75,7 @@ This translates the source code into a list of Elixir terms that describe the to
 
 The list of tokens are fairly self explanatory. We can see `:text` tokens for static ranges of plain text, `:expr` tokens for single line expressions, and `:start_expr`/`:end_expr` tokens for the multi-line do/end block expression.
 
-The tokens also include some row/column metadata, which is helpful later own for attributing error messages to the origin point in the source code.
+The tokens also include some row/column metadata, which is helpful later on for attributing error messages to the origin point in the source code.
 
 Now that we have the tokens, we need to traverse over them and pass them into the engine.
 
@@ -266,7 +266,7 @@ require Phoenix.LiveView.Engine
 
 ## How can this help Temple?
 
-So far we've detailed how _Elixir_ will compile an EEx template. The `EEx.Tokenizer` and `EEx.Compiler` are not public modules, and are essentially an implementation detail.
+So far we've detailed how _Elixir_ will compile an EEx template. The `EEx.Tokenizer` and `EEx.Compiler` are not public modules and are essentially an implementation detail.
 
 Surface and HEEx are not EEx compatible, so attempting to compile them with `EEx.compile_string/2` would raise a syntax error. So how do they work?
 
