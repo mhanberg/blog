@@ -14,17 +14,17 @@ A couple features of EEx that make it stand out are:
 - Templates can be compiled into functions ahead of time, avoiding needing to read from the file system at runtime. 
 - EEx has the concept of an "Engine" allowing you to compile an existing template into something different than what the builtin engine, [`EEx.SmartEngine`](https://hexdocs.pm/eex/EEx.SmartEngine.html), does. This is what [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) does.
 
-Recently, [José Valim tweeted me some advice on how to use the EEx Engine](https://twitter.com/josevalim/status/1511348149323014155?s=20&t=sFyaicmJApbs5yQO-n_CIA) in my library [Temple](https://github.com/mhanberg/temple) (an alternative HTML library, that uses an Elixir DSL). At first I was very confused at José's suggestion, I don't want to write EEx at all! I want Temple to go from DSL straight to `iolist` or `%LiveView.Rendered{}` structs.
+Recently, [José Valim tweeted me some advice on how to use the EEx Engine](https://twitter.com/josevalim/status/1511348149323014155?s=20&t=sFyaicmJApbs5yQO-n_CIA) in my library [Temple](https://github.com/mhanberg/temple) (an alternative HTML library, that uses an Elixir DSL). At first I was very confused at José's suggestion; I don't want to write EEx at all! I want Temple to go from DSL straight to `iolist` or `%LiveView.Rendered{}` structs.
 
-Luckily, my coworker [Marlus Saraiva](https://twitter.com/MarlusSaraiva) messaged me and gave a bit more context on Josés suggestion, and suddenly it all clicked!. (Hopefully at the end of this post, you'll understand how José's suggestion was makes perfect sense and was extremely clear.)
+Luckily, my coworker [Marlus Saraiva](https://twitter.com/MarlusSaraiva) messaged me and gave a bit more context on Josés suggestion, and suddenly it all clicked!. (Hopefully at the end of this post, you'll understand how José's suggestion makes perfect sense and was extremely clear.)
 
 This conversation led me to ask myself, how does EEx work anyway? I decided to source dive EEx, LiveView, [Surface](https://surface-ui.org/), and [HEEx](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.Helpers.html#sigil_H/2-syntax) and will share with you what I learned!
 
 ## The Source Code
 
-Technically EEx is just a templating syntax that can handle any plaintext format, it doesn't matter if its HTML, JavaScript, or even Elixir (this is how the Phoenix generators work).
+Technically EEx is just a templating syntax that can handle any plaintext format. It doesn't matter if its HTML, JavaScript, or even Elixir (this is how the Phoenix generators work).
 
-EEx templates allow you do execute arbitrary Elixir code inside of special tags and inject the runtime result into the return value. You can use single expressions or even expressions that take blocks. The `EEx.SmartEngine` also allows you to ergonomically access data passed to the template with the `@` syntax.
+EEx templates allow you to execute arbitrary Elixir code inside of special tags and inject the runtime result into the return value. You can use single expressions or even expressions that take blocks. The `EEx.SmartEngine` also allows you to ergonomically access data passed to the template with the `@` syntax.
 
 ```eex
 <!-- single line expression -->
@@ -40,11 +40,11 @@ EEx templates allow you do execute arbitrary Elixir code inside of special tags 
 
 ## The Compiler
 
-The public API for compiling an EEx file or string are the `EEx.compile_file/2` and `EEx.compile_string/2` functions. Internally, they will call into the `EEx.Compiler` module.
+The public API for compiling an EEx file or string consists of the `EEx.compile_file/2` and `EEx.compile_string/2` functions. Internally, they will call into the `EEx.Compiler` module.
 
 The `EEx.Compiler` module is where the coordination happens when compiling our source code. You can find the source code [here](https://github.com/elixir-lang/elixir/blob/v1.13.3/lib/eex/lib/eex/compiler.ex).
 
-This module's `compile/2` function is responsible for calling the tokenizer, traversing them and passing them to the appropriate callbacks on the engine. By default, EEx uses the builtin `EEx.SmartEngine`.
+This module's `compile/2` function is responsible for calling the tokenizer, traversing them, and passing them to the appropriate callbacks on the engine. By default, EEx uses the builtin `EEx.SmartEngine`.
 
 Essentially there are two steps:
 
@@ -83,7 +83,7 @@ Now that we have the tokens, we need to traverse over them and pass them into th
 
 The engine is where the magic happens! It's responsible for building the tokens into usable Elixir AST, which can then be injected into a function.
 
-An `EEx.Engine` has the following callbacks that it must implement, and that your compiler must call appropriately. I'll copy/paste some of the callback documentation here, copyright belonging to the elixir-lang/elixir project.
+An `EEx.Engine` has the following callbacks that it must implement and that your compiler must call appropriately. I'll copy/paste some of the callback documentation here, copyright belonging to the elixir-lang/elixir project.
 
 ```elixir
 @doc """
