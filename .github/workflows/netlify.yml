@@ -2,6 +2,7 @@ name: Netlify Deploy
 
 on:
   schedule:
+  # 6am ET, posts will publish if rebuilt after 1am ET
   - cron: "0 10 * * *"
 
 jobs:

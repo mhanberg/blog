@@ -6,7 +6,7 @@ require 'Date'
 
 post_title = ARGV.join(' ')
 post_date = Date.today.to_s
-post_time = '09:00:00 -04:00'
+post_time = '01:00:00 -04:00'
 file_path = "./_posts/#{post_date}-#{ARGV.map {|x| x.gsub(/[\W]/, "")}.join('-').downcase}.md"
 
 raise 'File already exists' if File.exists? file_path

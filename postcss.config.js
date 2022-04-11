@@ -9,12 +9,21 @@ module.exports = {
       ? [
           require("@fullhuman/postcss-purgecss")({
             content: ["!(_site|node_modules)/**/*.+(html|js|md)", "*.html"],
-            whitelistPatternsChildren: [/formkit-powered-by-convertkit/, /highlight/, /mark/, /hll/],
+            whitelistPatternsChildren: [
+              /formkit-powered-by-convertkit/,
+              /highlight/,
+              /mark/,
+              /hll/,
+              /table/,
+              /thead/,
+              /th/,
+              /td/,
+            ],
             defaultExtractor: (content) =>
               content.match(/[\w-/:]+(?<!:)/g) || [],
           }),
           require("cssnano")({ preset: "default" }),
         ]
-      : [])
-  ]
+      : []),
+  ],
 };
