@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How EEx Turns Your Template Into HTML"
-date: 2022-04-09 09:00:00 -04:00
+date: 2022-04-11 01:00:00 -04:00
 categories: post
 permalink: /:title/
 
