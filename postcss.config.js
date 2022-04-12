@@ -18,6 +18,7 @@ module.exports = {
               /thead/,
               /th/,
               /td/,
+              /tr/,
             ],
             defaultExtractor: (content) =>
               content.match(/[\w-/:]+(?<!:)/g) || [],
