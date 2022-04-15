@@ -1,4 +1,4 @@
-# mitchellhanberg.com
+# www.mitchellhanberg.com
 
 The source code for [mitchellhanberg.com](https://www.mitchellhanberg.com).
 
