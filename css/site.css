@@ -54,7 +54,7 @@ img {
 }
 
 a {
-  @apply text-evergreen-500 font-semibold underline cursor-pointer;
+  @apply text-evergreen-500 underline cursor-pointer;
 }
 
 button {
