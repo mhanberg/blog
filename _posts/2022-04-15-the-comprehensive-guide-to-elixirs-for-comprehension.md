@@ -14,7 +14,7 @@ permalink: /:title/
     - ✅ filters non matching items
     - ✅ works with anything enumerable, lists, maps
     - ✅ bitstring generator
-- the filter
+- ✅ the filter
 - option: into
     - collectables
 - option: uniq
@@ -214,7 +214,7 @@ This behaviour can be useful! If you only wanted to enumerated configuration opt
 configs = [
   %{name: :feature_a, enabled: true},
   %{name: :feature_b, enabled: false},
-  %{name: :feature_c, enabled: true},
+  %{name: :feature_c, enabled: true}
 ]
 
 for %{enabled: true} = config <- configs do
@@ -227,3 +227,155 @@ end
 ## Filters
 
 Now that we've talked about _generator filtering_, let's talk about _Filters_.
+
+So for we have seen one type of "argument" that can be pass to the comprehension, the generator. Another "argument" is the filter! Let's look at a quick example.
+
+In this example, we iterate over a list of employees, filter based on the employees status, and return a list of the employee's names
+
+```elixir
+employees = [
+  %{name: "Eric", status: :active},
+  %{name: "Mitch", status: :former},
+  %{name: "Greg", status: :active}
+]
+
+for employee <- employees, employee.status == :active do
+  employee.name
+end
+
+# ["Eric", "Greg"]
+```
+
+As with generators, filters can use values bound in a previous step of the comprehension. And like generators, you can use multiple filters as well. You can even mix and match them!
+
+```elixir
+employees = [
+  %{
+    name: "Eric",
+    status: :active,
+    hobbies: [%{name: "Text Adventures", type: :gaming}, %{name: "Chickens", type: :animals}]
+  },
+  %{
+    name: "Mitch",
+    status: :former,
+    hobbies: [%{name: "Woodworking", type: :making}, %{name: "Homebrewing", type: :making}]
+  },
+  %{
+    name: "Greg",
+    status: :active,
+    hobbies: [
+      %{name: "Dungeons & Dragons", type: :gaming},
+      %{name: "Woodworking", type: :making}
+    ]
+  }
+]
+
+for employee <- employees,
+    employee.status == :active,
+    hobby <- employee.hobbies,
+    hobby.type == :gaming do
+  {employee.name, hobby}
+end
+
+# [
+#   {"Eric", %{name: "Text Adventures", type: :gaming}},
+#   {"Greg", %{name: "Dungeons & Dragons", type: :gaming}}
+# ]
+
+```
+
+At this point we can recognize that the list comprehension has the characteristics of a function with [variadic arguments](TODO). If we were to write our own `for` using plain functions, we'd have to pass it a list of callbacks to evaluate and a final callback to do the mapping. While we aren't necessarily concerned with how we'd implement `for` as a plain function, it's important to recognize aspects that are "different" from "normal" constructs in language.
+
+One of the great things about the list comprehension is that it allows you to operate on `Enumerable` data structures in fewer passes (usually 1) than by using the `Enum` module.
+
+We can write our previous example using functions like so:
+
+```elixir
+employees = [
+  %{name: "Eric", status: :active},
+  %{name: "Mitch", status: :former},
+  %{name: "Greg", status: :active}
+]
+
+employees
+|> Enum.filter(fn employee -> employee.status == :active end)
+|> Enum.map(fn employee -> employee.name end)
+
+# ["Eric", "Greg"]
+
+employees
+|> Enum.reduce([], fn employee, acc -> 
+  if employee.status == :active do
+    [employee.name | acc]
+  else
+    acc
+  end
+end)
+|> Enum.reverse()
+
+# ["Eric", "Greg"]
+
+:lists.filtermap(
+  fn employee ->
+    if employee.status == :active do
+      {true, employee.name}
+    else
+      false
+    end
+  end,
+  employees
+)
+
+# ["Eric", "Greg"]
+```
+
+You can see benchmarks of all of these styles of "filter map" [here](https://github.com/mhanberg/notebooks/blob/c0c0c710fd5ca7a6f36d5acdca9043911d49044d/notebooks/list_benchmarks.livemd).
+
+## Options
+
+Now that we've covered the basic principals of the list comprehension, we can explore the various options that can be pass to augment it's behavior. The default behavior is to act more or less like `Enum.map/2` with regard to the return type.
+
+As of this writing, there are three options available: `:uniq`, `:into`, and `:reduce`
+
+### :uniq
+
+`:uniq` is the least interesting of the available options, but still quite powerful.
+
+It simply ensures that the return result will only contain unique values.
+
+```elixir
+employees = [
+  %{
+    name: "Eric",
+    status: :active,
+    hobbies: [%{name: "Text Adventures", type: :gaming}, %{name: "Chickens", type: :animals}]
+  },
+  %{
+    name: "Mitch",
+    status: :former,
+    hobbies: [%{name: "Woodworking", type: :making}, %{name: "Homebrewing", type: :making}]
+  },
+  %{
+    name: "Greg",
+    status: :active,
+    hobbies: [
+      %{name: "Dungeons & Dragons", type: :gaming},
+      %{name: "Woodworking", type: :making}
+    ]
+  }
+]
+
+for employee <- employees, hobby <- employee.hobbies, uniq: true do
+  hobby.name
+end
+
+# ["Text Adventures", "Chickens", "Woodworking", "Homebrewing", "Dungeons & Dragons"]
+```
+
+You can see benchmarks of all of these styles of "map uniq" [here](https://github.com/mhanberg/notebooks/blob/ae5362fded45465e22e74b9d310715e7852502d8/notebooks/list_benchmarks.livemd#results-mapuniq).
+
+### :into
+
+`:into` is where things start to get interesting.
+
+The `:into` option allows you to change the return type
