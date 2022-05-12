@@ -4,21 +4,15 @@ title: "The Comprehensive Guide to Elixir's List Comprehension"
 date: 2022-04-15 01:00:00 -04:00
 categories: post
 permalink: /:title/
+toc: true
 
 ---
 
-- what is it
-- the generators
-    - ✅ multiple generators
-    - ✅ you can use a lhs value from generator A in the rhs of generator B
-    - ✅ filters non matching items
-    - ✅ works with anything enumerable, lists, maps
-    - ✅ bitstring generator
-- ✅ the filter
-- option: into
-    - collectables
-- option: uniq
-- option: reduce
+## Table of Contents
+{:.no_toc}
+
+* toc
+{:toc}
 
 ## What is it?
 
@@ -165,7 +159,7 @@ end
 # ["Movies", "Hot Sauce", "YuGiOh", "Tattoos", "Photoshop", "Oreos", "Cereal"]
 ```
 
-### Generators filter non-matching `lhs` values
+### Generators filter non-matching lhs values
 
 If the match expression in the `lhs` of a generator does not match no the value yielded from the `rhs`, it will be rejected and the list comprehension will move on to the next element in the enumerable.
 
@@ -378,4 +372,167 @@ You can see benchmarks of all of these styles of "map uniq" [here](https://githu
 
 `:into` is where things start to get interesting.
 
-The `:into` option allows you to change the return type
+The default behavior for a list comprehension behaves more or less like a "map" operation, meaning that the expression evaluates to a list.
+
+The `:into` option allows you to instead push the value returned by each iteration into a _collectable_. A data structure is collectable if it implements the [Collectable](TODO) protocol.
+
+If you aren't familiar with protocols, you have already been using them! The `Enum` module is a set of functions that operate on data structures that implement the [Enumerable](TODO) protocol. The builtin data structures that implement the `Enumerable` protocol are the `List` and `Map` types.
+
+The builtin data structures that implement the `Collectable` protocol are `List`, `Map`, and `BitString`. The `Enum` function that you would use to take advantage of this protocol is [Enum.into/2](TODO).
+
+Let's take a look at some examples.
+
+#### List
+
+Using a list as the `:into` actually doesn't change the behavior at all!
+
+
+```elixir
+employees = [
+  %{
+    name: "Eric",
+    status: :active,
+    hobbies: [%{name: "Text Adventures", type: :gaming}, %{name: "Chickens", type: :animals}]
+  },
+  %{
+    name: "Mitch",
+    status: :former,
+    hobbies: [%{name: "Woodworking", type: :making}, %{name: "Homebrewing", type: :making}]
+  },
+  %{
+    name: "Greg",
+    status: :active,
+    hobbies: [
+      %{name: "Dungeons & Dragons", type: :gaming},
+      %{name: "Woodworking", type: :making}
+    ]
+  }
+]
+
+for employee <- employees,
+    employee.status == :active,
+    hobby <- employee.hobbies,
+    hobby.type == :gaming,
+    into: [] do
+  {employee.name, hobby}
+end
+
+# [
+#   {"Eric", %{name: "Text Adventures", type: :gaming}},
+#   {"Greg", %{name: "Dungeons & Dragons", type: :gaming}}
+# ]
+```
+
+#### Map
+
+But if we use a map, we can see that it pushes each key/value pair into the map that you pass for the option. Usually I use this with an empty map (`%{}` or `Map.new()`), but let's look at an example using a non-empty map.
+
+```elixir
+employees = [
+  %{
+    name: "Eric",
+    status: :active,
+    hobbies: [%{name: "Text Adventures", type: :gaming}, %{name: "Chickens", type: :animals}]
+  },
+  %{
+    name: "Mitch",
+    status: :former,
+    hobbies: [%{name: "Woodworking", type: :making}, %{name: "Homebrewing", type: :making}]
+  },
+  %{
+    name: "Greg",
+    status: :active,
+    hobbies: [
+      %{name: "Dungeons & Dragons", type: :gaming},
+      %{name: "Woodworking", type: :making}
+    ]
+  }
+]
+
+base_map = %{
+  "Mitch" => %{
+    name: "Reading",
+    type: :learning
+  },
+  "Greg" => %{
+    name: "Traveling",
+    type: :expensive
+  }
+}
+
+for employee <- employees,
+    employee.status == :active,
+    hobby <- employee.hobbies,
+    hobby.type == :gaming,
+    into: base_map do
+  {employee.name, hobby}
+end
+
+# %{
+#   "Eric" => %{name: "Text Adventures", type: :gaming},
+#   "Greg" => %{name: "Dungeons & Dragons", type: :gaming},
+#   "Mitch" => %{name: "Reading", type: :learning}
+# }
+```
+
+Here we can observe three things.
+
+- The comprehension evaluates to a map.
+- The `"Mitch"` key and its was preserved in the final output.
+- The `"Greg"` key's value in the `base_map` was overwritten by the value yielded during the comprehension with the same key. If our comprehension were two have returned multiple key/value pairs with identical keys, the last one would have won.
+
+This option is very useful for transforming maps, since iterating over a map with an `Enum` function turns it into a list of 2-tuples, you always need to pipe the return value into `Enum.into/2` or `Map.new/1`.
+
+```elixir
+base_map = %{
+  "Mitch" => %{
+    name: "Reading",
+    type: :learning
+  },
+  "Greg" => %{
+    name: "Traveling",
+    type: :expensive
+  }
+}
+
+base_map
+|> Enum.map(fn {key, value} ->
+  {String.downcase(key), value}
+end)
+|> Map.new()
+# or |> Enum.into(%{})
+
+
+# %{
+#   "greg" => %{name: "Traveling", type: :expensive},
+#   "mitch" => %{name: "Reading", type: :learning}
+# }
+```
+
+#### BitString
+
+You can build strings and bitstrings with the `:into` option as well!
+
+This is useful when you want to build a string out of a list or map all in one pass. Let's take a look at an example of creating an "attribute string" for use with HTML.
+
+```elixir
+attributes = [
+  class: "font-bold text-red-500 underline",
+  id: "error-text",
+  data_controller: "error-controller"
+]
+
+# `into: <<>>` can also be `into: ""`
+for {property, value} <- attributes, into: <<>> do
+  property =
+    property
+    |> to_string()
+    |> String.replace("_", "-")
+
+  ~s| #{property}="#{value}"|
+end
+
+# " class=\"font-bold text-red-500 underline\" id=\"error-text\" data-controller=\"error-controller\""
+```
+
+### :reduce
