@@ -18,7 +18,7 @@ toc: true
 
 The `for` special form, also known as a list comprehension, is a construct designed for concise and powerful enumerable transformation in Elixir.
 
-It looks very similar to a "for loop" in other languages like JavaScript and C, but rather than being a language construct, it is an expression (like everything else in Elixir). This means that it evaluates to a value that can be bound to a variable.
+It looks very similar to a "for loop" in other languages like JavaScript and C, but rather than being a language construct, it is an expression (like everything else in Elixir). This means that it evaluates to a value that can be bound to a variable. You may have heard this before as "statement vs expression".
 
 ```elixir
 last_names = 
@@ -33,7 +33,7 @@ Before reading this rest of this article, I suggest you read the list comprehens
 
 The primary ingredient in a comprehension is the generator. The only other place you will see this "left arrow" syntax (`lhs <- rhs`) is in the `with` special form.
 
-The right hand side is the enumerable you want to loop over and the left hand side is the intermediate pattern you want to match on each iteration. This is a normal pattern, so you can pattern match like you would anywhere else.
+The right hand side is the enumerable you want to loop over and the left hand side is the intermediate pattern you want to match on during each iteration. This is a normal pattern, so you can pattern match like you would anywhere else.
 
 ```elixir
 friends = [
@@ -63,7 +63,7 @@ end
 # [{0, 0}, {0, 1}, {0, 2}, ...]
 ```
 
-The counter example using [`Enum.map/2`](TODO) is not nearly as readable and demonstrates that you need to remember to flatten the outer loop, or else you'll get a list of lists.
+The counter example using [`Enum.map/2`](https://hexdocs.pm/elixir/Enum.html#map/2) is not nearly as readable and demonstrates that you need to remember to flatten the outer loop, or else you'll get a list of lists.
 
 ```elixir
 Enum.flat_map(0..99, fn x ->
@@ -141,9 +141,9 @@ For.loop(bitstring)
 
 ### Chaining generators
 
-List comprehensions allow you to chain generators together by using a `lhs` value from a generator in the `rhs` of a subsequent generator.
+List comprehensions allow you to chain generators together by using the `lhs` value from a generator in the `rhs` of a subsequent generator.
 
-Here's an example of getting a list of all of your friends hobbies:
+Here's an example that demonstrates getting a list of all of your friends hobbies:
 
 ```elixir
 friends = [
@@ -161,7 +161,7 @@ end
 
 ### Generators filter non-matching lhs values
 
-If the match expression in the `lhs` of a generator does not match no the value yielded from the `rhs`, it will be rejected and the list comprehension will move on to the next element in the enumerable.
+If the match expression in the `lhs` of a generator does not match on the value yielded from the `rhs`, it will be rejected and the list comprehension will move on to the next element in the enumerable.
 
 This is slightly surprising behavior at first and should be kept in mind when using list comprehensions. The following example might lead to a bug in your program.
 
@@ -178,7 +178,7 @@ end
 # ["Joe"]
 ```
 
-If you were to have written this program using `Enum.map/2`, you would have run into a function clause error.
+If you were to have written this program using `Enum.map/2`, you would have ran into a function clause error.
 
 ```elixir
 friends = [
@@ -202,7 +202,7 @@ end)
 #    (elixir 1.13.3) lib/enum.ex:1593: Enum."-map/2-lists^map/1-0-"/2
 ```
 
-This behaviour can be useful! If you only wanted to enumerated configuration options that are enabled, you could write something like this:
+This behaviour can be useful! If you only wanted to iterate over configuration options that are enabled, you could write something like this:
 
 ```elixir
 configs = [
@@ -222,7 +222,7 @@ end
 
 Now that we've talked about _generator filtering_, let's talk about _Filters_.
 
-So for we have seen one type of "argument" that can be pass to the comprehension, the generator. Another "argument" is the filter! Let's look at a quick example.
+So for we have seen one type of "argument" that can be passed to the comprehension, the generator. Another "argument" is the filter! Let's look at a quick example.
 
 In this example, we iterate over a list of employees, filter based on the employees status, and return a list of the employee's names
 
@@ -278,9 +278,9 @@ end
 
 ```
 
-At this point we can recognize that the list comprehension has the characteristics of a function with [variadic arguments](TODO). If we were to write our own `for` using plain functions, we'd have to pass it a list of callbacks to evaluate and a final callback to do the mapping. While we aren't necessarily concerned with how we'd implement `for` as a plain function, it's important to recognize aspects that are "different" from "normal" constructs in language.
+At this point we can recognize that the list comprehension has the characteristics of a function with [variadic arguments](https://en.wikipedia.org/wiki/Variadic_function). If we were to write our own `for` using plain functions, we'd have to pass it a list of callbacks to evaluate and a final callback to do the mapping. While we aren't necessarily concerned with how we'd implement `for` as a plain function, it's important to recognize aspects that are "different" from "normal" constructs in the language.
 
-One of the great things about the list comprehension is that it allows you to operate on `Enumerable` data structures in fewer passes (usually 1) than by using the `Enum` module.
+One of the great things about the list comprehension is that it allows you to operate on `Enumerable` data structures in fewer passes (usually 1) than when using the `Enum` module.
 
 We can write our previous example using functions like so:
 
@@ -327,7 +327,7 @@ You can see benchmarks of all of these styles of "filter map" [here](https://git
 
 ## Options
 
-Now that we've covered the basic principals of the list comprehension, we can explore the various options that can be pass to augment it's behavior. The default behavior is to act more or less like `Enum.map/2` with regard to the return type.
+Now that we've covered the basic principles of the list comprehension, we can explore the various options that can be passed to augment it's behavior. The default behavior is to act more or less like `Enum.map/2` with regard to the return type.
 
 As of this writing, there are three options available: `:uniq`, `:into`, and `:reduce`
 
@@ -374,11 +374,11 @@ You can see benchmarks of all of these styles of "map uniq" [here](https://githu
 
 The default behavior for a list comprehension behaves more or less like a "map" operation, meaning that the expression evaluates to a list.
 
-The `:into` option allows you to instead push the value returned by each iteration into a _collectable_. A data structure is collectable if it implements the [Collectable](TODO) protocol.
+The `:into` option allows you to instead push the value returned by each iteration into a _collectable_. A data structure is collectable if it implements the [Collectable](https://hexdocs.pm/elixir/Collectable.html) protocol.
 
-If you aren't familiar with protocols, you have already been using them! The `Enum` module is a set of functions that operate on data structures that implement the [Enumerable](TODO) protocol. The builtin data structures that implement the `Enumerable` protocol are the `List` and `Map` types.
+If you aren't familiar with protocols, you have already been using them! The `Enum` module is a set of functions that operate on data structures that implement the [Enumerable](https://hexdocs.pm/elixir/Enumerable.html) protocol. The builtin data structures that implement the `Enumerable` protocol are the `List`, `Range`, and `Map` types.
 
-The builtin data structures that implement the `Collectable` protocol are `List`, `Map`, and `BitString`. The `Enum` function that you would use to take advantage of this protocol is [Enum.into/2](TODO).
+The builtin data structures that implement the `Collectable` protocol are `List`, `Map`, and `BitString`. The `Enum` function that you would use to take advantage of this protocol is [Enum.into/2](https://hexdocs.pm/elixir/Enum.html#into/3).
 
 Let's take a look at some examples.
 
@@ -478,7 +478,7 @@ end
 Here we can observe three things.
 
 - The comprehension evaluates to a map.
-- The `"Mitch"` key and its was preserved in the final output.
+- The `"Mitch"` key and its value were preserved in the final output.
 - The `"Greg"` key's value in the `base_map` was overwritten by the value yielded during the comprehension with the same key. If our comprehension were two have returned multiple key/value pairs with identical keys, the last one would have won.
 
 This option is very useful for transforming maps, since iterating over a map with an `Enum` function turns it into a list of 2-tuples, you always need to pipe the return value into `Enum.into/2` or `Map.new/1`.
@@ -509,11 +509,11 @@ end)
 # }
 ```
 
-#### BitString
+#### Strings and BitStrings
 
 You can build strings and bitstrings with the `:into` option as well!
 
-This is useful when you want to build a string out of a list or map all in one pass. Let's take a look at an example of creating an "attribute string" for use with HTML.
+This is useful when you want to build a string or a binary out of a list or map all in one pass. Let's take a look at an example of creating an "attribute string" for use with HTML.
 
 ```elixir
 attributes = [
@@ -522,8 +522,7 @@ attributes = [
   data_controller: "error-controller"
 ]
 
-# `into: <<>>` can also be `into: ""`
-for {property, value} <- attributes, into: <<>> do
+for {property, value} <- attributes, into: "" do
   property =
     property
     |> to_string()
@@ -536,3 +535,114 @@ end
 ```
 
 ### :reduce
+
+My favorite option to the comprehension is `:reduce`!
+
+Reduce allows us to change the comprehension from behaving like a "map" operation to a "reduce" operation. This means that it will loop over an enumerable, but collect an "accumulator" instead.
+
+Let's take a look at the first example in the `Enum.reduce/3` documentation and then convert it to a comprehension. This example produces the sum of a list of integers.
+
+```elixir
+Enum.reduce([1, 2, 3], 0, fn x, acc ->
+  x + acc
+end)
+
+# 6
+```
+
+We can express this as a comprehension like so:
+
+```elixir
+for x <- [1, 2, 3], reduce: 0 do
+  acc ->
+    x + acc
+end
+
+# 6
+```
+
+There are two immediate things we can observe.
+
+First, the `:reduce` option takes a value that is to be used as the first value of the accumulator.
+
+Second, the comprehension in this mode includes a slightly different syntax. Here the inside of the block includes the "arg(s) and right arrow" syntax that you see in anonymous functions and case expressions. This is the syntax that allows the comprehensions to yield the accumulator to the block on every iteration.
+
+The additional syntax is the same as the other places you have probably seen it, you can pattern match and pass additional clauses!
+
+```elixir
+directions = [
+  left: 2,
+  up: 1,
+  down: 5,
+  right: 6
+]
+
+# You can't move below or to the left of 0.
+starting_position = {0, 0}
+
+for {dir, movement} <- directions, reduce: starting_position  do
+  {x, y} when dir == :left and x - movement > 0 ->
+    {x - movement, y}
+
+  {x, y} when dir == :down and y - movement > 0 ->
+    {x, y - movement}
+
+  {x, y} when dir == :up ->
+    {x, y + movement}
+
+  {x, y} when dir == :right ->
+    {x + movement, y}
+
+  position ->
+    IO.puts("Not possible to move #{dir} by #{movement} when you care located at #{inspect(position)}")
+
+    position
+end
+
+# {6, 1}
+```
+
+Above we can observe that we've written 5 different clauses, pattern match on the shape of the data, as well as add guard clauses that capture the data in the generator as well as the accumulator.
+
+The beauty of using a comprehension as a reducer is the ability to use multiple generators and act on them as if they are one level of iteration.
+
+```elixir
+friends = [
+  %{name: "Derek", hobbies: ["Movies", "Hot Sauce"]},
+  %{name: "Joe", hobbies: ["Yu-Gi-Oh!", "Tattoos"]},
+  %{name: "Andres", hobbies: ["Photoshop", "Oreos", "Cereal"]},
+]
+
+for %{hobbies: hobbies, name: name} <- friends, hobby <- hobbies, reduce: [] do
+  tagged_hobbies ->
+    [{name, hobby} | tagged_hobbies]
+end
+
+# [
+#   {"Andres", "Cereal"},
+#   {"Andres", "Oreos"},
+#   {"Andres", "Photoshop"},
+#   {"Joe", "Tattoos"},
+#   {"Joe", "Yu-Gi-Oh!"},
+#   {"Derek", "Hot Sauce"},
+#   {"Derek", "Movies"}
+# ]
+```
+
+To write this without a comprehension it would look something like:
+
+```elixir
+Enum.reduce(friends, [], fn %{name: name, hobbies: hobbies}, tagged_hobbies ->
+  new_hobbies = Enum.map(hobbies, fn hobby -> {name, hobby} end)
+
+  new_hobbies ++ tagged_hobbies
+end)
+```
+
+## Conclusion
+
+If you've made it this far, congrats! The comprehension packs a lot of features into a tiny programming construct and demonstrating all of them is a lot of work!
+
+The comprehension is one of my favorite features of the Elixir programming language and it was a pleasure to write about every feature in as much depth as I could.
+
+If you have any questions about comprehensions or want to suggest examples or features that I've missed, feel free to reach out on [Twitter](https://twitter.com/mitchhanberg) or [email](mailto:contact@mitchellhanberg.com).
