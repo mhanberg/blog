@@ -479,7 +479,7 @@ Here we can observe three things.
 
 - The comprehension evaluates to a map.
 - The `"Mitch"` key and its value were preserved in the final output.
-- The `"Greg"` key's value in the `base_map` was overwritten by the value yielded during the comprehension with the same key. If our comprehension were two have returned multiple key/value pairs with identical keys, the last one would have won.
+- The `"Greg"` key's value in the `base_map` was overwritten by the value yielded during the comprehension with the same key. If our comprehension were to have returned multiple key/value pairs with identical keys, the last one would have won.
 
 This option is very useful for transforming maps, since iterating over a map with an `Enum` function turns it into a list of 2-tuples, you always need to pipe the return value into `Enum.into/2` or `Map.new/1`.
 
