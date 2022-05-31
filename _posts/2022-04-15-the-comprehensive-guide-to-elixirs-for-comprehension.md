@@ -156,7 +156,7 @@ for %{hobbies: hobbies} <- friends, hobby <- hobbies do
   hobby
 end
 
-# ["Movies", "Hot Sauce", "YuGiOh", "Tattoos", "Photoshop", "Oreos", "Cereal"]
+# ["Movies", "Hot Sauce", "Yu-Gi-Oh!", "Tattoos", "Photoshop", "Oreos", "Cereal"]
 ```
 
 ### Generators filter non-matching lhs values
@@ -222,7 +222,7 @@ end
 
 Now that we've talked about _generator filtering_, let's talk about _Filters_.
 
-So for we have seen one type of "argument" that can be passed to the comprehension, the generator. Another "argument" is the filter! Let's look at a quick example.
+So far we have seen one type of "argument" that can be passed to the comprehension, the generator. Another "argument" is the filter! Let's look at a quick example.
 
 In this example, we iterate over a list of employees, filter based on the employees status, and return a list of the employee's names
 
@@ -484,6 +484,27 @@ Here we can observe three things.
 This option is very useful for transforming maps, since iterating over a map with an `Enum` function turns it into a list of 2-tuples, you always need to pipe the return value into `Enum.into/2` or `Map.new/1`.
 
 ```elixir
+employees = [
+  %{
+    name: "Eric",
+    status: :active,
+    hobbies: [%{name: "Text Adventures", type: :gaming}, %{name: "Chickens", type: :animals}]
+  },
+  %{
+    name: "Mitch",
+    status: :former,
+    hobbies: [%{name: "Woodworking", type: :making}, %{name: "Homebrewing", type: :making}]
+  },
+  %{
+    name: "Greg",
+    status: :active,
+    hobbies: [
+      %{name: "Dungeons & Dragons", type: :gaming},
+      %{name: "Woodworking", type: :making}
+    ]
+  }
+]
+
 base_map = %{
   "Mitch" => %{
     name: "Reading",
@@ -495,17 +516,21 @@ base_map = %{
   }
 }
 
-base_map
-|> Enum.map(fn {key, value} ->
-  {String.downcase(key), value}
+employees
+|> Enum.filter(fn employee -> employee.status == :active end)
+|> Enum.flat_map(fn employee ->
+  employee.hobbies
+  |> Enum.filter(fn hobby -> hobby.type == :gaming end)
+  |> Enum.map(fn hobby ->
+    {employee.name, hobby}
+  end)
 end)
-|> Map.new()
-# or |> Enum.into(%{})
-
+|> Enum.into(base_map)
 
 # %{
-#   "greg" => %{name: "Traveling", type: :expensive},
-#   "mitch" => %{name: "Reading", type: :learning}
+#   "Eric" => %{name: "Text Adventures", type: :gaming},
+#   "Greg" => %{name: "Dungeons & Dragons", type: :gaming},
+#   "Mitch" => %{name: "Reading", type: :learning}
 # }
 ```
 
