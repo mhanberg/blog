@@ -161,7 +161,7 @@ end
 
 ### Generators filter non-matching lhs values
 
-If the match expression in the `lhs` of a generator does not match on the value yielded from the `rhs`, it will be rejected and the list comprehension will move on to the next element in the enumerable.
+If the match expression in the `lhs` of a generator does not match on the value yielded from the `rhs`, it will be rejected, and the list comprehension will move on to the next element in the enumerable.
 
 This is slightly surprising behavior at first and should be kept in mind when using list comprehensions. The following example might lead to a bug in your program.
 
@@ -481,7 +481,7 @@ Here we can observe three things.
 - The `"Mitch"` key and its value were preserved in the final output.
 - The `"Greg"` key's value in the `base_map` was overwritten by the value yielded during the comprehension with the same key. If our comprehension were to have returned multiple key/value pairs with identical keys, the last one would have won.
 
-This option is very useful for transforming maps, since iterating over a map with an `Enum` function turns it into a list of 2-tuples, you always need to pipe the return value into `Enum.into/2` or `Map.new/1`.
+This option is very useful for transforming maps. Since iterating over a map with an `Enum` function turns it into a list of 2-tuples, you always need to pipe the return value into `Enum.into/2` or `Map.new/1`.
 
 ```elixir
 employees = [
@@ -592,7 +592,7 @@ First, the `:reduce` option takes a value that is to be used as the first value 
 
 Second, the comprehension in this mode includes a slightly different syntax. Here the inside of the block includes the "arg(s) and right arrow" syntax that you see in anonymous functions and case expressions. This is the syntax that allows the comprehensions to yield the accumulator to the block on every iteration.
 
-The additional syntax is the same as the other places you have probably seen it, you can pattern match and pass additional clauses!
+The additional syntax is the same as the other places you have probably seen it; you can pattern match and pass additional clauses!
 
 ```elixir
 directions = [
@@ -627,7 +627,7 @@ end
 # {6, 1}
 ```
 
-Above we can observe that we've written 5 different clauses, pattern match on the shape of the data, as well as add guard clauses that capture the data in the generator as well as the accumulator.
+Above we can observe that we've written 5 different clauses, pattern matched on the shape of the data, as well as added guard clauses that capture the data in the generator and the accumulator.
 
 The beauty of using a comprehension as a reducer is the ability to use multiple generators and act on them as if they are one level of iteration.
 
@@ -668,6 +668,6 @@ end)
 
 If you've made it this far, congrats! The comprehension packs a lot of features into a tiny programming construct and demonstrating all of them is a lot of work!
 
-The comprehension is one of my favorite features of the Elixir programming language and it was a pleasure to write about every feature in as much depth as I could.
+The comprehension is one of my favorite features of the Elixir programming language, and it was a pleasure to write about every feature in as much depth as I could.
 
 If you have any questions about comprehensions or want to suggest examples or features that I've missed, feel free to reach out on [Twitter](https://twitter.com/mitchhanberg) or [email](mailto:contact@mitchellhanberg.com).
