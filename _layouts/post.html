@@ -29,9 +29,16 @@ layout: default
     <article class="post my-4 mx-auto">
   {% endif %}
     {{ content }}
+
     </article>
     <div class="max-w-2xl mx-auto mt-16">
       <hr>
+
+      {% if page.reviewers %}
+      <p class="italic mb-8">
+        Thank you to {{ page.reviewers | array_to_sentence_string }} for their help reviewing this article.
+      </p>
+      {% endif %}
 
       <div class="bg-evergreen-800 p-4 rounded mb-4">
         <p>If you want to stay current with what I'm working on and articles I write, join my mailing list!</p>
