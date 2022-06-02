@@ -1,3 +1,16 @@
+- name: Temple
+  role: Author
+  link: https://github.com/mhanberg/temple
+  description: |
+    Temple is an HTML DSL for Elixir and Phoenix and my first original contribution to the Elixir community.
+
+    Inspired by the [Lucky web framework](https://luckyframework.org/guides/frontend/rendering-html#creating-a-page) templating language, Temple allows you to effortlessly author HTML without leaving the comfortable embrace of Elixir.
+
+    I learned a _lot_ about macros and metaprogramming while building Temple and found a lot of great resources along the way, including&#58;
+
+    * [Metaprogramming Elixir](https://amzn.to/2CVV7lr) by [Chris McCord](https://twitter.com/chris_mccord).
+    * [Understanding Elixir Macros](https://www.theerlangelist.com/article/macros_1) blog series by [Saša Jurić](https://twitter.com/sasajuric)
+
 - name: Wallaby
   role: Maintainer
   link: https://github.com/elixir-wallaby/wallaby
@@ -12,43 +25,10 @@
 
     Thank you Keathley!
 
-- name: Temple
-  role: Creator
-  link: https://github.com/mhanberg/temple
+- name: elixir.nvim
+  role: Author
+  link: https://github.com/mhanberg/elixir.nvim
   description: |
-    Temple is an HTML DSL for Elixir and Phoenix and my first original contribution to the Elixir community.
+    elixir.nvim is an Elixir plugin for Neovim.
 
-    Inspired by the [Lucky web framework](https://luckyframework.org/guides/frontend/rendering-html#creating-a-page) templating language, Temple allows you to effortlessly author HTML without leaving the comfortable embrace of Elixir.
-
-    I learned a _lot_ about macros and metaprogramming while building Temple and found a lot of great resources along the way, including&#58;
-
-    * [Metaprogramming Elixir](https://amzn.to/2CVV7lr) by [Chris McCord](https://twitter.com/chris_mccord).
-    * [Understanding Elixir Macros](https://www.theerlangelist.com/article/macros_1) blog series by [Saša Jurić](https://twitter.com/sasajuric)
-
-- name: PlanetEx
-  role: Creator
-  link: https://github.com/sep/planet_ex
-  description: |
-    PlanetEx was my first side project that I finished and deployed. (And is still running today!)
-
-    [SEP](https://sep.com) had an employee blog aggregator called Planet that would gather feeds from our company blog, our SharePoint blogs, and SEPers personal blogs.
-
-    One day our IT did a routine upgrade of our SharePoint system and our little Planet had reached the end of it's days. The source code was so old that no one who built it was still around, so I sprung at the opportunity to flex my new Elixir skills.
-
-    You can read more about PlanetEx [here](https://www.sep.com/sep-blog/2018/10/01/announcing-planetex-an-open-source-blog-aggregator-written-in-elixir/) and [here](https://www.sep.com/sep-blog/2018/08/18/how-to-subscribe-to-sharepoint-rss-feeds-without-ntlm-authentication/).
-
-- name: jekyll-postcss
-  role: Creator
-  link: https://github.com/mhanberg/jekyll-postcss
-  description: |
-    I love to use [Jekyll](https://jekyllrb.org) to build static sites, but it's a PITA to use newer JS and CSS tooling since those tools are centered around the Node.js ecosystem.
-
-    jekyll-postcss is a plugin for running your CSS through [PostCSS](https://postcss.org) without sacrificing the the developer experience that you get with Jekyll.
-
-- name: jekyll-tailwind-starter
-  role: Creator
-  link: https://github.com/mhanberg/jekyll-tailwind-starter
-  description: |
-    I wrote jekyll-postcss primarily so I could use [TailwindCSS](https://tailwindcss.com) conveniently.
-
-    This template bundles together Jekyll, TailwindCSS, [Autoprefixer](https://autoprefixer.github.io/), and [PurgeCSS](https://www.purgecss.com).
+    The goal of the project is to make it as easy as possible to get started writing Elixir with the full power of the language server, treesitter, and any other useful commands and functions.

@@ -54,7 +54,7 @@ img {
 }
 
 a {
-  @apply text-evergreen-500 font-semibold underline cursor-pointer;
+  @apply text-evergreen-500 underline cursor-pointer;
 }
 
 button {
@@ -261,6 +261,22 @@ td ~ td {
 
 td {
   @apply pl-2;
+}
+
+#markdown-toc {
+  @apply bg-evergreen-800 p-2 rounded list-none;
+}
+
+#markdown-toc a {
+  @apply text-evergreen-400;
+}
+
+#markdown-toc ul {
+  @apply m-0;
+}
+
+#markdown-toc li {
+  @apply ml-4;
 }
 
 .ais-Hits-list {

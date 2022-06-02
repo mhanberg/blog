@@ -13,10 +13,14 @@ title: Projects
   {% for project in site.data.projects %}
     <div class="mt-8">
       <div class="flex justify-between">
-        <a class="text-xl text-white no-underline" href="{{ project.link }}" target="_blank">
+        <h2 class="text-xl text-white no-underline">
           {{ project.name }}
-        </a>
+        </h2>
         <span class="text-sm italic">{{ project.role }}</span>
+      </div>
+
+      <div class="mt-2 text-base">
+        Homepage: <a class="font-normal" target="_blank" href="{{project.link}}">{{project.link}}</a>
       </div>
 
 
