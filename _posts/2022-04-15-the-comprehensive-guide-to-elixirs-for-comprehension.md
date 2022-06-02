@@ -416,9 +416,9 @@ The default behavior for a list comprehension behaves more or less like a "map" 
 
 The `:into` option allows you to instead push the value returned by each iteration into a _collectable_. A data structure is collectable if it implements the [Collectable](https://hexdocs.pm/elixir/Collectable.html) protocol.
 
-If you aren't familiar with protocols, you have already been using them! The `Enum` module is a set of functions that operate on data structures that implement the [Enumerable](https://hexdocs.pm/elixir/Enumerable.html) protocol. The builtin data structures that implement the `Enumerable` protocol are the `List`, `Range`, and `Map` types.
+If you aren't familiar with protocols, you have already been using them! The `Enum` module is a set of functions that operate on data structures that implement the [Enumerable](https://hexdocs.pm/elixir/Enumerable.html) protocol. The builtin data structures that implement the `Enumerable` protocol are the `List`, `Range`, `Map`, and `MapSet` types.
 
-The builtin data structures that implement the `Collectable` protocol are `List`, `Map`, and `BitString`. The `Enum` function that you would use to take advantage of this protocol is [Enum.into/2](https://hexdocs.pm/elixir/Enum.html#into/3).
+The builtin data structures that implement the `Collectable` protocol are `List`, `Map`, `MapSet`, and `BitString`. The `Enum` function that you would use to take advantage of this protocol is [Enum.into/2](https://hexdocs.pm/elixir/Enum.html#into/3).
 
 Let's take a look at some examples.
 
