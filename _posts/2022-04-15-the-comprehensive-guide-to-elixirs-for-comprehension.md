@@ -105,6 +105,8 @@ end
 
 The generators we've seen so far have been "list generators". The other type of generator is the "bitstring generator". The bitstring generator allows you to easily loop over a bitstring while correctly parsing bytes.
 
+For a primer on bitstrings, please see the fantastic guide on [elixir-lang.org](https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings).
+
 This is often very useful when parsing binary protocols like database protocols. Below is an example that demonstrates that each iteration of the comprehension reads the message length and then uses it to know how much more of the bitstring to read next. While the previous examples could be translated into various form of `Enum.map/2`, this example can only be achieved with normal recursion.
 
 ```elixir
@@ -115,7 +117,7 @@ bitstring = <<1, "I", 6, "really", 4, "love", 4, "list", 14, "comprehensions", 1
 #  115, 1, 33>>
 
 for <<message_length::integer, message::binary-size(message_length) <- bitstring>> do
- message
+  message
 end
 
 # ["I", "really", "love", "list", "comprehensions", "!"]
@@ -137,6 +139,40 @@ bitstring = <<1, "I", 6, "really", 4, "love", 4, "list", 14, "comprehensions", 1
 For.loop(bitstring)
 
 # ["I", "really", "love", "list", "comprehensions", "!"]
+```
+
+To compare the two styles, let's look at the syntax of the generator in the comprehension example and the second function head of `loop` in the function example.
+
+In the function example, you'll see that we pattern match on the bitstring in a similar manner to who you pattern match on a list. We pull several individual items off the beginning of the bitstring (`message_length::integer, message::binary-size(message_length)`) and we pattern match on the "rest" of the bitstring with `rest::binary`.
+
+The list equivalent looks like:
+
+```elixir
+defmodule For do
+  def loop([]), do: []
+
+  def loop([_length, message | rest]) do
+    [message | loop(rest)]
+  end
+end
+
+list = [1, "I", 6, "really", 4, "love", 4, "list", 14, "comprehensions", 1, "!"]
+
+For.loop(list)
+
+# ["I", "really", "love", "list", "comprehensions", "!"]
+```
+
+Now if we compare this to the bitstring generator, we can see the similarity (_**with a caveat**_). The `lhs` of the bitstring generator is the pattern match on the individual items and the `rhs` is pattern matching on the "rest". The caveat is that `bitstring` here is not actually the "rest" on each iteration, it is still the entire bitstring. I find this the best analogy to describe how the bitstring generator works since it is different enough from the "normal" list generator.
+
+```elixir
+#   👇 individual item         👇 individual item                      👇rest
+for <<message_length::integer, message::binary-size(message_length) <- bitstring>> do
+  # 👇 this will print the same thing every time
+  IO.inspect(bitstring)
+
+  message
+end
 ```
 
 ### Chaining generators
@@ -671,3 +707,21 @@ If you've made it this far, congrats! The comprehension packs a lot of features 
 The comprehension is one of my favorite features of the Elixir programming language, and it was a pleasure to write about every feature in as much depth as I could.
 
 If you have any questions about comprehensions or want to suggest examples or features that I've missed, feel free to reach out on [Twitter](https://twitter.com/mitchhanberg) or [email](mailto:contact@mitchellhanberg.com).
+
+## Supplementary Information
+
+### List Comprehensions in Erlang
+
+It would be remiss to not mention that the list comprehension also exists in Erlang. I am not personally familiar with them, so I won't explain them very much, but I think I'll provide an example and a link to learn more about them on your own.
+
+The following examples are from the official Erlang/OTP documentation and can be found [here](https://erlang.org/doc/programming_examples/list_comprehensions.html).
+
+```erlang
+[X || X <- [1, 2, a, 3, 4, b, 5, 6], is_integer(X), X > 3].
+
+% [4, 5, 6]
+
+[{X, Y} || X <- [1, 2, 3],  Y <- [a, b]].
+
+% [{1, a}, {1, b}, {2, a}, {2, b}, {3, a}, {3, b}]
+```
