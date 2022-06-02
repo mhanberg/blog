@@ -712,7 +712,7 @@ If you have any questions about comprehensions or want to suggest examples or fe
 
 ### List Comprehensions in Erlang
 
-It would be remiss to not mention that the list comprehension also exists in Erlang. I am not personally familiar with them, so I won't explain them very much, but I think I'll provide an example and a link to learn more about them on your own.
+It would be remiss to not mention that the list comprehension also exists in Erlang. I am not personally familiar with them, so I won't explain them very much, but I I'll provide an example and a link to learn more about them on your own.
 
 The following examples are from the official Erlang/OTP documentation and can be found [here](https://erlang.org/doc/programming_examples/list_comprehensions.html).
 
