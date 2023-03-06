@@ -10,6 +10,8 @@ permalink: /:title/
 
 `lazyasdf` is my first real shot at making TUIs with [Elixir](https://elixir-lang.org)!
 
+> TUI: Terminal User Interface
+
 I recently fell in love with [lazygit](https://github.com/jesseduffield/lazygit) and have since dreamed of writing my own TUI programs, but in Elixir. The TUI provides a quick and intuitive interface for those familiar with the terminal and for those who prefer a graphical application, but the TUI is so much more approachable in my humble opinion when it comes to making your own 😄.
 
 While I find `lazyasdf` to be an amazing achievement for myself, it isn't _super_ interesting on its own. Let's dive into the specifics of how I was able to build and distribute a TUI application with Elixir.
@@ -18,9 +20,9 @@ While I find `lazyasdf` to be an amazing achievement for myself, it isn't _super
 
 None of this would be possible if it weren't for the library [ratatouille](https://github.com/ndreynolds/ratatouille) by [Nick Reynolds](https://ndreynolds.com/).
 
-I am not some genius when it comes to terminals or laying out text, this all comes from Ratatouille, which builds off of [termbox](TODO), which is a [n]curses alternative.
+I am not some genius when it comes to terminals or laying out text, this all comes from Ratatouille, which builds off of [termbox](https://github.com/nsf/termbox), which is a [n]curses alternative.
 
-Ratatouille leverages the familiar [Elm Architecture](TODO) of which many of us have grown familiar. Let's take a look at a small Ratatouille program that showcases most of it's features.
+Ratatouille leverages the familiar [Elm Architecture](https://guide.elm-lang.org/architecture/) of which many of us have grown familiar. Let's take a look at a small Ratatouille program that showcases most of its features.
 
 ![Tuido](https://res.cloudinary.com/mhanberg/image/upload/v1678037282/CleanShot_2023-03-05_at_12.27.43_2x.png){:standalone .space-y-2}
 
@@ -109,11 +111,11 @@ You should be able to copy the above snippet into a file, make it executable (`c
 
 Ratatouille calls for 3 callbacks in your TUI program, `init/1`, `update/2`, and `render/1`.
 
-- When you program boots up, the `init/1` callback is called and the return value becomes your initial model state.
+- When the program boots up, the `init/1` callback is called and the return value becomes your initial model state.
 
-- Whenever your TUI receives user input, the `update/2` callback is executed with the message and your current model state.
+- Whenever the TUI receives user input, the `update/2` callback is executed with the message and your current model state.
 
-- When that returns, the runtime will call your `render/1` callback with the new model state.
+- When that returns, the runtime will call the `render/1` callback with the new model state.
 
   The `render/1` callback is full of macros which translate to element structs, so it's just an ergonomic DSL. Typing out many structs by hand would be a PITA!
 
