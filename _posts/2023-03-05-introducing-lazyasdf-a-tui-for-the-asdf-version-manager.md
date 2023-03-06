@@ -8,11 +8,13 @@ permalink: /:title/
 
 ![lazyasdf](https://res.cloudinary.com/mhanberg/image/upload/v1678034860/CleanShot_2023-03-04_at_14.44.18_2x.png){:standalone .space-y-2}
 
-`lazyasdf` is my first real* attempt at making TUIs with [Elixir](https://elixir-lang.org)!
+[lazyasdf](https://github.com/mhanberg/lazyasdf) is my first real* attempt at making a TUI with [Elixir](https://elixir-lang.org)! 
 
-> TUI: Terminal User Interface
+[asdf](https://asdf-vm.com/) is normally used through a _command line interface_ (CLI), `lazyasdf` presents you with a _terminal user interface_ (TUI) for working with `asdf`.
 
-I recently fell in love with [lazygit](https://github.com/jesseduffield/lazygit) and have since dreamed of writing my own TUI programs, but in Elixir. The TUI provides a quick and intuitive interface for those familiar with the terminal and for those who prefer a graphical application, but the TUI is so much more approachable in my humble opinion when it comes to making your own 😄.
+I recently fell in love with [lazygit](https://github.com/jesseduffield/lazygit) and have since dreamed of writing my own TUI programs, but with Elixir.
+
+The TUI provides a quick and intuitive interface for those familiar with the terminal and for those who prefer a graphical application, but the TUI is so much more approachable in my humble opinion when it comes to making your own 😄.
 
 While I find `lazyasdf` to be an amazing achievement for myself, it isn't _super_ interesting on its own. Let's dive into the specifics of how I was able to build and distribute a TUI application with Elixir.
 
@@ -22,7 +24,7 @@ None of this would be possible if it weren't for the library [ratatouille](https
 
 I am not some genius when it comes to terminals or laying out text, this all comes from Ratatouille, which builds off of [termbox](https://github.com/nsf/termbox), which is a [n]curses alternative.
 
-Ratatouille leverages the familiar [Elm Architecture](https://guide.elm-lang.org/architecture/) of which many of us have grown familiar. Let's take a look at a small Ratatouille program that showcases most of its features.
+Ratatouille leverages the [Elm Architecture](https://guide.elm-lang.org/architecture/) of which many of us have grown familiar. Let's take a look at a small Ratatouille program that showcases most of its features.
 
 ![Tuido](https://res.cloudinary.com/mhanberg/image/upload/v1678037282/CleanShot_2023-03-05_at_12.27.43_2x.png){:standalone .space-y-2}
 
