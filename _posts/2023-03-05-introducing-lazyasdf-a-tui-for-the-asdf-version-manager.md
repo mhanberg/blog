@@ -8,7 +8,7 @@ permalink: /:title/
 
 ![lazyasdf](https://res.cloudinary.com/mhanberg/image/upload/v1678034860/CleanShot_2023-03-04_at_14.44.18_2x.png){:standalone .space-y-2}
 
-`lazyasdf` is my first real shot at making TUIs with [Elixir](https://elixir-lang.org)!
+`lazyasdf` is my first real* attempt at making TUIs with [Elixir](https://elixir-lang.org)!
 
 > TUI: Terminal User Interface
 
@@ -264,3 +264,7 @@ As time allows, I hope to:
 - Create a higher level toolkit for building TUIs with Ratatouille, including menus, inputs, dialogs, etc.
 
 Thanks for reading!
+
+---
+
+\* Previously, I have made a [fzf](https://github.com/junegunn/fzf) clone using Ratatouille. You can find it in my [dotfiles](https://github.com/mhanberg/.dotfiles/blob/ab07f27041780d1b54704ad4799382f58548468e/bin/fxf).
