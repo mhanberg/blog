@@ -8,7 +8,7 @@ permalink: /:title/
 
 Last year I started working on [gen_lsp](https://github.com/mhanberg/gen_lsp), an abstraction for writing [language servers](https://microsoft.github.io/language-server-protocol/) in Elixir.
 
-> I gave a presentation on gen_lsp and writing OTP process abstractions at CodeBEAM America 2022. You can watch my talk here: (TODO: put link here when they post it on youtube)
+> I gave a presentation on gen_lsp and writing OTP process abstractions at CodeBEAM America 2022. You can watch my talk on [YouTube](https://www.youtube.com/watch?v=Ug-SEozyG1A).
 
 Today I'd like to announce the release of the first language server built with `gen_lsp`.
 
