@@ -4,19 +4,25 @@ title: Uses
 ---
 
 <section class="max-w-2xl m-auto">
-  <h1>Uses</h1> 
+  <h1>Uses</h1>
 
-  <p> No one ever asks me what font or syntax theme I use, but nevertheless here we are. </p>
+  <p>
+    No one ever asks me what font or syntax theme I use, but nevertheless here
+    we are.
+  </p>
 
   {% for category in site.data.uses %}
   <h2>{{ category.name }}</h2>
   <ul class="px-1">
-  {% for entry in category.entries %}
+    {% for entry in category.entries %}
     <li class="list-none">
-    {% if entry.description %}
+      {% if entry.description %}
       <details>
         <summary>
-          <span id="{{ entry.name | slugify }}"class="text-white font-semibold">
+          <span
+            id="{{ entry.name | slugify }}"
+            class="text-white font-semibold"
+          >
             <a href="{{entry.link}}" target="_blank">{{ entry.name }}</a>
           </span>
         </summary>
@@ -26,15 +32,15 @@ title: Uses
           </div>
         </div>
       </details>
-    {% else %}
+      {% else %}
       <div class="pl-5">
-        <span id="{{ entry.name | slugify }}"class="text-white font-semibold">
+        <span id="{{ entry.name | slugify }}" class="text-white font-semibold">
           <a href="{{entry.link}}" target="_blank">{{ entry.name }}</a>
         </span>
       </div>
-    {% endif %}
+      {% endif %}
     </li>
-  {% endfor %}
+    {% endfor %}
   </ul>
   {% endfor %}
 </section>

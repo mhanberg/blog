@@ -1,54 +1,31 @@
 - name: Development
   entries:
-    - name: NeoVim
+    - name: .dotfiles
+      link: https://github.com/mhanberg/.dotfiles
+
+    - name: Neovim
       link: https://neovim.io
-      description: |
-        I started using Vim full time since the beginning of 2018 and I can't imagine my life without it. Vim is a gateway drug to the life of optimizing for productivity (even if it costs you some productivity up front!).
 
-        The primary reason why I love Vim is the keyboard focused design. It keeps my hands and arms in relatively the same position as I work, as I rarely need to reach for the mouse. It's not that the mouse is a bad input device, but the travel distance between the mouse and home row on your keyboard starts to become a problem the faster you work. You can cut down on this by getting a [tenkeyless](https://keyboardwhiz.com/tenkeyless/) or [60%](https://keyboardwhiz.com/60-percent/), but it can't beat not moving your hands at all!
-
-        **Plugins**
-
-        I use [packer.nvim](https://github.com/wbthomason/packer.nvim) to manage my plugins; you can see all of the plugins I in my [dotfiles](https://github.com/mhanberg/.dotfiles/blob/0f1c4f83012c0e6ec73691e01d5b2c909f272024/config/nvim/lua/motch/plugins.lua).
-    
-    - name: Thicc Forest
-      link: https://github.com/mhanberg/.dotfiles/blob/main/config/nvim/lua/lush_theme/thicc_forest.lua
-      description: |
-        I like the subtle dark theme with hints of green. I use this in NeoVim, Alacritty, and Alfred.
-        
-        This is a fork of [Everforest](https://github.com/sainnhe/everforest)
+    - name: everforest
+      link: https://github.com/sainnhe/everforest
 
     - name: JetBrains Mono font
       link: https://www.jetbrains.com/lp/mono/
-      description: |
-        I switched fonts every so often, and this is my current choice. I also use the patched nerd font version to get the fancy icons.
 
-    - name: Alacritty
-      link: https://github.com/alacritty/alacritty
-      description: |
-        I switched to Alacritty because I thought iTerm2 was causing my computer to crash (I think I have since concluded that it is a macOS bug).
-
-        I've kept using it, as it is super lightweight and is meant to be used with tmux.
+    - name: Kitty
+      link: https://sw.kovidgoyal.net/kitty/
 
     - name: Postico
       link: https://eggerapps.at/postico/
-      description: |
-        Postico is a minimal Postgres GUI client and is an example of an amazing macOS application, amazing performance and has just the functionality that I need.
 
     - name: Firefox Developer Edition
       link: https://www.mozilla.org/en-US/firefox/developer/
 
-    - name: Sublime Merge
-      link: https://www.sublimemerge.com/
-      description: |
-        This is the best Git GUI application that I have ever used. 
-
-        The features that I enjoy the most is the three way merge, staging/unstaging individual lines of code, and the ability to search just about anything in the repository.
+    - name: lazygit
+      link: https://github.com/jesseduffield/lazygit
 
     - name: Dash
       link: https://kapeli.com/dash
-      description: |
-        Dash is an offline documentation repository with full text search. Combined with the Alfred Dash workflow, this is a must have application for anyone writing software on a Mac.
 
     - name: Sketch
       link: https://www.sketch.com/
@@ -58,27 +35,15 @@
 
     - name: zsh
       link: https://www.zsh.org/
-      description: |
-        zsh is pretty much an improved version of Bash. It is worth using because of the community that has been built up around it (see [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)) and the number of plugins available.
-
-        It's even the default shell on macOS now!
 
     - name: zplug
       link: https://github.com/zplug/zplug
-      description: |
-        zplug is a plugin manager for zsh that is inspired by vim-plug. I recently switched from ohmyzsh to zplug to get a better handle on my configuration and make it easier to install plugins.
 
     - name: tmux
       link: https://github.com/tmux/tmux#welcome-to-tmux
-      description: |
-        tmux is primarily what I use to manage terminal splits and windows. It follows the Vim philosophy of keyboard shortcuts and extensibility, so they make a fine pair.
 
     - name: asdf
       link: https://github.com/asdf-vm/asdf
-      description: |
-        Once I started programming in Elixir, I needed to be manage two languages at once (the other being Erlang) and asdf makes that super simple. It is based on a plugin architecture, so there is a plugin for just about every language you can think of.
-
-        I contributed to the [Io plugin](https://github.com/mracos/asdf-io/pull/5) when I was reading [Seven Languages in Seven Weeks](https://amzn.to/37lmG5E) by Bruce Tate.
 
     - name: fzf
       link: https://github.com/junegunn/fzf
@@ -93,120 +58,66 @@
   entries:
     - name: Alfred
       link: https://www.alfredapp.com/
-      description: |
-        Alfred is a workhorse of a tool. It's amazing for launching apps, searching your computer, managing your pasteboard, and snippets. It becomes really powerful when you start using workflows as it enables Alfred to integrate with other apps and run arbitrary scripts in any language.
-
-        It's definitely my #1 productivity tool for macOS.
 
     - name: 1Password
       link: https://1password.com/
 
     - name: Things 3
       link: https://culturedcode.com/things/
-      description: |
-        I like Things for personal projects, but I don't actually use it that much in my daily life because my work projects already have a form of project management software.
 
     - name: Fastmail
       link: https://ref.fm/u20036168
-      description: |
-        I started using Fastmail as a cheap way to use my domain as my email address, then I learned of some of the powerful aliasing features which I now love.
-
-    - name: Itsycal
-      link: https://www.mowglii.com/itsycal/
-        This is a neat little menubar app that works really well for seeing what upcoming events you have over the next few days.
 
     - name: iCloud Drive
       link: https://www.icloud.com/iclouddrive
-      description: |
-        I used to use Dropbox, but switched to iCloud Drive because of it being baked into all of the Apple products and being able to share the storage space with my family.
-
-    - name: Licecap
-      link: https://www.cockos.com/licecap/
 
 - name: Hardware
   entries:
     - name: 2020 13" M1 MacBook Air
       link: https://support.apple.com/kb/SP825?locale=en_US
-      description: |
-        Personal computer.
 
     - name: 2021 16" MacBook Pro
       link: https://www.apple.com/macbook-pro-16/specs/
-      description: |
-        The new one with the M1 Pro chip 🏎.
 
     - name: Ergodoz EZ
       link: https://ergodox-ez.com/
-      description: |
-        This is the best keyboard ever made.
-
-        It's a split ortholinear keyboard that is incredibly extensible, you can find my config [here](https://configure.ergodox-ez.com/ergodox-ez/layouts/GGYnj/latest/0).
-
-        I use this one at work.
 
     - name: OLKB Preonic
       link: https://drop.com/buy/preonic-mechanical-keyboard
-      description: |
-        This is second favorite keyboard. Just as extensible as the Ergodox, but in a tight form factor that is easy to carry.
-
-        You can find my config [here](https://github.com/mhanberg/.dotfiles/blob/master/mitch-preonic.json).
-
-        I use this one at home/travel.
 
     - name: Apple Magic Trackpad
       link: https://www.apple.com/shop/product/MMMP3AM/A/magic-trackpad-black-multi-touch-surface?fnode=4d0def805c6db6de0fbae9052cb831ea2c102e18ffb2aa987ed6c12e24b77a45ed729f921edb95f34249a492de8d99aef8cc2fc9b698d9ad5a6bf0d44fa4a3f9c9a55b7d7d09597b4d76d5537ce323b3071c18b0a987d19c4fee9ca45a9a7e36
-      description: |
-        I use it in between the two halves of my keyboard.
 
     - name: CalDigit TS3 Plus
       link: https://www.amazon.com/gp/product/B07CZPV8DF/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
-      description: |
-        I plug all my peripherals and both of my montiors into this little guy, and then plug my laptop into it with only a single cable!
 
-    - name: LG 27UD68-W
-      link: https://amzn.to/3389fCI
+    - name: LG 40WP95C-W Ultrawide
+      link: https://www.amazon.com/gp/product/B09P1VLCQ4/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
 
     - name: Philips Hue Bulbs
       link: https://amzn.to/37mgzy2
-      description: |
-        I have these throughout my home. They're really nice in my office as it allows me to dim and change the warmth of the light to be easier on the eyes in the dark.
-
-    - name: Fully Jarvis Dual Monitor Arm
-      link: https://www.fully.com/accessories/monitor-arms/jarvis-dual-monitor-arm.html
-      description: |
-        I use a monitor on one arm, and the laptop mounted on the other. I had to contact customer support to purchase the laptop holder by itself.
 
     - name: Fully Jarvis Standing Desk
       link: https://www.fully.com/standing-desks/jarvis/jarvis-frame-only.html
-      description: |
-        I use an old IKEA desktop as the desk surface. In the future I want to build my own desktop out of 2x4 lumber.
-
-        I have the caster wheels as well, which makes moving the desk a breeze for when I need to fidget with the cords behind the desk.
 
     - name: Anker Power Strip
       link: https://www.amazon.com/gp/product/B08FWXXBT3/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
-      description: |
-        I have this attached to the bottom of my desktop.
-
-        It is nice because it has plenty of outlets that are spaced apart for plugs that have the big block on them, as well has 3 USB ports for charging things like my iPad without using a block.
 
 - name: Audio/Video
   entries:
-    - name: Audio-Technica AT2035PK 
+    - name: Audio-Technica AT2035PK
       link: https://www.amazon.com/gp/product/B07JL8YRCV/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
     - name: Pop filter
       link: https://www.amazon.com/gp/product/B01J5OTVTC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
-    - name: Gator Frameworks Deluxe Boom Arm 
+    - name: Gator Frameworks Deluxe Boom Arm
       link: https://www.amazon.com/gp/product/B07JL8YRCV/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
-      description: |
-        I use this screwed into the desktop. I found that the clamp mount would fall off frequently.
 
     - name: Focusrite Scarlett Solo (3rd Gen)
       link: https://www.amazon.com/gp/product/B07QR6Z1JB/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
-    - name: ATH-M20x Professional Monitor Headphones 
+    - name: ATH-M20x Professional Monitor Headphones
       link: https://www.amazon.com/Audio-Technica-ATH-M20x-Professional-Monitor-Headphones/dp/B00HVLUR18/ref=sr_1_2?dchild=1&keywords=ATH-M20x&qid=1635866818&s=musical-instruments&sr=1-2
 
     - name: Anker Soundcore Life Q20

@@ -5,14 +5,15 @@
   title: Summer Frost
   link: https://amzn.to/2QvTN0E
 - id: 44770129
-  title: 'Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate
-    Your Career'
+  title:
+    "Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate
+    Your Career"
   link: https://amzn.to/35dyFjP
 - id: 45864574
   title: The Handmaid's Tale
   link: https://amzn.to/2OmdANo
 - id: 45177526
-  title: 'Loserthink: How Untrained Brains Are Ruining America'
+  title: "Loserthink: How Untrained Brains Are Ruining America"
   link: https://amzn.to/37m5exR
 - id: 28253767nk
   title: Wizard and Glass
@@ -21,7 +22,7 @@
   title: The Waste Lands
   link: https://amzn.to/37m5exR
 - id: 29555865
-  title: 'Never Split the Difference: Negotiating As If Your Life Depended On It'
+  title: "Never Split the Difference: Negotiating As If Your Life Depended On It"
   link: https://amzn.to/37m5exR
 - id: 28253762
   title: The Drawing of the Three
@@ -45,25 +46,25 @@
   title: The Catcher in the Rye
   link: https://amzn.to/2Kw6G76
 - id: 35492204
-  title: 'Adopting Elixir: From Concept to Production'
+  title: "Adopting Elixir: From Concept to Production"
   link: https://amzn.to/2QA4qj1
 - id: 36277162
-  title: 'Skin in the Game: Hidden Asymmetries in Daily Life'
+  title: "Skin in the Game: Hidden Asymmetries in Daily Life"
   link: https://amzn.to/2QvVkUs
 - id: 34637918
-  title: 'Functional Web Development with Elixir, Otp, and Phoenix: Rethink the Modern Web App'
+  title: "Functional Web Development with Elixir, Otp, and Phoenix: Rethink the Modern Web App"
   link: https://amzn.to/35j6BvF
 - id: 28094574
   title: It
   link: https://amzn.to/2D2euJv
 - id: 26871792
-  title: 'Programming Phoenix: Productive |> Reliable |> Fast'
+  title: "Programming Phoenix: Productive |> Reliable |> Fast"
   link: https://amzn.to/2NY8ibO
 - id: 40672036
-  title: 'Digital Minimalism: Choosing a Focused Life in a Noisy World'
+  title: "Digital Minimalism: Choosing a Focused Life in a Noisy World"
   link: https://amzn.to/2pzTSWa
 - id: 8155000
-  title: 'Getting Naked: A Business Fable about Shedding the Three Fears That Sabotage Client Loyalty'
+  title: "Getting Naked: A Business Fable about Shedding the Three Fears That Sabotage Client Loyalty"
   link: https://amzn.to/35jG9lh
 - id: 6081088
   title: Into Thin Air
@@ -72,16 +73,16 @@
   title: The Road
   link: https://amzn.to/2O11jiq
 - id: 40501533
-  title: 'Creative Selection: Inside Apple''s Design Process During the Golden Age of Steve Jobs'
+  title: "Creative Selection: Inside Apple's Design Process During the Golden Age of Steve Jobs"
   link: https://amzn.to/2XBBbOx
 - id: 18401393
   title: The Martian
   link: https://amzn.to/2prLmbw
 - id: 40121378
-  title: 'Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones'
+  title: "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones"
   link: https://amzn.to/34cz8m8
 - id: 25980294
-  title: 'Deep Work: Rules for Focused Success in a Distracted World'
+  title: "Deep Work: Rules for Focused Success in a Distracted World"
   link: https://amzn.to/2XrdB6R
 - id: 594288
   title: Purely Functional Data Structures
@@ -90,9 +91,9 @@
 - id: 43190966
   title: Refactoring UI
 - id: 29939161
-  title: 'Radical Candor: Be a Kickass Boss Without Losing Your Humanity'
+  title: "Radical Candor: Be a Kickass Boss Without Losing Your Humanity"
 - id: 4588730
-  title: 'The Five Temptations of a Ceo, 10th Anniversary Edition: A Leadership Fable'
+  title: "The Five Temptations of a Ceo, 10th Anniversary Edition: A Leadership Fable"
 - id: 20524444
   title: Elixir in Action
   link: https://amzn.to/2raibdK
@@ -108,33 +109,33 @@
 - id: 11467079
   title: I Am Legend
 - id: 33117946
-  title: 'Programming Elixir 1.3: Functional |> Concurrent |> Pragmatic |> Fun'
+  title: "Programming Elixir 1.3: Functional |> Concurrent |> Pragmatic |> Fun"
 - id: 34427200
-  title: 'The Four: The Hidden DNA of Amazon, Apple, Facebook, and Google'
+  title: "The Four: The Hidden DNA of Amazon, Apple, Facebook, and Google"
 - id: 34921689
-  title: 'Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#'
+  title: "Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#"
 - id: 13607232
-  title: 'Practical Vim: Edit Text at the Speed of Thought'
+  title: "Practical Vim: Edit Text at the Speed of Thought"
 - id: 24382154
-  title: 'The Jobs-to-be-Done Handbook: Practical techniques for improving your application of Jobs-to-be-Done'
+  title: "The Jobs-to-be-Done Handbook: Practical techniques for improving your application of Jobs-to-be-Done"
 - id: 36595101
-  title: 'Fire and Fury: Inside the Trump White House'
+  title: "Fire and Fury: Inside the Trump White House"
 - id: 315425
-  title: 'In Defense of Food: An Eater''s Manifesto'
+  title: "In Defense of Food: An Eater's Manifesto"
 - id: 20839196
-  title: 'Sapiens: A Brief History of Humankind'
+  title: "Sapiens: A Brief History of Humankind"
 - id: 30055184
-  title: 'Competing Against Luck: The Story of Innovation and Customer Choice'
+  title: "Competing Against Luck: The Story of Innovation and Customer Choice"
 - id: 9969571
   title: Ready Player One
 - id: 27833670
   title: Dark Matter
 - id: 34427205
-  title: 'Win Bigly: Persuasion in a World Where Facts Don''t Matter'
+  title: "Win Bigly: Persuasion in a World Where Facts Don't Matter"
 - id: 2998152
-  title: 'JavaScript: The Good Parts'
+  title: "JavaScript: The Good Parts"
 - id: 17910054
-  title: 'The Sixth Extinction: An Unnatural History'
+  title: "The Sixth Extinction: An Unnatural History"
 - id: 569429
   title: Mostly Harmless
 - id: 25563811
@@ -144,9 +145,9 @@
 - id: 8694
   title: Life, the Universe and Everything
 - id: 22221112
-  title: 'User Story Mapping: Discover the Whole Story, Build the Right Product'
+  title: "User Story Mapping: Discover the Whole Story, Build the Right Product"
 - id: 3735293
-  title: 'Clean Code: A Handbook of Agile Software Craftsmanship'
+  title: "Clean Code: A Handbook of Agile Software Craftsmanship"
 - id: 8695
   title: The Restaurant at the End of the Universe
 - id: 386162
@@ -154,19 +155,19 @@
 - id: 6732019
   title: Rework
 - id: 17859574
-  title: 'How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life'
+  title: "How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life"
 - id: 44936
-  title: 'Refactoring: Improving the Design of Existing Code'
+  title: "Refactoring: Improving the Design of Existing Code"
 - id: 4099
-  title: 'The Pragmatic Programmer: From Journeyman to Master'
+  title: "The Pragmatic Programmer: From Journeyman to Master"
 - id: 67825
-  title: 'Peopleware: Productive Projects and Teams'
+  title: "Peopleware: Productive Projects and Teams"
 - id: 5608045
-  title: 'Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman'
+  title: "Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman"
 - id: 6399113
   title: The Passionate Programmer
 - id: 22573850
-  title: 'Getting Things Done: The Art of Stress-Free Productivity'
+  title: "Getting Things Done: The Art of Stress-Free Productivity"
 - id: 18626828
   title: A Dance with Dragons
 - id: 18626829

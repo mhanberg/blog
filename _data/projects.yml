@@ -1,3 +1,13 @@
+- name: elixir-tools
+  role: Author
+  link: https://github.com/elixir-tools
+  description: |
+    elixir-tools is a collection of editor extensions, language servers, and tooling for productive Elixir development.
+
+    * [credo-language-server](https://github.com/elixir-tools/credo-language-server) - LSP implementation for [Credo](https://github.com/rrrene/credo)
+    * [elixir-tools.nvim](https://github.com/elixir-tools/elixir-tools.nvim) - Neovim plugin for Elixir
+    * [elixir-tools.vscode](https://github.com/elixir-tools/elixir-tools.vscode) - VSCode plugin for Elixir
+
 - name: Temple
   role: Author
   link: https://github.com/mhanberg/temple
@@ -23,12 +33,4 @@
 
     Maintaining a popular open source library has presented me with new challenges in addition to programming and I truly appreciate every opportunity Wallaby has given me.
 
-    Thank you Keathley!
-
-- name: elixir.nvim
-  role: Author
-  link: https://github.com/mhanberg/elixir.nvim
-  description: |
-    elixir.nvim is an Elixir plugin for Neovim.
-
-    The goal of the project is to make it as easy as possible to get started writing Elixir with the full power of the language server, treesitter, and any other useful commands and functions.
+    Thank you Chris!
