@@ -125,15 +125,7 @@ ol {
 }
 
 blockquote {
-  @apply bg-evergreen-700 rounded italic p-4 text-lg mt-4;
-}
-
-blockquote p::before {
-  content: "\"";
-}
-
-blockquote p::after {
-  content: "\"";
+  @apply bg-evergreen-700 rounded p-4 text-sm mt-4 border-l-4 border-yellow-500
 }
 
 .highlighter-rouge {
