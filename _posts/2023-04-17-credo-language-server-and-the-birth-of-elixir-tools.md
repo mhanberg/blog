@@ -62,4 +62,4 @@ I will be writing more about gen_lsp and schematic in the future.
 
 This is just the beginning! 🤗
 
-I have some exciting ideas planned and can't wait to be able to share them with the Elixir community. If you'd like to stay on the bleeding edge of elixir-tools, feel free to join the [Discord](https://discord.gg/nNDMwTJ8).
+I have some exciting ideas planned and can't wait to be able to share them with the Elixir community. If you'd like to stay on the bleeding edge of elixir-tools, feel free to join the [Discord](https://discord.gg/6XdGnxVA2A).
