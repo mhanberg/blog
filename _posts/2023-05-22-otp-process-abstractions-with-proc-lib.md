@@ -8,7 +8,7 @@ permalink: /:title/
 
 In November of 2022, I had the privilege to speak at [Code BEAM America](https://codebeamamerica.com/).
 
-You check out the video below, let me know what you think!
+You can check out the video below, let me know what you think!
 
 &nbsp;
 
