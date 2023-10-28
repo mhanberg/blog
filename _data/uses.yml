@@ -71,7 +71,33 @@
     - name: iCloud Drive
       link: https://www.icloud.com/iclouddrive
 
-- name: Hardware
+- name: PC
+  entries:
+    - name: Intel Core i9-13900K 3 GHz 24-Core Processor
+      link: https://pcpartpicker.com/product/DhVmP6/intel-core-i9-13900k-3-ghz-24-core-processor-bx8071513900k
+
+    - name: NZXT Kraken X63 98.17 CFM Liquid CPU Cooler
+      link: https://pcpartpicker.com/product/JfVG3C/nzxt-kraken-x63-9817-cfm-liquid-cpu-cooler-rl-krx63-01
+
+    - name: MSI MAG Z790 TOMAHAWK WIFI ATX LGA1700 Motherboard
+      link: https://pcpartpicker.com/product/9B2WGX/msi-mag-z790-tomahawk-wifi-atx-lga1700-motherboard-mag-z790-tomahawk-wifi
+
+    - name: Corsair Vengeance 32 GB (2 x 16 GB) DDR5-5600 CL36 Memory
+      link: https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36
+
+    - name: (2) Samsung 990 Pro 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive
+      link: https://pcpartpicker.com/product/34ytt6/samsung-990-pro-2-tb-m2-2280-pcie-40-x4-nvme-solid-state-drive-mz-v9p2t0bw
+
+    - name: MSI GeForce RTX 3060 Ventus 2X 12G GeForce RTX 3060 12GB 12 GB Video Card
+      link: https://pcpartpicker.com/product/pD8bt6/msi-geforce-rtx-3060-ventus-2x-12g-geforce-rtx-3060-12gb-12-gb-video-card-rtx3060ventus2x12goc
+
+    - name: Corsair 4000D Airflow ATX Mid Tower Case
+      link: https://pcpartpicker.com/product/bCYQzy/corsair-4000d-airflow-atx-mid-tower-case-cc-9011200-ww
+
+    - name: Corsair RM850x (2021) 850 W 80+ Gold Certified Fully Modular ATX Power Supply
+      link: https://pcpartpicker.com/product/26rRsY/corsair-rm850x-2021-850-w-80-gold-certified-fully-modular-atx-power-supply-cp-9020200-na
+
+- name: Laptops
   entries:
     - name: 2020 13" M1 MacBook Air
       link: https://support.apple.com/kb/SP825?locale=en_US
@@ -79,11 +105,25 @@
     - name: 2021 16" MacBook Pro
       link: https://www.apple.com/macbook-pro-16/specs/
 
+- name: Peripherals
+  entries:
+    - name: ZSA Voyager
+      link: https://zsa.io/voyager
+
+    - name: Sunset Tactile Choc Switches
+      link: https://lowprokb.ca/products/sunset-tactile-choc-switches
+
     - name: Ergodoz EZ
       link: https://ergodox-ez.com/
 
+    - name: Zilent V2 67g
+      link: https://zealpc.net/products/zilent?variant=5894832324646
+
     - name: OLKB Preonic
       link: https://drop.com/buy/preonic-mechanical-keyboard
+
+    - name: Zealio V2 78g
+      link: https://zealpc.net/collections/zealio?variant=6502846147
 
     - name: Apple Magic Trackpad
       link: https://www.apple.com/shop/product/MMMP3AM/A/magic-trackpad-black-multi-touch-surface?fnode=4d0def805c6db6de0fbae9052cb831ea2c102e18ffb2aa987ed6c12e24b77a45ed729f921edb95f34249a492de8d99aef8cc2fc9b698d9ad5a6bf0d44fa4a3f9c9a55b7d7d09597b4d76d5537ce323b3071c18b0a987d19c4fee9ca45a9a7e36
