@@ -6,52 +6,46 @@
     - name: Neovim
       link: https://neovim.io
 
-    - name: everforest
-      link: https://github.com/sainnhe/everforest
+    - name: Kanagawa - Neovim theme
+      link: https://github.com/rebelot/kanagawa.nvim
 
     - name: JetBrains Mono font
       link: https://www.jetbrains.com/lp/mono/
 
-    - name: Kitty
-      link: https://sw.kovidgoyal.net/kitty/
+    - name: Ghostty - Terminal
+      link: https://mitchellh.com/ghostty
 
-    - name: Postico
+    - name: Postico - GUI for Postgresql
       link: https://eggerapps.at/postico/
 
-    - name: Firefox Developer Edition
-      link: https://www.mozilla.org/en-US/firefox/developer/
+    - name: Firefox
+      link: https://www.mozilla.org/en-US/firefox
 
-    - name: lazygit
+    - name: lazygit - TUI for Git
       link: https://github.com/jesseduffield/lazygit
 
-    - name: Dash
+    - name: Dash - Documentation View
       link: https://kapeli.com/dash
 
-    - name: Sketch
-      link: https://www.sketch.com/
-
-    - name: Figma
-      link: https://github.com/BurntSushi/ripgrep
-
-    - name: zsh
+    - name: zsh - Shell
       link: https://www.zsh.org/
 
-    - name: zplug
-      link: https://github.com/zplug/zplug
+    - name: zinit - 🌻 Flexible and fast ZSH plugin manager 
+      link: https://github.com/zdharma-continuum/zinit
 
-    - name: tmux
+    - name: tmux - Terminal Multiplexer
       link: https://github.com/tmux/tmux#welcome-to-tmux
 
-    - name: asdf
-      link: https://github.com/asdf-vm/asdf
+    - name: rtx - Runtime Executor (asdf-plugin compatible) 
+      link: https://github.com/jdx/rtx
 
-    - name: fzf
+    - name: fzf - fuzzy finder
       link: https://github.com/junegunn/fzf
 
-    - name: gh
+    - name: gh - GitHub CLI
       link: https://github.com/cli/cli
 
-    - name: ripgrep
+    - name: ripgrep - Fast grep alternative
       link: https://github.com/BurntSushi/ripgrep
 
 - name: Productivity
@@ -61,9 +55,6 @@
 
     - name: 1Password
       link: https://1password.com/
-
-    - name: Things 3
-      link: https://culturedcode.com/things/
 
     - name: Fastmail
       link: https://ref.fm/u20036168
@@ -142,6 +133,9 @@
 
     - name: Anker Power Strip
       link: https://www.amazon.com/gp/product/B08FWXXBT3/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+    - name: Synology 4-Bay DiskStation DS423+
+      link: https://www.amazon.com/gp/product/B0BXMS9GFF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
 - name: Audio/Video
   entries:
