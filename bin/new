@@ -2,7 +2,7 @@
 
 raise 'Missing argument: Filename' if ARGV.empty?
 
-require 'Date'
+require 'date'
 
 post_title = ARGV.join(' ')
 post_date = Date.today.to_s
