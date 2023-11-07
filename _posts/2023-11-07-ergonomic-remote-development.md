@@ -108,6 +108,24 @@ If we are _not_, we just call `xdg-open` as usual. This is helpful in case we lo
 
 If we _are_, then we parse our local IP address out of the `$SSH_CONNECTION` variable and run the `open` command remotely using `ssh`.
 
+
+## Web Development
+
+Now, if you are a web developer, you typically will be starting a local web server and previewing your site or app in the browser. This gets a little tricky when your browser and web server are not on the same computer!
+
+Luckily, tailscale comes to the rescue again!
+
+With tailscale, you can create a reverse proxy served over `https` with your existing free plan.
+
+
+```bash
+$ tailscale serve https / http://localhost:4000
+```
+
+This will create a reverse proxy that is only available inside your tailnet!
+
+If you want to show off your beautiful website to a client or coworker, you can run `tailscale funnel 443 on`, which will make your reverse proxy available outside of your tailnet.
+
 ## Signing Git Commits
 
 I sign my `git` commits using the [1Password](https://1password.com/) SSH agent. This allows me to use an SSH key (instead of a GPG key) and to authorize the usage of the key with Touch ID on my Mac.
