@@ -282,12 +282,12 @@ The _Engine_ is the public API that Temple can leverage to efficiently output El
 
 Here is a table comparing which parts of the "template to Elixir AST" lifestyle between the builtin EEx compiler, the Temple compiler (in a theoretical future when Temple leverages this technique), Surface, and HEEx. EEx and HEEx don't have their own AST, so the parser step is not applicable.
 
-| Step | EEx | Temple | Surface | HEEx |
-|-------------------------------|
-| Tokenizer | EEx.Tokenizer | Kernel.SpecialForms.quote/2 | Surface.Compiler.Tokenizer | Phoenix.LiveView.HTMLTokenizer |
-| Parser | - | Temple.Parser | Surface.Compiler.Parser | - |
-| "Compiler" | EEx.Compiler | Temple.Renderer | Surface.Compiler.EExEngine | Phoenix.LiveView.HTMLEngine | 
-| Engine | Chosen Engine | Chosen Engine | Phoenix.LiveView.Engine | Chosen Engine |
+| Step       | EEx           | Temple                      | Surface                    | HEEx                           |
+| ---        | ---           | ---                         | ---                        | ---                            |
+| Tokenizer  | EEx.Tokenizer | Kernel.SpecialForms.quote/2 | Surface.Compiler.Tokenizer | Phoenix.LiveView.HTMLTokenizer |
+| Parser     | -             | Temple.Parser               | Surface.Compiler.Parser    | -                              |
+| "Compiler" | EEx.Compiler  | Temple.Renderer             | Surface.Compiler.EExEngine | Phoenix.LiveView.HTMLEngine    |
+| Engine     | Chosen Engine | Chosen Engine               | Phoenix.LiveView.Engine    | Chosen Engine                  |
 
 Prior to this revelation, I had planned on the monumental task of basically re-implementing the `EEx.SmartEngine`, `Phoenix.HTML.Engine`, and `Phoenix.LiveView.Engine` modules in Temple (probably with lots of bugs). Now that I understand how to utilize the existing engines properly, it should be a relatively small lift for Temple to be able to use all three of them!
 
