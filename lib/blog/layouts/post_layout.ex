@@ -54,7 +54,7 @@ defmodule Blog.PostLayout do
 
     <script>
       // Mitch.anchorifyHeaders();
-      Mitch.focuswrapTable();
+      Mitch.wrapTable();
     </script>
     """
   end
