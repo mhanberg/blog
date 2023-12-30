@@ -3,20 +3,13 @@ layout: Blog.PostLayout
 title: "The Comprehensive Guide to Elixir's List Comprehension"
 date: 2022-06-02 01:00:00 -04:00
 categories: post
-permalink: /:title/
-toc: true
+permalink: /the-comprehensive-guide-to-elixirs-for-comprehension/
 reviewers:
   - Seth Brown
   - Eric Oestrich
   - Kevin Rankin
 
 ---
-
-## Table of Contents
-{:.no_toc}
-
-* toc
-{:toc}
 
 ## What is it?
 

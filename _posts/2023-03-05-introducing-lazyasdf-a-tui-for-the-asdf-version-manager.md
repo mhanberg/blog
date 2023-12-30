@@ -3,7 +3,7 @@ layout: Blog.PostLayout
 title: "Introducing lazyasdf: An Elixir-based TUI for the asdf version manager"
 date: 2023-03-06 01:00:00 -04:00
 categories: post
-permalink: /:title/
+permalink: /introducing-lazyasdf-a-tui-for-the-asdf-version-manager/
 ---
 
 ![lazyasdf](https://res.cloudinary.com/mhanberg/image/upload/v1678034860/CleanShot_2023-03-04_at_14.44.18_2x.png)

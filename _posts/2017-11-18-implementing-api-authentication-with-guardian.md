@@ -4,7 +4,7 @@ title: Implementing API Authentication with Guardian in Phoenix
 date: 2017-11-28 09:00:00 -04:00
 categories: post
 desc: Guide on implementing authentication in an API-only Phoenix 1.3 application using Guardian 1.0.
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /post/2017/11/28/implementing-api-authentication-with-guardian/
 ---
 
 Most applications need some sort of authentication and authorization, and REST API's are no different. If you are familiar with web development but have never worked on one that does not have a front end (like me), then the authentication functionality might stump you at first.

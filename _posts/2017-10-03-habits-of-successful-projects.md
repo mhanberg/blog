@@ -4,7 +4,7 @@ title: Habits of Successful Projects
 date: 2017-10-03 08:00:00 -04:00
 categories: post
 desc: Keeping perspective over the course of a project can make the difference between a success and a failure.
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /:categories/:year/:month/03/:title/
 ---
 
 Over the course of a project, it is easy to become jaded and to lose track of why your team has certain processes. It's important to stay vigilant to keep those processes from degrading, because you will have trouble finding the cause of a reduction in velocity or quality due to the misunderstanding of how the team is operating.

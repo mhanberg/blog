@@ -3,7 +3,7 @@ layout: Blog.PostLayout
 title: OTP Process Abstractions with proc_lib
 date: 2023-05-22 01:00:00 -04:00
 categories: post
-permalink: /:title/
+permalink: /otp-process-abstractions-with-proc-lib/
 ---
 
 In November of 2022, I had the privilege to speak at [Code BEAM America](https://codebeamamerica.com/).

@@ -4,7 +4,7 @@ title: Version Your Dotfiles for Great Good
 date: 2018-01-29 09:00:00 -04:00
 categories: post
 desc: Guide on how to set up a versioned (using git) set of dotfiles.
-permalink: /:categories/:year/:month/:day/:title/
+permalink: post/2018/01/29/version-your-dotfiles-for-great-good/
 ---
 
 ### What are dotfiles?

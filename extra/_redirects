@@ -3,6 +3,3 @@
 https://mitchell-hanberg.netlify.com/* https://www.mitchellhanberg.com/:splat 301!
 /about/ /
 /about /
-
-/introducing-lazyasdf-a-tui-for-the-asdf-version-manager/ /introducing-lazyasdf-an-elixir-based-tui-for-the-asdf-version-manager/
-/creating-responsive-popovers-with-popper.js/ /creating-responsive-popovers-with-popperjs/

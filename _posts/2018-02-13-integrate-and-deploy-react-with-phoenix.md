@@ -4,7 +4,7 @@ title: Integrate and Deploy React with Phoenix
 date: 2018-02-22 08:00:00 -04:00
 categories: post
 desc: End-to-end guide on introducing a React frontend to a Phoenix application.
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /post/2018/02/22/integrate-and-deploy-react-with-phoenix/
 ---
 
 > You've just finished your lightning fast Phoenix JSON API, what's next?
