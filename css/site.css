@@ -1,9 +1,6 @@
----
----
-
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "_includes/native";
+@import "../_includes/native";
 
 * {
   scrollbar-color: theme("colors.evergreen.700") theme("colors.evergreen.900");
@@ -26,6 +23,19 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
+}
+
+.anchor {
+  text-decoration-line: none;
+}
+
+.anchor:hover {
+  text-decoration-line: underline;
+}
+
+.anchor:after {
+  text-decoration-line: none;
+  content: "# ";
 }
 
 *::-webkit-scrollbar {
@@ -92,12 +102,12 @@ h5 {
   font-size: 1.1rem;
 }
 
-h2 > span > a > svg,
-h3 > span > a > svg,
-h4 > span > a > svg,
-h5 > span > a > svg {
-  height: 1.5rem;
-}
+/* h2 > span > a > svg, */
+/* h3 > span > a > svg, */
+/* h4 > span > a > svg, */
+/* h5 > span > a > svg { */
+/*   height: 1.5rem; */
+/* } */
 
 :target::before {
   content: "";
@@ -106,9 +116,9 @@ h5 > span > a > svg {
   margin: -120px 0 0;
 }
 
-figure.bg-transparent img {
-  @apply bg-transparent;
-}
+/* figure.bg-transparent img { */
+/*   @apply bg-transparent; */
+/* } */
 
 figcaption {
   @apply italic text-sm text-center;
@@ -128,11 +138,11 @@ blockquote {
   @apply bg-evergreen-700 rounded p-4 text-sm mt-4 border-l-4 border-yellow-500
 }
 
-.highlighter-rouge {
-  @apply max-w-4xl mx-auto;
+pre.autumn {
+  @apply max-w-4xl mx-auto my-4 p-8 overflow-x-auto text-sm;
 }
 
-article > :not(.table-wrapper):not(.highlighter-rouge) {
+article > :not(.table-wrapper):not(.autumn) {
   @apply max-w-2xl mx-auto;
 }
 
@@ -214,7 +224,7 @@ hr {
   max-height: 0;
 }
 
-@variants focus {
+@layer utilities {
   .focus-ring-400 {
     outline: 0;
     box-shadow: 0 0 0 3px theme("colors.evergreen.400");

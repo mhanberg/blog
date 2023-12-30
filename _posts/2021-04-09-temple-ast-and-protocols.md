@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: "Temple, AST, and Protocols"
 date: 2021-04-12 10:00:00 -04:00
 categories: post
@@ -154,7 +154,7 @@ end
 
 The benefit of using a protocol becomes clear when we look at the `NonvoidElementsAliases` implementation. The highlighted line belows shows how the protocol makes recursively compiling the AST super easy.  
 
-{% hl elixir hl="11" %}
+```elixir
 defmodule Temple.Parser.NonvoidElementsAliases do
   # ...
 
@@ -173,7 +173,7 @@ defmodule Temple.Parser.NonvoidElementsAliases do
     end
   end
 end
-{% endhl %}
+```
 
 Since the implementation takes advantage of `iolist`s, we can easily compute the final markup without maintaining any state or dealing with cumbersome return values. Once `to_eex` returns, we just run that through `:erlang.iolist_to_binary/1` and we're good to go!
 

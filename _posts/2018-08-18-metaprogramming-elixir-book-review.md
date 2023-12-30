@@ -1,10 +1,10 @@
 ---
-layout: book_review
+layout: Blog.BookReviewLayout
 title: "Metaprogramming Elixir: Book Review"
 date: 2018-08-18 09:00:00 -04:00
 categories: post
 desc: Metaprogramming Elixir is a must read read for those looking to level up their Elixir skills!
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /post/2018/08/18/metaprogramming-elixir-book-review/
 book:
   title: Metaprogramming Elixir
   author: Chris McCord

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: "How to Deploy a Phoenix App to Gigalixir in 20 Minutes"
 date: 2020-11-06 09:00:00 -04:00
 categories: post

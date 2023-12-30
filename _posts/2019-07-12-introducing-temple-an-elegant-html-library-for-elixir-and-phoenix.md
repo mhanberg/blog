@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: "Introducing Temple: An elegant HTML library for Elixir and Phoenix"
 date: 2019-07-12 09:00:00 -04:00
 categories: post

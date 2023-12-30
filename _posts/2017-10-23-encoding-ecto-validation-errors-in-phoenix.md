@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: Encoding Ecto Validation Errors in Phoenix 1.3
 date: 2017-10-23 09:00:00 -04:00
 categories: post
 desc: With a recent change to Ecto, rendering database validation errors requires some extra TLC to get the job done.
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /post/2017/10/23/encoding-ecto-validation-errors-in-phoenix/
 ---
 # Problem
 

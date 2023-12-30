@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: "Ergonomic Remote Development"
 date: 2023-11-07 08:00:00 -05:00
 categories: post

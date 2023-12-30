@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: Leaving Your Legacy
 date: 2017-03-09
 categories: post

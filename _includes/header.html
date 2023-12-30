@@ -6,7 +6,7 @@
     <div class="flex items-end justify-between">
       <div class="flex items-end">
         <a class="text-white no-underline" href="/" aria-label="Home button">
-          {% include logo.html %}
+          {% render "logo" %}
         </a>
         <div class="ml-4 md:ml-8 flex-shrink-0">
           <a class="text-white no-underline" href="/" aria-label="Home button">
@@ -17,7 +17,7 @@
               class="text-sm hidden md:block mr-2"
               style="word-spacing: 1rem"
             >
-              {% include nav_items.html %}
+              {% render "nav_items" %}
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@
     class="mobile-nav closed flex flex-col items-end my-4 text-evergreen-500"
     x-bind:class="{closed: !open}"
   >
-    {% include nav_items.html %}
+    {% render "nav_items" %}
     <button
       type="button"
       id="searchbtn"

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: "Credo Language Server and the birth of elixir-tools"
 date: 2023-04-18 01:00:00 -04:00
 categories: post
