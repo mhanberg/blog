@@ -28,7 +28,7 @@ defmodule Blog.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:tableau, "~> 0.13"},
+      {:tableau, "~> 0.14"},
       # {:tableau, path: "../tableau"},
       {:floki, "~> 0.34"},
       {:solid, "~> 0.15.2"},
