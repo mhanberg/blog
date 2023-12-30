@@ -3,7 +3,7 @@ layout: Blog.PostLayout
 title: "Announcing Temple v0.6!"
 date: 2021-05-25 10:00:00 -04:00
 categories: post
-permalink: /:title/
+permalink: /announcing-temple-v06/
 ---
 
 v0.6 of Temple has been released! 🎉
