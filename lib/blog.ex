@@ -74,6 +74,7 @@ defmodule Blog do
         else
           words / 180
         end
+        |> Kernel./(2)
         |> ceil()
 
       "#{mins} minute read"
