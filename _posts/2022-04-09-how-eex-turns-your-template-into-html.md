@@ -4,7 +4,6 @@ title: "How EEx Turns Your Template Into HTML"
 date: 2022-04-11 01:00:00 -04:00
 categories: post
 permalink: /:title/
-
 ---
 
 EEx is a templating language and module built into the [Elixir](https://hexdocs.pm/eex/EEx.html) standard library, often used by web servers to render dynamic content for a web application. The same concept exists in other language ecosystems, ERB for Ruby, Blade for Laravel/PHP, Pug/Jade for JavaScript.
