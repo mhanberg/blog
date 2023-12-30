@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: Installing Erlang and Elixir with asdf
 date: 2017-10-05 11:30:00 -04:00
 updated: 2021-02-18

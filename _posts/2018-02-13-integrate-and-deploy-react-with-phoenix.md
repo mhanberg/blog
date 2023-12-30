@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: Integrate and Deploy React with Phoenix
 date: 2018-02-22 08:00:00 -04:00
 categories: post

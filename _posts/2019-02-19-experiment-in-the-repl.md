@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: Experiment in the REPL
 date: 2019-02-19 11:00:00 -04:00
 categories: post

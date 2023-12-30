@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: "Announcing Temple v0.6!"
 date: 2021-05-25 10:00:00 -04:00
 categories: post
@@ -112,7 +112,7 @@ div class: "grid grid-cols-3 gap-4 p-4 items-start" do
 end
 ```
 
-![Screenshot of 3 cards created using the above code snippet](https://res.cloudinary.com/mhanberg/image/upload/v1621913949/Screen_Shot_2021-05-24_at_11.41.34_PM.png){:standalone .bg-transparent}
+![Screenshot of 3 cards created using the above code snippet](https://res.cloudinary.com/mhanberg/image/upload/v1621913949/Screen_Shot_2021-05-24_at_11.41.34_PM.png)
 
 The `Card` related components all called `slot :default` to render their inner content, but as we can see inside our usage of `LinkList` within the `Card.Footer` component, we call `slot :link, %{text: text, url: url}`, why is that??
 

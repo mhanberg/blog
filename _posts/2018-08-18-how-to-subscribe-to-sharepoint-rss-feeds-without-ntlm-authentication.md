@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: How to Subscribe to SharePoint RSS Feeds Without NTLM Authentication 
 date: 2018-08-18 21:00:00 -04:00
 categories: post

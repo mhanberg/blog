@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: "Announcing PlanetEx: an open source blog aggregator written in Elixir"
 date: 2018-10-01 13:00:00 -04:00
 categories: post

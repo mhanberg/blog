@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: If You Don't Have Anything Valuable To Say... Say It Anyways
 date: 2017-02-28
 categories: post

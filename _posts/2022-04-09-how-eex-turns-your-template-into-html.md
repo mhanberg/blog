@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: "How EEx Turns Your Template Into HTML"
 date: 2022-04-11 01:00:00 -04:00
 categories: post
@@ -147,7 +147,7 @@ When the compiler encounters an `:eof` token, it knows the template has finished
 
 I built an app that allows you to step through the compilation of a template as it traverses the tokens to help visualize what is happening and the output that is produced.
 
-![EEx Compiler Visualizer](https://user-images.githubusercontent.com/5523984/162604950-a682e940-2af2-4968-886b-7413f256020d.gif){:standalone}
+![EEx Compiler Visualizer](https://user-images.githubusercontent.com/5523984/162604950-a682e940-2af2-4968-886b-7413f256020d.gif)
 
 You should check it out [here](https://github.com/mhanberg/eex_compiler_visualizer).
 

@@ -1,6 +1,12 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
+  content: [
+    "_includes/*.html",
+    "extra/**/*.js",
+    "extra/**/*.css",
+    "lib/**/*.ex"
+  ],
   variants: {
     visibility: ['responsive', 'group-hover'],
   },

@@ -44,6 +44,7 @@ search.addWidgets([
         input = document.createElement("input");
         input.id = "search-input";
         input.classList.add(
+          "outline-none",
           "text-evergreen-400",
           "bg-evergreen-800",
           "w-full",
@@ -94,7 +95,7 @@ search.addWidgets([
     const { hits, widgetParams } = renderOptions;
 
     widgetParams.container.innerHTML = `
-      <ul class="list-none bg-evergreen-700 px-0 w-full">
+      <ul class="list-none bg-evergreen-700 px-0 w-full space-y-4">
         ${hits
           .map(
             (item) =>
@@ -144,6 +145,8 @@ function clearSearchBar(clear) {
 }
 
 function toggleSearchBar() {
-  document.getElementById("omnibox").classList.toggle("hidden");
+  const omnibox = document.getElementById("omnibox")
+  omnibox.classList.toggle("hidden");
+  omnibox.classList.toggle("flex");
   document.getElementById("the-universe").classList.toggle("opacity-25");
 }

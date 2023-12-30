@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: "Container Components: Exploring State Management in React (Part I)"
 date: 2018-07-25 00:00:00 -04:00
 categories: post

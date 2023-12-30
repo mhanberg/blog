@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: Habits of Successful Projects
 date: 2017-10-03 08:00:00 -04:00
 categories: post

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: Conducting Good Retrospectives
 date: 2018-11-08 21:00:00 -05:00
 categories: post

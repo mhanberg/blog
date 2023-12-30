@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: Scheduling Cron Jobs on Heroku with Ruby on Rails
 date: 2017-10-25 09:00:00 -04:00
 categories: post

@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: "Introducing lazyasdf: An Elixir-based TUI for the asdf version manager"
 date: 2023-03-06 01:00:00 -04:00
 categories: post
 permalink: /:title/
 ---
 
-![lazyasdf](https://res.cloudinary.com/mhanberg/image/upload/v1678034860/CleanShot_2023-03-04_at_14.44.18_2x.png){:standalone .space-y-2}
+![lazyasdf](https://res.cloudinary.com/mhanberg/image/upload/v1678034860/CleanShot_2023-03-04_at_14.44.18_2x.png)
 
 [lazyasdf](https://github.com/mhanberg/lazyasdf) is my first real* attempt at making a TUI with [Elixir](https://elixir-lang.org)! 
 
@@ -26,7 +26,7 @@ I am not some genius when it comes to terminals or laying out text, this all com
 
 Ratatouille leverages the [Elm Architecture](https://guide.elm-lang.org/architecture/) of which many of us have grown familiar. Let's take a look at a small Ratatouille program that showcases most of its features.
 
-![Tuido](https://res.cloudinary.com/mhanberg/image/upload/v1678037282/CleanShot_2023-03-05_at_12.27.43_2x.png){:standalone .space-y-2}
+![Tuido](https://res.cloudinary.com/mhanberg/image/upload/v1678037282/CleanShot_2023-03-05_at_12.27.43_2x.png)
 
 ```elixir
 #!/usr/bin/env elixir

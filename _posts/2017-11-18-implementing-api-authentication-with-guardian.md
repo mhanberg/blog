@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: Implementing API Authentication with Guardian in Phoenix
 date: 2017-11-28 09:00:00 -04:00
 categories: post

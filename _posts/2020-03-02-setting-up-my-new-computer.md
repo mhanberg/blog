@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: Setting up my new computer
 date: 2020-03-02 09:00:00 -05:00
 categories: post

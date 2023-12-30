@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: Version Your Dotfiles for Great Good
 date: 2018-01-29 09:00:00 -04:00
 categories: post

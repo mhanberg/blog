@@ -1,5 +1,5 @@
 ---
-layout: book_review
+layout: Blog.BookReviewLayout
 title: "Metaprogramming Elixir: Book Review"
 date: 2018-08-18 09:00:00 -04:00
 categories: post

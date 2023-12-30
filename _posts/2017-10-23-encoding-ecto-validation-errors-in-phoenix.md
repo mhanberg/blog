@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: Encoding Ecto Validation Errors in Phoenix 1.3
 date: 2017-10-23 09:00:00 -04:00
 categories: post

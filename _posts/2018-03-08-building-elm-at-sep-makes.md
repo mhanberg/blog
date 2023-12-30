@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: Building with Elm at SEP:Makes 
 date: 2018-03-08 09:00:00 -04:00
 categories: post

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: Blog.PostLayout
 title: OTP Process Abstractions with proc_lib
 date: 2023-05-22 01:00:00 -04:00
 categories: post
