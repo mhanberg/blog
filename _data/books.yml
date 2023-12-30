@@ -1,0 +1,1442 @@
+---
+- id: 52706033
+  title: 'Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth
+    to Preschool'
+  isbn: '0525559272'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Emily Oster
+  link: https://amazon.com/s?k=Cribsheet%3A+A+Data-Driven+Guide+to+Better%2C+More+Relaxed+Parenting%2C+from+Birth+to+Preschool
+  currently_reading: true
+- id: 19238889
+  title: Schild's Ladder
+  isbn: '9781922240132'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Greg Egan
+  link: https://amazon.com/s?k=Schild%27s+Ladder
+  currently_reading: true
+- id: 59053857
+  title: Misery
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1632321032l/59053857._SX98_.jpg
+  author: Stephen King
+  link: https://amazon.com/s?k=Misery
+  currently_reading: true
+- id: 51901147
+  title: The Ballad of Songbirds and Snakes
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1593892032l/51901147._SX98_.jpg
+  author: Suzanne Collins
+  date_read: 2023-12-26
+  link: https://amazon.com/s?k=The+Ballad+of+Songbirds+and+Snakes
+  currently_reading: false
+- id: 199526476
+  title: 'Twelve Hours'' Sleep by Twelve Weeks Old: A Step-by-Step Plan for Baby Sleep
+    Success'
+  isbn: '0593719395'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Suzy Giordano
+  date_read: 2023-12-14
+  link: https://amazon.com/s?k=Twelve+Hours%27+Sleep+by+Twelve+Weeks+Old%3A+A+Step-by-Step+Plan+for+Baby+Sleep+Success
+  currently_reading: false
+- id: 8684868
+  title: Mockingjay
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1661028164l/8684868._SX98_.jpg
+  author: Suzanne Collins
+  date_read: 2023-12-06
+  link: https://amazon.com/s?k=Mockingjay
+  currently_reading: false
+- id: 8423493
+  title: Catching Fire
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1661028128l/8423493._SX98_.jpg
+  author: Suzanne Collins
+  date_read: 2023-11-27
+  link: https://amazon.com/s?k=Catching+Fire
+  currently_reading: false
+- id: 49494289
+  title: The Hunger Games
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1592234598l/49494289._SX98_.jpg
+  author: Suzanne Collins
+  date_read: 2023-11-23
+  link: https://amazon.com/s?k=The+Hunger+Games
+  currently_reading: false
+- id: 74894304
+  title: The Woman in Me
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1689102415l/74894304._SX98_.jpg
+  author: Britney Spears
+  date_read: 2023-10-28
+  link: https://amazon.com/s?k=The+Woman+in+Me
+  currently_reading: false
+- id: 55172984
+  title: Carrie
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1598821680l/55172984._SX98_.jpg
+  author: Stephen King
+  date_read: 2023-10-25
+  link: https://amazon.com/s?k=Carrie
+  currently_reading: false
+- id: 36185216
+  title: Season of Storms
+  isbn: '0316441619'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1565098470l/36185216._SX98_.jpg
+  author: Andrzej Sapkowski
+  date_read: 2023-10-14
+  link: https://amazon.com/s?k=Season+of+Storms
+  currently_reading: false
+- id: 41022931
+  title: Writing A Compiler In Go
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Thorsten Ball
+  date_read: 2023-10-11
+  link: https://amazon.com/s?k=Writing+A+Compiler+In+Go
+  currently_reading: false
+- id: 32186143
+  title: The Lady of the Lake
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1484410866l/32186143._SX98_.jpg
+  author: Andrzej Sapkowski
+  date_read: 2023-09-14
+  link: https://amazon.com/s?k=The+Lady+of+the+Lake
+  currently_reading: false
+- id: 54595722
+  title: 'The Newborn Handbook: Your Guide to Bringing Home Baby'
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Smita Malhotra
+  date_read: 2023-09-05
+  link: https://amazon.com/s?k=The+Newborn+Handbook%3A+Your+Guide+to+Bringing+Home+Baby
+  currently_reading: false
+- id: 29340636
+  title: The Tower of Swallows
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Andrzej Sapkowski
+  date_read: 2023-06-23
+  link: https://amazon.com/s?k=The+Tower+of+Swallows
+  currently_reading: false
+- id: 18924205
+  title: Baptism of Fire
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Andrzej Sapkowski
+  date_read: 2023-05-18
+  link: https://amazon.com/s?k=Baptism+of+Fire
+  currently_reading: false
+- id: 25008661
+  title: The Rust Programming Language
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1518920310l/25008661._SX98_.jpg
+  author: Steve Klabnik
+  date_read: 2023-03-28
+  link: https://amazon.com/s?k=The+Rust+Programming+Language
+  currently_reading: false
+- id: 56070818
+  title: 'Kill It with Fire: Manage Aging Computer Systems'
+  isbn: '1718501196'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Marianne Bellotti
+  date_read: 2023-03-06
+  link: https://amazon.com/s?k=Kill+It+with+Fire%3A+Manage+Aging+Computer+Systems
+  currently_reading: false
+- id: 57807199
+  title: The Kaiju Preservation Society
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1624901085l/57807199._SX98_.jpg
+  author: John Scalzi
+  date_read: 2023-02-20
+  link: https://amazon.com/s?k=The+Kaiju+Preservation+Society
+  currently_reading: false
+- id: 55710304
+  title: Exhalation
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1603031062l/55710304._SX98_.jpg
+  author: Ted Chiang
+  date_read: 2023-01-04
+  link: https://amazon.com/s?k=Exhalation
+  currently_reading: false
+- id: 60188762
+  title: Fairy Tale
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1642947888l/60188762._SX98_.jpg
+  author: Stephen King
+  date_read: 2022-12-20
+  link: https://amazon.com/s?k=Fairy+Tale
+  currently_reading: false
+- id: 59911060
+  title: Artemis
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1640196841l/59911060._SY160_.jpg
+  author: Andy Weir
+  date_read: 2022-09-07
+  link: https://amazon.com/s?k=Artemis
+  currently_reading: false
+- id: 32681092
+  title: Writing An Interpreter In Go
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1480949814l/32681092._SX98_.jpg
+  author: Thorsten Ball
+  date_read: 2022-08-21
+  link: https://amazon.com/s?k=Writing+An+Interpreter+In+Go
+  currently_reading: false
+- id: 23466395
+  title: 'Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable,
+    and Maintainable Systems'
+  isbn: '1449373321'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1501626846l/23466395._SX98_.jpg
+  author: Martin Kleppmann
+  date_read: 2022-08-06
+  link: https://amazon.com/s?k=Designing+Data-Intensive+Applications%3A+The+Big+Ideas+Behind+Reliable%2C+Scalable%2C+and+Maintainable+Systems
+  currently_reading: false
+- id: 59439117
+  title: Upgrade
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1639699094l/59439117._SX98_.jpg
+  author: Blake Crouch
+  date_read: 2022-07-19
+  link: https://amazon.com/s?k=Upgrade
+  currently_reading: false
+- id: 50689973
+  title: Real-Time Phoenix
+  isbn: '1680507192'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1585978564l/50689973._SX98_.jpg
+  author: Stephen Bussey
+  date_read: 2022-07-13
+  link: https://amazon.com/s?k=Real-Time+Phoenix
+  currently_reading: false
+- id: 6603887
+  title: 'Masters of Doom: How Two Guys Created an Empire and Transformed Pop Culture'
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: David Kushner
+  date_read: 2022-05-29
+  link: https://amazon.com/s?k=Masters+of+Doom%3A+How+Two+Guys+Created+an+Empire+and+Transformed+Pop+Culture
+  currently_reading: false
+- id: 42399532
+  title: Wolves of the Calla
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1616299847l/42399532._SX98_.jpg
+  author: Stephen King
+  date_read: 2022-03-03
+  link: https://amazon.com/s?k=Wolves+of+the+Calla
+  currently_reading: false
+- id: 18115311
+  title: RabbitMQ in Depth
+  isbn: '1617291005'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1509121378l/18115311._SX98_.jpg
+  author: Gavin M. Roy
+  date_read: 2022-02-12
+  link: https://amazon.com/s?k=RabbitMQ+in+Depth
+  currently_reading: false
+- id: 42648863
+  title: 'Property-Based Testing with PropEr, Erlang, and Elixir: Find Bugs Before
+    Your Users Do'
+  isbn: '1680506218'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1541536505l/42648863._SX98_.jpg
+  author: Fred Hebert
+  date_read: 2022-02-08
+  link: https://amazon.com/s?k=Property-Based+Testing+with+PropEr%2C+Erlang%2C+and+Elixir%3A+Find+Bugs+Before+Your+Users+Do
+  currently_reading: false
+- id: 52523856
+  title: 'Hell Yeah or No: What''s Worth Doing'
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1594784873l/52523856._SX98_.jpg
+  author: Derek Sivers
+  date_read: 2022-01-17
+  link: https://amazon.com/s?k=Hell+Yeah+or+No%3A+What%27s+Worth+Doing
+  currently_reading: false
+- id: 54906250
+  title: Project Hail Mary
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1655684120l/54906250._SX98_.jpg
+  author: Andy Weir
+  date_read: 2022-01-16
+  link: https://amazon.com/s?k=Project+Hail+Mary
+  currently_reading: false
+- id: 26200918
+  title: 'Anything You Want: 40 Lessons for a New Kind of Entrepreneur'
+  isbn: '0698409027'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Derek Sivers
+  date_read: 2021-10-10
+  link: https://amazon.com/s?k=Anything+You+Want%3A+40+Lessons+for+a+New+Kind+of+Entrepreneur
+  currently_reading: false
+- id: 54252875
+  title: 'Your Music and People: creative and considerate fame'
+  isbn: '9781988575018'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1593019982l/54252875._SX98_.jpg
+  author: Derek Sivers
+  date_read: 2021-10-10
+  link: https://amazon.com/s?k=Your+Music+and+People%3A+creative+and+considerate+fame
+  currently_reading: false
+- id: 12032688
+  title: 'Perfect Puppy in 7 Days: How to Start Your Puppy Off Right'
+  isbn: '0964151871'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1382376831l/12032688._SX98_.jpg
+  author: Sophia Yin
+  date_read: 2021-09-08
+  link: https://amazon.com/s?k=Perfect+Puppy+in+7+Days%3A+How+to+Start+Your+Puppy+Off+Right
+  currently_reading: false
+- id: 18924206
+  title: The Time of Contempt
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Andrzej Sapkowski
+  date_read: 2021-01-11
+  link: https://amazon.com/s?k=The+Time+of+Contempt
+  currently_reading: false
+- id: 42832585
+  title: 'Graph Algorithms: Practical Examples in Apache Spark & Neo4j'
+  isbn: '9781492047681'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553103782l/42832585._SX98_.jpg
+  author: Mark Needham
+  date_read: 2020-12-13
+  link: https://amazon.com/s?k=Graph+Algorithms%3A+Practical+Examples+in+Apache+Spark+%26+Neo4j
+  currently_reading: false
+- id: 8117684
+  title: 'Bird by Bird: Some Instructions on Writing and Life'
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Anne Lamott
+  date_read: 2020-11-23
+  link: https://amazon.com/s?k=Bird+by+Bird%3A+Some+Instructions+on+Writing+and+Life
+  currently_reading: false
+- id: 40582814
+  title: Programming Ecto
+  isbn: '1680502824'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1529434502l/40582814._SX98_.jpg
+  author: Darin Wilson
+  date_read: 2020-07-24
+  link: https://amazon.com/s?k=Programming+Ecto
+  currently_reading: false
+- id: 40195495
+  title: 'Make Your Bed: Little Things That Can Change Your Life...And Maybe the World'
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1527034243l/40195495._SX98_.jpg
+  author: William H. McRaven
+  date_read: 2020-04-19
+  link: https://amazon.com/s?k=Make+Your+Bed%3A+Little+Things+That+Can+Change+Your+Life...And+Maybe+the+World
+  currently_reading: false
+- id: 40603669
+  title: Blood of Elves
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1529592934l/40603669._SY160_.jpg
+  author: Andrzej Sapkowski
+  date_read: 2020-04-19
+  link: https://amazon.com/s?k=Blood+of+Elves
+  currently_reading: false
+- id: 36517607
+  title: 'Modern Vim: Craft Your Development Environment with Vim 8 and Neovim'
+  isbn: 168050262X
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1509565292l/36517607._SX98_.jpg
+  author: Drew Neil
+  date_read: 2020-03-22
+  link: https://amazon.com/s?k=Modern+Vim%3A+Craft+Your+Development+Environment+with+Vim+8+and+Neovim
+  currently_reading: false
+- id: 45159167
+  title: Designing Elixir Systems with OTP
+  isbn: '1680506617'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1555488141l/45159167._SX98_.jpg
+  author: James Edward Gray II
+  date_read: 2020-03-15
+  link: https://amazon.com/s?k=Designing+Elixir+Systems+with+OTP
+  currently_reading: false
+- id: 52283963
+  title: 'The Mom Test: How to talk to customers & learn if your business is a good
+    idea when everyone is lying to you'
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Rob  Fitzpatrick
+  date_read: 2020-02-29
+  link: https://amazon.com/s?k=The+Mom+Test%3A+How+to+talk+to+customers+%26+learn+if+your+business+is+a+good+idea+when+everyone+is+lying+to+you
+  currently_reading: false
+- id: 25454056
+  title: Sword of Destiny
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1671660198l/25454056._SX98_.jpg
+  author: Andrzej Sapkowski
+  date_read: 2020-02-15
+  link: https://amazon.com/s?k=Sword+of+Destiny
+  currently_reading: false
+- id: 32302568
+  title: 'tmux 2: Productive Mouse-Free Development'
+  isbn: '1680502212'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1483436982l/32302568._SX98_.jpg
+  author: Brian P. Hogan
+  date_read: 2020-02-13
+  link: https://amazon.com/s?k=tmux+2%3A+Productive+Mouse-Free+Development
+  currently_reading: false
+- id: 17227647
+  title: Learn Vimscript the Hard Way
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1357668297l/17227647._SX98_.jpg
+  author: Steve Losh
+  date_read: 2020-02-12
+  link: https://amazon.com/s?k=Learn+Vimscript+the+Hard+Way
+  currently_reading: false
+- id: 9976177
+  title: 'The Bed of Procrustes: Philosophical and Practical Aphorisms'
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Nassim Nicholas Taleb
+  date_read: 2020-02-01
+  link: https://amazon.com/s?k=The+Bed+of+Procrustes%3A+Philosophical+and+Practical+Aphorisms
+  currently_reading: false
+- id: 40603587
+  title: The Last Wish
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1529591917l/40603587._SX98_.jpg
+  author: Andrzej Sapkowski
+  date_read: 2020-01-29
+  link: https://amazon.com/s?k=The+Last+Wish
+  currently_reading: false
+- id: 18802222
+  title: 'Remote: Office Not Required'
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Jason Fried
+  date_read: 2020-01-23
+  link: https://amazon.com/s?k=Remote%3A+Office+Not+Required
+  currently_reading: false
+- id: 49669410
+  title: Emergency Skin
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: N.K. Jemisin
+  date_read: 2020-01-20
+  link: https://amazon.com/s?k=Emergency+Skin
+  currently_reading: false
+- id: 49665863
+  title: You Have Arrived at Your Destination
+  isbn: '1542004349'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Amor Towles
+  date_read: 2020-01-20
+  link: https://amazon.com/s?k=You+Have+Arrived+at+Your+Destination
+  currently_reading: false
+- id: 49674113
+  title: The Last Conversation
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Paul Tremblay
+  date_read: 2020-01-20
+  link: https://amazon.com/s?k=The+Last+Conversation
+  currently_reading: false
+- id: 49680556
+  title: Ark
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Veronica Roth
+  date_read: 2020-01-18
+  link: https://amazon.com/s?k=Ark
+  currently_reading: false
+- id: 49661162
+  title: Randomize
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Andy Weir
+  date_read: 2020-01-17
+  link: https://amazon.com/s?k=Randomize
+  currently_reading: false
+- id: 6571744
+  title: 'Influence: The Psychology of Persuasion'
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Robert B. Cialdini
+  date_read: 2020-01-16
+  link: https://amazon.com/s?k=Influence%3A+The+Psychology+of+Persuasion
+  currently_reading: false
+- id: 8117586
+  title: Into the Wild
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327860565l/8117586._SX98_.jpg
+  author: Jon Krakauer
+  date_read: 2019-11-22
+  link: https://amzn.to/2OdKpNL
+  currently_reading: false
+- id: 44770129
+  title: 'Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate
+    Your Career'
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Scott H. Young
+  date_read: 2019-11-15
+  link: https://amzn.to/35dyFjP
+  currently_reading: false
+- id: 49676965
+  title: Summer Frost
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Blake Crouch
+  date_read: 2019-11-15
+  link: https://amazon.com/s?k=Summer+Frost
+  currently_reading: false
+- id: 45864574
+  title: The Handmaid's Tale
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558090637l/45864574._SX98_.jpg
+  author: Margaret Atwood
+  date_read: 2019-11-11
+  link: https://amzn.to/2OmdANo
+  currently_reading: false
+- id: 45177526
+  title: 'Loserthink: How Untrained Brains Are Ruining America'
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Scott Adams
+  date_read: 2019-11-07
+  link: https://amzn.to/37m5exR
+  currently_reading: false
+- id: 28253767
+  title: Wizard and Glass
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Stephen King
+  date_read: 2019-11-06
+  link: https://amazon.com/s?k=Wizard+and+Glass
+  currently_reading: false
+- id: 28335914
+  title: The Waste Lands
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Stephen King
+  date_read: 2019-09-09
+  link: https://amzn.to/37m5exR
+  currently_reading: false
+- id: 29555865
+  title: 'Never Split the Difference: Negotiating As If Your Life Depended On It'
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Chris Voss
+  date_read: 2019-08-30
+  link: https://amzn.to/37m5exR
+  currently_reading: false
+- id: 28253762
+  title: The Drawing of the Three
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Stephen King
+  date_read: 2019-08-04
+  link: https://amzn.to/2O1Woxy
+  currently_reading: false
+- id: 7912517
+  title: 'Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming
+    Languages'
+  isbn: 193435659X
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Bruce A. Tate
+  date_read: 2019-07-21
+  link: https://amzn.to/340XAae
+  currently_reading: false
+- id: 43701534
+  title: A Philosophy of Software Design
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: John Ousterhout
+  date_read: 2019-07-20
+  link: https://amzn.to/2O1Woxy
+  currently_reading: false
+- id: 28253070
+  title: The Gunslinger
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1506010608l/28253070._SX98_.jpg
+  author: Stephen King
+  date_read: 2019-07-09
+  link: https://amzn.to/2O0x8YQ
+  currently_reading: false
+- id: 42046112
+  title: Recursion
+  isbn: '1524759783'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1543687940l/42046112._SX98_.jpg
+  author: Blake Crouch
+  date_read: 2019-06-23
+  link: https://amzn.to/35emB1N
+  currently_reading: false
+- id: 5864120
+  title: The Stand
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1371414486l/5864120._SX98_.jpg
+  author: Stephen King
+  date_read: 2019-06-21
+  link: https://amzn.to/2QyW7nt
+  currently_reading: false
+- id: 7178
+  title: The Catcher in the Rye
+  isbn: '0316769487'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1635957403l/7178._SX98_.jpg
+  author: J.D. Salinger
+  date_read: 2019-04-07
+  link: https://amzn.to/2Kw6G76
+  currently_reading: false
+- id: 35492204
+  title: 'Adopting Elixir: From Concept to Production'
+  isbn: '1680502522'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1506971446l/35492204._SX98_.jpg
+  author: Ben Marx
+  date_read: 2019-04-05
+  link: https://amzn.to/2QA4qj1
+  currently_reading: false
+- id: 36277162
+  title: 'Skin in the Game: Hidden Asymmetries in Daily Life'
+  isbn: '0425284638'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1509142432l/36277162._SX98_.jpg
+  author: Nassim Nicholas Taleb
+  date_read: 2019-04-02
+  link: https://amzn.to/2QvVkUs
+  currently_reading: false
+- id: 34637918
+  title: 'Functional Web Development with Elixir, OTP, and Phoenix: Rethink the Modern
+    Web App'
+  isbn: '1680502433'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1490121950l/34637918._SX98_.jpg
+  author: Lance Halvorsen
+  date_read: 2019-03-29
+  link: https://amzn.to/35j6BvF
+  currently_reading: false
+- id: 28094574
+  title: It
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Stephen King
+  date_read: 2019-03-25
+  link: https://amzn.to/2D2euJv
+  currently_reading: false
+- id: 26871792
+  title: 'Programming Phoenix: Productive |> Reliable |> Fast'
+  isbn: '1680501453'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1444081913l/26871792._SX98_.jpg
+  author: Chris McCord
+  date_read: 2019-03-07
+  link: https://amzn.to/2NY8ibO
+  currently_reading: false
+- id: 40672036
+  title: 'Digital Minimalism: Choosing a Focused Life in a Noisy World'
+  isbn: 052553654X
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549433350l/40672036._SX98_.jpg
+  author: Cal Newport
+  date_read: 2019-03-04
+  link: https://amzn.to/2pzTSWa
+  currently_reading: false
+- id: 8155000
+  title: 'Getting Naked: A Business Fable about Shedding the Three Fears That Sabotage
+    Client Loyalty'
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1337626757l/8155000._SX98_.jpg
+  author: Patrick Lencioni
+  date_read: 2019-02-25
+  link: https://amzn.to/35jG9lh
+  currently_reading: false
+- id: 6081088
+  title: Into Thin Air
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327859184l/6081088._SX98_.jpg
+  author: Jon Krakauer
+  date_read: 2019-02-20
+  link: https://amzn.to/2QvXBz1
+  currently_reading: false
+- id: 5325066
+  title: The Road
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1490351142l/5325066._SY160_.jpg
+  author: Cormac McCarthy
+  date_read: 2019-02-11
+  link: https://amzn.to/2O11jiq
+  currently_reading: false
+- id: 40501533
+  title: 'Creative Selection: Inside Apple''s Design Process During the Golden Age
+    of Steve Jobs'
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Ken Kocienda
+  date_read: 2019-02-06
+  link: https://amzn.to/2XBBbOx
+  currently_reading: false
+- id: 18401393
+  title: The Martian
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1377968571l/18401393._SX98_.jpg
+  author: Andy Weir
+  date_read: 2019-01-29
+  link: https://amzn.to/2prLmbw
+  currently_reading: false
+- id: 40121378
+  title: 'Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones'
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1655988385l/40121378._SX98_.jpg
+  author: James Clear
+  date_read: 2019-01-20
+  link: https://amzn.to/34cz8m8
+  currently_reading: false
+- id: 25980294
+  title: 'Deep Work: Rules for Focused Success in a Distracted World'
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Cal Newport
+  date_read: 2019-01-14
+  link: https://amzn.to/2XrdB6R
+  currently_reading: false
+- id: 594288
+  title: Purely Functional Data Structures
+  isbn: '0521663504'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Chris Okasaki
+  date_read: 2019-01-09
+  link: https://amazon.com/s?k=Purely+Functional+Data+Structures
+  currently_reading: false
+- id: 10654495
+  title: 11/22/63
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328630331l/10654495._SX98_.jpg
+  author: Stephen King
+  date_read: 2019-01-08
+  link: https://amazon.com/s?k=11%2F22%2F63
+  currently_reading: false
+- id: 43190966
+  title: Refactoring UI
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1544555766l/43190966._SX98_.jpg
+  author: Adam Wathan
+  date_read: 2018-12-13
+  link: https://amazon.com/s?k=Refactoring+UI
+  currently_reading: false
+- id: 29939161
+  title: 'Radical Candor: Be a Kickass Boss Without Losing Your Humanity'
+  isbn: '1250103509'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1482838407l/29939161._SX98_.jpg
+  author: Kim Malone Scott
+  date_read: 2018-11-04
+  link: https://amazon.com/s?k=Radical+Candor%3A+Be+a+Kickass+Boss+Without+Losing+Your+Humanity
+  currently_reading: false
+- id: 4588730
+  title: 'The Five Temptations of a CEO: A Leadership Fable'
+  isbn: '0470267585'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Patrick Lencioni
+  date_read: 2018-09-23
+  link: https://amazon.com/s?k=The+Five+Temptations+of+a+CEO%3A+A+Leadership+Fable
+  currently_reading: false
+- id: 20524444
+  title: Elixir in Action
+  isbn: 161729201X
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1389595057l/20524444._SX98_.jpg
+  author: Saša Jurić
+  date_read: 2018-09-17
+  link: https://amzn.to/2raibdK
+  currently_reading: false
+- id: 8045789
+  title: Ender's Game
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1452898522l/8045789._SX98_.jpg
+  author: Orson Scott Card
+  date_read: 2018-08-22
+  link: https://amazon.com/s?k=Ender%27s+Game
+  currently_reading: false
+- id: 24791466
+  title: Metaprogramming Elixir
+  isbn: '9781680500417'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1423129450l/24791466._SX98_.jpg
+  author: Chris McCord
+  date_read: 2018-08-18
+  link: https://amzn.to/2qldVrP
+  currently_reading: false
+- id: 22080
+  title: Westworld
+  isbn: '0553084410'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1298961031l/22080._SY160_.jpg
+  author: Michael Crichton
+  date_read: 2018-07-22
+  link: https://amazon.com/s?k=Westworld
+  currently_reading: false
+- id: 1331002
+  title: Making Vision Stick
+  isbn: '0310283051'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Andy Stanley
+  date_read: 2018-07-09
+  link: https://amazon.com/s?k=Making+Vision+Stick
+  currently_reading: false
+- id: 11467079
+  title: I Am Legend
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Richard Matheson
+  date_read: 2018-07-01
+  link: https://amazon.com/s?k=I+Am+Legend
+  currently_reading: false
+- id: 33117946
+  title: 'Programming Elixir 1.3: Functional |> Concurrent |> Pragmatic |> Fun'
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Dave Thomas
+  date_read: 2018-06-29
+  link: https://amazon.com/s?k=Programming+Elixir+1.3%3A+Functional+%7C%3E+Concurrent+%7C%3E+Pragmatic+%7C%3E+Fun
+  currently_reading: false
+- id: 34427200
+  title: 'The Four: The Hidden DNA of Amazon, Apple, Facebook, and Google'
+  isbn: '0735213658'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1502089797l/34427200._SX98_.jpg
+  author: Scott Galloway
+  date_read: 2018-05-11
+  link: https://amazon.com/s?k=The+Four%3A+The+Hidden+DNA+of+Amazon%2C+Apple%2C+Facebook%2C+and+Google
+  currently_reading: false
+- id: 34921689
+  title: 'Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven
+    Design and F#'
+  isbn: '1680502549'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1495325301l/34921689._SX98_.jpg
+  author: Scott Wlaschin
+  date_read: 2018-05-01
+  link: https://amazon.com/s?k=Domain+Modeling+Made+Functional%3A+Tackle+Software+Complexity+with+Domain-Driven+Design+and+F%23
+  currently_reading: false
+- id: 13607232
+  title: 'Practical Vim: Edit Text at the Speed of Thought'
+  isbn: '1934356980'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336278962l/13607232._SX98_.jpg
+  author: Drew Neil
+  date_read: 2018-04-14
+  link: https://amazon.com/s?k=Practical+Vim%3A+Edit+Text+at+the+Speed+of+Thought
+  currently_reading: false
+- id: 24382154
+  title: 'The Jobs-to-be-Done Handbook: Practical techniques for improving your application
+    of Jobs-to-be-Done'
+  isbn: '1499339232'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Chris Spiek
+  date_read: 2018-02-26
+  link: https://amazon.com/s?k=The+Jobs-to-be-Done+Handbook%3A+Practical+techniques+for+improving+your+application+of+Jobs-to-be-Done
+  currently_reading: false
+- id: 36595101
+  title: 'Fire and Fury: Inside the Trump White House'
+  isbn: '1250158060'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1631954821l/36595101._SX98_.jpg
+  author: Michael  Wolff
+  date_read: 2018-02-20
+  link: https://amazon.com/s?k=Fire+and+Fury%3A+Inside+the+Trump+White+House
+  currently_reading: false
+- id: 315425
+  title: 'In Defense of Food: An Eater''s Manifesto'
+  isbn: '1594201455'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Michael Pollan
+  date_read: 2018-01-05
+  link: https://amazon.com/s?k=In+Defense+of+Food%3A+An+Eater%27s+Manifesto
+  currently_reading: false
+- id: 20839196
+  title: 'Sapiens: A Brief History of Humankind'
+  isbn: '0062316095'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1420788020l/20839196._SX98_.jpg
+  author: Yuval Noah Harari
+  date_read: 2017-12-29
+  link: https://amazon.com/s?k=Sapiens%3A+A+Brief+History+of+Humankind
+  currently_reading: false
+- id: 30055184
+  title: 'Competing Against Luck: The Story of Innovation and Customer Choice'
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Clayton M. Christensen
+  date_read: 2017-12-04
+  link: https://amazon.com/s?k=Competing+Against+Luck%3A+The+Story+of+Innovation+and+Customer+Choice
+  currently_reading: false
+- id: 9969571
+  title: Ready Player One
+  isbn: '030788743X'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1500930947l/9969571._SX98_.jpg
+  author: Ernest Cline
+  date_read: 2017-11-20
+  link: https://amazon.com/s?k=Ready+Player+One
+  currently_reading: false
+- id: 27833670
+  title: Dark Matter
+  isbn: '1101904224'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1472119680l/27833670._SX98_.jpg
+  author: Blake Crouch
+  date_read: 2017-11-16
+  link: https://amazon.com/s?k=Dark+Matter
+  currently_reading: false
+- id: 34427205
+  title: 'Win Bigly: Persuasion in a World Where Facts Don''t Matter'
+  isbn: '0735219710'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1498810022l/34427205._SX98_.jpg
+  author: Scott Adams
+  date_read: 2017-11-13
+  link: https://amazon.com/s?k=Win+Bigly%3A+Persuasion+in+a+World+Where+Facts+Don%27t+Matter
+  currently_reading: false
+- id: 2998152
+  title: 'JavaScript: The Good Parts'
+  isbn: '0596517742'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328834793l/2998152._SX98_.jpg
+  author: Douglas Crockford
+  date_read: 2017-11-08
+  link: https://amazon.com/s?k=JavaScript%3A+The+Good+Parts
+  currently_reading: false
+- id: 17910054
+  title: 'The Sixth Extinction: An Unnatural History'
+  isbn: '0805092994'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1372677697l/17910054._SX98_.jpg
+  author: Elizabeth Kolbert
+  date_read: 2017-11-06
+  link: https://amazon.com/s?k=The+Sixth+Extinction%3A+An+Unnatural+History
+  currently_reading: false
+- id: 569429
+  title: Mostly Harmless
+  isbn: '0345379330'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1397933521l/569429._SX98_.jpg
+  author: Douglas Adams
+  date_read: 2017-11-04
+  link: https://amazon.com/s?k=Mostly+Harmless
+  currently_reading: false
+- id: 25563811
+  title: The Little Elixir & OTP Guidebook
+  isbn: '1633430111'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1509890035l/25563811._SX98_.jpg
+  author: Benjamin Tan Wei Hao
+  date_read: 2017-11-03
+  link: https://amazon.com/s?k=The+Little+Elixir+%26+OTP+Guidebook
+  currently_reading: false
+- id: 6091075
+  title: So Long, and Thanks for All the Fish
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327873354l/6091075._SX98_.jpg
+  author: Douglas Adams
+  date_read: 2017-10-21
+  link: https://amazon.com/s?k=So+Long%2C+and+Thanks+for+All+the+Fish
+  currently_reading: false
+- id: 8694
+  title: Life, the Universe and Everything
+  isbn: '0345418905'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1333577589l/8694._SX98_.jpg
+  author: Douglas Adams
+  date_read: 2017-10-15
+  link: https://amazon.com/s?k=Life%2C+the+Universe+and+Everything
+  currently_reading: false
+- id: 22221112
+  title: 'User Story Mapping: Discover the Whole Story, Build the Right Product'
+  isbn: '1491904909'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1410801669l/22221112._SX98_.jpg
+  author: Jeff Patton
+  date_read: 2017-10-14
+  link: https://amazon.com/s?k=User+Story+Mapping%3A+Discover+the+Whole+Story%2C+Build+the+Right+Product
+  currently_reading: false
+- id: 3735293
+  title: 'Clean Code: A Handbook of Agile Software Craftsmanship'
+  isbn: '0132350882'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Robert C. Martin
+  date_read: 2017-10-05
+  link: https://amazon.com/s?k=Clean+Code%3A+A+Handbook+of+Agile+Software+Craftsmanship
+  currently_reading: false
+- id: 8695
+  title: The Restaurant at the End of the Universe
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1521213881l/8695._SX98_.jpg
+  author: Douglas Adams
+  date_read: 2017-08-03
+  link: https://amazon.com/s?k=The+Restaurant+at+the+End+of+the+Universe
+  currently_reading: false
+- id: 386162
+  title: The Hitchhiker's Guide to the Galaxy
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1559986152l/386162._SX98_SY160_.jpg
+  author: Douglas Adams
+  date_read: 2017-07-28
+  link: https://amazon.com/s?k=The+Hitchhiker%27s+Guide+to+the+Galaxy
+  currently_reading: false
+- id: 6732019
+  title: Rework
+  isbn: '0307463745'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Jason Fried
+  date_read: 2017-07-22
+  link: https://amazon.com/s?k=Rework
+  currently_reading: false
+- id: 17859574
+  title: 'How to Fail at Almost Everything and Still Win Big: Kind of the Story of
+    My Life'
+  isbn: '1591846919'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1369823209l/17859574._SX98_.jpg
+  author: Scott Adams
+  date_read: 2017-07-17
+  link: https://amazon.com/s?k=How+to+Fail+at+Almost+Everything+and+Still+Win+Big%3A+Kind+of+the+Story+of+My+Life
+  currently_reading: false
+- id: 44936
+  title: 'Refactoring: Improving the Design of Existing Code'
+  isbn: '0201485672'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Martin Fowler
+  date_read: 2017-05-01
+  link: https://amazon.com/s?k=Refactoring%3A+Improving+the+Design+of+Existing+Code
+  currently_reading: false
+- id: 4099
+  title: 'The Pragmatic Programmer: From Journeyman to Master'
+  isbn: 020161622X
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401432508l/4099._SX98_.jpg
+  author: Andy Hunt
+  date_read: 2017-03-01
+  link: https://amazon.com/s?k=The+Pragmatic+Programmer%3A+From+Journeyman+to+Master
+  currently_reading: false
+- id: 67825
+  title: 'Peopleware: Productive Projects and Teams'
+  isbn: '0932633439'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Tom DeMarco
+  date_read: 2017-03-01
+  link: https://amazon.com/s?k=Peopleware%3A+Productive+Projects+and+Teams
+  currently_reading: false
+- id: 5608045
+  title: 'Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman'
+  isbn: '0596518382'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328834807l/5608045._SX98_.jpg
+  author: Dave Hoover
+  date_read: 2017-01-10
+  link: https://amazon.com/s?k=Apprenticeship+Patterns%3A+Guidance+for+the+Aspiring+Software+Craftsman
+  currently_reading: false
+- id: 6399113
+  title: 'The Passionate Programmer: Creating a Remarkable Career in Software Development'
+  isbn: '1934356344'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Chad Fowler
+  date_read: 2017-01-02
+  link: https://amazon.com/s?k=The+Passionate+Programmer%3A+Creating+a+Remarkable+Career+in+Software+Development
+  currently_reading: false
+- id: 22573850
+  title: 'Getting Things Done: The Art of Stress-Free Productivity'
+  isbn: '0698161866'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1427634749l/22573850._SX98_.jpg
+  author: David    Allen
+  date_read: 2016-10-01
+  link: https://amazon.com/s?k=Getting+Things+Done%3A+The+Art+of+Stress-Free+Productivity
+  currently_reading: false
+- id: 18626828
+  title: A Dance with Dragons
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1383741703l/18626828._SY160_.jpg
+  author: George R.R. Martin
+  date_read: 2014-01-01
+  link: https://amazon.com/s?k=A+Dance+with+Dragons
+  currently_reading: false
+- id: 18626829
+  title: A Feast for Crows
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1428883061l/18626829._SY160_.jpg
+  author: George R.R. Martin
+  date_read: 2014-01-01
+  link: https://amazon.com/s?k=A+Feast+for+Crows
+  currently_reading: false
+- id: 515601
+  title: The C Programming Language
+  isbn: '0131103628'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Brian W. Kernighan
+  date_read: 2013-01-01
+  link: https://amazon.com/s?k=The+C+Programming+Language
+  currently_reading: false
+- id: 6307964
+  title: A Storm of Swords
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1427885895l/6307964._SX98_.jpg
+  author: George R.R. Martin
+  date_read: 2013-01-01
+  link: https://amazon.com/s?k=A+Storm+of+Swords
+  currently_reading: false
+- id: 6584437
+  title: A Clash of Kings
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327885466l/6584437._SY160_.jpg
+  author: George R.R. Martin
+  date_read: 2013-01-01
+  link: https://amazon.com/s?k=A+Clash+of+Kings
+  currently_reading: false
+- id: 6421982
+  title: A Game of Thrones
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1518078493l/6421982._SX98_.jpg
+  author: George R.R. Martin
+  date_read: 2012-04-01
+  link: https://amazon.com/s?k=A+Game+of+Thrones
+  currently_reading: false
+- id: 14743
+  title: The God Delusion
+  isbn: '0618680004'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347220693l/14743._SX98_.jpg
+  author: Richard Dawkins
+  date_read: 2012-01-01
+  link: https://amazon.com/s?k=The+God+Delusion
+  currently_reading: false
+- id: 11084145
+  title: Steve Jobs
+  isbn: '1451648537'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1511288482l/11084145._SX98_.jpg
+  author: Walter Isaacson
+  date_read: 2011-01-01
+  link: https://amazon.com/s?k=Steve+Jobs
+  currently_reading: false
+- id: 11660590
+  title: Micro
+  isbn: '0062094734'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1314593813l/11660590._SX98_.jpg
+  author: Michael Crichton
+  date_read: 2011-01-01
+  link: https://amazon.com/s?k=Micro
+  currently_reading: false
+- id: 7664041
+  title: Inheritance
+  isbn: '0375856110'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Christopher Paolini
+  date_read: 2011-01-01
+  link: https://amazon.com/s?k=Inheritance
+  currently_reading: false
+- id: 7670
+  title: The Andromeda Strain
+  isbn: '0060541814'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1587497243l/7670._SX98_.jpg
+  author: Michael Crichton
+  date_read: 2009-01-01
+  link: https://amazon.com/s?k=The+Andromeda+Strain
+  currently_reading: false
+- id: 6428887
+  title: Pirate Latitudes
+  isbn: '0061929379'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1332304096l/6428887._SX98_.jpg
+  author: Michael Crichton
+  date_read: 2009-01-01
+  link: https://amazon.com/s?k=Pirate+Latitudes
+  currently_reading: false
+- id: 2248573
+  title: Brisingr
+  isbn: '0375826726'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1661030683l/2248573._SX98_.jpg
+  author: Christopher Paolini
+  date_read: 2008-09-20
+  link: https://amazon.com/s?k=Brisingr
+  currently_reading: false
+- id: 83763
+  title: Prey
+  isbn: '0061015725'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1607268251l/83763._SY160_.jpg
+  author: Michael Crichton
+  date_read: 2008-01-01
+  link: https://amazon.com/s?k=Prey
+  currently_reading: false
+- id: 113436
+  title: Eragon
+  isbn: '0375826696'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1366212852l/113436._SX98_.jpg
+  author: Christopher Paolini
+  date_read: 2008-01-01
+  link: https://amazon.com/s?k=Eragon
+  currently_reading: false
+- id: 7679
+  title: The Terminal Man
+  isbn: '0060092572'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1461056182l/7679._SX98_.jpg
+  author: Michael Crichton
+  date_read: 2008-01-01
+  link: https://amazon.com/s?k=The+Terminal+Man
+  currently_reading: false
+- id: 879299
+  title: When The Legends Die
+  isbn: '0553257382'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320463379l/879299._SY160_.jpg
+  author: Hal Borland
+  date_read: 2007-11-14
+  link: https://amazon.com/s?k=When+The+Legends+Die
+  currently_reading: false
+- id: 136251
+  title: Harry Potter and the Deathly Hallows
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1663805647l/136251._SX98_.jpg
+  author: J.K. Rowling
+  date_read: 2007-07-21
+  link: https://amazon.com/s?k=Harry+Potter+and+the+Deathly+Hallows
+  currently_reading: false
+- id: 15241
+  title: The Two Towers
+  isbn: '0618346260'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1661031399l/15241._SX98_.jpg
+  author: J.R.R. Tolkien
+  date_read: 2007-01-01
+  link: https://amazon.com/s?k=The+Two+Towers
+  currently_reading: false
+- id: 7661
+  title: Next
+  isbn: '0060872985'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554225620l/7661._SX98_.jpg
+  author: Michael Crichton
+  date_read: 2006-11-28
+  link: https://amazon.com/s?k=Next
+  currently_reading: false
+- id: 7672
+  title: Congo
+  isbn: '0060541830'
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: Michael Crichton
+  date_read: 2006-01-01
+  link: https://amazon.com/s?k=Congo
+  currently_reading: false
+- id: 455373
+  title: Sphere
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1660273071l/455373._SX98_.jpg
+  author: Michael Crichton
+  date_read: 2006-01-01
+  link: https://amazon.com/s?k=Sphere
+  currently_reading: false
+- id: 5907
+  title: The Hobbit
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546071216l/5907._SX98_.jpg
+  author: J.R.R. Tolkien
+  date_read: 2006-01-01
+  link: https://amazon.com/s?k=The+Hobbit
+  currently_reading: false
+- id: 34
+  title: The Fellowship of the Ring
+  isbn: '0618346252'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1298411339l/34._SX98_.jpg
+  author: J.R.R. Tolkien
+  date_read: 2006-01-01
+  link: https://amazon.com/s?k=The+Fellowship+of+the+Ring
+  currently_reading: false
+- id: 18512
+  title: The Return of the King
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1520258755l/18512._SY160_.jpg
+  author: J.R.R. Tolkien
+  date_read: 2006-01-01
+  link: https://amazon.com/s?k=The+Return+of+the+King
+  currently_reading: false
+- id: 45978
+  title: Eldest
+  isbn: '0375840400'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387119654l/45978._SX98_.jpg
+  author: Christopher Paolini
+  date_read: 2006-01-01
+  link: https://amazon.com/s?k=Eldest
+  currently_reading: false
+- id: 6424171
+  title: Jurassic Park
+  isbn: '0345370775'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1661028321l/6424171._SY160_.jpg
+  author: Michael Crichton
+  date_read: 2005-01-01
+  link: https://amazon.com/s?k=Jurassic+Park
+  currently_reading: false
+- id: 8650
+  title: The Lost World
+  isbn: '0752224417'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386864575l/8650._SX98_.jpg
+  author: Michael Crichton
+  date_read: 2005-01-01
+  link: https://amazon.com/s?k=The+Lost+World
+  currently_reading: false
+- id: 1
+  title: Harry Potter and the Half-Blood Prince
+  isbn:
+  asin:
+  image: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+  author: J.K. Rowling
+  date_read: 2005-01-01
+  link: https://amazon.com/s?k=Harry+Potter+and+the+Half-Blood+Prince
+  currently_reading: false
+- id: 3
+  title: Harry Potter and the Sorcerer's Stone
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474154022l/3._SX98_.jpg
+  author: J.K. Rowling
+  date_read: 2004-01-01
+  link: https://amazon.com/s?k=Harry+Potter+and+the+Sorcerer%27s+Stone
+  currently_reading: false
+- id: 5
+  title: Harry Potter and the Prisoner of Azkaban
+  isbn: '043965548X'
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630547330l/5._SX98_.jpg
+  author: J.K. Rowling
+  date_read: 2004-01-01
+  link: https://amazon.com/s?k=Harry+Potter+and+the+Prisoner+of+Azkaban
+  currently_reading: false
+- id: 6
+  title: Harry Potter and the Goblet of Fire
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554006152l/6._SX98_.jpg
+  author: J.K. Rowling
+  date_read: 2004-01-01
+  link: https://amazon.com/s?k=Harry+Potter+and+the+Goblet+of+Fire
+  currently_reading: false
+- id: 15881
+  title: Harry Potter and the Chamber of Secrets
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474169725l/15881._SX98_.jpg
+  author: J.K. Rowling
+  date_read: 2004-01-01
+  link: https://amazon.com/s?k=Harry+Potter+and+the+Chamber+of+Secrets
+  currently_reading: false
+- id: 2
+  title: Harry Potter and the Order of the Phoenix
+  isbn:
+  asin:
+  image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546910265l/2._SX98_.jpg
+  author: J.K. Rowling
+  date_read: 2004-01-01
+  link: https://amazon.com/s?k=Harry+Potter+and+the+Order+of+the+Phoenix
+  currently_reading: false
