@@ -28,8 +28,8 @@ defmodule Blog.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:tableau, "~> 0.12"},
-      {:tableau, path: "../tableau"},
+      {:tableau, "~> 0.13"},
+      # {:tableau, path: "../tableau"},
       {:floki, "~> 0.34"},
       {:solid, "~> 0.15.2"},
       {:tailwind, "~> 0.2", runtime: Mix.env() == :dev}
