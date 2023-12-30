@@ -7,6 +7,7 @@ defmodule Blog.MixProject do
       version: "0.1.0",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
+      aliases: aliases(),
       deps: deps()
     ]
   end
@@ -15,6 +16,12 @@ defmodule Blog.MixProject do
   def application do
     [
       extra_applications: [:logger]
+    ]
+  end
+
+  def aliases() do
+    [
+      build: ["tableau.build", "tailwind default --minify"]
     ]
   end
 

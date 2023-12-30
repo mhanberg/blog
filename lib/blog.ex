@@ -46,7 +46,7 @@ defmodule Blog do
           link["id"] == goodreads_id
         end)
 
-      Map.get(link, "link", "https://amazon.com/s?k=#{Base.url_encode64(link["title"])}") |> dbg
+      Map.get(link, "link", "https://amazon.com/s?k=#{Base.url_encode64(link["title"])}")
     end
 
     def array_to_sentence_string(items) do
