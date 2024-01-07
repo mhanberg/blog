@@ -36,13 +36,15 @@ defmodule Blog do
     def absolute_url(url) do
       host = Application.get_env(:tableau, :config)[:url]
 
-      URI.parse(host) |> URI.merge(url) |> URI.to_string()
+      host
+      |> URI.parse()
+      |> URI.merge(url)
+      |> URI.to_string()
     end
 
     def book_url(links, goodreads_id) do
       link =
-        links
-        |> Enum.find(fn link ->
+        Enum.find(links, fn link ->
           link["id"] == goodreads_id
         end)
 
@@ -81,14 +83,13 @@ defmodule Blog do
     end
 
     def get_review(id, posts) do
-      (posts || [])
-      |> Enum.find(fn post ->
+      Enum.find(posts || [], fn post ->
         get_goodreads_id(post) == id
       end)
     end
 
     defp get_goodreads_id(post) do
-      if post["book"] == nil do
+      unless post["book"] do
         %{}
       else
         post["book"]["goodreads_id"]
@@ -120,7 +121,7 @@ defmodule Blog do
              file_system: {Solid.LocalFileSystem, unquote(Macro.escape(fs))}
            ) do
         {:ok, iolist} ->
-          iolist |> IO.iodata_to_binary()
+          IO.iodata_to_binary(iolist)
 
         {:error, error, iolist} ->
           require Logger

@@ -34,9 +34,6 @@ defmodule Blog.RootLayout do
           integrity="sha256-6S7q0JJs/Kx4kb/fv0oMjS855QTz5Rc2hh9AkIUjUsk="
           crossorigin="anonymous"
         ></script>
-        {% comment %}
-        {% seo %}
-        {% endcomment %}
       </head>
       <body>
         <div id="the-universe">
