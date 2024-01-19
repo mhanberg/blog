@@ -10,7 +10,6 @@ config :tableau, :reloader,
 config :web_dev_utils, :reload_log, true
 config :web_dev_utils, :reload_url, "'wss://' + location.host + '/ws'"
 
-
 config :tailwind,
   version: "3.3.5",
   default: [

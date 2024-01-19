@@ -39,7 +39,7 @@ defmodule Blog.BookshelfPage do
         <div class="flex justify-between mt-4">
           <a class="text-sm text-white font-normal"
              href="{{ book.link | default: "#" }}" target="_blank">
-            Buy it
+            View on Goodreads
           </a>
         {% assign post = book.id | get_review: posts %}
         {% if post %}
@@ -76,7 +76,7 @@ defmodule Blog.BookshelfPage do
               <div class="flex justify-between mt-4">
                 <a class="text-sm text-white font-normal"
                    href="{{ book.link | default: "#" }}" target="_blank">
-                  Buy it
+                  View on Goodreads
                 </a>
               {% assign post = book.id | get_review: posts %}
               {% if post %}

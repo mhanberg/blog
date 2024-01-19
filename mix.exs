@@ -31,6 +31,8 @@ defmodule Blog.MixProject do
       {:tableau, "~> 0.14"},
       # {:tableau, path: "../tableau"},
       {:floki, "~> 0.34"},
+      {:req, "~> 0.4.8"},
+      {:easyxml, "~> 0.1.0-dev", github: "wojtekmach/easyxml", branch: "main"},
       {:solid, "~> 0.15.2"},
       {:tailwind, "~> 0.2", runtime: Mix.env() == :dev}
     ]

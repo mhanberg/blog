@@ -59,7 +59,7 @@ defmodule Blog do
       if books do
         books
         |> Enum.group_by(fn book ->
-          DateTimeParser.parse_date!(book["date_read"]).year
+          book["date_read"].year
         end)
         |> Enum.sort_by(fn {year, _} -> year end, :desc)
       else
