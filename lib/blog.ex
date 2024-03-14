@@ -82,6 +82,14 @@ defmodule Blog do
       "#{mins} minute read"
     end
 
+    def reload(env) do
+      if env == "dev" do
+        Tableau.live_reload(%{})
+      else
+        ""
+      end
+    end
+
     def get_review(id, posts) do
       Enum.find(posts || [], fn post ->
         get_goodreads_id(post) == id

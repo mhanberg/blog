@@ -46,6 +46,7 @@ defmodule Blog.RootLayout do
         {% render "analytics" %}
         {% endif %}
         {% render "search" %}
+        {{ tableau.environment | reload }}
       </body>
     </html>
     """
