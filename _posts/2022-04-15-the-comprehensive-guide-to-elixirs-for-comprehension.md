@@ -8,7 +8,6 @@ reviewers:
   - Seth Brown
   - Eric Oestrich
   - Kevin Rankin
-
 ---
 
 ## What is it?
