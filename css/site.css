@@ -138,11 +138,11 @@ blockquote {
   @apply bg-evergreen-700 rounded p-4 text-sm mt-4 border-l-4 border-yellow-500
 }
 
-pre.autumn {
+pre.autumn-hl {
   @apply max-w-4xl mx-auto my-4 p-8 overflow-x-auto text-sm;
 }
 
-article > :not(.table-wrapper):not(.autumn) {
+article> :not(.table-wrapper):not(.autumn-hl) {
   @apply max-w-2xl mx-auto;
 }
 
@@ -183,8 +183,8 @@ div.highlight,
   @apply my-10;
 }
 
-figure + p,
-.highlighter-rouge + p {
+figure+p,
+.highlighter-rouge+p {
   @apply mt-10;
 }
 
@@ -256,8 +256,8 @@ tr:not(:last-child) {
   @apply border-b border-white;
 }
 
-th ~ th,
-td ~ td {
+th~th,
+td~td {
   @apply border-l border-white;
 }
 
