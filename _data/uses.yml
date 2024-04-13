@@ -62,34 +62,40 @@
     - name: iCloud Drive
       link: https://www.icloud.com/iclouddrive
 
+    - name: Supernote Nomad
+      link: https://supernote.com/products/supernote-nomad
+
 - name: PC
   entries:
     - name: Intel Core i9-13900K 3 GHz 24-Core Processor
-      link: https://pcpartpicker.com/product/DhVmP6/intel-core-i9-13900k-3-ghz-24-core-processor-bx8071513900k
+      link: https://www.amazon.com/gp/product/B0BCF54SR1/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1
 
-    - name: NZXT Kraken X63 98.17 CFM Liquid CPU Cooler
-      link: https://pcpartpicker.com/product/JfVG3C/nzxt-kraken-x63-9817-cfm-liquid-cpu-cooler-rl-krx63-01
+    - name: DeepCool LT720 360mm AIO 4th Gen Dual-Chamber Pump 3100RPM
+      link: https://www.amazon.com/gp/product/B0B9SKBGFP/ref=ppx_yo_dt_b_asin_title_o01_s02?ie=UTF8&psc=1
 
     - name: MSI MAG Z790 TOMAHAWK WIFI ATX LGA1700 Motherboard
-      link: https://pcpartpicker.com/product/9B2WGX/msi-mag-z790-tomahawk-wifi-atx-lga1700-motherboard-mag-z790-tomahawk-wifi
+      link: https://www.bhphotovideo.com/c/product/1790666-REG/msi_mag_z790_tomahawk_max.html
 
-    - name: Corsair Vengeance 32 GB (2 x 16 GB) DDR5-5600 CL36 Memory
-      link: https://pcpartpicker.com/product/4kmmP6/corsair-vengeance-32-gb-2-x-16-gb-ddr5-5600-cl36-memory-cmk32gx5m2b5600c36
+    - name: G.SKILL Trident Z5 RGB Series (Intel XMP 3.0) DDR5 RAM 64GB (2x32GB) 6400MT/s
+      link: https://www.amazon.com/gp/product/B0BJ7X9P1W/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
 
     - name: (2) Samsung 990 Pro 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive
-      link: https://pcpartpicker.com/product/34ytt6/samsung-990-pro-2-tb-m2-2280-pcie-40-x4-nvme-solid-state-drive-mz-v9p2t0bw
+      link: https://www.amazon.com/gp/product/B0BHJJ9Y77/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1
 
     - name: MSI GeForce RTX 3060 Ventus 2X 12G GeForce RTX 3060 12GB 12 GB Video Card
-      link: https://pcpartpicker.com/product/pD8bt6/msi-geforce-rtx-3060-ventus-2x-12g-geforce-rtx-3060-12gb-12-gb-video-card-rtx3060ventus2x12goc
+      link: https://www.amazon.com/gp/product/B08WPRMVWB/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&psc=1
 
     - name: Corsair 4000D Airflow ATX Mid Tower Case
-      link: https://pcpartpicker.com/product/bCYQzy/corsair-4000d-airflow-atx-mid-tower-case-cc-9011200-ww
+      link: https://www.amazon.com/gp/product/B08C7BGV3D/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&psc=1
 
     - name: Corsair RM850x (2021) 850 W 80+ Gold Certified Fully Modular ATX Power Supply
-      link: https://pcpartpicker.com/product/26rRsY/corsair-rm850x-2021-850-w-80-gold-certified-fully-modular-atx-power-supply-cp-9020200-na
+      link: https://www.amazon.com/gp/product/B08R5JPTMZ/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
 
-- name: Laptops
+- name: Apple Computers
   entries:
+    - name: 2023 Mac mini Apple M2 Chip with 8‑Core CPU and 10‑Core GPU
+      link: https://support.apple.com/kb/SP825?locale=en_US
+
     - name: 2020 13" M1 MacBook Air
       link: https://support.apple.com/kb/SP825?locale=en_US
 
@@ -101,8 +107,11 @@
     - name: ZSA Voyager
       link: https://zsa.io/voyager
 
-    - name: Sunset Tactile Choc Switches
-      link: https://lowprokb.ca/products/sunset-tactile-choc-switches
+    - name: Linear Red Choc V1
+      link: https://www.amazon.com/Profile-Mechanical-Switch-Split-Ergo-Mechanical-Keyboard/dp/B0BLC57T32?th=1
+
+    - name: Megalodon Triple Knob Macro Pad Programmable Designer Mini Keyboard 16 Keys
+      link: https://www.amazon.com/KEEBMONKEY-Megalodon-Programmable-Designer-Keyboard/dp/B0C1SW9KV1
 
     - name: Ergodoz EZ
       link: https://ergodox-ez.com/
@@ -157,8 +166,7 @@
     - name: Anker Soundcore Life Q20
       link: https://www.amazon.com/gp/product/B07NM3RSRQ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
-    - name: Logitech C920S HD Pro Webcam
-      link: https://www.amazon.com/gp/product/B07K95WFWM/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+    - name: iPhone 12 w/ Continuity Camera
 
     - name: Elgato Stream Deck MK.2
       link: https://www.amazon.com/dp/B09738CV2G?ref=ppx_yo2_dt_b_product_details&th=1
