@@ -6,7 +6,7 @@ categories: post
 permalink: /:title/
 ---
 
-![Logo for the Elixir library Temple]({{ 'images/temple.png' | absolute_url }}){: class="mx-auto my-16 bg-transparent" style="filter: invert(100%);"}
+<img src="/images/temple.png" class="bg-transparent mx-auto my-16" style="filter: invert(100%);">
 
 Temple is a macro DSL for writing HTML markup in [Elixir](https://elixir-lang.org) and a template engine for [Phoenix](https://phoenixframework.org/).
 
