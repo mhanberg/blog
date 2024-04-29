@@ -48,7 +48,7 @@ $ heroku addons:open scheduler
 
 You should now see a screen similar to this.
 
-![]({{ 'images/scheduler-add-on.jpg' | absolute_url }})
+![](/images/scheduler-add-on.jpg)
 
 Since we want to remind customers of their appointments for the day, we'll set the __Frequency__ to __Daily__ and the __Next Due__ to __10:00__. Note that the __Next Due__ time is in UTC, so __10:00__ is 6:00AM where I live. After clicking __Save__, your scheduled job should be live.
 

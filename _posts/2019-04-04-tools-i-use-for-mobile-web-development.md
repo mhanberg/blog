@@ -30,7 +30,7 @@ I use the Mobile Safari dev tools to debug JavaScript and design in the browser 
 
 To use the Web Inspector on your iPhone, toggle the following option under Settings > Safari > Advanced and following the instructions.
 
-![Picture of the web inspector option for the Safari web browser on iOS]({{ 'images/safari-web-inspector.jpg' | absolute_url }})
+![Picture of the web inspector option for the Safari web browser on iOS](/images/safari-web-inspector.jpg)
 
 ## Tailwind CSS
 

@@ -99,7 +99,7 @@ The basics of our version of the Four Quadrant activity are:
 
 At this point, the board should resemble something like this:
 
-![Diagram of a completed Four Quadrants diagram]({{ 'https://res.cloudinary.com/mhanberg/image/upload/v1541686229/four-quadrants.png' }})
+![Diagram of a completed Four Quadrants diagram](https://res.cloudinary.com/mhanberg/image/upload/v1541686229/four-quadrants.png)
 
 Starting in the top right corner and moving counter-clockwise, the team discusses the events in an attempt to learn. If your team is prone to drawing out discussions, consider using a timer.
 

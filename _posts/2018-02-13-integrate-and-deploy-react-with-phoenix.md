@@ -11,7 +11,7 @@ permalink: /post/2018/02/22/integrate-and-deploy-react-with-phoenix/
 
 ## Motivation
 
-![]({{'images/contact.png' | absolute_url }})
+![](/images/contact.png)
 
 My most recent side project, [Contact](https://www.github.com/mhanberg/contact), is a JSON REST API written with [Elixir](https://elixir-lang.org/) and [Phoenix](https://github.com/phoenixframework/phoenix), designed to be the backend to an instant messaging application (e.g., Slack). There was a hackathon coming up at work, and I thought it'd be fun to make a frontend for Contact during it, and although Contact's development was thoroughly test-driven, I wanted to make sure that my API was ready to be used.
 
@@ -40,7 +40,7 @@ $ yarn start # npm start if you don't use yarn
 
 We now have a development server running, serving the generated React application. 
 
-![]({{'images/create-react-default.png' | absolute_url }})
+![](/images/create-react-default.png)
 
 ## Connecting the frontend to the backend
 

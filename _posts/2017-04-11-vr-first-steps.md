@@ -30,7 +30,7 @@ Most of the VR platforms have support for Unity and Unreal Engine, so I chose Un
 
 Unity has an amazing amount of documentation available, so getting it installed and commencing on the tutorial game was a fairly painless process. I was able to get the tutorial finished in a couple of hours.
 
-![picture]({{ site.url }}/images/roll-a-ball-screenshot.png)
+![picture](/images/roll-a-ball-screenshot.png)
 
 At this point it was time to get it on the phone and be able to view it in the headset. We hadn't bought the actual Gear VR headset yet, but we were able to find a 3rd party headset somewhere in the office. 
 
