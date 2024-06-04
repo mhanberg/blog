@@ -55,6 +55,10 @@ defmodule Blog do
       Enum.join(items, ", ")
     end
 
+    def to_date_time(datetime) do
+      DateTimeParser.parse_datetime!(datetime)
+    end
+
     def group_by_year(books) do
       if books do
         books

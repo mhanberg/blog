@@ -9,7 +9,7 @@ defmodule Blog.PostLayout do
         <h1 class="text-2xl md:text-3xl mb-4">{{ page.title }}</h1>
         <div class="text-sm italic">{{ page.date | date: "%B %d, %Y" }}
           {% if page.updated %}
-            • Updated on {{ page.updated | date: "%B %d, %Y" }}
+            • Updated on {{ page.updated | to_date_time | date: "%B %d, %Y" }}
           {% endif %}
           • {{ page | reading_time }}
           • <a class="font-normal" href="https://twitter.com/mitchhanberg" target="_blank">@mitchhanberg</a>

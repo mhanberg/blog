@@ -2,6 +2,7 @@
 layout: Blog.PostLayout
 title: "Ergonomic Remote Development"
 date: 2023-11-07 08:00:00 -05:00
+updated: 2024-06-04 08:00:00 -05:00
 categories: post
 permalink: /:title/
 ---
@@ -113,6 +114,8 @@ If we _are_, then we parse our local IP address out of the `$SSH_CONNECTION` var
 
 Now, if you are a web developer, you typically will be starting a local web server and previewing your site or app in the browser. This gets a little tricky when your browser and web server are not on the same computer!
 
+### Tailscale
+
 Luckily, tailscale comes to the rescue again!
 
 With tailscale, you can create a reverse proxy served over `https` with your existing free plan.
@@ -125,6 +128,14 @@ $ tailscale serve https / http://localhost:4000
 This will create a reverse proxy that is only available inside your tailnet!
 
 If you want to show off your beautiful website to a client or coworker, you can run `tailscale funnel 443 on`, which will make your reverse proxy available outside of your tailnet.
+
+### SSH Port Forwarding
+
+You can also just tack on some options to the `ssh` command instead of using Tailscale
+
+```bash
+$ ssh mitchell@<remote ip> -L 4999:localhost:4999
+```
 
 ## Signing Git Commits
 

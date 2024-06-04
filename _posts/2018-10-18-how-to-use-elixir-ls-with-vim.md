@@ -2,7 +2,7 @@
 layout: Blog.PostLayout
 title: How to use Elixir LS with Vim
 date: 2018-10-18 08:00:00 -04:00
-updated: 2020-06-19
+updated: 2020-06-19 08:00:00 -04:00
 categories: post
 desc: Guide on how to use the Elixir LS language server with the Vim text editor. 
 permalink: /:categories/:year/:month/:day/:title/
