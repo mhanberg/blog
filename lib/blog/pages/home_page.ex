@@ -23,7 +23,7 @@ defmodule Blog.HomePage do
 
     Lately I've been building backend distributed systems and Elixir developer tooling.
 
-    I am the leader and author of the [elixir-tools](https://github.com/elixir-tools) family of developer tool, the maintainer of [Wallaby](https://www.github.com/elixir-wallaby/wallaby), and the author of [Temple](https://www.github.com/mhanberg/temple).
+    I am the leader and author of the [elixir-tools](https://github.com/elixir-tools) family of developer tools, the maintainer of [Wallaby](https://www.github.com/elixir-wallaby/wallaby), and the author of [Temple](https://www.github.com/mhanberg/temple).
 
     ### Get in touch
 
