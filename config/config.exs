@@ -2,13 +2,14 @@ import Config
 
 config :tableau, :reloader,
   patterns: [
-    ~r"lib/*.ex",
+    ~r"lib/.*.ex",
     ~r"(_posts|_docs)/.*.md",
+    ~r"(_includes)/.*.html",
     ~r"assets/*.(css|js)"
   ]
 
 config :web_dev_utils, :reload_log, true
-config :web_dev_utils, :reload_url, "'wss://' + location.host + '/ws'"
+config :web_dev_utils, :reload_url, "'ws://' + location.host + '/ws'"
 
 config :tailwind,
   version: "3.3.5",

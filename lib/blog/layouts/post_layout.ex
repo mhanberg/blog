@@ -47,7 +47,9 @@ defmodule Blog.PostLayout do
 
             <p class="text-sm">I seldom send emails, and I will <strong class="text-white">never</strong> share your email address with anyone else.</p>
 
+            {% if tableau.environment == 'prod' %}
             {% render "subscribe" %}
+            {% endif %}
           </div>
         </div>
     </section>

@@ -12,7 +12,7 @@ defmodule Blog.NewsletterPage do
       <h1 class="md:text-5xl md:mb-8">Newsletter</h1>
 
     {{"
-    I like to work, talk, and write about Elixir, Ruby, JavaScript, productivity, building awesome teams, and shipping great products.
+    I like to work, talk, and write about Elixir, compilers, productivity, building awesome teams, and shipping great products.
 
     **If any of that resonates with you, sign up for my newsletter and follow along!**
     " | markdownify}}
@@ -20,7 +20,7 @@ defmodule Blog.NewsletterPage do
       <p class="text-sm">I seldom send emails quite, and I will <strong class="font-semibold">never</strong> share your email address with anyone else.</p>
 
       <div class="bg-evergreen-800 px-4 pt-4 rounded mt-4">
-        {% render "subscribe", env: tableau.environment %}
+        {% render "subscribe" %}
       </div>
     </div>
     """
