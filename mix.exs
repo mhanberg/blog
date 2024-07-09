@@ -2,6 +2,8 @@ defmodule Blog.MixProject do
   use Mix.Project
 
   def project do
+    Code.put_compiler_option(:ignore_already_consolidated, true)
+
     [
       app: :blog,
       version: "0.1.0",
