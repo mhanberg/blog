@@ -147,7 +147,7 @@ defmodule Animals do
   end
 end
 
-Schematic.dump(Animals.schematic(), %Animals{species: "lupus", genus: "canis", color: "grey"})
+Schematic.unify(Animals.schematic(), %{"species" => "lupus", "genus" => "canis", "color" => "grey"})
 #=> {:ok, %Animals{species: "lupus", genus: "canis", color: "grey"}}
 ```
 
