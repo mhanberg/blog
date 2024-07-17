@@ -111,6 +111,10 @@ defmodule Blog do
     def slugify(str) do
       String.replace(str, " ", "-")
     end
+
+    def app_css(path) do
+      File.read!(path)
+    end
   end
 
   defmacro sigil_L({:<<>>, _, [binary]}, []) do

@@ -35,6 +35,7 @@ config :tableau, :config,
   ]
 
 config :tableau, Tableau.DataExtension, enabled: true
+config :tableau, Tableau.OgExtension, enabled: true
 config :tableau, Tableau.PageExtension, enabled: false
 config :tableau, Tableau.PostExtension, enabled: true, future: true
 config :tableau, Tableau.SitemapExtension, enabled: true
