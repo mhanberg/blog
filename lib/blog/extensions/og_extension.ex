@@ -3,43 +3,35 @@ defmodule Blog.OgExtension do
   import Blog
 
   def run(token) do
-    pages =
-      for post <- token.site.pages do
-        if post[:title] do
-          file =
-            with ".png" <- String.trim_trailing(post[:permalink], "/") <> ".png" do
-              "root.png"
-            end
+    for post <- token.site.pages do
+      if post[:title] do
+        file = file_name(post[:permalink])
 
-          if Application.get_env(:blog, :og_extension, false) do
-            html = template(%{post: post})
+        if Application.get_env(:blog, :og_extension, false) do
+          html = template(%{post: post})
 
-            image =
-              "take-screenshot"
-              |> NodeJS.call!([html], binary: true)
-              |> Base.decode64!()
+          image =
+            "take-screenshot"
+            |> NodeJS.call!([html], binary: true)
+            |> Base.decode64!()
 
-            Mix.shell().info("==> created image for #{post.permalink}")
+          Mix.shell().info("==> created image for #{post.permalink}")
 
-            path = "_site/og" |> Path.join(file)
+          path = "_site/og" |> Path.join(file)
 
-            File.mkdir_p!(path |> Path.dirname())
-            File.write!(path, image)
-          end
-
-          put_in(
-            post,
-            [:seo],
-            %{image: Path.join("https://f005.backblazeb2.com/file/BlogOgImages/og", file)}
-          )
-        else
-          post
+          File.mkdir_p!(path |> Path.dirname())
+          File.write!(path, image)
         end
       end
-
-    token = put_in(token.site.pages, pages)
+    end
 
     {:ok, token}
+  end
+
+  def file_name(permalink) do
+    with ".png" <- String.trim_trailing(permalink, "/") <> ".png" do
+      "root.png"
+    end
   end
 
   defp template(assigns) do

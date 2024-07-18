@@ -34,16 +34,14 @@ defmodule Blog.RootLayout do
           integrity="sha256-6S7q0JJs/Kx4kb/fv0oMjS855QTz5Rc2hh9AkIUjUsk="
           crossorigin="anonymous"
         ></script>
-        {% if page.seo.image %}
-          <meta property="og:image" content="{{ page.seo.image }}" />
-          <meta name="twitter:card" content="{{ page.twitter.card | default: site.twitter.card | default: "summary_large_image" }}" />
-          <meta property="twitter:image" content="{{ page.seo.image }}" />
-          <meta property="twitter:title" content="{{ page.title }}" />
-          <meta name="twitter:site" content="@mitchhanberg" />
-          <meta name="twitter:creator" content="@mitchhanberg" />
-        {% else %}
-          <meta name="twitter:card" content="summary" />
-        {% endif %}
+        <meta name="twitter:card" content="{{ page.twitter.card | default: site.twitter.card | default: "summary_large_image" }}" />
+
+        <meta property="og:image" content="{{ page.permalink | og_image_url }}" />
+        <meta property="twitter:image" content="{{ page.seo.image }}" />
+
+        <meta property="twitter:title" content="{{ page.title }}" />
+        <meta name="twitter:site" content="@mitchhanberg" />
+        <meta name="twitter:creator" content="@mitchhanberg" />
       </head>
       <body>
         <div id="the-universe">
