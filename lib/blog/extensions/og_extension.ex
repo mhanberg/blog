@@ -6,7 +6,10 @@ defmodule Blog.OgExtension do
     pages =
       for post <- token.site.pages do
         if post[:title] do
-          file = String.trim_trailing(post[:permalink], "/") <> ".png"
+          file =
+            with ".png" <- String.trim_trailing(post[:permalink], "/") <> ".png" do
+              "root.png"
+            end
 
           if Application.get_env(:blog, :og_extension, false) do
             html = template(%{post: post})
