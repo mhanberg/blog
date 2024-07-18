@@ -1,40 +1,7 @@
-defmodule Blog.OgExtension do
-  use Tableau.Extension, enabled: true, key: :og, type: :pre_write, priority: 300
+defmodule Blog.Og do
   import Blog
 
-  def run(token) do
-    for post <- token.site.pages do
-      if post[:title] do
-        file = file_name(post[:permalink])
-
-        if Application.get_env(:blog, :og_extension, false) do
-          html = template(%{post: post})
-
-          image =
-            "take-screenshot"
-            |> NodeJS.call!([html], binary: true)
-            |> Base.decode64!()
-
-          Mix.shell().info("==> created image for #{post.permalink}")
-
-          path = "_site/og" |> Path.join(file)
-
-          File.mkdir_p!(path |> Path.dirname())
-          File.write!(path, image)
-        end
-      end
-    end
-
-    {:ok, token}
-  end
-
-  def file_name(permalink) do
-    with ".png" <- String.trim_trailing(permalink, "/") <> ".png" do
-      "root.png"
-    end
-  end
-
-  defp template(assigns) do
+  def template(assigns) do
     ~L"""
     <!DOCTYPE html>
     <html lang="en">
