@@ -30,14 +30,20 @@
     - name: zsh - Shell
       link: https://www.zsh.org/
 
-    - name: zinit - 🌻 Flexible and fast ZSH plugin manager 
-      link: https://github.com/zdharma-continuum/zinit
+    - name: Nix 
+      link: https://nixos.org
+
+    - name: Home Manager 
+      link: https://nix-community.github.io/home-manager/
+
+    - name: nix-darwin
+      link: https://daiderd.com/nix-darwin/
 
     - name: tmux - Terminal Multiplexer
       link: https://github.com/tmux/tmux#welcome-to-tmux
 
-    - name: rtx - Runtime Executor (asdf-plugin compatible) 
-      link: https://github.com/jdx/rtx
+    - name: mise - dev tools, env vars, task runner 
+      link: https://github.com/jdx/mise
 
     - name: fzf - fuzzy finder
       link: https://github.com/junegunn/fzf
@@ -102,12 +108,18 @@
     - name: 2021 16" MacBook Pro
       link: https://www.apple.com/macbook-pro-16/specs/
 
-- name: Peripherals
+- name: Keyboards
   entries:
+    - name: Corne v4
+      link: https://github.com/foostan/crkbd
+
+    - name: Linear Red Choc v2
+      link: https://www.amazon.com/KAILH-Profile-Mechanical-Keyboard-Switches/dp/B0B462XK49
+
     - name: ZSA Voyager
       link: https://zsa.io/voyager
 
-    - name: Linear Red Choc V1
+    - name: Linear Red Choc v1
       link: https://www.amazon.com/Profile-Mechanical-Switch-Split-Ergo-Mechanical-Keyboard/dp/B0BLC57T32?th=1
 
     - name: Megalodon Triple Knob Macro Pad Programmable Designer Mini Keyboard 16 Keys
@@ -116,15 +128,17 @@
     - name: Ergodoz EZ
       link: https://ergodox-ez.com/
 
-    - name: Zilent V2 67g
+    - name: Zilent v2 67g
       link: https://zealpc.net/products/zilent?variant=5894832324646
 
     - name: OLKB Preonic
       link: https://drop.com/buy/preonic-mechanical-keyboard
 
-    - name: Zealio V2 78g
+    - name: Zealio v2 78g
       link: https://zealpc.net/collections/zealio?variant=6502846147
 
+- name: Peripherals
+  entries:
     - name: Apple Magic Trackpad
       link: https://www.apple.com/shop/product/MMMP3AM/A/magic-trackpad-black-multi-touch-surface?fnode=4d0def805c6db6de0fbae9052cb831ea2c102e18ffb2aa987ed6c12e24b77a45ed729f921edb95f34249a492de8d99aef8cc2fc9b698d9ad5a6bf0d44fa4a3f9c9a55b7d7d09597b4d76d5537ce323b3071c18b0a987d19c4fee9ca45a9a7e36
 
@@ -134,8 +148,8 @@
     - name: LG 40WP95C-W Ultrawide
       link: https://www.amazon.com/gp/product/B09P1VLCQ4/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
 
-    - name: Philips Hue Bulbs
-      link: https://amzn.to/37mgzy2
+    - name: PreSonus Eris E3.5-3.5" Near Field Studio Monitors
+      link: https://www.amazon.com/gp/product/B075QVMBT9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
 
     - name: Fully Jarvis Standing Desk
       link: https://www.fully.com/standing-desks/jarvis/jarvis-frame-only.html
