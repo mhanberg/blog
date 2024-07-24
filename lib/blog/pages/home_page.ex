@@ -17,9 +17,9 @@ defmodule Blog.HomePage do
       </div>
 
       <div class="mt-4 max-w-lg md:w-1/2 md:pr-4">
-        <h1 class="text-center md:text-left mt-12 md:mt-auto md:text-3xl lg:text-4xl">Senior Software Engineer</h1>
+        <h1 class="text-center md:text-left mt-12 md:mt-auto md:text-3xl lg:text-4xl">Lead Software Engineer</h1>
     {{"
-    My name is Mitchell Hanberg and I am a senior software engineer from Indianapolis, IN.
+    My name is Mitchell Hanberg and I am a Lead software engineer from Indianapolis, IN.
 
     Lately I've been building backend distributed systems and Elixir developer tooling.
 
