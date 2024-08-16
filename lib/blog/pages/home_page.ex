@@ -19,11 +19,11 @@ defmodule Blog.HomePage do
       <div class="mt-4 max-w-lg md:w-1/2 md:pr-4">
         <h1 class="text-center md:text-left mt-12 md:mt-auto md:text-3xl lg:text-4xl">Lead Software Engineer</h1>
     {{"
-    My name is Mitchell Hanberg and I am a Lead software engineer from Indianapolis, IN.
+    My name is Mitchell Hanberg and I am a lead software engineer from Indianapolis, IN.
 
     Lately I've been building backend distributed systems and Elixir developer tooling.
 
-    I am the leader and author of the [elixir-tools](https://github.com/elixir-tools) family of developer tools, the maintainer of [Wallaby](https://www.github.com/elixir-wallaby/wallaby), and the author of [Temple](https://www.github.com/mhanberg/temple).
+    I am a member of the [Elixir Language Server team](https://elixir-lang.org/blog/2024/08/15/welcome-elixir-language-server-team/), the leader and author of the [elixir-tools](https://github.com/elixir-tools) family of developer tools, the maintainer of [Wallaby](https://www.github.com/elixir-wallaby/wallaby), and the author of [Temple](https://www.github.com/mhanberg/temple).
 
     ### Get in touch
 
