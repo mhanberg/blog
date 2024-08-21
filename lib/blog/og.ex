@@ -1,4 +1,20 @@
+# defmodule Blog.Og.Layout do
+#   use Tableau.Layout
+#   import Blog
+#
+#   def template(assigns) do
+#     ~L"""
+#     {{ inner_content | render }}
+#     """
+#   end
+# end
+
 defmodule Blog.Og do
+  # use Tableau.Page,
+  #   layout: Blog.Og.Layout,
+  #   permalink: "/og/preview",
+  #   title: "Some kind of page title"
+
   import Blog
 
   def template(assigns) do
@@ -22,13 +38,13 @@ defmodule Blog.Og do
           </div>
           <div class="flex justify-end items-center p-8">
             <span class="text-3xl font-semibold">
-              {{ post.date | date: "%B %d, %Y"}}
+              {{ page.date | date: "%B %d, %Y"}}
             </span>
           </div>
         </div>
         <div class="grid justify-center items-center h-screen w-screen absolute top-0 border-white border-[15px]">
           <div class="flex items-end px-12">
-            <div class="text-7xl font-bold leading-[125%]">{{ post.title }}</div>
+            <div class="text-7xl font-bold leading-[125%]">{{ page.title }}</div>
           </div>
         </div>
       </body>
