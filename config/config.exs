@@ -28,7 +28,13 @@ config :tableau, :config,
   timezone: "America/Indiana/Indianapolis",
   markdown: [
     mdex: [
-      extension: [table: true, header_ids: "", tasklist: true, strikethrough: true],
+      extension: [
+        table: true,
+        header_ids: "",
+        tasklist: true,
+        strikethrough: true,
+        autolink: true
+      ],
       render: [unsafe_: true],
       features: [syntax_highlight_theme: "everforest_dark"]
     ]
