@@ -26,15 +26,6 @@ defmodule Blog.BookshelfPage do
             <span> {{ book.title }} </span>
             <div class="text-sm italic">{{ book.author }}</div>
           </div>
-          <div class="ml-2 flex-shrink-0">
-            {% unless book.image contains '/nophoto/' %}
-              <img src="{{ book.image }}" alt="Book cover for {{ book.title }}" class="h-32">
-            {% else %}
-              <div class="h-32 w-24 bg-evergreen-500 text-evergreen-800 text-5xl flex items-center justify-center">
-                {{ book.title | split: "" | first }}
-              </div>
-            {% endunless %}
-          </div>
         </div>
         <div class="flex justify-between mt-4">
           <a class="text-sm text-white font-normal"
@@ -62,15 +53,6 @@ defmodule Blog.BookshelfPage do
                   <span> {{ book.title }} </span>
                   <div class="text-sm italic">{{ book.author }}</div>
                   <div class="text-sm italic">Read {{ book.date_read | date_to_string: "ordinal", "US" }}</div>
-                </div>
-                <div class="ml-2 flex-shrink-0">
-                  {% unless book.image contains '/nophoto/' %}
-                    <img src="{{ book.image }}" alt="Book cover for {{ book.title }}" class="h-32">
-                  {% else %}
-                    <div class="h-32 w-24 bg-evergreen-500 text-evergreen-800 text-5xl flex items-center justify-center">
-                      {{ book.title | split: "" | first }}
-                    </div>
-                  {% endunless %}
                 </div>
               </div>
               <div class="flex justify-between mt-4">

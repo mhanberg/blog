@@ -43,8 +43,8 @@ defmodule Blog.RootLayout do
         <meta name="twitter:site" content="@mitchhanberg" />
         <meta name="twitter:creator" content="@mitchhanberg" />
       </head>
-      <body>
-        <div id="the-universe">
+      <body class="font-sans bg-evergreen-900 text-white text-[18px]">
+        <div id="the-universe" class="min-h-screen pb-8 grid grid-rows-[auto_1fr_auto] grid-cols-[100%]">
           {% render "header" %}
           <main class="container">{{ inner_content | render }}</main>
           {% render "footer" %}

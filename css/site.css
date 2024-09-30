@@ -1,6 +1,5 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "../_includes/native";
 
 * {
   scrollbar-color: theme("colors.evergreen.700") theme("colors.evergreen.900");
@@ -9,20 +8,6 @@
 
 .formkit-powered-by-convertkit {
   display: none !important;
-}
-
-body {
-  @apply font-sans bg-evergreen-900 text-white;
-
-  font-size: 18px;
-}
-
-#the-universe {
-  @apply min-h-screen pb-8;
-
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
 }
 
 .anchor {
