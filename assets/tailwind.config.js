@@ -2,7 +2,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: [
-    "_includes/*.html",
+    // "_includes/*.html",
     "extra/**/*.js",
     "extra/**/*.css",
     "lib/**/*.ex"
@@ -23,7 +23,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        "sans": ["Inter", ...defaultTheme.fontFamily.sans]
+        "sans": ['"Jersey 25"', ...defaultTheme.fontFamily.sans]
       },
     },
     container: {

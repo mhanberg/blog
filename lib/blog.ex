@@ -36,7 +36,7 @@ defmodule Blog do
     end
 
     def markdownify(markdown) do
-      MDEx.to_html(markdown)
+      MDEx.to_html!(markdown)
     end
 
     def absolute_url(url) do
