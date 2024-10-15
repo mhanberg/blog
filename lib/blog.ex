@@ -77,8 +77,8 @@ defmodule Blog do
       end
     end
 
-    def reading_time(post) do
-      words = post["body"] |> String.split(" ") |> Enum.count()
+    def reading_time(content) do
+      words = content |> String.split(" ") |> Enum.count()
 
       mins =
         if words < 360 do
@@ -89,7 +89,7 @@ defmodule Blog do
         |> Kernel./(2)
         |> ceil()
 
-      "#{mins} minute read"
+      mins
     end
 
     def reload(env) do

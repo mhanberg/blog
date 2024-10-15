@@ -1,0 +1,11 @@
+{
+  "name": "site",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "fzf": "^0.5.2",
+    "lit-html": "^3.2.1"
+  }
+}

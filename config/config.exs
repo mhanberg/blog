@@ -3,13 +3,18 @@ import Config
 config :tableau, :reloader,
   patterns: [
     ~r"^lib/.*.ex",
-    ~r"^(_posts|_docs)/.*.md",
+    ~r"^(_posts|_docs|_pages)/.*.md",
     ~r"^(_includes)/.*.html",
-    ~r"^assets/*.(css|js)"
+    ~r"^css/site.css",
+    ~r"^js/index.js"
   ]
 
 config :web_dev_utils, :reload_log, true
 config :web_dev_utils, :reload_url, "'ws://' + location.host + '/ws'"
+
+config :temple,
+  engine: EEx.SmartEngine,
+  attributes: {Temple, :attributes}
 
 config :tailwind,
   version: "3.4.13",
@@ -21,7 +26,23 @@ config :tailwind,
     )
   ]
 
-config :tableau, :assets, tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
+config :bun,
+  version: "1.1.30",
+  install: [
+    args: ~w(install)
+  ],
+  default: [
+    args: ~w(
+      build 
+      index.js  
+      --outdir=../_site/js
+    ),
+    cd: Path.expand("../js", __DIR__)
+  ]
+
+config :tableau, :assets,
+  tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]},
+  bun: {Bun, :install_and_run, [:default, ~w(--watch)]}
 
 config :tableau, :config,
   url: "http://localhost:4999",
@@ -36,7 +57,7 @@ config :tableau, :config,
         autolink: true
       ],
       render: [unsafe_: true],
-      features: [syntax_highlight_theme: "everforest_dark"]
+      features: [syntax_highlight_theme: "poimandres"]
     ]
   ]
 

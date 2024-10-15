@@ -1,7 +1,6 @@
 defmodule Blog.RootLayout do
   use Tableau.Layout
   use Blog.Component
-  import Tableau.Document.Helper
 
   def template(assigns) do
     temple do
@@ -19,13 +18,23 @@ defmodule Blog.RootLayout do
                href: "https://www.mitchellhanberg.com/feed.xml",
                title: "Mitchell Hanberg"
 
-          link rel: "stylesheet", href: "https://rsms.me/inter/inter.css"
+          # link rel: "stylesheet", href: "https://rsms.me/inter/inter.css"
+          link rel: "preconnect", href: "https://fonts.googleapis.com"
+          link rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: true
+
+          link href: "https://fonts.googleapis.com/css2?family=Jersey+25&display=swap",
+               rel: "stylesheet"
+
+          link href:
+                 "https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap",
+               rel: "stylesheet"
+
           link rel: "stylesheet", href: "/css/site.css"
           link rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png"
           link rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png"
           link rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png"
 
-          script src: "/js/site.js"
+          script type: "module", src: "/js/index.js"
 
           script src: "https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js",
                  defer: true
@@ -49,19 +58,15 @@ defmodule Blog.RootLayout do
           meta name: "twitter:creator", content: "@mitchhanberg"
         end
 
-        body class: "" do
-          div id: "the-universe", class: "" do
-            c &header/1
-
-            main class: "container" do
-              render(@inner_content)
-            end
-
-            c &footer/1
+        body class: "font-sans bg-black text-white text-[18px]" do
+          main do
+            render(@inner_content)
           end
 
           if Mix.env() == :prod do
-            c &analytics/1
+            "<!-- Plausible Analytics -->"
+            script defer: true, "data-domain": "mitchellhanberg.com", src: "/js/foo.js"
+            "<!-- / Plausible -->"
           end
 
           if Mix.env() == :dev do
@@ -69,21 +74,6 @@ defmodule Blog.RootLayout do
           end
         end
       end
-    end
-  end
-
-  defp header _assigns do
-    temple do
-    end
-  end
-
-  defp footer _assigns do
-    temple do
-    end
-  end
-
-  defp analytics(_assigns) do
-    temple do
     end
   end
 end

@@ -5,6 +5,7 @@ module.exports = {
     // "_includes/*.html",
     "extra/**/*.js",
     "extra/**/*.css",
+    "css/site.css",
     "lib/**/*.ex"
   ],
   variants: {
@@ -13,17 +14,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        evergreen: {
-          400: "#cbe0df",
-          500: "#a0bfc0",
-          600: "#719496",
-          700: "#4a6668",
-          800: "#2d4648",
-          900: "#1a2b2c",
-        }
+        hacker: "#00ff00"
       },
       fontFamily: {
-        "sans": ['"Jersey 25"', ...defaultTheme.fontFamily.sans]
+        "sans": ['"Jersey 25"', ...defaultTheme.fontFamily.sans],
+        "mono": ['"Fira Code"', ...defaultTheme.fontFamily.mono]
       },
     },
     container: {
@@ -31,4 +26,8 @@ module.exports = {
       padding: "1rem",
     }
   },
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/container-queries"),
+  ],
 };

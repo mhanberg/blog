@@ -1,0 +1,10 @@
+- name: Home
+  permalink: /
+- name: Articles
+  permalink: /articles
+- name: Bookshelf
+  permalink: /bookshelf
+- name: Uses
+  permalink: /uses
+- name: Newsletter
+  permalink: /newsletter
