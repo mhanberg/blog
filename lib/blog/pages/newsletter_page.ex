@@ -8,7 +8,7 @@ defmodule Blog.NewsletterPage do
 
   def template(_assigns) do
     temple do
-      div class: "prose-lg prose-invert" do
+      div class: "prose prose-invert prose-headings:font-normal max-w-4xl" do
         MDEx.to_html!("""
         # Newsletter
 
@@ -23,8 +23,8 @@ defmodule Blog.NewsletterPage do
           "share your email address with anyone else"
         end
 
-        div class: "border border-white bg-zinc-300 px-4 pt-4 rounded mt-4 max-w-xl" do
-          c &subscribe/1
+        div class: "px-4 pt-4 rounded mt-4 max-w-xl" do
+          c &convertkit/1
         end
       end
     end

@@ -6,25 +6,26 @@ module.exports = {
     "extra/**/*.js",
     "extra/**/*.css",
     "css/site.css",
-    "lib/**/*.ex"
+    "lib/**/*.ex",
   ],
   variants: {
-    visibility: ['responsive', 'group-hover'],
+    visibility: ["responsive", "group-hover"],
   },
   theme: {
     extend: {
       colors: {
-        hacker: "#00ff00"
+        hacker: "#00ff00",
       },
       fontFamily: {
-        "sans": ['"Jersey 25"', ...defaultTheme.fontFamily.sans],
-        "mono": ['"Fira Code"', ...defaultTheme.fontFamily.mono]
+        // fancy: ['"Jersey 25"'],
+        fancy: ["VT323"],
+        mono: ['"Fira Code"', ...defaultTheme.fontFamily.mono],
       },
     },
     container: {
       center: true,
       padding: "1rem",
-    }
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),

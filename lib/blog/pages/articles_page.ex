@@ -1,6 +1,6 @@
 defmodule Blog.ArticlesPage do
   use Tableau.Page,
-    layout: Blog.SidebarLayout,
+    layout: Blog.PageLayout,
     permalink: "/articles",
     title: "Articles | Mitchell Hanberg"
 
@@ -9,17 +9,15 @@ defmodule Blog.ArticlesPage do
   def template(assigns) do
     temple do
       section class: "mx-auto mb-8" do
-        div class: "prose-lg prose-invert" do
-          MDEx.to_html!("""
-          # Articles
+        MDEx.to_html!("""
+        # Articles
 
-          Subscribe to my [mailing list](/newsletter) or [RSS](/feed.xml) feed to stay notified of new articles.
-          """)
-        end
+        Subscribe to my [mailing list](/newsletter) or [RSS](/feed.xml) feed to stay notified of new articles.
+        """)
 
         for post <- @posts do
           article class: "mt-8" do
-            a class: "block text-2xl md:text-3xl text-white no-underline",
+            a class: "font-fancy block font-normal text-2xl md:text-3xl no-underline",
               href: post.permalink do
               post.title
             end

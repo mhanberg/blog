@@ -2,10 +2,42 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.prose-lg a {
-  @apply text-hacker;
+
+* {
+  scrollbar-color: theme("colors.hacker") theme("colors.black");
+  scrollbar-width: auto;
+}
+
+p {
+  @apply font-mono text-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-fancy;
 }
 
 pre.autumn-hl {
   @apply max-w-4xl mx-auto my-4 overflow-x-auto text-sm;
+}
+
+.anchor {
+  @apply font-mono;
+  font-size: 0.8em;
+  text-decoration-line: none;
+  font-weight: 400;
+}
+
+.anchor:hover {
+  text-decoration-line: underline;
+}
+
+.anchor:after {
+  text-decoration-line: none;
+  padding-right: 0.5rem;
+  content: "#";
 }

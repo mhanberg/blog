@@ -29,25 +29,14 @@ defmodule Blog.RootLayout do
                  "https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap",
                rel: "stylesheet"
 
+          ~s|<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">|
+
           link rel: "stylesheet", href: "/css/site.css"
           link rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png"
           link rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png"
           link rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png"
 
           script type: "module", src: "/js/index.js"
-
-          script src: "https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js",
-                 defer: true
-
-          script src:
-                   "https://cdn.jsdelivr.net/npm/algoliasearch@4.0.0/dist/algoliasearch-lite.umd.js",
-                 integrity: "sha256-MfeKq2Aw9VAkaE9Caes2NOxQf6vUa8Av0JqcUXUGkd0=",
-                 crossorigin: "anonymous"
-
-          script src:
-                   "https://cdn.jsdelivr.net/npm/instantsearch.js@4.0.0/dist/instantsearch.production.min.js",
-                 integrity: "sha256-6S7q0JJs/Kx4kb/fv0oMjS855QTz5Rc2hh9AkIUjUsk=",
-                 crossorigin: "anonymous"
 
           meta name: "twitter:card", content: "summary_large_image"
 
@@ -58,7 +47,7 @@ defmodule Blog.RootLayout do
           meta name: "twitter:creator", content: "@mitchhanberg"
         end
 
-        body class: "font-sans bg-black text-white text-[18px]" do
+        body class: "font-mono bg-black text-white text-[16px]" do
           main do
             render(@inner_content)
           end

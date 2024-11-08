@@ -8,6 +8,12 @@ defmodule Blog.Component do
     end
   end
 
+  def convertkit(_assigns) do
+    temple do
+      iframe width: "100%", height: "211px", src: "/convertkit"
+    end
+  end
+
   def subscribe(_assigns) do
     temple do
       "<!-- newsletter -->"
@@ -39,14 +45,14 @@ defmodule Blog.Component do
     end
   end
 
-  def folder(_assigns) do
+  def folder(assigns) do
     temple do
       svg xmlns: "http://www.w3.org/2000/svg",
           fill: "none",
           viewbox: "0 0 24 24",
           stroke_width: "1.5",
           stroke: "currentColor",
-          class: "size-6" do
+          class: @class do
         path stroke_linecap: "round",
              stroke_linejoin: "round",
              d:

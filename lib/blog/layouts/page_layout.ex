@@ -4,7 +4,8 @@ defmodule Blog.PageLayout do
 
   def template(assigns) do
     temple do
-      div class: "prose-lg prose-invert prose-ul:list-disc prose-p:text-[22px]" do
+      div class:
+            "prose prose-invert prose-ul:list-disc prose-headings:font-normal prose-a:text-hacker max-w-4xl mx-auto" do
         render(@inner_content)
       end
     end

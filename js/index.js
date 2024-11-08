@@ -1,18 +1,8 @@
-console.log("hi but i'm different");
+import Alpine from "alpinejs";
 
-import {html, render} from 'lit-html';
+import { Fzf } from "fzf";
 
-// This is a lit-html template function. It returns a lit-html template.
-const helloTemplate = (name) => html`<div>bye ${name}!</div>`;
+window.Fzf = Fzf;
+window.Alpine = Alpine;
 
-
-
-window.addEventListener("DOMContentLoaded", () => {
-// This renders <div>Hello Steve!</div> to the document body
-  let nav = document.getElementById("nav")
-  nav.innerHTML = '';
-  render(helloTemplate('Steve'), nav);
-});
-console.log('hi');
-console.log('hi');
-console.log('hi');
+Alpine.start();

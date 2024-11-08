@@ -19,6 +19,8 @@
               beam.packages.erlang_27.elixir_1_17
               nodejs_18
               netlify-cli
+              nodePackages.typescript-language-server
+              prettierd
             ];
           };
         };
