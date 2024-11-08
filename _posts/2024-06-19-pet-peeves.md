@@ -17,3 +17,4 @@ Here's a list of minor things I find irritating. I'll attempt to keep this page 
 - Complaining about what other people are doing when it doesn't affect you at all
 - Judgement without context
 - Speaking in a way that implies you have a ton of experience with something (saying "I do this in all my apps") when really you've done it two times
+- The word "just"
