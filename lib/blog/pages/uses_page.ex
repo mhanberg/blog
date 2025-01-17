@@ -1,15 +1,14 @@
 defmodule Blog.UsesPage do
   use Tableau.Page,
-    layout: Blog.SidebarLayout,
+    layout: Blog.PageLayout,
     permalink: "/uses",
-    title: "Uses | Mitchell Hanberg"
+    title: "Uses"
 
   use Blog.Component
 
   def template(assigns) do
     temple do
-      section class:
-                "prose prose-invert prose-ul:list-disc marker:prose-li:text-hacker m-auto prose-headings:font-normal" do
+      section do
         h1 do: "Uses"
 
         p do

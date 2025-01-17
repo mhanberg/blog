@@ -18,10 +18,34 @@ defmodule Blog.Component do
     temple do
       "<!-- newsletter -->"
 
-      div class: "my-4 mx-auto flex justify-center *:flex-grow" do
+      style do
+        """
+        .my-4 {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+        .mx-auto {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .flex {display: flex;}
+        .justify-center{
+          justify-content: center;
+        }
+        .flex-grow-inside > * {
+          flex-grow: 1;
+        }
+        .w-full {
+          width: 100%;
+        }
+
+        """
+      end
+
+      div class: "w-full my-4 mx-auto flex justify-center flex-grow-inside" do
         script async: true,
                "data-uid": "179cec943d",
-               src: "https://dogged-composer-1540.ck.page/179cec943d/index.js"
+               src: "https://dogged-composer-1540.kit.com/179cec943d/index.js"
       end
 
       "<!--/ newsletter -->"

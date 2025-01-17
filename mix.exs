@@ -30,7 +30,8 @@ defmodule Blog.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:tableau, "~> 0.18"},
+      # {:tableau, "~> 0.18"},
+      {:tableau, path: "../tableau/", override: true},
       {:temple, "~> 0.12"},
       {:benchee, "~> 1.3"},
       {:bun, "~> 1.3"},

@@ -1,8 +1,8 @@
 defmodule Blog.ProjectsPage do
   use Tableau.Page,
-    layout: Blog.RootLayout,
+    layout: Blog.PageLayout,
     permalink: "/projects",
-    title: "Projects | Mitchell Hanberg"
+    title: "Projects"
 
   import Blog
 

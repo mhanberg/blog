@@ -2,7 +2,7 @@ defmodule Blog.ArticlesPage do
   use Tableau.Page,
     layout: Blog.PageLayout,
     permalink: "/articles",
-    title: "Articles | Mitchell Hanberg"
+    title: "Articles"
 
   use Blog.Component
 

@@ -1,8 +1,8 @@
 defmodule Blog.BookshelfPage do
   use Tableau.Page,
-    layout: Blog.SidebarLayout,
+    layout: Blog.PageLayout,
     permalink: "/bookshelf",
-    title: "Bookshelf | Mitchell Hanberg"
+    title: "Bookshelf"
 
   use Blog.Component
 
@@ -21,7 +21,7 @@ defmodule Blog.BookshelfPage do
       |> Map.put(:currently_reading, currently_reading)
 
     temple do
-      div class: "prose prose-invert prose-headings:font-normal max-w-4xl" do
+      div class: "prose prose-invert prose-headings:font-normal prose-a:text-white max-w-4xl" do
         MDEx.to_html!("""
         # Bookshelf
 
@@ -59,9 +59,10 @@ defmodule Blog.BookshelfPage do
   defp book(assigns) do
     temple do
       a href: @book["link"] || "#",
+        title: @book["title"],
         target: "_blank",
         class:
-          "book [&:not(:only-child)]:last:rotate-[-4deg] [&:not(:only-child)]:last:-translate-x-2 flex items-center text-sm py-4 border border-hacker h-[250px] w-[50px] [writing-mode:vertical-rl] rounded" do
+          "book [&:not(:only-child)]:last:rotate-[-4deg] [&:not(:only-child)]:last:-translate-x-2 flex items-center text-sm py-4 border-2 border-hacker h-[250px] w-[50px] [writing-mode:vertical-rl] rounded" do
         div class: "text-ellipsis overflow-hidden whitespace-nowrap" do
           @book["title"]
         end

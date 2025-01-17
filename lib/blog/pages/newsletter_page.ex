@@ -1,8 +1,8 @@
 defmodule Blog.NewsletterPage do
   use Tableau.Page,
-    layout: Blog.SidebarLayout,
+    layout: Blog.PageLayout,
     permalink: "/newsletter",
-    title: "Newsletter | Mitchell Hanberg"
+    title: "Newsletter"
 
   use Blog.Component
 

@@ -7,7 +7,7 @@ defmodule Blog.RootLayout do
       html lang: "en" do
         head do
           title do
-            @page.title
+            @page.title <> " | Mitchell Hanberg"
           end
 
           meta name: "viewport", content: "width=device-width, initial-scale=1.0"
