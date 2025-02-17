@@ -23,15 +23,18 @@ I am a member of the [Elixir Language Server team](https://elixir-lang.org/blog/
 - [elixir-tools.vscode](https://github.com/elixir-tools/elixir-tools.vscode) - VSCode Plugin for Elixir
 - [Credo Language Server](https://github.com/elixir-tools/credo-langauge-server) - LSP implementation for Credo
 - [GenLSP](https://github.com/elixir-tools/gen_lsp) - Language Server Protocol behaviour for Elixir
+- [Spitfire](https://github.com/elixir-tools/spitfire) - Error resilient parser for Elixir
 - [Tableau](https://github.com/elixir-tools/tableau) - Static Site Generator for Elixir
 
 ### Temple
 
-[Temple](https://github.com/mhanberg/temple) is an HTML DSL for Elixir and Phoenix and my first original contribution to the Elixir community.
+[Temple](https://github.com/mhanberg/temple) is an HTML DSL and component system for Elixir and Phoenix and my first original contribution to the Elixir community.
+
+Temple is fully compatible with [HEEx](TODO), allowing you to mix and match components and write [Phoenix LiveView](TODO) programs with ease.
 
 Inspired by the [Lucky web framework](https://luckyframework.org/guides/frontend/rendering-html#creating-a-page) templating language, Temple allows you to effortlessly author HTML without leaving the comfortable embrace of Elixir.
 
-I learned a _lot_ about macros and metaprogramming while building Temple and found a lot of great resources along the way, including&#58;
+I learned a _lot_ about macros and metaprogramming while building Temple and found a lot of great resources along the way, including:
 
 * [Metaprogramming Elixir](https://amzn.to/2CVV7lr) by [Chris McCord](https://twitter.com/chris_mccord).
 * [Understanding Elixir Macros](https://www.theerlangelist.com/article/macros_1) blog series by [Saša Jurić](https://twitter.com/sasajuric)
@@ -42,7 +45,7 @@ I learned a _lot_ about macros and metaprogramming while building Temple and fou
 
 After using Wallaby on a side project, the original creator ([Chris Keathley](https://keathley.io)) stepped down as the lead maintainer and asked the community if anyone could take ownership of the library.
 
-Having never "seriously" contributed to an open source project before, I was nervous about responding to Keathley. So I started contributing [small PRs](https://github.com/elixir-wallaby/wallaby/pull/371) to learn the code base and it lead to being asked to become an official maintainer of the library.
+Having never "seriously" contributed to an open source project before, I was nervous about responding to Chris. So I started contributing [small PRs](https://github.com/elixir-wallaby/wallaby/pull/371) to learn the code base and it lead to being asked to become an official maintainer of the library.
 
 Maintaining a popular open source library has presented me with new challenges in addition to programming and I truly appreciate every opportunity Wallaby has given me.
 

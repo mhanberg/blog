@@ -6,8 +6,8 @@
     - name: Neovim
       link: https://neovim.io
 
-    - name: Kanagawa - Neovim theme
-      link: https://github.com/rebelot/kanagawa.nvim
+    - name: Rosé Pine 
+      link: https://github.com/rose-pine
 
     - name: JetBrains Mono font
       link: https://www.jetbrains.com/lp/mono/
@@ -113,14 +113,9 @@
     - name: Corne v4
       link: https://github.com/foostan/crkbd
 
-    - name: Linear Red Choc v2
-      link: https://www.amazon.com/KAILH-Profile-Mechanical-Keyboard-Switches/dp/B0B462XK49
-
     - name: ZSA Voyager
       link: https://zsa.io/voyager
 
-    - name: Linear Red Choc v1
-      link: https://www.amazon.com/Profile-Mechanical-Switch-Split-Ergo-Mechanical-Keyboard/dp/B0BLC57T32?th=1
 
     - name: Megalodon Triple Knob Macro Pad Programmable Designer Mini Keyboard 16 Keys
       link: https://www.amazon.com/KEEBMONKEY-Megalodon-Programmable-Designer-Keyboard/dp/B0C1SW9KV1
@@ -128,12 +123,18 @@
     - name: Ergodoz EZ
       link: https://ergodox-ez.com/
 
-    - name: Zilent v2 67g
-      link: https://zealpc.net/products/zilent?variant=5894832324646
-
     - name: OLKB Preonic
       link: https://drop.com/buy/preonic-mechanical-keyboard
 
+
+- name: Keyboard Switches
+  entries:
+    - name: Linear Red Choc v2
+      link: https://www.amazon.com/KAILH-Profile-Mechanical-Keyboard-Switches/dp/B0B462XK49
+    - name: Linear Red Choc v1
+      link: https://www.amazon.com/Profile-Mechanical-Switch-Split-Ergo-Mechanical-Keyboard/dp/B0BLC57T32?th=1
+    - name: Zilent v2 67g
+      link: https://zealpc.net/products/zilent?variant=5894832324646
     - name: Zealio v2 78g
       link: https://zealpc.net/collections/zealio?variant=6502846147
 
@@ -160,6 +161,15 @@
     - name: Synology 4-Bay DiskStation DS423+
       link: https://www.amazon.com/gp/product/B0BXMS9GFF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
+    - name: Elgato Stream Deck MK.2
+      link: https://www.amazon.com/dp/B09738CV2G?ref=ppx_yo2_dt_b_product_details&th=1
+
+    - name: Elgato Key Light
+      link: https://www.amazon.com/Elgato-Key-Light-Professional-App-Enabled/dp/B07L755X9G
+
+    - name: Elgato Master Mount L
+      link: https://www.amazon.com/gp/product/B07X49967V/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
 - name: Audio/Video
   entries:
     - name: Audio-Technica AT2035PK
@@ -177,16 +187,7 @@
     - name: ATH-M20x Professional Monitor Headphones
       link: https://www.amazon.com/Audio-Technica-ATH-M20x-Professional-Monitor-Headphones/dp/B00HVLUR18/ref=sr_1_2?dchild=1&keywords=ATH-M20x&qid=1635866818&s=musical-instruments&sr=1-2
 
-    - name: Anker Soundcore Life Q20
-      link: https://www.amazon.com/gp/product/B07NM3RSRQ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+    - name: Beats Studio Pro
+      link: https://www.beatsbydre.com/headphones/studio-pro-wireless-b
 
     - name: iPhone 12 w/ Continuity Camera
-
-    - name: Elgato Stream Deck MK.2
-      link: https://www.amazon.com/dp/B09738CV2G?ref=ppx_yo2_dt_b_product_details&th=1
-
-    - name: Elgato Key Light
-      link: https://www.amazon.com/Elgato-Key-Light-Professional-App-Enabled/dp/B07L755X9G
-
-    - name: Elgato Master Mount L
-      link: https://www.amazon.com/gp/product/B07X49967V/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1

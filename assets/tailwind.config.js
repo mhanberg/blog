@@ -7,6 +7,7 @@ module.exports = {
     "extra/**/*.css",
     "css/site.css",
     "lib/**/*.ex",
+    "_pages/**/*.md",
   ],
   variants: {
     visibility: ["responsive", "group-hover"],

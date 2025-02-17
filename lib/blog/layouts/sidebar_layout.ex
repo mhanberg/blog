@@ -33,11 +33,9 @@ defmodule Blog.SidebarLayout do
 
               nav class: "hidden lg:block" do
                 ul class: "flex items-center gap-2" do
-                  li do: a(href: "/articles", do: "articles/")
-                  li do: a(href: "/bookshelf", do: "bookshelf/")
-                  li do: a(href: "/newsletter", do: "newsletter/")
-                  li do: a(href: "/uses", do: "uses/")
-                  li do: a(href: "/feed.xml", do: "rss/")
+                  for n <- @data["nav"] do
+                    li do: a(href: n["permalink"], do: n["name"])
+                  end
                 end
               end
 
@@ -48,12 +46,12 @@ defmodule Blog.SidebarLayout do
 
             div id: "mobilenav", class: "hidden group-[[data-open]]:block bg-black w-full" do
               ul class: "text-2xl" do
-                for item <- @data["sidebar"] do
+                for item <- @data["nav"] do
                   li class:
                        "border-l-4 p-2 data-[selected]:border-hacker data-[selected]:bg-[#2B332D] border-transparent",
                      "data-selected": is_current_page(@posts, item["permalink"], @page.permalink) do
                     a href: item["permalink"], class: "font-mono lowercase" do
-                      item["name"] <> "/"
+                      item["name"]
                     end
                   end
                 end
@@ -124,7 +122,7 @@ defmodule Blog.SidebarLayout do
             "x-trap.noscroll": "focused",
             "@keydown.ctrl.p.window": "focused = true; terminal.focus();",
             class:
-              "absolute z-[100] inset-1 max-h-[75dvh] max-w-4xl mx-auto bg-black mt-8 p-1 border border-hacker rounded" do
+              "absolute z-[100] inset-1 max-h-[75dvh] max-w-4xl mx-auto bg-black mt-8 p-1 border-4 border-hacker" do
         h2 class: "font-mono mb-2 flex gap-1 border-b border-zinc-500 py-1" do
           div class: "flex-shrink-0" do
             "/mitch/"
