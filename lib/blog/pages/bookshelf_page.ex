@@ -63,7 +63,7 @@ defmodule Blog.BookshelfPage do
         target: "_blank",
         class:
           "book [&:not(:only-child)]:last:rotate-[-4deg] [&:not(:only-child)]:last:-translate-x-2 flex items-center text-sm py-4 border-2 border-hacker h-[250px] w-[50px] [writing-mode:vertical-rl] rounded" do
-        div class: "text-ellipsis overflow-hidden whitespace-nowrap" do
+        div class: "text-ellipsis overflow-hidden whitespace-nowrap pt-4" do
           @book["title"]
         end
       end
