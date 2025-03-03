@@ -17,7 +17,7 @@ config :temple,
   attributes: {Temple, :attributes}
 
 config :tailwind,
-  version: "3.4.13",
+  version: "4.0.9",
   default: [
     args: ~w(
     --config=assets/tailwind.config.js
@@ -27,7 +27,7 @@ config :tailwind,
   ]
 
 config :bun,
-  version: "1.1.30",
+  version: "1.2.4",
   install: [
     args: ~w(install)
   ],

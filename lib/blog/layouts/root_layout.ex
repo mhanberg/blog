@@ -4,6 +4,8 @@ defmodule Blog.RootLayout do
 
   def template(assigns) do
     temple do
+      "<!DOCTYPE html>"
+
       html lang: "en" do
         head do
           title do

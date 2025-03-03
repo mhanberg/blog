@@ -23,7 +23,7 @@ defmodule Blog.MixProject do
 
   def aliases() do
     [
-      build: ["tableau.build", "tailwind default --minify"]
+      build: ["tableau.build", "tailwind default --minify", "bun default --minify"]
     ]
   end
 
@@ -41,7 +41,7 @@ defmodule Blog.MixProject do
       {:req, "~> 0.4.8"},
       {:easyxml, "~> 0.1.0-dev", github: "wojtekmach/easyxml", branch: "main"},
       {:solid, "~> 0.15.2"},
-      {:tailwind, "~> 0.2", runtime: Mix.env() == :dev}
+      {:tailwind, "~> 0.3", runtime: Mix.env() == :dev}
     ]
   end
 end
