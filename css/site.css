@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
 @plugin '@tailwindcss/typography';
-@plugin '@tailwindcss/container-queries';
 
 @source './site.css';
 

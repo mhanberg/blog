@@ -23,7 +23,7 @@ defmodule Blog.MixProject do
 
   def aliases() do
     [
-      build: ["tableau.build", "tailwind default --minify", "bun default --minify"]
+      build: ["tableau.build", "tailwind default --minify", "bun install", "bun default --minify"]
     ]
   end
 
