@@ -6,7 +6,7 @@ defmodule Blog.RootLayout do
     temple do
       "<!DOCTYPE html>"
 
-      html lang: "en" do
+      html lang: "en", class: "scroll-smooth" do
         head do
           title do
             @page.title <> " | Mitchell Hanberg"

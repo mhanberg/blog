@@ -59,7 +59,7 @@ defmodule Blog.SidebarLayout do
             end
           end
 
-          div class: "" do
+          div class: "scroll-p-4" do
             render(@inner_content)
           end
 

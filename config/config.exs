@@ -16,33 +16,37 @@ config :temple,
   engine: EEx.SmartEngine,
   attributes: {Temple, :attributes}
 
-config :tailwind,
-  version: "4.0.9",
-  default: [
-    args: ~w(
-    --config=assets/tailwind.config.js
-    --input=css/site.css
-    --output=_site/css/site.css
-    )
-  ]
+# config :tailwind,
+#   version: "4.0.9",
+#   default: [
+#     args: ~w(
+#     --input=css/site.css
+#     --output=_site/css/site.css
+#     )
+#   ]
 
 config :bun,
   version: "1.2.4",
   install: [
-    args: ~w(install),
-    cd: Path.expand("../js", __DIR__)
+    args: ~w(install)
+  ],
+  css: [
+    args: ~w(
+    run tailwindcss
+    --input=css/site.css
+    --output=_site/css/site.css
+    )
   ],
   default: [
     args: ~w(
-      build 
-      index.js  
-      --outdir=../_site/js
-    ),
-    cd: Path.expand("../js", __DIR__)
+    build 
+    js/index.js  
+    --outdir=_site/js
+    )
   ]
 
 config :tableau, :assets,
-  tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]},
+  tailwind: {Bun, :install_and_run, [:css, ~w(--watch)]},
   bun: {Bun, :install_and_run, [:default, ~w(--watch)]}
 
 config :tableau, :config,
