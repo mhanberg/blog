@@ -158,9 +158,6 @@
     - name: Anker Power Strip
       link: https://www.amazon.com/gp/product/B08FWXXBT3/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
-    - name: Synology 4-Bay DiskStation DS423+
-      link: https://www.amazon.com/gp/product/B0BXMS9GFF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
-
     - name: Elgato Stream Deck MK.2
       link: https://www.amazon.com/dp/B09738CV2G?ref=ppx_yo2_dt_b_product_details&th=1
 
@@ -169,6 +166,16 @@
 
     - name: Elgato Master Mount L
       link: https://www.amazon.com/gp/product/B07X49967V/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+- name: Home Lab
+  entries:
+    - name: Synology 4-Bay DiskStation DS423+
+      link: https://www.amazon.com/gp/product/B0BXMS9GFF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+    - name: 4x Dell Optiplex 3050M 
+      link: https://www.hardware-corner.net/desktop-models/Dell-OptiPlex-3050M/
+    - name: Bambu A1 Combo 3D Printer
+      link: https://us.store.bambulab.com/products/a1
+
 
 - name: Audio/Video
   entries:
