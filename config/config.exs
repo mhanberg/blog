@@ -29,7 +29,8 @@ config :tailwind,
 config :bun,
   version: "1.2.4",
   install: [
-    args: ~w(install)
+    args: ~w(install),
+    cd: Path.expand("../js", __DIR__)
   ],
   default: [
     args: ~w(
