@@ -51,7 +51,19 @@ Maintaining a popular open source library has presented me with new challenges i
 
 Thank you Chris!
 
+
+## Conference Speaking
+
+- [OTP Process Abstractions with proc_lib](https://www.youtube.com/watch?v=Ug-SEozyG1A) at CodeBEAM America 2022
+- Your Official Elixir Expert at CodeBEAM America 2025
+
+## Podcasts
+
+- [Elixir Mix #37 - The Elixir Language Service with Mitchell Hanberg](https://topenddevs.com/podcasts/elixir-mix/episodes/emx-037-the-elixir-language-service-with-mitchell-hanberg)
+- [Thinking Elixir #92 - Temple with Mitchell Hanberg](https://podcast.thinkingelixir.com/92)
+- [Thinking Elixir #153 - Elixir Tools and Language Servers](https://podcast.thinkingelixir.com/153)
+
 ## Get in touch
 
-You can find me on [Twitter](https://twitter.com/mitchhanberg), [GitHub](https://github.com/mhanberg), and by [email](mailto:contact@mitchellhanberg.com).
+You can find me on [GitHub](https://github.com/mhanberg) and by [email](mailto:contact@mitchellhanberg.com).
 
