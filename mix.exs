@@ -39,8 +39,7 @@ defmodule Blog.MixProject do
       {:schematic, "~> 0.4", override: true},
       {:floki, "~> 0.34"},
       {:req, "~> 0.4.8"},
-      {:easyxml, "~> 0.1.0-dev", github: "wojtekmach/easyxml", branch: "main"},
-      {:solid, "~> 0.15.2"}
+      {:easyxml, "~> 0.1.0-dev", github: "wojtekmach/easyxml", branch: "main"}
       # {:tailwind, "~> 0.3", runtime: Mix.env() == :dev}
     ]
   end
