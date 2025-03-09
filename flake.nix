@@ -23,6 +23,7 @@
               tailwindcss-language-server
               prettierd
               netlify-cli
+              backblaze-b2
             ];
           };
         };

@@ -10,11 +10,11 @@ defmodule Blog.Og.Layout do
 end
 
 defmodule Blog.Og do
-  use Tableau.Page,
-    layout: Blog.Og.Layout,
-    permalink: "/og/preview",
-    title: "Some kind of page title",
-    date: DateTime.utc_now()
+  # use Tableau.Page,
+  #   layout: Blog.Og.Layout,
+  #   permalink: "/og/preview",
+  #   title: "Some kind of page title",
+  #   date: DateTime.utc_now()
 
   use Blog.Component
 
@@ -34,7 +34,7 @@ defmodule Blog.Og do
                 "MH"
               end
 
-              span class: "text-3xl font-fancy -mt-0.5 font-semibold" do
+              span class: "text-3xl -mt-0.5 font-semibold" do
                 "Mitchell Hanberg"
               end
             end
