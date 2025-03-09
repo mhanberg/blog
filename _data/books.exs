@@ -5,7 +5,7 @@ else
   get = fn shelf ->
     Req.get!("https://www.goodreads.com/review/list/69703261.xml",
       params: [
-        key: System.get_env("GOODREADS_KEY"),
+        key: System.get_env("GOODREADS_KEY") || raise("GOODREADS_KEY is not set"),
         v: 2,
         shelf: shelf,
         per_page: 200
