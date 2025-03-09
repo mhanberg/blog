@@ -25,7 +25,7 @@ defmodule Blog.ArticlesPage do
             div class: "text-sm italic mb-4" do
               Calendar.strftime(post.date, "%b %d, %Y")
               " • "
-              "#{Blog.Filters.reading_time(post.body)} minute read"
+              "#{Blog.reading_time(post.body)} minute read"
             end
           end
         end

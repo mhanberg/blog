@@ -21,7 +21,7 @@ defmodule Blog.UsesPage do
           ul do
             for entry <- category["entries"] do
               li do
-                span id: Blog.Filters.slugify(entry["name"]),
+                span id: Blog.slugify(entry["name"]),
                      class: "text-whtie font-semibold" do
                   a href: entry["link"], target: "_blank", do: entry["name"]
                 end

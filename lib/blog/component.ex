@@ -63,7 +63,7 @@ defmodule Blog.Component do
   def reading_time(assigns) do
     temple do
       span do
-        Blog.Filters.reading_time(@content)
+        Blog.reading_time(@content)
         "minute read"
       end
     end

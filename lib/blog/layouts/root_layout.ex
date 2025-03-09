@@ -20,19 +20,6 @@ defmodule Blog.RootLayout do
                href: "https://www.mitchellhanberg.com/feed.xml",
                title: "Mitchell Hanberg"
 
-          # link rel: "stylesheet", href: "https://rsms.me/inter/inter.css"
-          link rel: "preconnect", href: "https://fonts.googleapis.com"
-          link rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: true
-
-          link href: "https://fonts.googleapis.com/css2?family=Jersey+25&display=swap",
-               rel: "stylesheet"
-
-          link href:
-                 "https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap",
-               rel: "stylesheet"
-
-          ~s|<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">|
-
           link rel: "stylesheet", href: "/css/site.css"
           link rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png"
           link rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png"
@@ -42,7 +29,7 @@ defmodule Blog.RootLayout do
 
           meta name: "twitter:card", content: "summary_large_image"
 
-          meta property: "og:image", content: @page.permalink |> Blog.Filters.og_image_url()
+          meta property: "og:image", content: @page.permalink |> Blog.og_image_url()
           # meta property: "twitter:image", content: @page.seo.image
           # meta property: "twitter:title", content: @page.title
           meta name: "twitter:site", content: "@mitchhanberg"
