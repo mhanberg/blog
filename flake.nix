@@ -22,6 +22,7 @@
               nodePackages.typescript-language-server
               tailwindcss-language-server
               prettierd
+              netlify-cli
             ];
           };
         };
