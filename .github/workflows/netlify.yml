@@ -33,11 +33,11 @@ jobs:
       - name: Build
         run: nix develop --command bash -c 'mix build'
 
-      - name: Deploy
+      - name: Deploy Branch Preview
         if: ${{ github.ref_name != 'main' }}
         run: nix develop --command bash -c 'netlify deploy --alias ${{ github.ref_name}}'
 
-      - name: Deploy
+      - name: Deploy Production
         if: ${{ github.ref_name == 'main' }}
         run: nix develop --command bash -c 'netlify deploy --prod'
 

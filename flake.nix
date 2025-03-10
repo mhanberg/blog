@@ -10,14 +10,7 @@
     flake-parts.lib.mkFlake {inherit inputs;} {
       imports = [];
       systems = ["x86_64-linux" "aarch64-linux" "aarch64-darwin" "x86_64-darwin"];
-      perSystem = {
-        config,
-        self',
-        inputs',
-        pkgs,
-        system,
-        ...
-      }: {
+      perSystem = {pkgs, ...}: {
         devShells = {
           default = pkgs.mkShell {
             # The Nix packages provided in the environment
@@ -25,6 +18,7 @@
               beam.packages.erlang_27.erlang
               beam.packages.erlang_27.elixir_1_17
               nodejs_18
+              netlify-cli
             ];
           };
         };
