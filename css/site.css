@@ -9,6 +9,7 @@
 
 @theme {
   --color-hacker: #00ff00;
+  --color-hacker-darker: #118411;
 
   --font-fancy: VT323;
   --font-mono:

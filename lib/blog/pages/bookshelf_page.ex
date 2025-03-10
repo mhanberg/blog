@@ -62,7 +62,7 @@ defmodule Blog.BookshelfPage do
         title: @book["title"],
         target: "_blank",
         class:
-          "book bg-gradient-to-r from-[#118411] via-hacker to-[#118411] [&:not(:only-child)]:last:rotate-[-4deg] [&:not(:only-child)]:last:translate-x-2 flex items-center text-sm py-4 h-[250px] w-[50px] [writing-mode:vertical-rl] rounded decoration-black border-t border-white" do
+          "book bg-gradient-to-r from-hacker-darker via-hacker to-hacker-darker [&:not(:only-child)]:last:rotate-[-4deg] [&:not(:only-child)]:last:translate-x-2 flex items-center text-sm py-4 h-[250px] w-[50px] [writing-mode:vertical-rl] rounded decoration-black border-t border-white" do
         div class: "text-ellipsis overflow-hidden whitespace-nowrap pt-4 text-black " do
           @book["title"]
         end
