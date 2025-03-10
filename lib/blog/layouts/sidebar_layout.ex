@@ -58,11 +58,10 @@ defmodule Blog.SidebarLayout do
                 button type: "button",
                        class: "cursor-pointer",
                        "@click": """
-                       if (search_open) {
-                         search_open = false;
+                       const store = Alpine.store('site')
+                       if (store.focused) {
                          window.dispatchEvent(new KeyboardEvent('keydown', {'key': 'escape'}));
                        } else {
-                         search_open = true;
                          window.dispatchEvent(new KeyboardEvent('keydown', {'key': 'p', ctrlKey: true}));
                        }
                        """ do
