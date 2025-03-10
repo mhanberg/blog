@@ -48,7 +48,7 @@ defmodule Blog.BookshelfPage do
   defp books(assigns) do
     temple do
       div class:
-            "grid grid-cols-[repeat(auto-fill,50px)] gap-4 mt-8 has-[:not(.book:first-child:last-child)]:ml-4" do
+            "grid grid-cols-[repeat(auto-fill,50px)] gap-x-[1px] gap-y-2 mt-8 has-[:not(.book:first-child:last-child)]:ml-4" do
         for book <- @books do
           c &book/1, book: book
         end
@@ -62,8 +62,8 @@ defmodule Blog.BookshelfPage do
         title: @book["title"],
         target: "_blank",
         class:
-          "book [&:not(:only-child)]:last:rotate-[-4deg] [&:not(:only-child)]:last:-translate-x-2 flex items-center text-sm py-4 border-2 border-hacker h-[250px] w-[50px] [writing-mode:vertical-rl] rounded" do
-        div class: "text-ellipsis overflow-hidden whitespace-nowrap pt-4" do
+          "book bg-gradient-to-r from-[#118411] via-hacker to-[#118411] [&:not(:only-child)]:last:rotate-[-4deg] [&:not(:only-child)]:last:translate-x-2 flex items-center text-sm py-4 h-[250px] w-[50px] [writing-mode:vertical-rl] rounded decoration-black border-t border-white" do
+        div class: "text-ellipsis overflow-hidden whitespace-nowrap pt-4 text-black " do
           @book["title"]
         end
       end
