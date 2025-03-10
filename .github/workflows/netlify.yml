@@ -1,14 +1,45 @@
 name: Netlify Deploy
 
 on:
+  push:
   schedule:
   # 6am ET, posts will publish if rebuilt after 1am ET
   - cron: "0 10 * * *"
 
 jobs:
   build:
+    env:
+      GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
+      MIX_ENV: prod
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+  
     runs-on: ubuntu-latest
     steps:
-    - name: Trigger Netlify Hook
-      run: ${{ secrets.NETLIFY_DEPLOY_CMD }}
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: actions/cache@v4
+        with:
+          path: |
+            deps
+            _build
+          key: ${{ runner.os }}-mix-${{ hashFiles('**/flake.nix') }}-${{ hashFiles('**/mix.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-mix-
+
+      - name: Install Dependencies
+        run: nix develop --command bash -c 'mix deps.get'
+
+      - name: Build
+        run: nix develop --command bash -c 'mix build'
+
+      - name: Deploy
+        if: ${{ github.ref_name != 'main' }}
+        run: nix develop --command bash -c 'netlify deploy --alias ${{ github.ref_name}}'
+
+      - name: Deploy
+        if: ${{ github.ref_name == 'main' }}
+        run: nix develop --command bash -c 'netlify deploy --prod'
+
+
 
