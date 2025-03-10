@@ -69,6 +69,22 @@ defmodule Blog.Component do
     end
   end
 
+  def search(assigns) do
+    temple do
+      svg xmlns: "http://www.w3.org/2000/svg",
+          fill: "none",
+          viewbox: "0 0 24 24",
+          stroke_width: "2",
+          stroke: "currentColor",
+          class: @class do
+        path stroke_linecap: "round",
+             stroke_linejoin: "round",
+             d: "m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" do
+        end
+      end
+    end
+  end
+
   def folder(assigns) do
     temple do
       svg xmlns: "http://www.w3.org/2000/svg",

@@ -23,7 +23,9 @@ defmodule Blog.SidebarLayout do
     temple do
       div class: "min-h-[100dvh]" do
         div class: "grid grid-rows-[auto_1fr_auto] grid-cols-[100%] container w-full" do
-          div "x-data": "{open: false}", ":data-open": "open", class: "sticky top-0 group z-10" do
+          div "x-data": "{open: false, search_open: false}",
+              ":data-open": "open",
+              class: "sticky top-0 group z-10" do
             div class: "py-4 flex items-center justify-between bg-black" do
               h2 class: "text-2xl" do
                 a href: "/" do
@@ -36,16 +38,44 @@ defmodule Blog.SidebarLayout do
                   for n <- @data["nav"] do
                     li do: a(href: n["permalink"], do: n["name"])
                   end
+
+                  button type: "button",
+                         "@click": """
+                         if (search_open) {
+                           search_open = false;
+                           window.dispatchEvent(new KeyboardEvent('keydown', {'key': 'escape'}));
+                         } else {
+                           search_open = true;
+                           window.dispatchEvent(new KeyboardEvent('keydown', {'key': 'p', ctrlKey: true}));
+                         }
+                         """ do
+                    c &search/1, class: "size-5"
+                  end
                 end
               end
 
-              button type: "button", class: "lg:hidden", "@click": "open = !open" do
-                c &folder/1, class: "size-6"
+              div class: "lg:hidden" do
+                button type: "button",
+                       "@click": """
+                       if (search_open) {
+                         search_open = false;
+                         window.dispatchEvent(new KeyboardEvent('keydown', {'key': 'escape'}));
+                       } else {
+                         search_open = true;
+                         window.dispatchEvent(new KeyboardEvent('keydown', {'key': 'p', ctrlKey: true}));
+                       }
+                       """ do
+                  c &search/1, class: "size-6"
+                end
+
+                button type: "button", "@click": "open = !open" do
+                  c &folder/1, class: "size-6"
+                end
               end
             end
 
             div id: "mobilenav", class: "hidden group-[[data-open]]:block bg-black w-full" do
-              ul class: "text-2xl" do
+              ul class: "text-lg" do
                 for item <- @data["nav"] do
                   li class:
                        "border-l-4 p-2 data-[selected]:border-hacker data-[selected]:bg-[#2B332D] border-transparent",
@@ -122,7 +152,7 @@ defmodule Blog.SidebarLayout do
             "x-trap.noscroll": "focused",
             "@keydown.ctrl.p.window": "focused = true; terminal.focus();",
             class:
-              "absolute z-[100] inset-1 max-h-[75dvh] max-w-4xl mx-auto bg-black mt-8 p-1 border-4 border-hacker" do
+              "absolute z-[100] inset-1 max-h-[75dvh] max-w-4xl mx-auto bg-black mt-12 md:mt-8 p-1 border-4 border-hacker" do
         h2 class: "font-mono mb-2 flex gap-1 border-b border-zinc-500 py-1" do
           div class: "flex-shrink-0" do
             "/mitch/"
