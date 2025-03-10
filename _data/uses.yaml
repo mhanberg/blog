@@ -1,4 +1,5 @@
 - name: Development
+  description: My dotfiles config and links to some of my favorite tools. I'm currently obsessed with [Nix](https://nixos.org) and have almost everything configured with it.
   entries:
     - name: .dotfiles
       link: https://github.com/mhanberg/.dotfiles
@@ -15,19 +16,16 @@
     - name: Ghostty - Terminal
       link: https://mitchellh.com/ghostty
 
-    - name: Postico - GUI for Postgresql
+    - name: Postico
       link: https://eggerapps.at/postico/
 
     - name: Firefox
       link: https://www.mozilla.org/en-US/firefox
 
-    - name: lazygit - TUI for Git
+    - name: lazygit
       link: https://github.com/jesseduffield/lazygit
 
-    - name: Dash - Documentation View
-      link: https://kapeli.com/dash
-
-    - name: zsh - Shell
+    - name: zsh
       link: https://www.zsh.org/
 
     - name: Nix 
@@ -42,36 +40,36 @@
     - name: tmux - Terminal Multiplexer
       link: https://github.com/tmux/tmux#welcome-to-tmux
 
-    - name: mise - dev tools, env vars, task runner 
-      link: https://github.com/jdx/mise
-
-    - name: fzf - fuzzy finder
+    - name: fzf
       link: https://github.com/junegunn/fzf
 
-    - name: gh - GitHub CLI
+    - name: gh
       link: https://github.com/cli/cli
 
-    - name: ripgrep - Fast grep alternative
+    - name: ripgrep
       link: https://github.com/BurntSushi/ripgrep
 
 - name: Productivity
+  description: These are some of the tools that I use countless times a day. The combination of Alfred and Dash is unbeatable.
   entries:
     - name: Alfred
       link: https://www.alfredapp.com/
 
+    - name: Dash
+      link: https://kapeli.com/dash
+
     - name: 1Password
       link: https://1password.com/
-
-    - name: Fastmail
-      link: https://ref.fm/u20036168
-
-    - name: iCloud Drive
-      link: https://www.icloud.com/iclouddrive
 
     - name: Supernote Nomad
       link: https://supernote.com/products/supernote-nomad
 
 - name: PC
+  description: |
+    My desktop computer (codename `nublar`) is my primary development machine for personal and open source projects.
+
+    It runs Ubuntu and I configure it completely with Nix, but I am interested in switching to NixOS. I basically only use it remotely via ssh,
+    in what I like to call "Darwin Subsystem for Linux."
   entries:
     - name: Intel Core i9-13900K 3 GHz 24-Core Processor
       link: https://www.amazon.com/gp/product/B0BCF54SR1/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1
@@ -105,17 +103,23 @@
     - name: 2020 13" M1 MacBook Air
       link: https://support.apple.com/kb/SP825?locale=en_US
 
-    - name: 2021 16" MacBook Pro
-      link: https://www.apple.com/macbook-pro-16/specs/
+    - name: 2023 16" M3 Pro MacBook Pro (Work)
+      link: https://support.apple.com/en-us/117737
 
 - name: Keyboards
+  description: |
+    I have been using mechanical keyboards since 2012 and split ergonomic keyboards since 2019 (starting with the Ergodox EZ).
+
+    I eventually got the ZSA Voyager in an attempt to try a smaller keyboard, but ended up ordering a Corne v4 from JLCPCB and
+    3D printing its case and keycaps. I really am liking the low profile style of keyboards because they end up being shorter and
+    I don't need to use a wrist rest.
+
   entries:
-    - name: Corne v4
+    - name: Corne v4 (Daily Driver)
       link: https://github.com/foostan/crkbd
 
     - name: ZSA Voyager
       link: https://zsa.io/voyager
-
 
     - name: Megalodon Triple Knob Macro Pad Programmable Designer Mini Keyboard 16 Keys
       link: https://www.amazon.com/KEEBMONKEY-Megalodon-Programmable-Designer-Keyboard/dp/B0C1SW9KV1
@@ -129,10 +133,10 @@
 
 - name: Keyboard Switches
   entries:
+    - name: Linear Red Choc v1 (Daily Driver)
+      link: https://www.amazon.com/Profile-Mechanical-Switch-Split-Ergo-Mechanical-Keyboard/dp/B0BLC57T32?th=1
     - name: Linear Red Choc v2
       link: https://www.amazon.com/KAILH-Profile-Mechanical-Keyboard-Switches/dp/B0B462XK49
-    - name: Linear Red Choc v1
-      link: https://www.amazon.com/Profile-Mechanical-Switch-Split-Ergo-Mechanical-Keyboard/dp/B0BLC57T32?th=1
     - name: Zilent v2 67g
       link: https://zealpc.net/products/zilent?variant=5894832324646
     - name: Zealio v2 78g
@@ -155,9 +159,6 @@
     - name: Fully Jarvis Standing Desk
       link: https://www.fully.com/standing-desks/jarvis/jarvis-frame-only.html
 
-    - name: Anker Power Strip
-      link: https://www.amazon.com/gp/product/B08FWXXBT3/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
-
     - name: Elgato Stream Deck MK.2
       link: https://www.amazon.com/dp/B09738CV2G?ref=ppx_yo2_dt_b_product_details&th=1
 
@@ -168,22 +169,33 @@
       link: https://www.amazon.com/gp/product/B07X49967V/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
 - name: Home Lab
+  description: |
+    In 2024 I started to get into "home labbing", which basically just means having a NAS and a bunch of mini PCs.
+
+    I deploy each mini PC with NixOS and orchestrate them with [colmena](https://github.com/zhaofengli/colmena). I think NixOS is a great operating
+    system for a homelab (or remote servers in general) as it allows you to declaratively enable and configure programs, as well as
+    easily let you create new systemd units or start containers as units.
+
+    I have a Digital Ocean droplet running a Caddy server (via NixOS and colmena) as ingress, and they are all clustered together via [Tailscale](https://tailscale.com/).
   entries:
+    - name: Synology Dream Router
+      link: https://store.ui.com/us/en/products/udr7
+
     - name: Synology 4-Bay DiskStation DS423+
       link: https://www.amazon.com/gp/product/B0BXMS9GFF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
     - name: 4x Dell Optiplex 3050M 
       link: https://www.hardware-corner.net/desktop-models/Dell-OptiPlex-3050M/
+
     - name: Bambu A1 Combo 3D Printer
       link: https://us.store.bambulab.com/products/a1
 
 
 - name: Audio/Video
+  description: A nerd with a remote job would be remiss to not have podcaster level gear to sit quietly in Zoom calls with your camera off.
   entries:
     - name: Audio-Technica AT2035PK
       link: https://www.amazon.com/gp/product/B07JL8YRCV/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
-
-    - name: Pop filter
-      link: https://www.amazon.com/gp/product/B01J5OTVTC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
     - name: Gator Frameworks Deluxe Boom Arm
       link: https://www.amazon.com/gp/product/B07JL8YRCV/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
@@ -197,4 +209,5 @@
     - name: Beats Studio Pro
       link: https://www.beatsbydre.com/headphones/studio-pro-wireless-b
 
-    - name: iPhone 12 w/ Continuity Camera
+    - name: Logitech 1080p Webcam
+      link: https://www.amazon.com/Logitech-Stream-Webcam-Streaming-Recording/dp/B07661NX9M

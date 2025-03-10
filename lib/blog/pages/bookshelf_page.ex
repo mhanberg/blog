@@ -22,7 +22,7 @@ defmodule Blog.BookshelfPage do
 
     temple do
       div class: "prose prose-invert prose-headings:font-normal prose-a:text-white max-w-4xl" do
-        MDEx.to_html!("""
+        Blog.markdownify("""
         # Bookshelf
 
         Reading has been one of my favorite hobbies ever since I was a kid. If you have any book suggestions or want to know how I felt about a book, hit me up on [Twitter](https://twitter.com/mitchhanberg)!

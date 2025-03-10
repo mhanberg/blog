@@ -18,6 +18,12 @@ defmodule Blog.UsesPage do
         for category <- @data["uses"] do
           h2 do: category["name"]
 
+          if category["description"] do
+            p do
+              Blog.markdownify(category["description"])
+            end
+          end
+
           ul do
             for entry <- category["entries"] do
               li do

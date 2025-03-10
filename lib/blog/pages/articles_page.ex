@@ -9,7 +9,7 @@ defmodule Blog.ArticlesPage do
   def template(assigns) do
     temple do
       section class: "mx-auto mb-8" do
-        MDEx.to_html!("""
+        Blog.markdownify("""
         # Articles
 
         Subscribe to my [mailing list](/newsletter) or [RSS](/feed.xml) feed to stay notified of new articles.

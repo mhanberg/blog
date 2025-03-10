@@ -9,7 +9,7 @@ defmodule Blog.NewsletterPage do
   def template(_assigns) do
     temple do
       div class: "prose prose-invert prose-headings:font-normal max-w-4xl" do
-        MDEx.to_html!("""
+        Blog.markdownify("""
         # Newsletter
 
         I like to work, talk, and write about Elixir, compilers, productivity, building awesome teams, and shipping great products.
