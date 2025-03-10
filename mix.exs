@@ -31,6 +31,8 @@ defmodule Blog.MixProject do
   defp deps do
     [
       {:tableau, "~> 0.20"},
+      {:mdex, "~> 0.4", override: true},
+
       # {:tableau, path: "../tableau/", override: true},
       {:temple, "~> 0.12"},
       {:benchee, "~> 1.3"},

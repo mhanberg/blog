@@ -15,11 +15,11 @@ defmodule Blog.PostLayout do
           c &reading_time/1, content: @page.body
         end
 
-        hr class: "border-hacker"
+        hr class: "!w-full border-hacker"
 
         render(@inner_content)
 
-        hr()
+        hr class: "!w-full"
 
         div class: "text-center mx-auto" do
           c &convertkit/1

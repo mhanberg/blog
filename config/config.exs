@@ -59,7 +59,8 @@ config :tableau, :config,
         header_ids: "",
         tasklist: true,
         strikethrough: true,
-        autolink: true
+        autolink: true,
+        alerts: true
       ],
       render: [unsafe_: true],
       features: [syntax_highlight_theme: "poimandres"]

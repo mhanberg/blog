@@ -7,7 +7,8 @@ categories: post
 permalink: /:title/
 ---
 
-> 4/12/22 Update: I've started working on a dedicated Neovim plugin for Elixir called [elixir.nvim](https://github.com/mhanberg/elixir.nvim). Please follow me on [Twitter](https://twitter.com/mitchhanberg) for more frequent updates!
+> [!IMPORTANT] Update
+> 4/12/22: I've started working on a dedicated Neovim plugin for Elixir called [elixir-tools.nvim](https://github.com/elixir-tools/elixir-tools.nvim). Please follow me on [Twitter](https://twitter.com/mitchhanberg) for more frequent updates!
 
 This article is the spiritual successor to [How to use Elixir LS with Vim](/post/2018/10/18/how-to-use-elixir-ls-with-vim/).
 

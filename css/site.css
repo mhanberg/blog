@@ -63,6 +63,62 @@ h6 {
   }
 }
 
+.markdown-alert {
+  @apply border-l-4 pl-4;
+
+  .markdown-alert-title {
+    @apply font-semibold font-fancy text-2xl m-0 mb-2 uppercase;
+  }
+
+  p:nth-child(2) {
+    @apply mt-0;
+  }
+}
+
+.markdown-alert-note {
+  @apply border-blue-500;
+
+  .markdown-alert-title {
+    @apply text-blue-500;
+  }
+}
+
+.markdown-alert-tip {
+  @apply border-green-500;
+
+  .markdown-alert-title {
+    @apply text-green-500;
+  }
+}
+
+.markdown-alert-important {
+  @apply border-purple-500;
+
+  .markdown-alert-title {
+    @apply text-purple-500;
+  }
+}
+
+.markdown-alert-warning {
+  @apply border-red-500;
+
+  .markdown-alert-title {
+    @apply text-red-500;
+  }
+}
+
+.markdown-alert-caution {
+  @apply border-yellow-500;
+
+  .markdown-alert-title {
+    @apply text-yellow-500;
+  }
+}
+
+.prose hr {
+  @apply mx-auto w-[50%];
+}
+
 pre.autumn-hl {
   @apply max-w-4xl mx-auto my-4 overflow-x-auto text-sm;
 }

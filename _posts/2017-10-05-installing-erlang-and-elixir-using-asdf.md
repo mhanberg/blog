@@ -8,7 +8,7 @@ desc: asdf is a multi-language version manager, making it an ideal choice for ma
 permalink: /post/2017/10/05/installing-erlang-and-elixir-using-asdf/
 ---
 
-<b>_Let's set the scene_</b>
+**Let's set the scene**
 
 _You've been fully entrenched in the Ruby and Rails world for 10 months_
 
