@@ -23,7 +23,7 @@ defmodule Blog.SidebarLayout do
     temple do
       div class: "min-h-[100dvh]" do
         div class: "grid grid-rows-[auto_1fr_auto] grid-cols-[100%] container w-full" do
-          div "x-data": "{open: false, search_open: false}",
+          div "x-data": "{open: false}",
               ":data-open": "open",
               class: "sticky top-0 group z-10" do
             div class: "py-4 flex items-center justify-between bg-black" do
@@ -40,12 +40,12 @@ defmodule Blog.SidebarLayout do
                   end
 
                   button type: "button",
+                         class: "cursor-pointer",
                          "@click": """
-                         if (search_open) {
-                           search_open = false;
+                         const store = Alpine.store('site')
+                         if (store.focused) {
                            window.dispatchEvent(new KeyboardEvent('keydown', {'key': 'escape'}));
                          } else {
-                           search_open = true;
                            window.dispatchEvent(new KeyboardEvent('keydown', {'key': 'p', ctrlKey: true}));
                          }
                          """ do
@@ -56,6 +56,7 @@ defmodule Blog.SidebarLayout do
 
               div class: "lg:hidden" do
                 button type: "button",
+                       class: "cursor-pointer",
                        "@click": """
                        if (search_open) {
                          search_open = false;
@@ -147,10 +148,11 @@ defmodule Blog.SidebarLayout do
     temple do
       aside id: "nav",
             "x-data": "sidebar",
-            "x-show": "focused",
+            "x-show": "$store.site.focused",
             "x-cloak": true,
-            "x-trap.noscroll": "focused",
-            "@keydown.ctrl.p.window": "focused = true; terminal.focus();",
+            "x-trap.noscroll": "$store.site.focused",
+            "@click.outside": "close();",
+            "@keydown.ctrl.p.window": "$store.site.focus(); terminal.focus();",
             class:
               "absolute z-[100] inset-1 max-h-[75dvh] max-w-4xl mx-auto bg-black mt-12 md:mt-8 p-1 border-4 border-hacker" do
         h2 class: "font-mono mb-2 flex gap-1 border-b border-zinc-500 py-1" do
@@ -163,8 +165,8 @@ defmodule Blog.SidebarLayout do
                   id: "terminal",
                   "x-effect": "items = fzf.find(search)",
                   "@keyup.enter": "location.assign(items.at(selected_row).item.permalink)",
-                  "@keydown.escape.prevent.window": "search = ''; focused = false;",
-                  "@keydown.ctrl.c.prevent.window": "search = ''; focused = false;",
+                  "@keydown.escape.prevent.window": "close();",
+                  "@keydown.ctrl.c.prevent.window": "close();",
                   "@keydown.up.window": "up",
                   "@keydown.down.window": "down",
                   type: "text",
@@ -180,13 +182,13 @@ defmodule Blog.SidebarLayout do
           end
         end
 
-        ul class: "text-2xl lg:text-lg max-h-[calc(75dvh-46px)] overflow-y-auto pb-2",
+        ul class: "text-2xl lg:text-lg max-h-[calc(75dvh-55px)] z-[99] overflow-y-scroll pb-2",
            id: "fzf_results" do
           template "x-for": "(entry, idx) in items", ":key": "entry.item.name" do
             li ":id": "'fzfitem' + idx",
                ":data-selected": "idx == selected_row",
                class:
-                 "border-l-4 pl-2 py-1 outline-none data-[selected]:border-hacker data-[selected]:bg-[#2B332D] border-transparent" do
+                 "border-l-4 pl-2 py-1 outline-none data-[selected]:border-hacker data-[selected]:bg-[#2B332D] hover:bg-[#2B332D] border-transparent" do
               a ":href": "entry.item.permalink", class: "font-mono lowercase text-sm" do
                 div do
                   template "x-for": "(char, i) in entry.item.name.split('')",
@@ -221,25 +223,33 @@ defmodule Blog.SidebarLayout do
           Alpine.data("sidebar", () => ({
             init() {
               this.search = '';
-              this.focused = false;
               this.total_items_length = sidebar_items.length;
               this.$watch('search', (_) => { this.selected_row = 0; });
               this.fzf = new Fzf(sidebar_items, {selector: (item) => item.name});
               this.items = this.fzf.find('');
               this.selected_row = 0;
+              this.store = Alpine.store('site');
+            },
+            open() {
+              terminal.focus();
+              this.store.focus();
+            },
+            close() {
+              this.search = '';
+              this.store.unfocus();
             },
             selected_result() {
               return document.getElementById(`fzfitem${this.selected_row}`);
             },
             up(event) {
-              if (this.focused) {
+              if (this.store.focused) {
                 event.preventDefault();
                 this.selected_row = Math.max(this.selected_row - 1, 0)
                 scrollIntoViewIfNotVisible(this.selected_result())
               }
             },
             down() {
-              if (this.focused) {
+              if (this.store.focused) {
                 event.preventDefault();
                 this.selected_row = Math.min(this.selected_row + 1,  this.items.length - 1)
                 scrollIntoViewIfNotVisible(this.selected_result())

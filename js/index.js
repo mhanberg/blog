@@ -8,4 +8,16 @@ window.Alpine = Alpine;
 
 Alpine.plugin(focus);
 
+Alpine.store("site", {
+  focused: false,
+
+  focus() {
+    this.focused = true;
+  },
+
+  unfocus() {
+    this.focused = false;
+  },
+});
+
 Alpine.start();
