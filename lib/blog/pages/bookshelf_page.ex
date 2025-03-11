@@ -48,7 +48,7 @@ defmodule Blog.BookshelfPage do
   defp books(assigns) do
     temple do
       div class:
-            "grid grid-cols-[repeat(auto-fill,50px)] gap-x-[1px] gap-y-2 mt-8 has-[:not(.book:first-child:last-child)]:ml-4" do
+            "flex flex-wrap gap-x-[1px] items-end gap-y-2 mt-8 has-[:not(.book:first-child:last-child)]:ml-4" do
         for book <- @books do
           c &book/1, book: book
         end
@@ -57,13 +57,34 @@ defmodule Blog.BookshelfPage do
   end
 
   defp book(assigns) do
+    heights = ["h-[250px]", "h-[240px]", "h-[230px]"]
+    widths = ["w-[41px]", "w-[59px]", "w-[91px]"]
+
+    colors = ["bg-fallout-green", "bg-fallout-amber", "bg-fallout-light-blue", "bg-fallout-blue"]
+
+    combos =
+      for color <- colors, height <- heights, width <- widths do
+        {color, height, width}
+      end
+
+    idx = :erlang.phash2(assigns.book["title"], length(combos))
+
+    {color, height, width} = Enum.at(combos, idx)
+
+    assigns =
+      assigns
+      |> Map.put(:color, color)
+      |> Map.put(:height, height)
+      |> Map.put(:width, width)
+
     temple do
       a href: @book["link"] || "#",
         title: @book["title"],
         target: "_blank",
         class:
-          "book bg-gradient-to-r from-hacker-darker via-hacker to-hacker-darker [&:not(:only-child)]:last:rotate-[-4deg] [&:not(:only-child)]:last:translate-x-2 flex items-center text-sm py-4 h-[250px] w-[50px] [writing-mode:vertical-rl] rounded decoration-black border-t border-white" do
-        div class: "text-ellipsis overflow-hidden whitespace-nowrap pt-4 text-black " do
+          "book no-underline #{@color} [&:not(:only-child)]:last:rotate-[-4deg] [&:not(:only-child)]:last:translate-x-2 flex justify-between items-center text-sm #{@height} #{@width} [writing-mode:vertical-rl] rounded decoration-black border-t border-white inset-shadow-x" do
+        div class:
+              "text-ellipsis font-sans overflow-hidden whitespace-nowrap text-black pt-4 h-full" do
           @book["title"]
         end
       end

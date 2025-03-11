@@ -9,7 +9,10 @@
 
 @theme {
   --color-hacker: #00ff00;
-  --color-hacker-darker: #118411;
+  --color-fallout-green: #1BFF80;
+  --color-fallout-amber: #FFB641;
+  --color-fallout-light-blue: #C0FFFF;
+  --color-fallout-blue: #2ECFFF;
 
   --font-fancy: VT323;
   --font-mono:
@@ -113,6 +116,10 @@ h6 {
   .markdown-alert-title {
     @apply text-yellow-500;
   }
+}
+
+.inset-shadow-x {
+  box-shadow: inset 8px 0 5px -5px rgba(0, 0, 0, 0.3), inset -8px 0 5px -5px rgba(0, 0, 0, 0.3);
 }
 
 .prose hr {
