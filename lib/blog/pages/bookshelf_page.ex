@@ -84,7 +84,7 @@ defmodule Blog.BookshelfPage do
         class:
           "book no-underline #{@color} [&:not(:only-child)]:last:rotate-[-4deg] [&:not(:only-child)]:last:translate-x-2 flex justify-between items-center text-sm #{@height} #{@width} [writing-mode:vertical-rl] rounded decoration-black border-t border-white inset-shadow-x" do
         div class:
-              "text-ellipsis font-sans overflow-hidden whitespace-nowrap text-black pt-4 h-full" do
+              "text-ellipsis font-sans overflow-hidden whitespace-nowrap text-black pt-4 pb-2 h-full" do
           @book["title"]
         end
       end

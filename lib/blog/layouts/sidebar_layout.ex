@@ -78,7 +78,7 @@ defmodule Blog.SidebarLayout do
               ul class: "text-lg" do
                 for item <- @data["nav"] do
                   li class:
-                       "border-l-4 p-2 data-[selected]:border-hacker data-[selected]:bg-[#2B332D] border-transparent",
+                       "border-l-4 p-2 data-[selected]:border-fallout-green data-[selected]:bg-[#2B332D] border-transparent",
                      "data-selected": is_current_page(@posts, item["permalink"], @page.permalink) do
                     a href: item["permalink"], class: "font-mono lowercase" do
                       item["name"]
@@ -130,7 +130,7 @@ defmodule Blog.SidebarLayout do
           a href: "https://github.com/mhanberg/blog",
             target: "_blank",
             rel: "noreferrer",
-            class: "text-hacker underline" do
+            class: "text-fallout-green underline" do
             "♥"
           end
 
@@ -153,7 +153,7 @@ defmodule Blog.SidebarLayout do
             "@click.outside": "close();",
             "@keydown.ctrl.p.window": "$store.site.focus(); terminal.focus();",
             class:
-              "absolute z-[100] inset-1 max-h-[75dvh] max-w-4xl mx-auto bg-black mt-12 md:mt-8 p-1 border-4 border-hacker" do
+              "absolute z-[100] inset-1 max-h-[75dvh] max-w-4xl mx-auto bg-black mt-12 md:mt-8 p-1 border-4 border-fallout-green" do
         h2 class: "font-mono mb-2 flex gap-1 border-b border-zinc-500 py-1" do
           div class: "flex-shrink-0" do
             "/mitch/"
@@ -170,7 +170,7 @@ defmodule Blog.SidebarLayout do
                   "@keydown.down.window": "down",
                   type: "text",
                   class:
-                    "bg-black caret-hacker w-full outline-none peer hover:cursor-pointer -ml-1"
+                    "bg-black caret-fallout-green w-full outline-none peer hover:cursor-pointer -ml-1"
 
             div class: "animate-pulse absolute left-[19.5ch] peer-focus:hidden z-0",
                 "x-show": "search == ''",
@@ -187,12 +187,12 @@ defmodule Blog.SidebarLayout do
             li ":id": "'fzfitem' + idx",
                ":data-selected": "idx == selected_row",
                class:
-                 "border-l-4 pl-2 py-1 outline-none data-[selected]:border-hacker data-[selected]:bg-[#2B332D] hover:bg-[#2B332D] border-transparent" do
+                 "border-l-4 pl-2 py-1 outline-none data-[selected]:border-fallout-green data-[selected]:bg-[#2B332D] hover:bg-[#2B332D] border-transparent" do
               a ":href": "entry.item.permalink", class: "font-mono lowercase text-sm" do
                 div do
                   template "x-for": "(char, i) in entry.item.name.split('')",
                            ":key": "i" do
-                    span "x-text": "char", ":class": "{'text-hacker': entry.positions.has(i)}"
+                    span "x-text": "char", ":class": "{'text-fallout-green': entry.positions.has(i)}"
                   end
                 end
 

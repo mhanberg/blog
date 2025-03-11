@@ -5,7 +5,7 @@ defmodule Blog.PostLayout do
   def template(assigns) do
     temple do
       article class:
-                "prose prose-invert prose-a:text-hacker prose-p:text-white prose-headings:font-normal max-w-4xl mx-auto" do
+                "prose prose-invert prose-a:text-fallout-green prose-p:text-white prose-headings:font-normal max-w-4xl mx-auto" do
         h1 class: "text-3xl" do
           @page.title
         end
@@ -15,7 +15,7 @@ defmodule Blog.PostLayout do
           c &reading_time/1, content: @page.body
         end
 
-        hr class: "!w-full border-hacker"
+        hr class: "!w-full border-fallout-green"
 
         render(@inner_content)
 

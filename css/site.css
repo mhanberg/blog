@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import 'tailwindcss';
 
 @plugin '@tailwindcss/typography';
@@ -8,13 +8,13 @@
 @source './site.css';
 
 @theme {
-  --color-hacker: #00ff00;
   --color-fallout-green: #1BFF80;
   --color-fallout-amber: #FFB641;
   --color-fallout-light-blue: #C0FFFF;
   --color-fallout-blue: #2ECFFF;
 
   --font-fancy: VT323;
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-mono:
     'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
@@ -45,7 +45,7 @@
 }
 
 * {
-  scrollbar-color: var(--color-hacker) var(--color-black);
+  scrollbar-color: var(--color-fallout-green) var(--color-black);
   scrollbar-width: auto;
 }
 

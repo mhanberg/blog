@@ -49,7 +49,7 @@ defmodule Blog.Og do
           end
 
           div class:
-                "grid justify-center items-center h-screen w-screen absolute top-0 border-hacker border-[15px]" do
+                "grid justify-center items-center h-screen w-screen absolute top-0 border-fallout-green border-[15px]" do
             div class: "flex items-end px-12" do
               div class: "text-7xl font-bold leading-[125%]" do
                 @page.title
