@@ -153,7 +153,7 @@ defmodule Blog.SidebarLayout do
             "@click.outside": "close();",
             "@keydown.ctrl.p.window": "$store.site.focus(); terminal.focus();",
             class:
-              "absolute z-[100] inset-1 max-h-[75dvh] max-w-4xl mx-auto bg-black mt-12 md:mt-8 p-1 border-4 border-fallout-green" do
+              "fixed z-[100] inset-1 max-h-[75dvh] max-w-4xl mx-auto bg-black mt-12 md:mt-8 p-1 border-4 border-fallout-green" do
         h2 class: "font-mono mb-2 flex gap-1 border-b border-zinc-500 py-1" do
           div class: "flex-shrink-0" do
             "/mitch/"
@@ -192,7 +192,8 @@ defmodule Blog.SidebarLayout do
                 div do
                   template "x-for": "(char, i) in entry.item.name.split('')",
                            ":key": "i" do
-                    span "x-text": "char", ":class": "{'text-fallout-green': entry.positions.has(i)}"
+                    span "x-text": "char",
+                         ":class": "{'text-fallout-green': entry.positions.has(i)}"
                   end
                 end
 
