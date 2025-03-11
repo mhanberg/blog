@@ -25,7 +25,7 @@ defmodule Blog.BookshelfPage do
         Blog.markdownify("""
         # Bookshelf
 
-        Reading has been one of my favorite hobbies ever since I was a kid. If you have any book suggestions or want to know how I felt about a book, hit me up on [Twitter](https://twitter.com/mitchhanberg)!
+        Reading has been one of my favorite hobbies ever since I was a kid. If you have any book suggestions or want to know how I felt about a book, please send me an  [email!](mailto:mitch@mitchellhanberg.com)
 
         I pull this data from my [Goodreads](https://www.goodreads.com/review/list/69703261) account once a day.
         """)
