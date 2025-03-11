@@ -18,8 +18,6 @@ This post serves as an outlet for my experience.
 
 **Note**: Team size = me.
 
-<br>
-
 ## The Stack
 
 Before starting on this project, I had an interest in exploring a new stack of technology, particularly Ruby web development with the Ruby on Rails framework. I had previously worked heavily in the .NET web stack and wanted to try my hand at something different. 
@@ -29,8 +27,6 @@ And then just like that, I'm told I have the opportunity to work on a Rails proj
 Working through my first task, naturally, I do some googling. I notice that everything I'm seeing online looks totally different than what I'm seeing in the code base. Eventually, I come to the realization that I'm working on Rails 3.2 and Ruby 1.9, a 5-year-old framework and a 10-year-old language. All I know about Ruby at this point has been deprecated for years (to a degree, the general syntax is similar).
 
 Learning the ins and outs of an old version of a tool just seems backward, especially if you haven't used that tool before. Is upgrading to the latest versions worth it for this project? Not really, but that seems to be part of the problem.
-
-<br>
 
 ## Testing
 
@@ -56,8 +52,6 @@ I did not think that this project needed some fancy system for deployment, but t
 
 I then experimented with just replacing the code on the server with a clone of the repository, and it deploy all it required was a git pull. Not much effort was put into this, but it was simple to implement and simple to use.
 
-<br>
-
 ## Decay
 
 This is the general theme, each time a new developer joins the project temporarily they will leave behind something corrosive, slowly decaying the project. Even experienced engineers can write some bad code if the circumstances are begging for it. 
@@ -68,22 +62,20 @@ In order to stop (or at least slow down) the decay is to maintain verbose docume
 
 Example of a commit message that is not helpful
 
-~~~
+```
 fixed brokn thing .
-~~~
+```
 
 Example of a commit message that is helpful
 
-~~~
+```
 Fixed broken pagination after filtering list
  * Code was attempting to filter during pagination, now 
    the list filters completely and then paginates the filtered list
  * Updated the gem used for pagination from v0.5.1 to v1.0.1
-~~~
+```
 
 I even think a project journal would be beneficial. After each task is finished, the developer will log everything that went into the task, including reasoning, failed attempts and possibly even short explanation of how a certain library was utilized. Anything that isn't written down is essentially lost for eternity, so any epiphanies you had are useless if you don't write them down for the next developer down the line.
-
-<br>
 
 ## Conclusion
 

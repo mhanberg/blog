@@ -23,21 +23,26 @@ defmodule Blog.MixProject do
 
   def aliases() do
     [
-      build: ["tableau.build", "tailwind default --minify"]
+      build: ["tableau.build", "bun install", "bun css --minify", "bun default --minify"]
     ]
   end
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:tableau, "~> 0.17"},
-      # {:tableau, path: "../tableau"},
-      {:tableau_og_extension, "~> 0.1.0"},
+      {:tableau, "~> 0.20"},
+      {:mdex, "~> 0.4", override: true},
+
+      # {:tableau, path: "../tableau/", override: true},
+      {:temple, "~> 0.12"},
+      {:benchee, "~> 1.3"},
+      {:bun, "~> 1.3"},
+      {:tableau_og_extension, "~> 0.2"},
+      {:schematic, "~> 0.4", override: true},
       {:floki, "~> 0.34"},
       {:req, "~> 0.4.8"},
-      {:easyxml, "~> 0.1.0-dev", github: "wojtekmach/easyxml", branch: "main"},
-      {:solid, "~> 0.15.2"},
-      {:tailwind, "~> 0.2", runtime: Mix.env() == :dev}
+      {:easyxml, "~> 0.1.0-dev", github: "wojtekmach/easyxml", branch: "main"}
+      # {:tailwind, "~> 0.3", runtime: Mix.env() == :dev}
     ]
   end
 end

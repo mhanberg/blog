@@ -37,6 +37,6 @@ Retros are the time to decide which practices to toss, which to keep, and on whi
 
 During your sprint, write down topics that you'd like to discuss and put them in a centralized place so that others can see them. This gives your teammates time to ponder your topic, making their response more valuable than if you gave them 10 seconds to think it through.
 
-<hr>
+---
 
 We love designing, building and deploying, so it's easy to get carried away and forgo process for the sake of getting things done. That's okay, but if you and your team have an "official" protocol you should follow it or exchange it for something that better suits your project's needs.

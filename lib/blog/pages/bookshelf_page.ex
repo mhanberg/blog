@@ -1,74 +1,93 @@
 defmodule Blog.BookshelfPage do
   use Tableau.Page,
-    layout: Blog.RootLayout,
+    layout: Blog.PageLayout,
     permalink: "/bookshelf",
-    title: "Bookshelf | Mitchell Hanberg"
+    title: "Bookshelf"
 
-  import Blog
+  use Blog.Component
 
   def template(assigns) do
-    ~L"""
-    <div class="max-w-2xl mx-auto">
-      <h1 class="md:text-5xl" >Bookshelf</h1>
-    {{ "
-    Reading has been one of my favorite hobbies ever since I was a kid. If you have any book suggestions or want to know how I felt about a book, hit me up on [Twitter](https://twitter.com/mitchhanberg)!
+    currently_reading = assigns.data["books"] |> Enum.filter(& &1["currently_reading"])
 
-    I pull this data from my [Goodreads](https://www.goodreads.com/review/list/69703261) account once a day.
-    " | markdownify }}
-    </div>
-    {% assign currently_reading = data.books | where: "currently_reading", true %}
-    <h2 class="text-center underline mt-16">Currently Reading</h2>
-    <div class="book-grid mt-8">
-    {% for book in currently_reading %}
-      <div class="p-4 rounded bg-evergreen-700 flex flex-col justify-between">
-        <div class="flex justify-between">
-          <div class="max-w-xs2">
-            <span> {{ book.title }} </span>
-            <div class="text-sm italic">{{ book.author }}</div>
-          </div>
-        </div>
-        <div class="flex justify-between mt-4">
-          <a class="text-sm text-white font-normal"
-             href="{{ book.link | default: "#" }}" target="_blank">
-            View on Goodreads
-          </a>
-        {% assign post = book.id | get_review: posts %}
-        {% if post %}
-        <a class="text-sm text-white font-normal" href="{{ post.url }}">Read my review</a>
-        {% endif %}
-        </div>
-      </div>
-    {% endfor %}
-    </div>
+    years =
+      assigns.data["books"]
+      |> Enum.reject(& &1["currently_reading"])
+      |> Enum.group_by(fn book -> book["date_read"].year end)
+      |> Enum.sort_by(fn {year, _} -> year end, :desc)
 
-    {% assign years = data.books | where: "currently_reading", false | group_by_year %}
-    {% for year in years %}
-      <h2 class="text-center underline mt-16">{{ year[0] }}</h2>
+    assigns =
+      assigns
+      |> Map.put(:years, years)
+      |> Map.put(:currently_reading, currently_reading)
 
-      <div class="book-grid mt-8">
-        {% for book in year[1] %}
-            <div class="p-4 rounded bg-evergreen-700 flex flex-col justify-between">
-              <div class="flex justify-between">
-                <div class="max-w-xs2">
-                  <span> {{ book.title }} </span>
-                  <div class="text-sm italic">{{ book.author }}</div>
-                  <div class="text-sm italic">Read {{ book.date_read | date_to_string: "ordinal", "US" }}</div>
-                </div>
-              </div>
-              <div class="flex justify-between mt-4">
-                <a class="text-sm text-white font-normal"
-                   href="{{ book.link | default: "#" }}" target="_blank">
-                  View on Goodreads
-                </a>
-              {% assign post = book.id | get_review: posts %}
-              {% if post %}
-              <a class="text-sm text-white font-normal" href="{{ post.url }}">Read my review</a>
-              {% endif %}
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-    {% endfor %}
-    """
+    temple do
+      div class: "prose prose-invert prose-headings:font-normal prose-a:text-white max-w-4xl" do
+        Blog.markdownify("""
+        # Bookshelf
+
+        Reading has been one of my favorite hobbies ever since I was a kid. If you have any book suggestions or want to know how I felt about a book, please send me an  [email!](mailto:mitch@mitchellhanberg.com)
+
+        I pull this data from my [Goodreads](https://www.goodreads.com/review/list/69703261) account once a day.
+        """)
+
+        h2 class: "text-center underline mt-16", do: "Currently Reading"
+
+        div class: "mt-8 font-mono" do
+          c &books/1, books: @currently_reading
+
+          for {year, books} <- @years do
+            h2 class: "text-center mt-16", do: "#{year} (#{length(books)} books)"
+
+            c &books/1, books: books
+          end
+        end
+      end
+    end
+  end
+
+  defp books(assigns) do
+    temple do
+      div class:
+            "flex flex-wrap gap-x-[1px] items-end gap-y-2 mt-8 has-[:not(.book:first-child:last-child)]:ml-4" do
+        for book <- @books do
+          c &book/1, book: book
+        end
+      end
+    end
+  end
+
+  defp book(assigns) do
+    heights = ["h-[250px]", "h-[240px]", "h-[230px]"]
+    widths = ["w-[41px]", "w-[59px]", "w-[91px]"]
+
+    colors = ["bg-fallout-green", "bg-fallout-amber", "bg-fallout-light-blue", "bg-fallout-blue"]
+
+    combos =
+      for color <- colors, height <- heights, width <- widths do
+        {color, height, width}
+      end
+
+    idx = :erlang.phash2(assigns.book["title"], length(combos))
+
+    {color, height, width} = Enum.at(combos, idx)
+
+    assigns =
+      assigns
+      |> Map.put(:color, color)
+      |> Map.put(:height, height)
+      |> Map.put(:width, width)
+
+    temple do
+      a href: @book["link"] || "#",
+        title: @book["title"],
+        target: "_blank",
+        class:
+          "book no-underline #{@color} [&:not(:only-child)]:last:rotate-[-4deg] [&:not(:only-child)]:last:translate-x-2 flex justify-between items-center text-sm #{@height} #{@width} [writing-mode:vertical-rl] rounded decoration-black border-t border-white inset-shadow-x" do
+        div class:
+              "text-ellipsis font-sans overflow-hidden whitespace-nowrap text-black pt-4 pb-2 h-full" do
+          @book["title"]
+        end
+      end
+    end
   end
 end

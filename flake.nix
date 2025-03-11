@@ -1,5 +1,5 @@
 {
-  description = "Spitfire parser for Elixir";
+  description = "Mitchell Hanberg's blog";
 
   inputs = {
     flake-parts.url = "github:hercules-ci/flake-parts";
@@ -19,6 +19,11 @@
               beam.packages.erlang_27.elixir_1_17
               nodejs_18
               netlify-cli
+              nodePackages.typescript-language-server
+              tailwindcss-language-server
+              prettierd
+              netlify-cli
+              backblaze-b2
             ];
           };
         };

@@ -1,54 +1,67 @@
-# defmodule Blog.Og.Layout do
-#   use Tableau.Layout
-#   import Blog
-#
-#   def template(assigns) do
-#     ~L"""
-#     {{ inner_content | render }}
-#     """
-#   end
-# end
+defmodule Blog.Og.Layout do
+  use Tableau.Layout
+  import Temple
+
+  def template(assigns) do
+    temple do
+      render(@inner_content)
+    end
+  end
+end
 
 defmodule Blog.Og do
   # use Tableau.Page,
   #   layout: Blog.Og.Layout,
   #   permalink: "/og/preview",
-  #   title: "Some kind of page title"
+  #   title: "Some kind of page title",
+  #   date: DateTime.utc_now()
 
-  import Blog
+  use Blog.Component
 
   def template(assigns) do
-    ~L"""
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="utf-8" />
-        <style>
-          {{ "_site/css/site.css" | app_css }}
-        </style>
-      </head>
-      <body class="bg-evergreen-900 font-sans h-screen">
-        <div class="flex flex-col h-full justify-between">
-          <div class="flex justify-between items-center gap-4 p-8">
-            <div class="p-1">
-            {% render "logo" %}
-            </div>
-            <span class="text-3xl -mt-0.5 font-semibold">Mitchell Hanberg</span>
-          </div>
-          <div class="flex justify-end items-center p-8">
-            <span class="text-3xl font-semibold">
-              {{ page.date | date: "%B %d, %Y"}}
-            </span>
-          </div>
-        </div>
-        <div class="grid justify-center items-center h-screen w-screen absolute top-0 border-white border-[15px]">
-          <div class="flex items-end px-12">
-            <div class="text-7xl font-bold leading-[125%]">{{ page.title }}</div>
-          </div>
-        </div>
-      </body>
-    </html>
-    """
+    temple do
+      html lang: "en" do
+        head do
+          style do
+            File.read!("_site/css/site.css")
+          end
+        end
+
+        body class: "bg-black font-mono text-white h-screen w-screen" do
+          div class: "flex flex-col h-full justify-between" do
+            div class: "flex justify-between items-center gap-4 p-8" do
+              div class: "p-1" do
+                "MH"
+              end
+
+              span class: "text-3xl -mt-0.5 font-semibold" do
+                "Mitchell Hanberg"
+              end
+            end
+
+            div class: "flex justify-end items-center p-8" do
+              span class: "text-3xl font-semibold" do
+                if @page[:date] do
+                  Calendar.strftime(@page.date, "%B %d, %Y")
+                end
+              end
+            end
+          end
+
+          div class:
+                "grid justify-center items-center h-screen w-screen absolute top-0 border-fallout-green border-[15px]" do
+            div class: "flex items-end px-12" do
+              div class: "text-7xl font-bold leading-[125%]" do
+                @page.title
+              end
+            end
+          end
+
+          # if Mix.env() == :dev do
+          #   c &Tableau.live_reload/1
+          # end
+        end
+      end
+    end
   end
 end

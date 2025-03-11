@@ -6,7 +6,7 @@ categories: post
 permalink: /post/2017/02/28/first-post/
 ---
 
-### What does this mean?
+## What does this mean?
 
 In the professional world, feedback is incredibly important and can vastly beneficial, but sometimes our fear of criticism can stop you from sharing, which then inhibits you from learning. 
 
@@ -14,11 +14,11 @@ There's nothing I hate more than being wrong, more so than others knowing I was 
 
 Obviously the title of the post is insinuating that you should make a blog and write articles about the stuff you are up to or any remarkable experiences, but I think it also applies to other areas of your life. It's not just about saying or writing, but it's also about **doing**, and this is something with which I struggle.
 
-#### You'll never finish if you don't start
+## You'll never finish if you don't start
 
 Many people never start a project because they don't want to get it wrong; they're afraid to build something that doesn't work becuase it'll mean that they're dumb. 
 
->Wrong
+> Wrong
 
 Having produced half of a project is still better than having not started one at all. The experience you gained is more important than the finished product (not saying that finishing something isn't worth it, it definitely is).
 

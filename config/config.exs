@@ -2,26 +2,52 @@ import Config
 
 config :tableau, :reloader,
   patterns: [
-    ~r"lib/.*.ex",
-    ~r"(_posts|_docs)/.*.md",
-    ~r"(_includes)/.*.html",
-    ~r"assets/*.(css|js)"
+    ~r"^lib/.*.ex",
+    ~r"^(_posts|_docs|_pages)/.*.md",
+    ~r"^_data/.*.(yaml|json|toml)",
+    ~r"^css/site.css",
+    ~r"^js/index.js"
   ]
 
 config :web_dev_utils, :reload_log, true
 config :web_dev_utils, :reload_url, "'ws://' + location.host + '/ws'"
 
-config :tailwind,
-  version: "3.3.5",
-  default: [
+config :temple,
+  engine: EEx.SmartEngine,
+  attributes: {Temple, :attributes}
+
+# config :tailwind,
+#   version: "4.0.9",
+#   default: [
+#     args: ~w(
+#     --input=css/site.css
+#     --output=_site/css/site.css
+#     )
+#   ]
+
+config :bun,
+  version: "1.2.4",
+  install: [
+    args: ~w(install)
+  ],
+  css: [
     args: ~w(
-    --config=_includes/tailwind.config.js
+    run tailwindcss
     --input=css/site.css
     --output=_site/css/site.css
     )
+  ],
+  default: [
+    args: ~w(
+    build 
+    js/index.js  
+    --outdir=_site/js
+    )
   ]
 
-config :tableau, :assets, tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
+config :tableau, :assets,
+  tailwind: {Bun, :install_and_run, [:css, ~w(--watch)]},
+  bun: {Bun, :install_and_run, [:default, ~w(--watch)]}
 
 config :tableau, :config,
   url: "http://localhost:4999",
@@ -33,10 +59,11 @@ config :tableau, :config,
         header_ids: "",
         tasklist: true,
         strikethrough: true,
-        autolink: true
+        autolink: true,
+        alerts: true
       ],
       render: [unsafe_: true],
-      features: [syntax_highlight_theme: "everforest_dark"]
+      features: [syntax_highlight_theme: "poimandres"]
     ]
   ]
 
@@ -46,7 +73,7 @@ config :tableau, Tableau.OgExtension,
   enabled: true,
   template: {Blog.Og, :template}
 
-config :tableau, Tableau.PageExtension, enabled: false
+config :tableau, Tableau.PageExtension, enabled: true
 config :tableau, Tableau.PostExtension, enabled: true, future: true
 config :tableau, Tableau.SitemapExtension, enabled: true
 
