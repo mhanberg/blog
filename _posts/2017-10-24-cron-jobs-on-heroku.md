@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: Scheduling Cron Jobs on Heroku with Ruby on Rails
-date: 2017-10-25 09:00:00 EST
+date: 2017-10-25 09:00:00 -04:00
 categories: post
 desc: Guide on scheduling recurring tasks on Heroku, where access to tools like Cron and the file system are not possible.
 permalink: /post/2017/10/25/cron-jobs-on-heroku/
@@ -9,7 +9,7 @@ permalink: /post/2017/10/25/cron-jobs-on-heroku/
 
 A common practice is to create a __cron job__ whenever you have a task you need done periodically.
 
->The software utility Cron is a time-based job scheduler in Unix-like computer operating systems. People who set up and maintain software environments use cron to schedule jobs (commands or shell scripts) to run periodically at fixed times, dates, or intervals. [[1]](#1)
+> The software utility Cron is a time-based job scheduler in Unix-like computer operating systems. People who set up and maintain software environments use cron to schedule jobs (commands or shell scripts) to run periodically at fixed times, dates, or intervals. [[1]](#1)
 
 On something like AWS, you would have the ability to create normal cron jobs and, when dealing with a Ruby on Rails application, you could use the Whenever gem [[2]](#2)  to interface between Cron and your application code.
 
