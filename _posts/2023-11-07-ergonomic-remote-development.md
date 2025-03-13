@@ -1,8 +1,8 @@
 ---
 layout: Blog.PostLayout
 title: "Ergonomic Remote Development"
-date: 2023-11-07 08:00:00 -05:00
-updated: 2024-06-04 08:00:00 -05:00
+date: 2023-11-07 08:00:00 EST
+updated: 2024-06-04 08:00:00 EST
 categories: post
 permalink: /:title/
 ---

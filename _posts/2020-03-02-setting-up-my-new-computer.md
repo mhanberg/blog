@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: Setting up my new computer
-date: 2020-03-02 09:00:00 -05:00
+date: 2020-03-02 09:00:00 EST
 categories: post
 permalink: /:title/
 img: https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2551&q=80

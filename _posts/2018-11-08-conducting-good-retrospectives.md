@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: Conducting Good Retrospectives
-date: 2018-11-09 21:00:00 -05:00
+date: 2018-11-09 21:00:00 EST
 categories: post
 desc: Introduction to holding wildly productive and efficient team retrospectives.
 permalink: /post/2018/11/09/conducting-good-retrospectives/

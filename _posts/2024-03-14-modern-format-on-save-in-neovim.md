@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: "Modern Format on Save in Neovim"
-date: 2024-03-14 08:00:00 -05:00
+date: 2024-03-14 08:00:00 EST
 categories: post
 permalink: /:title/
 ---
