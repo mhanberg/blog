@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: "Introducing lazyasdf: An Elixir-based TUI for the asdf version manager"
-date: 2023-03-06 01:00:00 -04:00
+date: 2023-03-06 01:00:00 EST
 categories: post
 permalink: /introducing-lazyasdf-a-tui-for-the-asdf-version-manager/
 ---

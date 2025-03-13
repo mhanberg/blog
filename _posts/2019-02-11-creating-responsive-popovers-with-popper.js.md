@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: Creating Responsive Popovers with Popper.js
-date: 2019-02-11 09:00:00 -04:00
+date: 2019-02-11 09:00:00 EST
 categories: post
 desc: Guide on making responsive popovers using Popper.js
 permalink: /creating-responsive-popovers-with-popper.js/

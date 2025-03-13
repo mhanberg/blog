@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: "I've Joined the Official Elixir LSP Team"
-date: 2024-08-21 01:00:00 -04:00
+date: 2024-08-21 01:00:00 EST
 permalink: /:title/
 ---
 

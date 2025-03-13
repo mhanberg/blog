@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: Implementing link following with OAuth
-date: 2019-04-07 9:00:00 -04:00
+date: 2019-04-07 9:00:00 EST
 categories: post
 permalink: /:title/
 ---

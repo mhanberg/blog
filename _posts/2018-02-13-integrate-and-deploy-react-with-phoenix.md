@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: Integrate and Deploy React with Phoenix
-date: 2018-02-22 08:00:00 -04:00
+date: 2018-02-22 08:00:00 EST
 categories: post
 desc: End-to-end guide on introducing a React frontend to a Phoenix application.
 permalink: /post/2018/02/22/integrate-and-deploy-react-with-phoenix/

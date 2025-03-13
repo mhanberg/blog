@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: OTP Process Abstractions with proc_lib
-date: 2023-05-22 01:00:00 -04:00
+date: 2023-05-22 01:00:00 EST
 categories: post
 permalink: /otp-process-abstractions-with-proc-lib/
 ---

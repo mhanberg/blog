@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: "CI/CD with Phoenix, GitHub Actions, and Gigalixir"
-date: 2020-03-03 09:00:00 -04:00
+date: 2020-03-03 09:00:00 EST
 categories: post
 permalink: /ci-cd-with-phoenix-github-actions-and-gigalixir/
 img: https://res.cloudinary.com/mhanberg/image/upload/v1583173677/ci-cd-with-phoenix-github-actions-gigalixir-hero-image.png

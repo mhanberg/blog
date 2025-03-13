@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: Scheduling Cron Jobs on Heroku with Ruby on Rails
-date: 2017-10-25 09:00:00 -04:00
+date: 2017-10-25 09:00:00 EST
 categories: post
 desc: Guide on scheduling recurring tasks on Heroku, where access to tools like Cron and the file system are not possible.
 permalink: /post/2017/10/25/cron-jobs-on-heroku/

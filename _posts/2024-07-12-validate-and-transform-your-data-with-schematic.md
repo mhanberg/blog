@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: "Validate and Transform Your Data with Schematic"
-date: 2024-07-12 01:00:00 -04:00
+date: 2024-07-12 01:00:00 EST
 permalink: /:title/
 ---
 

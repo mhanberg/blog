@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: Tools I use for mobile web development
-date: 2019-04-04 09:00:00 -04:00
+date: 2019-04-04 09:00:00 EST
 categories: post
 permalink: /:title/
 ---

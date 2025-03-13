@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: Tips for Reading More
-date: 2019-02-14 13:30:00 -04:00
+date: 2019-02-14 13:30:00 EST
 categories: post
 desc: Advice on becoming a frequent and consistent reader.
 permalink: /:title/

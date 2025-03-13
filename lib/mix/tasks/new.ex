@@ -12,7 +12,7 @@ defmodule Mix.Tasks.Blog.Gen.Post do
 
     post_title = Enum.join(argv, " ")
     post_date = Date.utc_today()
-    post_time = "01:00:00 -04:00"
+    post_time = "01:00:00 EST"
 
     file_name =
       post_title

@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: "Announcing Temple v0.6!"
-date: 2021-05-25 10:00:00 -04:00
+date: 2021-05-25 10:00:00 EST
 categories: post
 permalink: /announcing-temple-v06/
 ---

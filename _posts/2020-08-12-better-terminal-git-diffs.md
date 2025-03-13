@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: "Better Terminal Git Diffs"
-date: 2020-08-12 09:00:00 -04:00
+date: 2020-08-12 09:00:00 EST
 categories: post
 permalink: /:title/
 ---
