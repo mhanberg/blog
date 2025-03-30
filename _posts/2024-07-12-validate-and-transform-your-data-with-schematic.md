@@ -3,6 +3,7 @@ layout: Blog.PostLayout
 title: "Validate and Transform Your Data with Schematic"
 date: 2024-07-12 01:00:00 EST
 permalink: /:title/
+tags: [elixir, programming, schematic]
 ---
 
 I've recently seen talk of similar libraries to [Schematic](https://github.com/mhanberg/schematic) so I figured I'd share my take on the problem space!

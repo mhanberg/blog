@@ -21,7 +21,7 @@ defmodule Blog.BookshelfPage do
       |> Map.put(:currently_reading, currently_reading)
 
     temple do
-      div class: "prose prose-invert prose-headings:font-normal prose-a:text-white max-w-4xl" do
+      c &prose/1 do
         Blog.markdownify("""
         # Bookshelf
 

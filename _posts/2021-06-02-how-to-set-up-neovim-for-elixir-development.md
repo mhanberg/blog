@@ -4,6 +4,7 @@ title: "How to Set Up Neovim for Elixir Development"
 date: 2021-06-02 09:00:00 EST
 updated: 2022-04-12 09:00:00 EST
 categories: post
+tags: [elixir, neovim, dotfiles, dx, tips]
 permalink: /:title/
 ---
 

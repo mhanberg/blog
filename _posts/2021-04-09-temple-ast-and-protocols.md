@@ -3,6 +3,7 @@ layout: Blog.PostLayout
 title: "Temple, AST, and Protocols"
 date: 2021-04-12 10:00:00 EST
 categories: post
+tags: [elixir, programming, temple]
 permalink: /:title/
 ---
 

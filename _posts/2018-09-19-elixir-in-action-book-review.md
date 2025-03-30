@@ -5,6 +5,7 @@ date: 2018-09-19 09:00:00 EST
 categories: post
 desc: Elixir in Action covers the full breadth of all that is Elixir, from the basic syntax to building distributed, fault tolerant, and scalable systems.
 permalink: /post/2018/09/19/elixir-in-action-book-review/
+tags: [elixir, book-review, reading]
 book:
   title: Elixir in Action
   author: Sasa Jurić

@@ -77,10 +77,20 @@ config :tableau, Tableau.PageExtension, enabled: true
 config :tableau, Tableau.PostExtension, enabled: true, future: true
 config :tableau, Tableau.SitemapExtension, enabled: true
 
+config :tableau, Tableau.TagExtension,
+  enabled: true,
+  layout: Blog.TagLayout,
+  permalink: "/tags"
+
 config :tableau, Tableau.RSSExtension,
   enabled: true,
-  title: "Mitchell Hanberg's Blog",
-  description: "Mitchell Hanberg's Blog"
+  feeds: [
+    feed: [
+      enabled: true,
+      title: "Mitchell Hanberg's Blog",
+      description: "Mitchell Hanberg's Blog"
+    ]
+  ]
 
 config :elixir, :time_zone_database, Tz.TimeZoneDatabase
 

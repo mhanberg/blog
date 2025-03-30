@@ -5,6 +5,7 @@ date: 2018-10-23 23:00:00 EST
 categories: post
 desc: Let's explore how to extract React state transformations to better isolate and understand the way our component state changes.
 permalink: /post/2018/10/24/reducers-exploring-state-management-in-react/
+tags: [programming, javascript, react]
 ---
 
 In a previous [post](https://www.mitchellhanberg.com/post/2018/07/25/exploring-state-management-in-react-container-components/), we demonstrated how the Container/Presenter pattern is a solid approach to managing your React state. This time we are going to look into using Reducer functions as the method to managing change in state of your components.

@@ -4,6 +4,7 @@ title: "The Comprehensive Guide to Elixir's List Comprehension"
 date: 2022-06-02 01:00:00 EST
 categories: post
 permalink: /the-comprehensive-guide-to-elixirs-for-comprehension/
+tags: [elixir, programming, tips]
 reviewers:
   - Seth Brown
   - Eric Oestrich

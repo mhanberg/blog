@@ -3,6 +3,7 @@ layout: Blog.PostLayout
 title: "Credo Language Server and the birth of elixir-tools"
 date: 2023-04-18 01:00:00 EST
 categories: post
+tags: [elixir, lsp, elixir-tools]
 permalink: /:title/
 ---
 

@@ -4,6 +4,7 @@ title: Tools I use for mobile web development
 date: 2019-04-04 09:00:00 EST
 categories: post
 permalink: /:title/
+tags: [dx, dotfiles, tips]
 ---
 
 It's never been easier to write web applications for mobile and I want to share some of the tools I use everyday that help me do so.

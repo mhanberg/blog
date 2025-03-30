@@ -4,6 +4,7 @@ title: "Pet Peeves"
 date: 2024-06-19 01:00:00 EST
 updated: 2024-09-25 01:00:00 EST
 permalink: /:title/
+tags: [social]
 ---
 
 > **noun** _informal_

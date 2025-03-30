@@ -5,6 +5,7 @@ date: 2020-03-02 09:00:00 EST
 categories: post
 permalink: /:title/
 img: https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2551&q=80
+tags: [dx, dotfiles, tips]
 ---
 
 I started a new job last week, so I naturally received a new computer that required some set up.

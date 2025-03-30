@@ -3,6 +3,7 @@ layout: Blog.PostLayout
 title: Experiment in the REPL
 date: 2019-02-19 11:00:00 EST
 categories: post
+tags: [elixir, programming, tips]
 permalink: /:title/
 ---
 

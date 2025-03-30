@@ -5,6 +5,7 @@ date: 2023-11-07 08:00:00 EST
 updated: 2024-06-04 08:00:00 EST
 categories: post
 permalink: /:title/
+tags: [dotfiles, dx, tips]
 ---
 
 I recently built a new PC (you can see the specs on my [/uses](/uses) page!) and installed Linux on it.
