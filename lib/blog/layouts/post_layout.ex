@@ -9,7 +9,7 @@ defmodule Blog.PostLayout do
           @page.title
         end
 
-        div class: "flex gap-4 text-white text-sm" do
+        div class: "flex flex-wrap gap-4 text-white text-sm" do
           c &date/1, date: @page.date
           c &reading_time/1, content: @page.body
           c &tags/1, tags: @page[:tags] || []
