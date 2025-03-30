@@ -10,7 +10,7 @@ My first conference of 2025 was [Code BEAM America](https://codebeamamerica.com)
 
 ## On the Elixir community
 
-Reflecting on this year's conference, I realized how comfortable I was the entire time. After 7 years in the Elixir community, I've accumulated a number for friends and acquaintences, something I really never expected from a work adjacent interest like a programming language.
+Reflecting on this year's conference, I realized how comfortable I was the entire time. After 7 years in the Elixir community, I've accumulated a number for friends and acquaintances, something I really never expected from a work adjacent interest like a programming language.
 
 At my first Elixir conference, [Lonestar Elixir 2020](https://web.archive.org/web/20200308234856/https://lonestarelixir.com/) (rough year, but also the year I "went pro" with Elixir), I had a couple of acquaintences from my new job at [Bleacher Report](https://bleacherreport.com/), but I hadn't really me them yet. I'm a pretty social guy, but traveling across the country to hang out with a bunch of strangers isn't really my comfort zone.
 
@@ -24,7 +24,7 @@ We are a little more than 6 months into the project and it felt great to finally
 
 I spoke to a number of folks on what they're excited about with the project and had a blast exploring the possibilities of the next generation of Elixir tooling.
 
-I'll update this with a link to the talk once it's available.
+You can watch my on on [YouTube](https://www.youtube.com/watch?v=2vIw2fb9DxA).
 
 ## The talks
 
