@@ -2,6 +2,7 @@
 layout: Blog.PostLayout
 title: "Code BEAM America 2025"
 date: 2025-03-11 01:00:00 EST
+tags: [elixir, speaking, codebeam]
 permalink: /:title/
 ---
 

@@ -5,6 +5,7 @@ date: 2019-02-14 13:30:00 EST
 categories: post
 desc: Advice on becoming a frequent and consistent reader.
 permalink: /:title/
+tags: [reading, tips]
 ---
 
 In 2017, I challenged myself to read 20 books and I was able to read 22 books.

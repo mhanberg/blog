@@ -5,6 +5,7 @@ date: 2018-01-29 09:00:00 EST
 categories: post
 desc: Guide on how to set up a versioned (using git) set of dotfiles.
 permalink: post/2018/01/29/version-your-dotfiles-for-great-good/
+tags: [dx, programming, dotfiles, neovim, tips]
 ---
 
 ### What are dotfiles?

@@ -4,6 +4,7 @@ title: "Modern Format on Save in Neovim"
 date: 2024-03-14 08:00:00 EST
 categories: post
 permalink: /:title/
+tags: [neovim, dx, dotfiles, tips]
 ---
 
 Formatting on save is a popular workflow and is builtin to many text editors and IDEs.

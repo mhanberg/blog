@@ -30,19 +30,13 @@ defmodule Blog.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:tableau, "~> 0.20"},
-      {:mdex, "~> 0.4", override: true},
-
+      {:tableau, "~> 0.23"},
       # {:tableau, path: "../tableau/", override: true},
       {:temple, "~> 0.12"},
-      {:benchee, "~> 1.3"},
       {:bun, "~> 1.3"},
       {:tableau_og_extension, "~> 0.2"},
-      {:schematic, "~> 0.4", override: true},
-      {:floki, "~> 0.34"},
       {:req, "~> 0.4.8"},
       {:easyxml, "~> 0.1.0-dev", github: "wojtekmach/easyxml", branch: "main"}
-      # {:tailwind, "~> 0.3", runtime: Mix.env() == :dev}
     ]
   end
 end

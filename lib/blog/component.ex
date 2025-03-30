@@ -69,6 +69,32 @@ defmodule Blog.Component do
     end
   end
 
+  def tags(assigns) do
+    temple do
+      for tag <- @tags do
+        a href: Path.join("/tags", tag) do
+          "#" <> tag
+        end
+      end
+    end
+  end
+
+  def prose(assigns) do
+    temple do
+      section class: "prose prose-invert prose-a:text-fallout-green max-w-4xl mx-auto" do
+        slot @inner_block
+      end
+    end
+  end
+
+  def link(assigns) do
+    temple do
+      a href: @href, class: "text-fallout-green underline #{assigns[:class]}" do
+        slot @inner_block
+      end
+    end
+  end
+
   def search(assigns) do
     temple do
       svg xmlns: "http://www.w3.org/2000/svg",

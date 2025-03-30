@@ -7,6 +7,7 @@ desc: Introduction to holding wildly productive and efficient team retrospective
 permalink: /post/2018/11/09/conducting-good-retrospectives/
 img: https://res.cloudinary.com/mhanberg/image/upload/t_scale/v1541683676/jametlene-reskp-651411-unsplash.jpg
 image_desc: Photo by Jametlene Reskp on Unsplash
+tags: [projects, social, tips]
 ---
 
 Every team experiences moments of success or failure, moments of working like a well oiled machine, and moments of not being able to stand the sound of each other's voices. But many teams let these moments pass by without taking time to ponder "why did these things happen"?

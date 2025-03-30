@@ -1,0 +1,8 @@
+- name: GitHub
+  permalink: https://github.com/mhanberg
+- name: Newsletter
+  permalink: /newsletter
+- name: Tags
+  permalink: /tags
+- name: RSS
+  permalink: /feed.xml

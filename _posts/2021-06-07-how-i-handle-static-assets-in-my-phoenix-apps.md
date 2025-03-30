@@ -3,6 +3,7 @@ layout: Blog.PostLayout
 title: "How I Handle Static Assets in my Phoenix apps"
 date: 2021-06-07 01:00:00 EST
 categories: post
+tags: [elixir, phoenix, javascript, programming, tips]
 permalink: /:title/
 ---
 

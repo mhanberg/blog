@@ -3,6 +3,7 @@ layout: Blog.PostLayout
 title: Habits of Successful Projects
 date: 2017-10-03 08:00:00 EST
 categories: post
+tags: [social, projects, tips]
 desc: Keeping perspective over the course of a project can make the difference between a success and a failure.
 permalink: /:categories/:year/:month/03/:title/
 ---

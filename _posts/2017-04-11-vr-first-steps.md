@@ -2,6 +2,7 @@
 layout: Blog.PostLayout
 title: First Dive into Development for VR
 date: 2017-04-11 09:00:00 EST
+tags: [vr, programming]
 categories: post
 permalink: /:categories/:year/:month/:day/vr-first-steps/
 ---

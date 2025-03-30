@@ -5,6 +5,7 @@ date: 2019-02-11 09:00:00 EST
 categories: post
 desc: Guide on making responsive popovers using Popper.js
 permalink: /creating-responsive-popovers-with-popper.js/
+tags: [javascript, programming, tips]
 ---
 
 Making _simple_ popovers is pretty easy.

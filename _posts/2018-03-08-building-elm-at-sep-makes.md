@@ -7,4 +7,5 @@ desc: The thrilling tale of my first hackathon at SEP.
 permalink: /post/2018/03/08/building-elm-at-sep-makes/
 external_url: https://www.sep.com/sep-blog/2018/03/08/building-with-elm-at-sepmakes/
 external_site: sep
+tags: [hackathon, external]
 ---

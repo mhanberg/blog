@@ -7,4 +7,5 @@ desc: "How I used headless Chrome to access RSS feeds from an on-premise SharePo
 permalink: /post/2018/08/19/how-to-subscribe-to-sharepoint-rss-feeds-without-ntlm-authentication/
 external_url: https://www.sep.com/sep-blog/2018/08/18/how-to-subscribe-to-sharepoint-rss-feeds-without-ntlm-authentication/
 external_site: sep
+tags: [external, chromedriver, tips]
 ---

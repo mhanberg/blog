@@ -5,6 +5,7 @@ date: 2017-10-25 09:00:00 EST
 categories: post
 desc: Guide on scheduling recurring tasks on Heroku, where access to tools like Cron and the file system are not possible.
 permalink: /post/2017/10/25/cron-jobs-on-heroku/
+tags: [heroku, rails, ruby, programming, tips]
 ---
 
 A common practice is to create a __cron job__ whenever you have a task you need done periodically.

@@ -5,6 +5,7 @@ date: 2018-07-25 00:00:00 EST
 categories: post
 desc: This one simple trick will turn your unruly React components into the obedient angels they were meant to be!
 permalink: /post/2018/07/25/exploring-state-management-in-react-container-components/
+tags: [react, programming, javascript]
 ---
 
 >At what level of complexity will my React application require Redux?

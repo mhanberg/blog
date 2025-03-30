@@ -55,7 +55,7 @@ Thank you Chris!
 ## Conference Speaking
 
 - [OTP Process Abstractions with proc_lib](https://www.youtube.com/watch?v=Ug-SEozyG1A) at CodeBEAM America 2022
-- Your Official Elixir Expert at CodeBEAM America 2025
+- [Your Official Elixir Expert](https://www.youtube.com/watch?v=2vIw2fb9DxA) at CodeBEAM America 2025
 
 ## Podcasts
 

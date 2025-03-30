@@ -3,6 +3,7 @@ layout: Blog.PostLayout
 title: "Introducing Temple: An elegant HTML library for Elixir and Phoenix"
 date: 2019-07-12 09:00:00 EST
 categories: post
+tags: [elixir, temple, phoenix, programming]
 permalink: /:title/
 ---
 

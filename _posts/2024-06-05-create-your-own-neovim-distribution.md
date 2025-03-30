@@ -3,6 +3,7 @@ layout: Blog.PostLayout
 title: "Create Your Own Neovim Distribution"
 date: 2024-06-05 01:00:00 EST
 permalink: /:title/
+tags: [tips, neovim]
 ---
 
 Gotcha! The click bait worked!
