@@ -2,6 +2,7 @@ name: Netlify Deploy
 
 on:
   push:
+  workflow_dispatch: 
   schedule:
   # 6am ET, posts will publish if rebuilt after 1am ET
   - cron: "0 10 * * *"
@@ -26,6 +27,9 @@ jobs:
           key: ${{ runner.os }}-mix-${{ hashFiles('**/flake.nix') }}-${{ hashFiles('**/mix.lock') }}
           restore-keys: |
             ${{ runner.os }}-mix-
+
+      - name: Remove stale goodreads data
+        run: rm _build/books.bin
 
       - name: Install Dependencies
         run: nix develop --command bash -c 'mix deps.get'
