@@ -3,7 +3,7 @@ import Config
 config :tableau, :reloader,
   patterns: [
     ~r"^lib/.*.ex",
-    ~r"^(_posts|_docs|_pages)/.*.md",
+    ~r"^(_posts|_drafts|_wip|_pages)/.*.md",
     ~r"^_data/.*.(yaml|json|toml)",
     ~r"^css/site.css",
     ~r"^js/index.js"
@@ -74,7 +74,7 @@ config :tableau, Tableau.OgExtension,
   template: {Blog.Og, :template}
 
 config :tableau, Tableau.PageExtension, enabled: true
-config :tableau, Tableau.PostExtension, enabled: true, future: true
+config :tableau, Tableau.PostExtension, enabled: true
 config :tableau, Tableau.SitemapExtension, enabled: true
 
 config :tableau, Tableau.TagExtension,
