@@ -35,13 +35,13 @@
           buildPackages = with pkgs; [
             beam.packages.erlang_27.erlang
             beam.packages.erlang_27.elixir_1_17
+            netlify-cli
           ];
           devPackages = with pkgs; [
             nodejs_18
             nodePackages.typescript-language-server
             tailwindcss-language-server
             prettierd
-            netlify-cli
             backblaze-b2
             agenix.packages.${system}.default
           ];
