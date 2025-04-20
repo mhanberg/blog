@@ -31,24 +31,30 @@
         lib,
         ...
       }: {
-        devShells = {
+        devShells = let
+          buildPackages = with pkgs; [
+            beam.packages.erlang_27.erlang
+            beam.packages.erlang_27.elixir_1_17
+          ];
+          devPackages = with pkgs; [
+            nodejs_18
+            nodePackages.typescript-language-server
+            tailwindcss-language-server
+            prettierd
+            netlify-cli
+            backblaze-b2
+            agenix.packages.${system}.default
+          ];
+        in {
+          netlify = pkgs.mkShell {
+            packages = buildPackages;
+          };
           default = pkgs.mkShell {
+            packages = buildPackages ++ devPackages;
             # The Nix packages provided in the environment
             shellHook = ''
               source ${lib.getExe config.agenix-shell.installationScript}
             '';
-            packages = with pkgs; [
-              beam.packages.erlang_27.erlang
-              beam.packages.erlang_27.elixir_1_17
-              nodejs_18
-              netlify-cli
-              nodePackages.typescript-language-server
-              tailwindcss-language-server
-              prettierd
-              netlify-cli
-              backblaze-b2
-              agenix.packages.${system}.default
-            ];
           };
         };
       };

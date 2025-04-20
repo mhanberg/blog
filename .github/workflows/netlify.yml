@@ -32,18 +32,18 @@ jobs:
         run: rm _build/books.bin
 
       - name: Install Dependencies
-        run: nix develop --command bash -c 'mix deps.get'
+        run: nix develop .#netlify --command bash -c 'mix deps.get'
 
       - name: Build
-        run: nix develop --command bash -c 'mix build'
+        run: nix develop .#netlify --command bash -c 'mix build'
 
       - name: Deploy Branch Preview
         if: ${{ github.ref_name != 'main' }}
-        run: nix develop --command bash -c 'netlify deploy --alias ${{ github.ref_name}}'
+        run: nix develop .#netlify --command bash -c 'netlify deploy --alias ${{ github.ref_name}}'
 
       - name: Deploy Production
         if: ${{ github.ref_name == 'main' }}
-        run: nix develop --command bash -c 'netlify deploy --prod'
+        run: nix develop .#netlify --command bash -c 'netlify deploy --prod'
 
 
 
