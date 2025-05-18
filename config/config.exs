@@ -60,7 +60,8 @@ config :tableau, :config,
         tasklist: true,
         strikethrough: true,
         autolink: true,
-        alerts: true
+        alerts: true,
+        footnotes: true
       ],
       render: [unsafe_: true],
       features: [syntax_highlight_theme: "poimandres"]
