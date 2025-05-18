@@ -10,7 +10,9 @@ defmodule Blog.Component do
 
   def convertkit(_assigns) do
     temple do
-      iframe width: "100%", height: "211px", src: "/convertkit"
+      if Mix.env() == :prod do
+        iframe width: "100%", height: "211px", src: "/convertkit"
+      end
     end
   end
 
