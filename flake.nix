@@ -38,6 +38,7 @@
             netlify-cli
           ];
           devPackages = with pkgs; [
+            just
             nodejs_18
             nodePackages.typescript-language-server
             tailwindcss-language-server
