@@ -6,11 +6,13 @@ defmodule Mix.Tasks.Blog.Gen.Post do
 
   @doc false
   def run(argv) do
-    if argv == [] do
-      raise "Missing argument: Filename"
+    {opts, args, _invalid} = OptionParser.parse(argv, strict: [draft: :boolean])
+
+    if args == [] do
+      Mix.raise("Missing argument: Filename")
     end
 
-    post_title = Enum.join(argv, " ")
+    post_title = Enum.join(args, " ")
     post_date = Date.utc_today()
     post_time = "01:00:00 EST"
 
@@ -21,8 +23,14 @@ defmodule Mix.Tasks.Blog.Gen.Post do
       |> String.replace(~r/[^[:alnum:]\/\-.]/, "")
       |> String.downcase()
 
-    file_path =
-      "./_posts/#{post_date}-#{file_name}.md"
+    dir =
+      if opts[:draft] do
+        "_drafts"
+      else
+        "_posts"
+      end
+
+    file_path = Path.join(dir, "#{post_date}-#{file_name}.md")
 
     if File.exists?(file_path) do
       raise "File already exists"
