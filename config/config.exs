@@ -64,7 +64,7 @@ config :tableau, :config,
         footnotes: true
       ],
       render: [unsafe_: true],
-      features: [syntax_highlight_theme: "poimandres"]
+      syntax_highlight: [formatter: {:html_inline, theme: "material_darker"}]
     ]
   ]
 

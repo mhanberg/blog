@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Syne+Mono&family=VT323&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Fira+Code:wght@300..700&display=swap');
 @import 'tailwindcss';
 
 @plugin '@tailwindcss/typography';
@@ -13,7 +11,9 @@
   --color-fallout-light-blue: #C0FFFF;
   --color-fallout-blue: #2ECFFF;
 
-  --font-fancy: VT323;
+  /* --font-fancy: 'Pixelify Sans'; */
+  --font-fancy: 'Syne Mono';
+  /* --font-fancy: VT323; */
   --font-sans: Inter, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-mono:
     'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
@@ -67,10 +67,10 @@ h6 {
 }
 
 .markdown-alert {
-  @apply border-l-4 pl-4;
+  @apply border-l-2 pl-2 my-6;
 
   .markdown-alert-title {
-    @apply font-semibold font-fancy text-2xl m-0 mb-2 uppercase;
+    @apply font-semibold font-fancy text-lg m-0 uppercase;
   }
 
   p:nth-child(2) {
@@ -126,8 +126,8 @@ h6 {
   @apply mx-auto w-[50%];
 }
 
-pre.autumn-hl {
-  @apply max-w-4xl mx-auto my-4 overflow-x-auto text-sm;
+pre.athl {
+  @apply max-w-4xl mx-auto my-6 overflow-x-auto text-sm;
 }
 
 .anchor {

@@ -32,6 +32,7 @@ defmodule Blog.MixProject do
     [
       {:tableau, "~> 0.24"},
       # {:tableau, path: "../tableau/", override: true},
+      {:mdex, "~> 0.6.2", override: true},
       {:temple, "~> 0.12"},
       {:bun, "~> 1.3"},
       {:tableau_og_extension, "~> 0.2"},
