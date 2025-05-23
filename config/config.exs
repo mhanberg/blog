@@ -64,7 +64,7 @@ config :tableau, :config,
         footnotes: true
       ],
       render: [unsafe_: true],
-      syntax_highlight: [formatter: {:html_inline, theme: "material_darker"}]
+      syntax_highlight: [formatter: {:html_inline, theme: "neovim_dark"}]
     ]
   ]
 
