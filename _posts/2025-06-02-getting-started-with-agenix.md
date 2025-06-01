@@ -1,7 +1,7 @@
 ---
 layout: Blog.PostLayout
 title: "Getting Started with Agenix"
-date: 2025-05-11 01:00:00 EST
+date: 2025-06-02 01:00:00 EST
 permalink: /:title/
 tags: [nix, nixos, agenix]
 ---
