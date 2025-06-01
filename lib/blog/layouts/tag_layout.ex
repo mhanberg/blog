@@ -5,13 +5,13 @@ defmodule Blog.TagLayout do
   def template(assigns) do
     temple do
       c &prose/1 do
-        h1 class: "text-4xl" do
+        h1 class: "text-2xl" do
           "Tag: #" <> @page.tag
         end
 
         for post <- @page.posts do
           article class: "mt-8" do
-            a class: "font-fancy block font-normal text-2xl md:text-3xl no-underline",
+            a class: "font-fancy block font-light text-xl no-underline",
               href: post.permalink do
               post.title
             end

@@ -13,7 +13,7 @@
     - name: JetBrains Mono font
       link: https://www.jetbrains.com/lp/mono/
 
-    - name: Ghostty - Terminal
+    - name: Ghostty
       link: https://mitchellh.com/ghostty
 
     - name: Postico

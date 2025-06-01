@@ -24,7 +24,7 @@ defmodule Blog.SidebarLayout do
       div class: "grid grid-rows-[auto_1fr_auto] grid-cols-[100%] min-h-[100dvh] container" do
         div "x-data": "{open: false}", ":data-open": "open", class: "sticky top-0 group z-10" do
           div class: "py-4 flex items-center justify-between bg-black" do
-            h2 class: "text-2xl" do
+            h2 class: "text-lg" do
               a href: "/" do
                 "/mitch"
               end

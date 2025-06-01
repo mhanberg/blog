@@ -17,7 +17,7 @@ defmodule Blog.ArticlesPage do
 
         for post <- @posts do
           article class: "mt-8" do
-            a class: "font-fancy block font-normal text-lg md:text-xl no-underline",
+            a class: "font-fancy block font-light text-lg md:text-xl no-underline",
               href: post.permalink do
               post.title
             end

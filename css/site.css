@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Syne+Mono&family=VT323&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Handjet:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Syne+Mono&family=VT323&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Fira+Code:wght@300..700&display=swap');
 @import 'tailwindcss';
 
+@import "./pixel-code.css";
 @plugin '@tailwindcss/typography';
 
 @source './site.css';
@@ -11,8 +12,11 @@
   --color-fallout-light-blue: #C0FFFF;
   --color-fallout-blue: #2ECFFF;
 
+  /* --font-fancy: 'Creepster'; */
+  /* --font-fancy: 'Handjet'; */
+  --font-fancy: 'Pixel Code';
   /* --font-fancy: 'Pixelify Sans'; */
-  --font-fancy: 'Syne Mono';
+  /* --font-fancy: 'Syne Mono'; */
   /* --font-fancy: VT323; */
   --font-sans: Inter, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-mono:
@@ -59,11 +63,12 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-fancy;
+  @apply font-fancy font-light;
 
   a {
     @apply scroll-mt-16;
   }
+
 }
 
 .markdown-alert {
@@ -131,10 +136,8 @@ pre.athl {
 }
 
 .anchor {
-  @apply font-mono;
-  font-size: 0.8em;
+  @apply font-fancy font-extralight;
   text-decoration-line: none;
-  font-weight: 400;
 }
 
 .anchor:hover {

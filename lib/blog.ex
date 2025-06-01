@@ -85,6 +85,6 @@ defmodule Blog do
   end
 
   def slugify(str) do
-    String.replace(str, " ", "-")
+    str |> String.replace(" ", "-") |> String.downcase()
   end
 end
