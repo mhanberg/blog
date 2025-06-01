@@ -3,7 +3,7 @@ layout: Blog.PostLayout
 title: "Getting Started with Agenix"
 date: 2025-05-11 01:00:00 EST
 permalink: /:title/
-tags: [nix, agenix]
+tags: [nix, nixos, agenix]
 ---
 
 [NixOS modules](https://nixos.wiki/wiki/NixOS_modules) make it easy to configure many services with a consistent interface (the Nix language), but configuring confidential options like passwords and API keys this way has two major problems.
@@ -11,7 +11,7 @@ tags: [nix, agenix]
 - Secrets should not be committed to source control in plain text.
 - Values and files used in NixOS modules are copied to the [nix store](https://nix.dev/manual/nix/2.28/store/), which is globally readable.
 
-Agenix is a [Nix](https://nixos.org) package and CLI utility that allows you to encrypt files to store secrets in your repository and then be able to decrypt them at runtime, giving access to your services.
+[Agenix](https://github.com/ryantm/agenix) is a [Nix](https://nixos.org) package and CLI utility that allows you to encrypt files to store secrets in your repository and then be able to decrypt them at runtime, giving access to your services.
 
 The key here is that these secrets are decrypted to temporary directories with limited filesystem permissions and are kept out of the nix store.
 
@@ -52,14 +52,14 @@ Now, you can enter your devShell with `nix develop` and have access to the `agen
     agenix.url = "github:ryantm/agenix";
   };
 
--  outputs = { self, nixpkgs }: {
-+  outputs = { self, nixpkgs, agenix }: let
-+    pkgs = nixpkgs.legacyPackages.aarch64-linux;
-+  in {
-+    devShells.aarch64-linux.default = pkgs.mkShell {
-+      packages = [
-+        agenix.packages.aarch64-linux.default
-+      ];
+- outputs = { self, nixpkgs }: {
++ outputs = { self, nixpkgs, agenix }: let
++   pkgs = nixpkgs.legacyPackages.aarch64-linux;
++ in {
++   devShells.aarch64-linux.default = pkgs.mkShell {
++     packages = [
++       agenix.packages.aarch64-linux.default
++     ];
     };
   };
 }
@@ -67,7 +67,7 @@ Now, you can enter your devShell with `nix develop` and have access to the `agen
 
 ### 3. NixOS configuration
 
-Let's add the basic NixOS configuration before adding any Agenix specific stuff to it.
+Let's add the basic NixOS configuration before adding anything Agenix specific.
 
 ```diff
 {
@@ -133,6 +133,11 @@ Agenix controls who can decrypt which secret with a `secrets.nix` file. This fil
 With Agenix, the decryption will happen with the deployed servers ssh keys that are stored in `/etc/ssh`, so here we make `remote` equal to the public key at `/etc/ssh/ssh_host_ed25519_key.pub`
 
 We also set a `local` key, which is your local computer's ssh public key. This one is used by the `agenix` CLI utility to encrypt and decrypt the secrets during development
+
+> [!important]
+> If you are collaborating with other people, you will need to either add everyone's public keys to this file, or share a public/private key pair through something like [1Password](https://developer.1password.com/docs/ssh/agent/).
+>
+> If you add a new public key, you'll need to have to rekey the files using an existing public key with `agenix --rekey`.
 
 We then configure the `pihole.age` file use use these two public keys.
 
@@ -291,7 +296,7 @@ We built a NixOS module that consumes runtime secrets through a decrypted file t
 
 Next time we'll see how we can utilize Agenix with [home-manager](https://home-manager.dev/manual/23.05/index.html)!
 
-## Full example
+## Full Example
 
 ### flake.nix
 
