@@ -37,7 +37,7 @@
     - name: nix-darwin
       link: https://daiderd.com/nix-darwin/
 
-    - name: tmux - Terminal Multiplexer
+    - name: tmux
       link: https://github.com/tmux/tmux#welcome-to-tmux
 
     - name: fzf
