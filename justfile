@@ -7,6 +7,9 @@ clean:
 serve:
   mix tableau.server
 
+prod-build: clean
+  MIX_ENV=prod mix build
+
 regenerate-og-images:
   rm -rf ./priv/og
   @just generate-og-images
