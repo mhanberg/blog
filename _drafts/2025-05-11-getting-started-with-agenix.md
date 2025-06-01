@@ -257,6 +257,9 @@ Now we can tell the Agenix NixOS module about our encrypted files
         agenix.nixosModules.default
 -       ({...}: {
 +       ({config, ...}: {
++         age.secrets = {
++           pihole.file = ./pihole.age;
++         };
           virtualisation.oci-containers.containers = {
             pi-hole = {
               image = "pihole/pihole:latest";
