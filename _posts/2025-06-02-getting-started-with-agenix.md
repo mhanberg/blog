@@ -6,6 +6,11 @@ permalink: /:title/
 tags: [nix, nixos, agenix]
 ---
 
+> [!tip]
+> This article is part of the Agenix series
+> - 👉 **Getting Started with Agenix**
+> - [Using Agenix with Home Manager](/using-agenix-with-home-manager)
+
 [NixOS modules](https://nixos.wiki/wiki/NixOS_modules) make it easy to configure many services with a consistent interface (the Nix language), but configuring confidential options like passwords and API keys this way has two major problems.
 
 - Secrets should not be committed to source control in plain text.
