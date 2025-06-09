@@ -33,13 +33,13 @@
       }: {
         devShells = let
           buildPackages = with pkgs; [
-            beam.packages.erlang_27.erlang
-            beam.packages.erlang_27.elixir_1_17
+            beam.packages.erlang_28.erlang
+            beam.packages.erlang_28.elixir_1_18
             netlify-cli
           ];
           devPackages = with pkgs; [
             just
-            nodejs_18
+            nodejs_20
             nodePackages.typescript-language-server
             tailwindcss-language-server
             prettierd
