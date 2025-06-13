@@ -118,3 +118,7 @@ pkgs.stdenv.mkDerivation {
   ];
 }
 ```
+
+## The code
+
+You can find my solutions on my [GitHub](https://github.com/mhanberg/tiny-c-projects).
