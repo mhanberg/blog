@@ -11,7 +11,7 @@ EEx is a templating language and module built into the [Elixir](https://hexdocs.
 
 A couple features of EEx that make it stand out are:
 
-- Templates can be compiled into functions ahead of time, avoiding needing to read from the file system at runtime. 
+- Templates can be compiled into functions ahead of time, avoiding needing to read from the filesystem at runtime. 
 - EEx has the concept of an "Engine" allowing you to compile an existing template into something different than what the builtin engine, [`EEx.SmartEngine`](https://hexdocs.pm/eex/EEx.SmartEngine.html), does. This is what [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) does.
 
 Recently, [José Valim tweeted me some advice on how to use the EEx Engine](https://twitter.com/josevalim/status/1511348149323014155?s=20&t=sFyaicmJApbs5yQO-n_CIA) in my library [Temple](https://github.com/mhanberg/temple) (an alternative HTML library, that uses an Elixir DSL). At first I was very confused at José's suggestion; I don't want to write EEx at all! I want Temple to go from DSL straight to `iolist` or `%LiveView.Rendered{}` structs.

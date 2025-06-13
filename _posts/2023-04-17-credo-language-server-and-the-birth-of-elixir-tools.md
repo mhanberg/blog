@@ -49,7 +49,7 @@ As I built out gen_lsp, I realized that the best way to achieve correctness was 
 
 So, I built the [lsp_codegen](https://github.com/mhanberg/lsp_codegen) library.
 
-It includes a handwritten generator that conforms to the LSP specification's [JSON Schema](https://json-schema.org) and is used to read the LSP metamodel and to generate Elixir code that includes typespecs and structs for all of the data structures.
+It includes a handwritten generator that conforms to the LSP specification's [JSON Schema](https://json-schema.org) and is used to read the LSP metamodel and to generate Elixir code that includes typespecs and structs for all the data structures.
 
 While building the code generator, I realized that the specification's "Or" type was easy to represent using typespecs, but was actually hard to deserialize from a JSON payload into the Elixir data structures.
 

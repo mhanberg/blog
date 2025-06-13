@@ -282,7 +282,7 @@ Elixir LS should be all set up now! Let's test it out by seeing if autocompletio
 
 I decided to completely remove [ALE](https://github.com/dense-analysis/ale), so I was wondering how I might get linters and formatters like credo and prettier hooked back in.
 
-Luckly, there are a few projects that implement a language server for the purpose of running these tools for you. I am currently using [efm-langserver](https://github.com/mattn/efm-langserver).
+Luckily, there are a few projects that implement a language server for the purpose of running these tools for you. I am currently using [efm-langserver](https://github.com/mattn/efm-langserver).
 
 I install efm with brew.
 

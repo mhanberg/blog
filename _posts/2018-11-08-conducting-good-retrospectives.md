@@ -18,7 +18,7 @@ A structured way to make sure your team doesn't miss asking that question is to 
 
 A [retrospective](https://www.scrum.org/resources/what-is-a-sprint-retrospective) (or "retro") is a recurring meeting used by teams to look back at the last sprint, week, or any major event in order to figure out what went well and what went poorly. 
 
-The realm of topics is wide ranging: from  mishandled social interactions to achieving a major milestone. These meetings are not intended to make you feel good or bad about yourselves, they're designed to create actionable items for your team.
+The realm of topics is wide ranging: from mishandled social interactions to achieving a major milestone. These meetings are not intended to make you feel good or bad about yourselves, they're designed to create actionable items for your team.
 
 Setting aside dedicated time for these matters assures that they will get some attention and helps keep these conversations from spilling into normal work time. 
 
@@ -93,7 +93,7 @@ The basics of our version of the Four Quadrant activity are:
 
 1. Enumerate events that happened during the last two weeks on sticky notes.
     - Limit to 5 minutes
-1. The facilitator will draw a horizontal axis on the white board, with the left side indicating _bad_ and the right side _good_.
+1. The facilitator will draw a horizontal axis on the whiteboard, with the left side indicating _bad_ and the right side _good_.
 1. Each person will give a brief description of their stickies and place them on the axis where they think they belong.
 1. The facilitator then draws a vertical axis, with the top indicating the event was _in the team's control_ and the bottom that it was _not in the team's control_.
 1. The facilitator quickly pulls each sticky to the appropriate place on the vertical axis. This is usually obvious, but the rest of the team will signal where they think it should go in case of disagreement.

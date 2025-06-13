@@ -6,7 +6,7 @@ permalink: /:title/
 tags: [tips, neovim]
 ---
 
-Gotcha! The click bait worked!
+Gotcha! The clickbait worked!
 
 We're not really in the market to create an actual "distribution", but we are going to explore how to extract your Neovim configuration into it's own plugin.
 
@@ -42,9 +42,9 @@ $HOME/.config/nvim/
 
 The steps I took to extract my distribution was to:
 
-- move the whole thing to a new git repository.
-- rename `custom` to `mydistro` and resolve any necessary changes.
-- rename `init.lua` to `plugin/mydistro.lua`.
+- Move the whole thing to a new git repository.
+- Rename `custom` to `mydistro` and resolve any necessary changes.
+- Rename `init.lua` to `plugin/mydistro.lua`.
 
 Your new configuration structure should look like this:
 

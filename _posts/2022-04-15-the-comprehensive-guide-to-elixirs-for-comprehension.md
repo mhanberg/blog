@@ -30,7 +30,7 @@ Before reading this rest of this article, I suggest you read the list comprehens
 
 The primary ingredient in a comprehension is the generator. The only other place you will see this "left arrow" syntax (`lhs <- rhs`) is in the `with` special form.
 
-The right hand side is the enumerable you want to loop over and the left hand side is the intermediate pattern you want to match on during each iteration. This is a normal pattern, so you can pattern match like you would anywhere else.
+The right-hand side is the enumerable you want to loop over and the left-hand side is the intermediate pattern you want to match on during each iteration. This is a normal pattern, so you can pattern match like you would anywhere else.
 
 ```elixir
 friends = [
@@ -60,7 +60,7 @@ end
 # [{0, 0}, {0, 1}, {0, 2}, ...]
 ```
 
-The counter example using [`Enum.map/2`](https://hexdocs.pm/elixir/Enum.html#map/2) is not nearly as readable and demonstrates that you need to remember to flatten the outer loop, or else you'll get a list of lists.
+The counterexample using [`Enum.map/2`](https://hexdocs.pm/elixir/Enum.html#map/2) is not nearly as readable and demonstrates that you need to remember to flatten the outer loop, or else you'll get a list of lists.
 
 ```elixir
 Enum.flat_map(0..99, fn x ->

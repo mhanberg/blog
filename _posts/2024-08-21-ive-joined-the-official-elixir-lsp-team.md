@@ -12,7 +12,7 @@ This is the culmination of the efforts from [Jonatan Kłosko](https://github.com
 
 You can read more about it on [elixir-lang.org](https://elixir-lang.org/blog/2024/08/15/welcome-elixir-language-server-team/).
 
-We are currently working on merging the three projects (Lexical, ElixirLS, and Next LS) into a single official project, so in the mean time, you can continue to use 
+We are currently working on merging the three projects (Lexical, ElixirLS, and Next LS) into a single official project, so in the meantime, you can continue to use 
 the language server you are currently using.
 
 If you would like to support my efforts on this project, please sponsor me on GitHub! I have a goal of reaching 100 sponsors, and as of writing I'm a little more than halfway there.

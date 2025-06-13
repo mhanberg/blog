@@ -7,7 +7,7 @@ permalink: /:title/
 tags: [neovim, dx, dotfiles, tips]
 ---
 
-Formatting on save is a popular workflow and is builtin to many text editors and IDEs.
+Formatting on save is a popular workflow and is built into many text editors and IDEs.
 
 In Neovim, you must create this manually, but it is very easy using `autocmds`.
 

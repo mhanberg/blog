@@ -16,6 +16,6 @@ Here's a list of minor things I find irritating. I'll attempt to keep this page 
 - Calling software "dead" or "abandoned"
 - Complaining about too many choices, especially when C=2
 - Complaining about what other people are doing when it doesn't affect you at all
-- Judgement without context
+- Judgment without context
 - Speaking in a way that implies you have a ton of experience with something (saying "I do this in all my apps") when really you've done it two times
 - The word "just"

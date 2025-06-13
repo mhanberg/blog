@@ -240,11 +240,11 @@ It requires
 
 - Elixir/Erlang: self-explanatory
 - asdf: self-explanatory
-- gcc,make: used to compile the termbox NIF bindings
+- gcc, make: used to compile the termbox NIF bindings
 - Python 3.9: The termbox NIF uses a python script. For some reason it works with 3.9 and not 3.11, so I pinned it at 3.9 🤷‍♂️.
 - zig,xz: Burrito uses these two.
   
-  Burrito specifically uses Zig 0.10.0, not 0.10.1, so we have to specify it as a resource and download it from the Zig website. Luckily, they provide pre-compiled binaries for both our our target platforms, so we can just download, untar, and add them to our PATH!
+  Burrito specifically uses Zig 0.10.0, not 0.10.1, so we have to specify it as a resource and download it from the Zig website. Luckily, they provide pre-compiled binaries for both of our target platforms, so we can just download, untar, and add them to our PATH!
 
 The Python dependency is even more quirky. The termbox scripts use the unversioned `python` executable, but Homebrew does not link those by default, so we have to manually add the unversioned one to our PATH for it to work.
 

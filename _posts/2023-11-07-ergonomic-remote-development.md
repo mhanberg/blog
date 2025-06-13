@@ -12,15 +12,15 @@ I recently built a new PC (you can see the specs on my [/uses](/uses) page!) and
 
 The way I have been using it mostly has been through an SSH connection, even though its sitting underneath my desk, plugged into my monitor, and all my peripherals plugged into a nifty USB hub splitter thing!
 
-I simply couldn't live without the macOS desktop environment. I have so much muscle memory for all of the shortcuts and have so many apps that I use that enhance my workflow.
+I simply couldn't live without the macOS desktop environment. I have so much muscle memory for all the shortcuts and have so many apps that I use that enhance my workflow.
 
-I have never remotely developed for this long before, so I quickly ran into a bunch of papercuts for which I was able to easily find bandaids.
+I have never remotely developed for this long before, so I quickly ran into a bunch of paper cuts for which I was able to easily find bandaids.
 
 ## Tailscale
 
 When you are going to be SSHing into a remote computer, you need to know the IP address of the computer.
 
-[Tailscale](https://tailscale.com/) makes this super easy. You install Tailscale on your local computer and on the remote computer, and they both joing your "tailnet".
+[Tailscale](https://tailscale.com/) makes this super easy. You install Tailscale on your local computer and on the remote computer, and they both join your "tailnet".
 
 Now, you have a static IP address that only other computers on your tailnet can access!
 
@@ -142,7 +142,7 @@ $ ssh mitchell@<remote ip> -L 4999:localhost:4999
 
 I sign my `git` commits using the [1Password](https://1password.com/) SSH agent. This allows me to use an SSH key (instead of a GPG key) and to authorize the usage of the key with Touch ID on my Mac.
 
-As you can imagine, when I went commit my first code on my new PC, I thought I had found a utter road block that would stop this new workflow from continuing.
+As you can imagine, when I went commit my first code on my new PC, I thought I had found a roadblock kill this new workflow.
 
 
 Luckily, you can actually _forward_ your SSH agent when you make and SSH connection. This is typically for when you are machine hopping and have to `ssh` to a remote machine from inside an `ssh` connection, so that you don't have to install your keys on your local computer and the first remote computer.
@@ -156,7 +156,7 @@ Host <remote ip>
   ForwardAgent yes
 ```
 
-And on the PC, configure the IdentityAgent to use 1Password. I don't actually remember if this is necessary, but when writing this post, I found this config and I don't remember writing it, so it must be  important!
+And on the PC, configure the IdentityAgent to use 1Password. I don't actually remember if this is necessary, but when writing this post, I found this config and I don't remember writing it, so it must be important!
  
 ```ssh
 Host *

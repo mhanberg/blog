@@ -14,7 +14,7 @@ Schematic is a library for validating and transforming data in Elixir, similar t
 
 I created Schematic early in 2023 while developing the [GenLSP](https://github.com/elixir-tools/gen_lsp) library, which I developed to build [Next LS](https://www.elixir-tools.dev/docs/next-ls/quickstart/). I needed to be able to consume and produce data structures described by the Language Server Protocol JSON Schema specification, which describes data in terms of basic scalar types and certain compound types, similar to some algebraic data types.
 
-I wanted a library that lends itself to expressibility, composition, and code generation.
+I wanted a library that lends itself to expressiveness, composition, and code generation.
 
 ## Basic schematics
 

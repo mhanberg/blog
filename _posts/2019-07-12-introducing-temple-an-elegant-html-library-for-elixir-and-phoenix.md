@@ -96,7 +96,7 @@ end
 
 ### Phoenix.HTML
 
-All of the Phoenix form and link helpers have been wrapped to be compatible with Temple.
+All the Phoenix form and link helpers have been wrapped to be compatible with Temple.
 
 The semantics and naming of some helpers have been change to work as macros and avoid name conflicts with standard HTML5 tags.
 
