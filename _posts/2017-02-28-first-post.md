@@ -16,7 +16,7 @@ Obviously the title of the post is insinuating that you should make a blog and w
 
 ## You'll never finish if you don't start
 
-Many people never start a project because they don't want to get it wrong; they're afraid to build something that doesn't work becuase it'll mean that they're dumb. 
+Many people never start a project because they don't want to get it wrong; they're afraid to build something that doesn't work because it'll mean that they're dumb. 
 
 > Wrong
 
