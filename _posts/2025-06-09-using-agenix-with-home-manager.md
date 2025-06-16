@@ -10,6 +10,7 @@ tags: [nix, home-manager, agenix]
 > This article is part of the Agenix series
 > - [Getting Started with Agenix](/getting-started-with-agenix)
 > - 👉 **Using Agenix with Home Manager**
+> - [Using Agenix with devShells](/using-agenix-with-devshells)
 
 [Home Manager](https://github.com/nix-community/home-manager) (also styled as home-manager) allows you to configure your programs and configuration with Nix code, similar to NixOS modules.
 
