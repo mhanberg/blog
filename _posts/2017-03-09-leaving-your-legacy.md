@@ -17,7 +17,8 @@ Until it was my turn to say goodbye to the team and hello to new opportunities, 
 
 This post serves as an outlet for my experience.
 
-**Note**: Team size = me.
+> [!important]
+> Team size = me.
 
 ## The Stack
 
@@ -41,11 +42,9 @@ This is where the difficulties of working on an internal project start to crop u
 
 I fixed all the tests, but at this point, I ask myself, are these tests even valuable? What are they testing?
 
-<br>
-
 ## Deployment
 
->Previously there was Jenkins integration with building and deployment using CloudFoundry, but this was not maintained and no longer works. Therefore, all staging and production deployments must be done manually
+> Previously there was Jenkins integration with building and deployment using CloudFoundry, but this was not maintained and no longer works. Therefore, all staging and production deployments must be done manually
 
 This was an actual quote from the project's wiki page (until I deleted it). I wasn't surprised by a defunct continuous integration setup, but that the expected deployment process was to *manually copy the files*. 
 

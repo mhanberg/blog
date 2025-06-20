@@ -7,7 +7,7 @@ tags: [elixir, temple, phoenix, programming]
 permalink: /:title/
 ---
 
-<img src="/images/temple.png" class="bg-transparent mx-auto my-16" style="filter: invert(100%);">
+<img src="/images/temple.png" class="bg-transparent mx-auto my-16 [filter:invert(100%)]">
 
 Temple is a macro DSL for writing HTML markup in [Elixir](https://elixir-lang.org) and a template engine for [Phoenix](https://phoenixframework.org/).
 
@@ -51,7 +51,7 @@ temple do
 end
 ```
 
-### Phoenix Template Engine
+## Phoenix Template Engine
 
 By implementing the `Phoenix.Template.Engine` behaviour, Temple becomes a full fledged template engine.
 
@@ -94,7 +94,7 @@ aside do
 end
 ```
 
-### Phoenix.HTML
+## Phoenix.HTML
 
 All the Phoenix form and link helpers have been wrapped to be compatible with Temple.
 
@@ -116,7 +116,7 @@ form_for @post, Routes.post_path(@conn, :create) do
 end
 ```
 
-### Components
+## Components
 
 Temple offers [React-ish](https://reactjs.org) style API for extracting reusable components. 
 

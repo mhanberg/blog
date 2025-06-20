@@ -14,7 +14,7 @@ Every team experiences moments of success or failure, moments of working like a 
 
 A structured way to make sure your team doesn't miss asking that question is to hold a __retrospective__.
 
-### What is a retrospective?
+## What is a retrospective?
 
 A [retrospective](https://www.scrum.org/resources/what-is-a-sprint-retrospective) (or "retro") is a recurring meeting used by teams to look back at the last sprint, week, or any major event in order to figure out what went well and what went poorly. 
 
@@ -28,13 +28,13 @@ Along with **learning from your successes and failures**, one of the goals of a 
 
 Anyone can host a retrospective, but hosting a _good_ retrospective takes finesse. There are five key aspects that are paramount to a good retrospective: Facilitation, Conversational Turn Taking, Format/Activity, Action Items, and Trust.
 
-#### Facilitation
+### Facilitation
 
 Someone should volunteer to facilitate the meeting and lead the chosen activity. Depending on the activity, this can include taking notes, keeping a conversation timer, or tracking whose turn it is to speak. 
 
 A facilitator **isolates the responsibility of running the meeting to one person** and allows everyone else to concentrate on participating.
 
-#### Conversational Turn Taking
+### Conversational Turn Taking
 
 It's important that everyone is heard. Your team should decide on a signal that makes it clear when you have something to say. My team has opted to use a finger raise to signal when you want to say something. Once someone is done speaking, motion to the next person in line to speak.
 
@@ -42,13 +42,13 @@ When someone has a tangential point to contribute, they can delay their turn to 
 
 The primary motivation for the technique to is **avoid interruptions** and **talking over each other**.
 
-#### Format/Activity
+### Format/Activity
 
 Free form conversation is not conducive to reaching conclusions, so pick a meeting format that fits well with your team. At the beginning of the meeting, the facilitator will explain the format and confirm that everyone is okay with that decision. Different formats optimize for different aspects of your team: project performance, interpersonal communication, or general frustration.
 
 Picking a format gives the meeting **structure** and an **objective**, allowing the team to work together towards a known and shared goal.
 
-#### Action Items
+### Action Items
 
 A necessary output of the meeting is a list of action items. An action item is a task that requires further action in order to accomplish it and is assigned to a specific person. You've probably experienced the situation where everyone agrees something should get done, but no one ever does it.
 
@@ -56,7 +56,7 @@ Sometimes you run into an action item that isn't a specific task, but possibly a
 
 Leaving the meeting with a list of action items ensures that the tasks you spent an hour discussing **actually get done**.
 
-#### Trust
+### Trust
 
 Building trust will take time, but it is the keystone to having productive retrospectives and becoming a great team. 
 
@@ -64,13 +64,13 @@ People thrive when working in an environment where everyone has mutual respect a
 
 The leader of the study, Julia Rozovksy, said:
 
->Individuals on teams with higher psychological safety are less likely to leave Google, they’re more likely to harness the power of diverse ideas from their teammates, they bring in more revenue, and they’re rated as effective twice as often by executives.
+> Individuals on teams with higher psychological safety are less likely to leave Google, they’re more likely to harness the power of diverse ideas from their teammates, they bring in more revenue, and they’re rated as effective twice as often by executives.
 
 ## Case Study
 
 For the last year, my team has had a weekly retro, alternating the format each time. We operate in two week sprints, so in the middle of the sprint we concentrate on interpersonal issues or other general frustrations and at the end of the sprint we focus on project-specific issues.
 
-#### Mid-Sprint Retrospective
+### Mid-Sprint Retrospective
 
 During the Mid-Sprint Retrospective, we engage in the [Lean Coffee](http://leancoffee.org) activity. The chosen facilitator will explain the activity and pass out the required supplies. 
 
@@ -85,7 +85,7 @@ The basics of the Lean Coffee activity are:
 
 Any topics that aren't discussed are carried over to the next meeting if anyone still has interest.
 
-#### Sprint Retrospective
+### Sprint Retrospective
 
 During the Sprint Retrospective we use a variant of the [Four Quadrant](http://www.funretrospectives.com/lessons-learned-quadrants-planning-vs-success/) activity. As with the Mid-Sprint retro, the chosen facilitator will explain the activity and pass out the required supplies.
 

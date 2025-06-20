@@ -9,7 +9,7 @@ permalink: /:title/
 
 A technique I've picked up for learning new tools is **experimenting with them in the REPL**.
 
->A read–eval–print loop (REPL), is a simple, interactive computer programming environment that takes single user inputs, evaluates them, and returns the result to the user. [\*](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)
+> A read–eval–print loop (REPL), is a simple, interactive computer programming environment that takes single user inputs, evaluates them, and returns the result to the user. [\*](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)
 
 Elixir (`iex`), Ruby (`irb`), and Node.js (`node`) all have interactive shells that allow you to evaluate expressions easily and quickly.
 
@@ -51,9 +51,9 @@ iex(5)>Slack.Web.Chat.post_message("C68FV6MDH", nil, %{attachments: Jason.encode
 
 I find experimenting in the REPL to be useful when I need a **short feedback loop** that isn't tightly coupled to the full stack of my application.
 
-### Avoid Analysis Paralysis
+## Avoid Analysis Paralysis
 
->Analysis paralysis is when the fear of potential error outweighs the realistic expectation or potential value of success, and this imbalance results in suppressed decision-making in an unconscious effort to preserve existing options. [\*](https://en.wikipedia.org/wiki/Analysis_paralysis#Software_development)
+> Analysis paralysis is when the fear of potential error outweighs the realistic expectation or potential value of success, and this imbalance results in suppressed decision-making in an unconscious effort to preserve existing options. [\*](https://en.wikipedia.org/wiki/Analysis_paralysis#Software_development)
 
 Idle hands build nothing. I fell into this trap recently, wasting hours before I remembered the power of the REPL.
 

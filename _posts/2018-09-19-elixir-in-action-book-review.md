@@ -16,11 +16,11 @@ book:
   recommendation: Essential if you are looking to explore all that Elixir has to offer.
 ---
 
-### Who is the target audience?
+## Who is the target audience?
 
 The book is intended for beginner and intermediate Elixir developers. As the book progresses, the author dives into topics that get more complex, which might not be suitable unless you already understand the basics of Elixir.
 
-### Review
+## Review
 
 _Elixir in Action_ covers the full breadth of all that is Elixir, from the basic syntax to building distributed, fault tolerant, and scalable systems. This is definitely a lot, especially if _Elixir in Action_ is the first book on Elixir you've read. 
 

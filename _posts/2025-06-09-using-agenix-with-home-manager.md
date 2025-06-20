@@ -16,7 +16,7 @@ tags: [nix, home-manager, agenix]
 
 Just like NixOS modules, we can use [Agenix](https://github.com/ryantm/agenix) to encrypt and store secrets without exposing them to our git repository.
 
-## 1. Install home-manager
+## Install home-manager
 
 Let's start with a basic home-manager configuration to our flake from last time (sans the NixOS configuration, for brevity).
 
@@ -54,7 +54,7 @@ Let's start with a basic home-manager configuration to our flake from last time 
 }
 ```
 
-## 2. Agenix homeManagerModule
+## Agenix homeManagerModule
 
 The Agenix module is responsible for decrypting and installing your secrets at runtime.
 
@@ -94,13 +94,13 @@ The Agenix module is responsible for decrypting and installing your secrets at r
 }
 ```
 
-## 3. Configure your secrets recipients
+## Configure your secrets recipients
 
 You can reference the section we described [last time](/getting-started-with-agenix/#5-configure-the-secrets-recipients).
 
 This time, we're going to encrypt a file called `api-keys.age`.
 
-## 4. Create your secrets file
+## Create your secrets file
 
 Create your secrets file by running `agenix -e api-keys.age` in the same directory as `secrets.nix`. Fill it with the following environment variables.
 
@@ -110,7 +110,7 @@ export SERVICE_B_API_KEY=bar
 export SERVICE_C_API_KEY=baz
 ```
 
-## 4. Use your secrets
+## Use your secrets
 
 We want these environment variables to be available in our shell, so we're going to export them in our zsh configuration.
 

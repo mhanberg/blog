@@ -55,4 +55,3 @@ The default Phoenix generators might have a certain naming scheme or directory s
 ## See ya next time
 
 I had a blast and I hope to catch ya at the next Code BEAM 👋
-

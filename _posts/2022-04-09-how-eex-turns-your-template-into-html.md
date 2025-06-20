@@ -16,7 +16,7 @@ A couple features of EEx that make it stand out are:
 
 Recently, [José Valim tweeted me some advice on how to use the EEx Engine](https://twitter.com/josevalim/status/1511348149323014155?s=20&t=sFyaicmJApbs5yQO-n_CIA) in my library [Temple](https://github.com/mhanberg/temple) (an alternative HTML library, that uses an Elixir DSL). At first I was very confused at José's suggestion; I don't want to write EEx at all! I want Temple to go from DSL straight to `iolist` or `%LiveView.Rendered{}` structs.
 
-Luckily, my coworker [Marlus Saraiva](https://twitter.com/MarlusSaraiva) messaged me and gave a bit more context on José's suggestion, and suddenly it all clicked!. (Hopefully at the end of this post, you'll understand how José's suggestion makes perfect sense and was extremely clear.)
+Luckily, my coworker [Marlus Saraiva](https://twitter.com/MarlusSaraiva) messaged me and gave a bit more context on José's suggestion, and suddenly it all clicked!. Hopefully at the end of this post, you'll understand how José's suggestion makes perfect sense and was extremely clear.
 
 This conversation led me to ask myself, how does EEx work anyway? I decided to source dive EEx, LiveView, [Surface](https://surface-ui.org/), and [HEEx](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.Helpers.html#sigil_H/2-syntax) and will share with you what I learned!
 

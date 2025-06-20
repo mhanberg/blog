@@ -9,7 +9,7 @@ permalink: /introducing-lazyasdf-a-tui-for-the-asdf-version-manager/
 
 ![lazyasdf](https://res.cloudinary.com/mhanberg/image/upload/v1678034860/CleanShot_2023-03-04_at_14.44.18_2x.png)
 
-[lazyasdf](https://github.com/mhanberg/lazyasdf) is my first real* attempt at making a TUI with [Elixir](https://elixir-lang.org)! 
+[lazyasdf](https://github.com/mhanberg/lazyasdf) is my first real[^1] attempt at making a TUI with [Elixir](https://elixir-lang.org)! 
 
 [asdf](https://asdf-vm.com/) is normally used through a _command line interface_ (CLI), `lazyasdf` presents you with a _terminal user interface_ (TUI) for working with `asdf`.
 
@@ -270,4 +270,4 @@ Thanks for reading!
 
 ---
 
-\* Previously, I have made a [fzf](https://github.com/junegunn/fzf) clone using Ratatouille. You can find it in my [dotfiles](https://github.com/mhanberg/.dotfiles/blob/ab07f27041780d1b54704ad4799382f58548468e/bin/fxf).
+[^1]: Previously, I have made a [fzf](https://github.com/junegunn/fzf) clone using Ratatouille. You can find it in my [dotfiles](https://github.com/mhanberg/.dotfiles/blob/ab07f27041780d1b54704ad4799382f58548468e/bin/fxf).

@@ -8,19 +8,19 @@ permalink: post/2018/01/29/version-your-dotfiles-for-great-good/
 tags: [dx, programming, dotfiles, neovim, tips]
 ---
 
-### What are dotfiles?
+## What are dotfiles?
 
 Your dotfiles are the hidden files or folders that live in your home directory, for example your `.vimrc` and your `.bashrc`.
 
-### What do I mean by version?
+## What do I mean by version?
 
 By "version", I mean to track your dotfiles using a version control system, like git, and a hosting service, like Github.
 
-### Why would you want to version them?
+## Why would you want to version them?
 
 Versioning your dotfiles allows you to track them and to be able to share them between computers, making it easy to provision a new computer.
 
-### Let's get started
+## Let's get started
 
 There's a good chance that you arleady have some dotfiles, don't worry, it's easy to start tracking them. Our first order of business is to install a handy suite of tools called [rcm](https://github.com/thoughtbot/rcm), which abstracts the process of symlinking our dotfiles.
 
@@ -46,7 +46,7 @@ $ mkrc .rubocop.yml
 
 At this point, rcm has copied these files to your `~/.dotfiles` directory with the dot stripped from the name (`.vimrc -> vimrc`) and replaced the copy in your home directory with a [symlink](https://en.wikipedia.org/wiki/Symbolic_link) to the new file in your `~/.dotfiles` directory.
 
-#### What about my vim plugins?
+### What about my vim plugins?
 
 For most vim plugin managers, you are probably going to be cloning at least one git repository somewhere in your `~/.vim` directory. If you don't plan on ever updating these repos, you can go ahead and run `mkrc .vim`. 
 
@@ -83,9 +83,9 @@ Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 ```
 
-#### Yeah, but what about the submodules I can't avoid making?
+### Yeah, but what about the submodules I can't avoid making?
 
-Thought you might ask that, I encountered the same challenge. I use [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for [zsh](https://en.wikipedia.org/wiki/Z_shell) customizations (mostly the themes¯\\\_(ツ)\_/¯ ), which relies on a git repository in your home directory `.oh-my-zsh`.
+Thought you might ask that, I encountered the same challenge. I use [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for [zsh](https://en.wikipedia.org/wiki/Z_shell) customizations (mostly the themes¯\\\_(ツ)\_/¯), which relies on a git repository in your home directory `.oh-my-zsh`.
 
 While I wasn't able to transfer the existing directory to my new `.dotfiles` directory, I was able to reclone it as a git submodule.
 
@@ -100,11 +100,11 @@ The submodule is set up to track the master branch, has been cloned into your re
 
 If you wish to update it at any time, you only need to move into the directory of the submodule and do a `git pull`, followed by  returning to the parent repository and committing the change.
 
-### Final Steps
+## Final Steps
 
 Now that you have all of your dotfiles in a git repository, it's time to push that repository to Github and figure out how you are going to install these dotfiles the next time you are setting up a computer.
 
-#### Provisioning a new machine with your dotfiles
+### Provisioning a new machine with your dotfiles
 
 This is the part we've been working towards, and thanks to our efforts, this part is a breeze.
 
@@ -126,9 +126,7 @@ If you want to make it even easier to install, rcm provides a utlity to generate
 >
 > Using the above command, you can now run install.sh to install (or re-install) your rc files. The install.sh script can be stored in your dotfiles directory, copied between computers, and so on.
 
----
-
-## Let's wrap up
+## Wrapping Up
 
 If you've followed along and have made it this far, congratulations! You now have a backup of all of your configuration files! 
 

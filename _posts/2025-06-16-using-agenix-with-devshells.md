@@ -16,7 +16,7 @@ tags: [nix, devshell, agenix]
 
 Just like NixOS modules and [home-manager](https://github.com/nix-community/home-manager), we can use [Agenix](https://github.com/ryantm/agenix) to encrypt and store secrets without exposing them to our git repository.
 
-## 1. flake-parts
+## flake-parts
 
 The easiest way to use Agenix with devShells is to use the [agenix-shell](https://flake.parts/options/agenix-shell) module for [flake-parts](https://flake.parts/index.html).
 
@@ -46,7 +46,7 @@ Let's start with a basic flake using flake-parts.
 }
 ```
 
-## 2. Add Agenix and agenix-shell
+## Add Agenix and agenix-shell
 
 Lets add flake-parts and the agenix-shell module.
 
@@ -84,13 +84,13 @@ Lets add flake-parts and the agenix-shell module.
 }
 ```
 
-## 3. Configure your secrets recipients
+## Configure your secrets recipients
 
 You can reference the section we described [last time](/getting-started-with-agenix/#5-configure-the-secrets-recipients).
 
 This time, we're going to encrypt a file called `api-keys.age`.
 
-## 4. Create your secrets files
+## Create your secrets files
 
 Create your secrets files by running `agenix -e <key-name>.age` in the same directory as `secrets.nix`. Fill them in with the relevant values.
 
@@ -99,7 +99,7 @@ Create your secrets files by running `agenix -e <key-name>.age` in the same dire
 foo
 ```
 
-## 5. Use your secrets 
+## Use your secrets 
 
 ```diff
 {

@@ -57,6 +57,10 @@ p {
   @apply font-mono text-white;
 }
 
+.prose img {
+  @apply mx-auto;
+}
+
 h1,
 h2,
 h3,
@@ -133,6 +137,10 @@ h6 {
 
 pre.athl {
   @apply max-w-4xl mx-auto my-6 overflow-x-auto text-sm;
+}
+
+.prose table {
+  @apply block overflow-x-scroll;
 }
 
 .anchor {

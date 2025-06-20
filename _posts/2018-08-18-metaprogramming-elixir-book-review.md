@@ -16,11 +16,11 @@ book:
   recommendation: A Must Read
 ---
 
-### Who is the target audience?
+## Who is the target audience?
 
 Advanced beginner to intermediate Elixir developers who have mastered the syntax and basic structure of Elixir applications who want to add advanced language features to their skill set.
 
-### Review
+## Review
 
 Chris McCord (creator of the [Phoenix Framework](https://phoenixframework.org/)) introduces you to the power of macros with the Elixir programming language.
 

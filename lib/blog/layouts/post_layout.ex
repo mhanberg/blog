@@ -15,7 +15,23 @@ defmodule Blog.PostLayout do
           c &tags/1, tags: @page[:tags] || []
         end
 
+        if @page[:reviewers] do
+          p do
+            "Thank you to #{Blog.array_to_sentence_string(@page.reviewers)} for reviewing this article."
+          end
+        end
+
         hr class: "!w-full border-fallout-green"
+
+        if @page[:book] do
+          ~MD"""
+          **Title**: [<%= @page.book.title %>](https://goodreads.com/book/show/<%= @page.book.goodreads_id %>)
+
+          **Author**: <%= @page.book.author %>
+
+          **Recommendation**: <%= @page.book.recommendation %>
+          """HTML
+        end
 
         render(@inner_content)
 

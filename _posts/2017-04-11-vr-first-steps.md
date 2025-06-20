@@ -35,7 +35,7 @@ Unity has an amazing amount of documentation available, so getting it installed 
 
 At this point it was time to get it on the phone and be able to view it in the headset. We hadn't bought the actual Gear VR headset yet, but we were able to find a 3rd party headset somewhere in the office. 
 
-The steps to deploy were pretty simple
+The steps to deploy were pretty simple:
 
 1. Install the Android SDK
 2. Point Unity to the path of the SDK

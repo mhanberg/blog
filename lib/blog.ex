@@ -27,8 +27,12 @@ defmodule Blog do
     Map.get(link, "link", "https://amazon.com/s?k=#{Base.url_encode64(link["title"])}")
   end
 
-  def array_to_sentence_string(items) do
-    Enum.join(items, ", ")
+  def array_to_sentence_string([node]) do
+    "and " <> node
+  end
+
+  def array_to_sentence_string([node | rest]) do
+    node <> ", " <> array_to_sentence_string(rest)
   end
 
   def to_date_time(datetime) do

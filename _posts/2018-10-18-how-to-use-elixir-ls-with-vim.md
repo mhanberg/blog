@@ -9,19 +9,19 @@ tags: [elixir, programming, lsp, vim, neovim, tips]
 permalink: /:categories/:year/:month/:day/:title/
 ---
 
-### What is Elixir LS?
+## What is Elixir LS?
 
 [Elixir LS](https://github.com/elixir-lsp/elixir-ls) by Jake Becker (now maintained by the [elixir-lsp](https://github.com/elixir-lsp) organization) is the language server implementation for Elixir.
 
-### What is a language server?
+## What is a language server?
 
 If you've been following the story of [Visual Studio Code](https://code.visualstudio.com), there is a chance you've heard of another recent creation from Microsoft: the [Language Server Protocol](https://langserver.org). 
 
->The Language Server Protocol (LSP) defines the protocol used between an editor or IDE and a language server that provides language features like auto complete, go to definition, find all references etc.
+> The Language Server Protocol (LSP) defines the protocol used between an editor or IDE and a language server that provides language features like auto complete, go to definition, find all references etc.
 
 This allows creators to build universal "language servers" that can be used by any text editor. 
 
-### How to integrate with Vim
+## How to integrate with Vim
 
 Using a language server requires a client implementation for your editor and we are going to use [ALE](https://github.com/dense-analysis/ale) by dense-analysis.
 
@@ -68,7 +68,7 @@ set completeopt=menu,menuone,preview,noselect,noinsert
 let g:ale_completion_enabled = 1
 ```
 
-### Now what?
+## Now what?
 
 I would familiarize yourself with the [features of ALE](https://github.com/dense-analysis/ale#usage) and decide how you want to incorporate them into your workflow. ALE doesn't prescribe any keymappings, so feel free to experiment to see what works best for you!
 

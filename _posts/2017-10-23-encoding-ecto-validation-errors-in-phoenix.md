@@ -7,7 +7,8 @@ desc: With a recent change to Ecto, rendering database validation errors require
 tags: [elixir, phoenix, programming, tips]
 permalink: /post/2017/10/23/encoding-ecto-validation-errors-in-phoenix/
 ---
-# Problem
+
+## Problem
 
 I recently ran into this error while implementing the first endpoint of my Phoenix JSON API.
 
@@ -40,7 +41,7 @@ The `errors` property of the `changeset` struct is a [keyword list](https://elix
 
 ---
 
-# Solution
+## Solution
 
 If you created your Phoenix app when Phoenix was at v1.3, then you should have this function in the `/lib/your_app_web/views/error_helpers.ex` file. If not, go ahead and paste it in that file.
 

@@ -9,6 +9,9 @@ tags: [elixir, programming, dx, tips]
 permalink: /post/2017/10/05/installing-erlang-and-elixir-using-asdf/
 ---
 
+> [!caution]
+> ASDF has changed a lot since this was written, you'll want to consult the [documentation](https://asdf-vm.com) first.
+
 **Let's set the scene**
 
 _You've been fully entrenched in the Ruby and Rails world for 10 months_

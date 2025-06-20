@@ -8,14 +8,15 @@ permalink: /post/2018/07/25/exploring-state-management-in-react-container-compon
 tags: [react, programming, javascript]
 ---
 
->At what level of complexity will my React application require Redux?
+> At what level of complexity will my React application require Redux?
 
 React developers have been asking this question for a long time, and answers still vary wildly. The truth is there is quite a bit we can do before needing to pull in Redux, and even then, _**Redux**_ isn't our only option! 
 
 Even the creator of Redux, [Dan Abramov](https://twitter.com/dan_abramov?lang=en) thinks that we might not need Redux (although, I think the spirit this statement applies to all 3rd-party libraries meant to help reduce complexity of state).
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">You Might Not Need Redux <a href="https://t.co/3zBPrbhFeL">https://t.co/3zBPrbhFeL</a></p>&mdash; Dan Abramov (@dan_abramov) <a href="https://twitter.com/dan_abramov/status/777983404914671616?ref_src=twsrc%5Etfw">September 19, 2016</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+> [You Might Not Need Redux](https://t.co/3zBPrbhFeL)
+>
+> &mdash; [Dan Abramov](@dan_abramov) ([September 19, 2016](https://twitter.com/dan_abramov/status/777983404914671616?ref_src=twsrc%5Etfw))
 
 In this series, we'll explore a few different patterns you can introduce to your code base before reaching for a 3rd party solution!
 
@@ -94,7 +95,6 @@ class CartContainer extends React.Component {
 }
 ```
 [![Edit wo7y9voowk](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/wo7y9voowk)
-&nbsp;
 
 Here we can see that we have a Container component, `CartContainer`, that handles controlling component state with the `addItem`, `removeItem`, and `onNewItemChange` callbacks, and fetching a list of discounts from an external REST api. This enables us to write `Cart`, our Presenter component, as a Pure Functional component. 
 

@@ -10,16 +10,14 @@ permalink: /post/2017/11/28/implementing-api-authentication-with-guardian/
 
 Most applications need some sort of authentication and authorization, and REST API's are no different. If you are familiar with web development but have never worked on one that does not have a front end (like me), then the authentication functionality might stump you at first.
 
-### What is Guardian?
+## What is Guardian?
 
 > Guardian is a token based authentication library for use with Elixir applications.
 
 * More can be learned by reading its [documentation](https://github.com/ueberauth/guardian), which I highly recommend.
 * Keep in mind that the "tokens" that Guardians refers to are [JSON Web Tokens](https://jwt.io/introduction/).
 
----
-
-### Installation and Configuration
+## Installation and Configuration
 
 Add Guardian 1.0 as a dependency in `mix.exs`.
 
@@ -84,9 +82,7 @@ You will need to create a secret key using the method above. If you're writing a
 * The atom `:my_app` corresponds to the atom in the implementation module and the namespacing of the module also corresponds to the implementation module.
 * The value for the key `issuer` can be whatever you want.
 
----
-
-### Authentication
+## Authentication
 
 Our next step will be to perform the authentication of the credentials that the client has sent to our API.
 
@@ -110,9 +106,7 @@ I am using the password hashing library [Comeonin](https://github.com/riverrun/c
 
 Otherwise we return the tuple `{:error, :unauthorized}` to signify that the authentication attempt failed.
 
----
-
-### The Controller
+## The Controller
 
 Let's expose this functionality to our public API by making a controller endpoint to sign in a user.
 
@@ -133,9 +127,7 @@ Here we find the user in the database and authenticate the user. If the authenti
 
 Note: Here I am using the `with` syntax along with Phoenix's [`action_fallback`](http://phoenixframework.org/blog/phoenix-1-3-0-released) functionality.
 
----
-
-### Authorization
+## Authorization
 
 In the context of a web application, this is the process of fencing off most of the routes from unauthenticated visitors. However, there are two routes that should ___not___ be fenced off, the route to sign in a user and the route to create a user.
 
@@ -202,9 +194,7 @@ defmodule MyAppWeb.Guardian.AuthErrorHandler do
 end
 ```
 
----
-
-### Testing
+## Testing
 
 At first I was unsure of how to test this functionality, but the solution turned out to be rather simple.
 

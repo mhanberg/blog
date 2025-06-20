@@ -30,7 +30,7 @@ Let's see what it looks like to use Agenix in these contexts through a Nix flake
 
 Let's build out an example that configures [PiHole](https://pi-hole.net/) as an OCI container whose secrets are provided by an environment file.
 
-### 1. Add it as an input
+### Add it as an input
 
 ```diff
 {
@@ -43,7 +43,7 @@ Let's build out an example that configures [PiHole](https://pi-hole.net/) as an 
 }
 ```
 
-### 2. Add the CLI tool to your package in your devShell
+### Add the CLI tool to your package in your devShell
 
 The `agenix` CLI tool is what we use to edit our secrets locally.
 
@@ -71,7 +71,7 @@ Now, you can enter your devShell with `nix develop` and have access to the `agen
 }
 ```
 
-### 3. NixOS configuration
+### NixOS configuration
 
 Let's add the basic NixOS configuration before adding anything Agenix specific.
 
@@ -101,7 +101,7 @@ Let's add the basic NixOS configuration before adding anything Agenix specific.
 }
 ```
 
-### 4. Add the Agenix module
+### Add the Agenix module
 
 The Agenix module is responsible for decrypting and installing your secrets at runtime.
 
@@ -132,7 +132,7 @@ The Agenix module is responsible for decrypting and installing your secrets at r
 }
 ```
 
-### 5. Configure the secrets recipients
+### Configure the secrets recipients
 
 Agenix controls who can decrypt which secret with a `secrets.nix` file. This file contains the public keys used to _encrypt_ the data, which also determines which private keys can _decrypt_ the data.
 
@@ -159,7 +159,7 @@ in {
 }
 ```
 
-### 6. Create your secrets file
+### Create your secrets file
 
 Create your secrets file by running `agenix -e pihole.age` in the same directory as `secrets.nix`. Fill it with the following environment variables.
 
@@ -180,7 +180,7 @@ zHbuGsYqgdGDdWjiuEjjgEift36XAEksGPAIYbsQnQc
 ����Iț����k��r��������!��H/�����M"ҧ2�,W`fs
 ```
 
-### 7. Pass the secrets path to a service
+### Pass the secrets path to a service
 
 Now that we have an encrypted secrets file, we can give the path to the (eventually) decrypted file to the NixOS module. Let's add our PiHole service to our configuration, then add the secrets path.
 

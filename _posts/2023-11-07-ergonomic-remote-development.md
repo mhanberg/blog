@@ -48,11 +48,11 @@ You'll want to make sure that you can still copy/paste to/from your host compute
 
 If you are using a modern terminal emulator (I use [Ghostty](https://mitchellh.com/ghostty)), you most likely have clipboard working already for TUI applications, as long as they support the appropriate terminal features.
 
-I use [Nvim](https://neovim.io/), which does not [currently](https://github.com/neovim/neovim/pull/25872) support the OSC-52 terminal feature that enables system clipboard communication, but I use Nvim inside [tmux](https://github.com/tmux/tmux), which does!
+I use [Neovim](https://neovim.io/), which does not [currently](https://github.com/neovim/neovim/pull/25872) support the OSC-52 terminal feature that enables system clipboard communication, but I use Neovim inside [tmux](https://github.com/tmux/tmux), which does!
 
-And luckily, Nvim has a tmux 'clipboard provider' which is how Nvim actually communicates to the "outside" clipboard.
+And luckily, Neovim has a tmux 'clipboard provider' which is how Neovim actually communicates to the "outside" clipboard.
 
-If you don't use tmux and use Vim/Nvim, there are plenty of [plugins](https://github.com/ojroques/vim-oscyank) that implement it!
+If you don't use tmux and use Vim/Neovim, there are plenty of [plugins](https://github.com/ojroques/vim-oscyank) that implement it!
 
 ### Scripting
 
@@ -162,7 +162,6 @@ And on the PC, configure the IdentityAgent to use 1Password. I don't actually re
 Host *
   IdentityAgent ~/.1password/agent.sock
 ```
-
 
 ## Conclusion
 

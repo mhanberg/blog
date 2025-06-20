@@ -7,11 +7,15 @@ permalink: /:title/
 tags: [social]
 ---
 
+> [!note] btw
+>
+> I update this periodically as I find new things things that bother me.
+
 > **noun** _informal_
 >
 > **something that a particular person finds especially annoying:** _one of my biggest pet peeves is poor customer service._
 
-Here's a list of minor things I find irritating. I'll attempt to keep this page updated as more irritating things inevitably cross my path.
+Here's a list of minor things I find irritating.
 
 - Calling software "dead" or "abandoned"
 - Complaining about too many choices, especially when C=2

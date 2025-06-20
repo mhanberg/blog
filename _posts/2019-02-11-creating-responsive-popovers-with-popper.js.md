@@ -14,10 +14,9 @@ Making popovers that position themselves based on the available screen real esta
 
 Luckily [Popper.js](https://popper.js.org/) will do the math for us and is straight forward to implement given the proper instructions.
 
-### JavaScript
+## JavaScript
 
 The JavaScript portion is simple. The `Popper` constructor takes a DOM node to attach the popover to and a DOM node that will be the body of the popover.
-
 
 ```javascript
 // index.js
@@ -28,7 +27,7 @@ const popoverNode = document.querySelector("#my-popover");
 const myPopper = new Popper(attachmentNode, popoverNode);
 ```
 
-### HTML and CSS
+## HTML and CSS
 
 The HTML and CSS is simple unless you want an arrow tab on your popover.
 
@@ -83,7 +82,7 @@ The `x-placement` attribute added by Popper.js allows you to style the arrow bas
 
 The goofiness you see with the borders is a hack you can use to create a triangle using a `div`. I haven't tried it, but I imagine using an `svg` yields better results.
 
-### Wrapping Up
+## Wrapping Up
 
 Popper.js takes care of the hard part so you can focus on building your application.
 
