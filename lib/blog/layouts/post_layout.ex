@@ -1,6 +1,7 @@
 defmodule Blog.PostLayout do
   use Tableau.Layout, layout: Blog.SidebarLayout
   use Blog.Component
+  import MDEx.Sigil
 
   def template(assigns) do
     temple do
