@@ -63,7 +63,7 @@ config :tableau, :config,
         alerts: true,
         footnotes: true
       ],
-      render: [unsafe_: true],
+      render: [unsafe: true],
       syntax_highlight: [formatter: {:html_inline, theme: "neovim_dark"}]
     ]
   ]

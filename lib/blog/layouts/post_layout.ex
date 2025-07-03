@@ -38,8 +38,8 @@ defmodule Blog.PostLayout do
       ol do
         for {heading, children} <- @headings do
           li do
-            a href: "##{Blog.slugify(textify(heading))}" do
-              textify(heading)
+            a href: "##{heading.anchor}" do
+              heading.text
             end
 
             if children != [] do
@@ -49,10 +49,6 @@ defmodule Blog.PostLayout do
         end
       end
     end
-  end
-
-  defp textify(heading) do
-    heading.nodes |> MDEx.Document.wrap() |> MDEx.to_html!()
   end
 
   def template(assigns) do
