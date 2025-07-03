@@ -13,6 +13,8 @@ defmodule Blog.TOCExtension do
         Map.put(post, :toc, toc)
       end
 
+    Agent.stop(counters_pid)
+
     {:ok, Map.put(token, :posts, posts)}
   end
 
