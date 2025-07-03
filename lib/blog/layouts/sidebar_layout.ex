@@ -170,6 +170,8 @@ defmodule Blog.SidebarLayout do
                   "@keydown.ctrl.c.prevent.window": "close();",
                   "@keydown.up.window": "up",
                   "@keydown.down.window": "down",
+                  "@keydown.ctrl.p.window": "up",
+                  "@keydown.ctrl.n.window": "down",
                   type: "text",
                   class:
                     "bg-black caret-fallout-green w-full outline-none peer hover:cursor-pointer -ml-1"
