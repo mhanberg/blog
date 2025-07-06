@@ -32,7 +32,7 @@ I thoroughly enjoyed the talks I attended this year (I can admit I do enjoy the 
 
 ### Jason Axelson - Choosing an effective testing structure
 
-[Jason Axelson](https://www.linkedin.com/in/jasonaxelson/) gave a presentation on testing practices from which I almost broke neck from aggressively nodding the entire time.
+[Jason Axelson](https://www.linkedin.com/in/jasonaxelson/) gave a presentation on testing practices from which I almost broke neck from aggressively nodding the entire time. [Watch it on YouTube!](https://www.youtube.com/watch?v=LutLGOxnSYE)
 
 One of his suggestions I believe is the most powerful: "Make your tests async" (paraphrased, I didn't write it down because of the aforementioned head banging).
 
