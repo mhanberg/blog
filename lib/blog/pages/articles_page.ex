@@ -15,7 +15,7 @@ defmodule Blog.ArticlesPage do
         Subscribe to my [mailing list](/newsletter) or [RSS](/feed.xml) feed to stay notified of new articles.
         """)
 
-        for post <- @posts do
+        for post <- @posts, "micro-post" not in (post[:tags] || []) do
           article class: "mt-8" do
             a class: "font-fancy block font-light text-lg md:text-xl no-underline",
               href: post.permalink do

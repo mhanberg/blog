@@ -3,7 +3,7 @@ import Config
 config :tableau, :reloader,
   patterns: [
     ~r"^lib/.*.ex",
-    ~r"^(_posts|_drafts|_wip|_pages)/.*.md",
+    ~r"^(_posts|_drafts|_micros|_wip|_pages)/.*.md",
     ~r"^_data/.*.(yaml|json|toml)",
     ~r"^css/site.css",
     ~r"^js/index.js"
@@ -15,15 +15,6 @@ config :web_dev_utils, :reload_url, "'ws://' + location.host + '/ws'"
 config :temple,
   engine: EEx.SmartEngine,
   attributes: {Temple, :attributes}
-
-# config :tailwind,
-#   version: "4.0.9",
-#   default: [
-#     args: ~w(
-#     --input=css/site.css
-#     --output=_site/css/site.css
-#     )
-#   ]
 
 config :bun,
   version: "1.2.4",
@@ -86,10 +77,22 @@ config :tableau, Tableau.TagExtension,
 config :tableau, Tableau.RSSExtension,
   enabled: true,
   feeds: [
-    feed: [
+    full: [
       enabled: true,
       title: "Mitchell Hanberg's Blog",
       description: "Mitchell Hanberg's Blog"
+    ],
+    feed: [
+      enabled: true,
+      title: "Mitchell Hanberg's Blog",
+      description: "Mitchell Hanberg's Blog",
+      exclude: [tags: ["micro-post"]]
+    ],
+    micros: [
+      enabled: true,
+      title: "Micro posts by Mitchell Hanberg",
+      description: "I rolled my own X dot com, but it's write-only and no one will ever read it.",
+      include: [tags: ["micro-post"]]
     ]
   ]
 

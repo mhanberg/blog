@@ -4,7 +4,6 @@
 @import "./pixel-code.css";
 @plugin '@tailwindcss/typography';
 
-@source './site.css';
 
 @theme {
   --color-fallout-green: #1BFF80;
@@ -160,4 +159,8 @@ pre.athl {
 
 [x-cloak] {
   display: none !important;
+}
+
+.micro img {
+  @apply sm:max-w-xl max-h-72 object-contain m-0;
 }

@@ -1,5 +1,7 @@
 - name: /articles
   permalink: /articles
+- name: /micros
+  permalink: /micros
 - name: /bookshelf
   permalink: /bookshelf
 - name: /uses

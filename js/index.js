@@ -3,6 +3,13 @@ import focus from "@alpinejs/focus";
 
 import { Fzf } from "fzf";
 
+import { render } from "timeago.js";
+
+const nodes = document.querySelectorAll(".timeago");
+if (nodes.length != 0) {
+  render(nodes, "en_US");
+}
+
 window.Fzf = Fzf;
 window.Alpine = Alpine;
 
