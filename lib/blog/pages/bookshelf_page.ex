@@ -30,13 +30,13 @@ defmodule Blog.BookshelfPage do
         I pull this data from my [Goodreads](https://www.goodreads.com/review/list/69703261) account once a day.
         """)
 
-        h2 class: "text-center underline mt-16", do: "Currently Reading"
+        h2 class: "mt-16 text-center underline", do: "Currently Reading"
 
-        div class: "mt-8 font-mono" do
+        div class: "font-mono mt-8" do
           c &books/1, books: @currently_reading
 
           for {year, books} <- @years do
-            h2 class: "text-center mt-16", do: "#{year} (#{length(books)} books)"
+            h2 class: "mt-16 text-center", do: "#{year} (#{length(books)} books)"
 
             c &books/1, books: books
           end
@@ -48,7 +48,7 @@ defmodule Blog.BookshelfPage do
   defp books(assigns) do
     temple do
       div class:
-            "flex flex-wrap gap-x-[1px] items-end gap-y-2 mt-8 has-[:not(.book:first-child:last-child)]:ml-4" do
+            "gap-x-[1px] mt-8 flex flex-wrap items-end gap-y-2 has-[:not(.book:first-child:last-child)]:ml-4" do
         for book <- @books do
           c &book/1, book: book
         end
@@ -82,9 +82,9 @@ defmodule Blog.BookshelfPage do
         title: @book["title"],
         target: "_blank",
         class:
-          "book no-underline #{@color} [&:not(:only-child)]:last:rotate-[-4deg] [&:not(:only-child)]:last:translate-x-2 flex justify-between items-center text-sm #{@height} #{@width} [writing-mode:vertical-rl] rounded decoration-black border-t border-white inset-shadow-x" do
+          "#{@color} #{@height} #{@width} book [writing-mode:vertical-rl] inset-shadow-x flex items-center justify-between rounded border-t border-white text-sm no-underline decoration-black last:[&:not(:only-child)]:rotate-[-4deg] last:[&:not(:only-child)]:translate-x-2" do
         div class:
-              "text-ellipsis font-sans overflow-hidden whitespace-nowrap text-black pt-4 pb-2 h-full" do
+              "font-sans h-full overflow-hidden text-ellipsis whitespace-nowrap pt-4 pb-2 text-black" do
           @book["title"]
         end
       end

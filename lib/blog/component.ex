@@ -44,7 +44,7 @@ defmodule Blog.Component do
         """
       end
 
-      div class: "w-full my-4 mx-auto flex justify-center flex-grow-inside" do
+      div class: "flex-grow-inside mx-auto my-4 flex w-full justify-center" do
         script async: true,
                "data-uid": "179cec943d",
                src: "https://dogged-composer-1540.kit.com/179cec943d/index.js"
@@ -91,7 +91,7 @@ defmodule Blog.Component do
 
     temple do
       section class:
-                "prose prose-invert prose-a:text-fallout-green max-w-4xl mx-auto #{container}" do
+                "#{container} prose prose-invert mx-auto max-w-4xl prose-a:text-fallout-green" do
         slot @inner_block
       end
     end
@@ -99,7 +99,7 @@ defmodule Blog.Component do
 
   def link(assigns) do
     temple do
-      a href: @href, class: "text-fallout-green underline #{assigns[:class]}" do
+      a href: @href, class: "#{assigns[:class]} text-fallout-green underline" do
         slot @inner_block
       end
     end

@@ -21,11 +21,11 @@ defmodule Blog.SidebarLayout do
 
   def template(assigns) do
     temple do
-      div class: "grid grid-rows-[auto_1fr_auto] grid-cols-[100%] min-h-[100dvh]" do
+      div class: "grid-rows-[auto_1fr_auto] grid-cols-[100%] min-h-[100dvh] grid" do
         div "x-data": "{open: false}",
             ":data-open": "open",
-            class: "sticky top-0 group z-10  container" do
-          div class: "py-4 flex items-center justify-between bg-black" do
+            class: "group container sticky top-0 z-10" do
+          div class: "flex items-center justify-between bg-black py-4" do
             h2 class: "text-lg" do
               a href: "/" do
                 "/mitch"
@@ -73,11 +73,11 @@ defmodule Blog.SidebarLayout do
             end
           end
 
-          div id: "mobilenav", class: "hidden group-[[data-open]]:block bg-black w-full" do
+          div id: "mobilenav", class: "hidden w-full bg-black group-[[data-open]]:block" do
             ul class: "text-lg" do
               for item <- @data["nav"] do
                 li class:
-                     "border-l-4 p-2 data-[selected]:border-fallout-green data-[selected]:bg-[#2B332D] border-transparent",
+                     "border-l-4 border-transparent p-2 data-[selected]:border-fallout-green data-[selected]:bg-[#2B332D]",
                    "data-selected": is_current_page(@posts, item["permalink"], @page.permalink) do
                   a href: item["permalink"], class: "font-mono lowercase" do
                     item["name"]
@@ -110,7 +110,7 @@ defmodule Blog.SidebarLayout do
           end
         end
 
-        p class: "text-xs text-center my-8" do
+        p class: "my-8 text-center text-xs" do
           "built with"
 
           a href: "https://github.com/elixir-tools/tableau",
@@ -157,13 +157,13 @@ defmodule Blog.SidebarLayout do
             "@click.outside": "close();",
             "@keydown.ctrl.p.window": "$store.site.focus(); terminal.focus();",
             class:
-              "fixed z-[100] inset-1 max-h-[75dvh] max-w-4xl mx-auto bg-black mt-12 md:mt-8 p-1 border-4 border-fallout-green" do
+              "z-[100] max-h-[75dvh] border-fallout-green fixed inset-1 mx-auto mt-12 max-w-4xl border-4 bg-black p-1 md:mt-8" do
         h2 class: "font-mono mb-2 flex gap-1 border-b border-zinc-500 py-1" do
           div class: "flex-shrink-0" do
             "/mitch/"
           end
 
-          div class: "flex bg-black flex-1 w-full flex-grow" do
+          div class: "flex w-full flex-1 flex-grow bg-black" do
             input "x-model": "search",
                   id: "terminal",
                   "x-effect": "items = fzf.find(search)",
@@ -176,25 +176,25 @@ defmodule Blog.SidebarLayout do
                   "@keydown.ctrl.n.window": "down",
                   type: "text",
                   class:
-                    "bg-black caret-fallout-green w-full outline-none peer hover:cursor-pointer -ml-1"
+                    "caret-fallout-green peer -ml-1 w-full bg-black outline-none hover:cursor-pointer"
 
-            div class: "animate-pulse absolute left-[19.5ch] peer-focus:hidden z-0",
+            div class: "left-[19.5ch] absolute z-0 animate-pulse peer-focus:hidden",
                 "x-show": "search == ''",
                 do: "▌"
 
-            div class: "font-mono text-sm self-center",
+            div class: "font-mono self-center text-sm",
                 "x-text": "`${items.length}/${total_items_length}`"
           end
         end
 
-        ul class: "text-2xl lg:text-lg max-h-[calc(75dvh-55px)] z-[99] overflow-y-scroll pb-2",
+        ul class: "max-h-[calc(75dvh-55px)] z-[99] overflow-y-scroll pb-2 text-2xl lg:text-lg",
            id: "fzf_results" do
           template "x-for": "(entry, idx) in items", ":key": "entry.item.name" do
             li ":id": "'fzfitem' + idx",
                ":data-selected": "idx == selected_row",
                class:
-                 "border-l-4 pl-2 py-1 outline-none data-[selected]:border-fallout-green data-[selected]:bg-[#2B332D] hover:bg-[#2B332D] border-transparent" do
-              a ":href": "entry.item.permalink", class: "font-mono lowercase text-sm" do
+                 "border-l-4 border-transparent py-1 pl-2 outline-none data-[selected]:border-fallout-green data-[selected]:bg-[#2B332D] hover:bg-[#2B332D]" do
+              a ":href": "entry.item.permalink", class: "font-mono text-sm lowercase" do
                 div do
                   template "x-for": "(char, i) in entry.item.name.split('')",
                            ":key": "i" do
@@ -203,7 +203,7 @@ defmodule Blog.SidebarLayout do
                   end
                 end
 
-                div "x-text": "entry.item.permalink", class: "text-slate-200 text-xs"
+                div "x-text": "entry.item.permalink", class: "text-xs text-slate-200"
               end
             end
           end

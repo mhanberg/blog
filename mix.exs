@@ -38,7 +38,8 @@ defmodule Blog.MixProject do
       {:bun, "~> 1.3"},
       {:tableau_og_extension, "~> 0.3"},
       {:req, "~> 0.4.8"},
-      {:easyxml, "~> 0.1.0-dev", github: "wojtekmach/easyxml", branch: "main"}
+      {:easyxml, "~> 0.1.0-dev", github: "wojtekmach/easyxml", branch: "main"},
+      {:tailwind_formatter, github: "mhanberg/tailwind_formatter", only: [:dev, :test]}
     ]
   end
 end

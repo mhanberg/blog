@@ -11,12 +11,12 @@ defmodule Blog.TagLayout do
 
         for post <- @page.posts do
           article class: "mt-8" do
-            a class: "font-fancy block font-light text-xl no-underline",
+            a class: "font-fancy block text-xl font-light no-underline",
               href: post.permalink do
               post.title
             end
 
-            div class: "text-sm italic mb-4" do
+            div class: "mb-4 text-sm italic" do
               Calendar.strftime(post.date, "%b %d, %Y")
               " • "
               "#{Blog.reading_time(post.body)} minute read"

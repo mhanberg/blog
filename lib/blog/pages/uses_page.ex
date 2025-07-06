@@ -29,14 +29,14 @@ defmodule Blog.UsesPage do
         ul do
           for entry <- category["entries"] do
             li do
-              span class: "group inline-flex items-center gap-2 text-white font-semibold" do
+              span class: "group inline-flex items-center gap-2 font-semibold text-white" do
                 a href: entry["link"],
                   target: "_blank",
                   do: entry["name"]
 
                 a id: Blog.slugify(entry["name"]),
                   href: "##{Blog.slugify(entry["name"])}",
-                  class: "hidden group-hover:inline scroll-m-16" do
+                  class: "hidden scroll-m-16 group-hover:inline" do
                   c &link_icon/1, class: "size-4 text-white"
                 end
               end

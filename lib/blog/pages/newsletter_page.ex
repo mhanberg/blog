@@ -22,7 +22,7 @@ defmodule Blog.NewsletterPage do
         "share your email address with anyone else"
       end
 
-      div class: "px-4 pt-4 rounded mt-4 max-w-xl mx-auto" do
+      div class: "mx-auto mt-4 max-w-xl rounded px-4 pt-4" do
         c &convertkit/1
       end
     end

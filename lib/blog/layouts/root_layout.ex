@@ -36,7 +36,7 @@ defmodule Blog.RootLayout do
           meta name: "twitter:creator", content: "@mitchhanberg"
         end
 
-        body class: "font-mono bg-black text-white text-[16px]" do
+        body class: "font-mono text-[16px] bg-black text-white" do
           main do
             render(@inner_content)
           end

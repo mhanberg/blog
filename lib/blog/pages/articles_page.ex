@@ -17,12 +17,12 @@ defmodule Blog.ArticlesPage do
 
         for post <- @posts, "micro-post" not in (post[:tags] || []) do
           article class: "mt-8" do
-            a class: "font-fancy block font-light text-lg md:text-xl no-underline",
+            a class: "font-fancy block text-lg font-light no-underline md:text-xl",
               href: post.permalink do
               post.title
             end
 
-            div class: "text-sm italic mb-4" do
+            div class: "mb-4 text-sm italic" do
               Calendar.strftime(post.date, "%b %d, %Y")
               " • "
               "#{Blog.reading_time(post.body)} minute read"
