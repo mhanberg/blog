@@ -82,8 +82,16 @@ defmodule Blog.Component do
   end
 
   def prose(assigns) do
+    container =
+      if Map.get(assigns, :container, true) do
+        "container"
+      else
+        ""
+      end
+
     temple do
-      section class: "prose prose-invert prose-a:text-fallout-green max-w-4xl mx-auto" do
+      section class:
+                "prose prose-invert prose-a:text-fallout-green max-w-4xl mx-auto #{container}" do
         slot @inner_block
       end
     end
