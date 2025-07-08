@@ -9,7 +9,9 @@ defmodule Mix.Tasks.Blog.Gen.Post do
     Application.ensure_all_started(:telemetry)
 
     {opts, _args, _invalid} =
-      OptionParser.parse(argv, strict: [draft: :boolean, kind: :string, title: :string])
+      OptionParser.parse(argv,
+        strict: [draft: :boolean, kind: :string, title: :string, commit: :boolean]
+      )
 
     {:ok, opts} = Schematic.unify(options(), opts)
 
@@ -85,6 +87,15 @@ defmodule Mix.Tasks.Blog.Gen.Post do
     File.write!(file_path, front_matter)
 
     Mix.shell().info("Succesfully created #{file_path}!")
+
+    if opts[:kind] == "micro" and (opts[:commit] || Mix.shell().yes?("Commit?")) do
+      if Mix.shell().cmd("git diff --cached --quiet") == 0 do
+        Mix.shell().cmd("git add #{file_path}")
+        Mix.shell().cmd(~s|git commit -m "feat(micro): #{file_path}"|)
+      else
+        Mix.shell().error("There are already staged changes, can't auto commit")
+      end
+    end
   end
 
   defp options do
@@ -93,7 +104,8 @@ defmodule Mix.Tasks.Blog.Gen.Post do
     keyword(%{
       optional(:kind, "post") => oneof(["post", "micro"]),
       optional(:draft, false) => bool(),
-      optional(:title) => str()
+      optional(:title) => str(),
+      optional(:commit, false) => bool()
     })
   end
 end
