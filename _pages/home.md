@@ -21,7 +21,7 @@ I am a member of the [Elixir Language Server team](https://elixir-lang.org/blog/
 - [Next LS](https://github.com/elixir-tools/next-ls) - The language server for Elixir that _just_ works
 - [elixir-tools.nvim](https://github.com/elixir-tools/elixir-tools.nvim) - Neovim Plugin for Elixir
 - [elixir-tools.vscode](https://github.com/elixir-tools/elixir-tools.vscode) - VSCode Plugin for Elixir
-- [Credo Language Server](https://github.com/elixir-tools/credo-langauge-server) - LSP implementation for Credo
+- [Credo Language Server](https://github.com/elixir-tools/credo-language-server) - LSP implementation for Credo
 - [GenLSP](https://github.com/elixir-tools/gen_lsp) - Language Server Protocol behaviour for Elixir
 - [Spitfire](https://github.com/elixir-tools/spitfire) - Error resilient parser for Elixir
 - [Tableau](https://github.com/elixir-tools/tableau) - Static Site Generator for Elixir
@@ -30,7 +30,7 @@ I am a member of the [Elixir Language Server team](https://elixir-lang.org/blog/
 
 [Temple](https://github.com/mhanberg/temple) is an HTML DSL and component system for Elixir and Phoenix and my first original contribution to the Elixir community.
 
-Temple is fully compatible with [HEEx](TODO), allowing you to mix and match components and write [Phoenix LiveView](TODO) programs with ease.
+Temple is fully compatible with [HEEx](https://hexdocs.pm/phoenix/components.html#heex), allowing you to mix and match components and write [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) programs with ease.
 
 Inspired by the [Lucky web framework](https://luckyframework.org/guides/frontend/rendering-html#creating-a-page) templating language, Temple allows you to effortlessly author HTML without leaving the comfortable embrace of Elixir.
 
