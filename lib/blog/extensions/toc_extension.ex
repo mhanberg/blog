@@ -1,5 +1,5 @@
 defmodule Blog.TOCExtension do
-  use Tableau.Extension, priority: 200, key: :oc, enabled: true
+  use Tableau.Extension, priority: 200, key: :toc, enabled: true
 
   @impl Tableau.Extension
   def pre_build(token) do

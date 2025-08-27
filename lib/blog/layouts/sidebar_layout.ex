@@ -166,7 +166,7 @@ defmodule Blog.SidebarLayout do
           div class: "flex w-full flex-1 flex-grow bg-black" do
             input "x-model": "search",
                   id: "terminal",
-                  "x-effect": "items = fzf.find(search)",
+                  "x-effect": "items = fzf.find(search); console.log(items);",
                   "@keyup.enter": "location.assign(items.at(selected_row).item.permalink)",
                   "@keydown.escape.prevent.window": "close();",
                   "@keydown.ctrl.c.prevent.window": "close();",
@@ -189,7 +189,7 @@ defmodule Blog.SidebarLayout do
 
         ul class: "max-h-[calc(75dvh-55px)] z-[99] overflow-y-scroll pb-2 text-2xl lg:text-lg",
            id: "fzf_results" do
-          template "x-for": "(entry, idx) in items", ":key": "entry.item.name" do
+          template "x-for": "(entry, idx) in items", ":key": "entry.item.permalink" do
             li ":id": "'fzfitem' + idx",
                ":data-selected": "idx == selected_row",
                class:

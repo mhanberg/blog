@@ -10,8 +10,9 @@
     "@tailwindcss/cli": "^4.0.9",
     "@tailwindcss/typography": "^0.5.16",
     "alpinejs": "^3.14.8",
+    "fitty": "^2.4.2",
     "fzf": "^0.5.2",
-    "tailwindcss": "^4.0.9",
+    "tailwindcss": "^4.1.12",
     "timeago.js": "^4.0.2"
   }
 }
