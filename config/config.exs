@@ -5,7 +5,7 @@ config :temple,
   attributes: {Temple, :attributes}
 
 config :bun,
-  version: "1.2.4",
+  version: "1.2.20",
   install: [
     args: ~w(install)
   ],
@@ -52,6 +52,8 @@ config :tableau, Tableau.OgExtension,
 config :tableau, Tableau.PageExtension, enabled: true
 config :tableau, Tableau.PostExtension, enabled: true
 config :tableau, Tableau.SitemapExtension, enabled: true
+
+config :tableau, Tableau.PresentationExtension, enabled: true
 
 config :tableau, Tableau.TagExtension,
   enabled: true,

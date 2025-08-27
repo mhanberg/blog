@@ -53,7 +53,7 @@ defmodule Blog.PostLayout do
 
   def template(assigns) do
     temple do
-      c &prose/1 do
+      c &prose/1, id: "article" do
         h1 class: "text-3xl" do
           @page.title
         end
@@ -76,7 +76,7 @@ defmodule Blog.PostLayout do
 
         if @page[:book] do
           ~MD"""
-          **Title**: [<%= @page.book.title %>](https://goodreads.com/book/show/<%= @page.book.goodreads_id %>)
+          **Title**: <a href="https://goodreads.com/book/show/<%= @page.book.goodreads_id %>"><%= @page.book.title %></a>
 
           **Author**: <%= @page.book.author %>
 

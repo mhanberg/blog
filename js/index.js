@@ -5,6 +5,8 @@ import { Fzf } from "fzf";
 
 import { render } from "timeago.js";
 
+import fitty from "fitty";
+
 const nodes = document.querySelectorAll(".timeago");
 if (nodes.length != 0) {
   render(nodes, "en_US");
@@ -17,6 +19,7 @@ document.querySelectorAll("a[inert]").forEach((node) => {
 
 window.Fzf = Fzf;
 window.Alpine = Alpine;
+window.fitty = fitty;
 
 Alpine.plugin(focus);
 

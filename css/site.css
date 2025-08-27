@@ -3,6 +3,7 @@
 
 @import "./pixel-code.css";
 @plugin '@tailwindcss/typography';
+@source '../lib';
 
 
 @theme {
@@ -57,7 +58,7 @@ p {
 }
 
 .prose img {
-  @apply mx-auto;
+  @apply mx-auto object-contain max-h-[500px];
 }
 
 h1,
@@ -134,7 +135,7 @@ h6 {
   @apply mx-auto w-[50%];
 }
 
-pre.athl {
+#article pre.athl {
   @apply max-w-4xl mx-auto my-6 overflow-x-auto text-sm;
 }
 
@@ -163,4 +164,68 @@ pre.athl {
 
 .micro img {
   @apply sm:max-w-xl max-h-72 object-contain m-0;
+}
+
+.blog-slide-cols {
+  @apply h-full flex justify-between gap-4;
+}
+
+.blog-slide-col:has(.blog-slide-col-title) {
+  @apply flex flex-col justify-center gap-8;
+}
+
+#slide {
+  @apply h-full;
+
+  .blog-slide-col-heading,
+  .blog-slide-col-body {
+
+    h1,
+    ul {
+      @apply m-0;
+
+    }
+  }
+}
+
+.blog-slide-col {
+  @apply w-full h-full;
+}
+
+.blog-slide-col-title,
+.blog-slide-col-subtitle {
+  @apply w-full;
+
+  h1,
+  h2 {
+    @apply text-4xl m-0;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .anchor {
+    @apply hidden;
+  }
+}
+
+.blog-slide-col-title,
+.blog-slide-col-heading {
+  @apply text-fallout-green;
+}
+
+.blog-slide-col-heading {
+  @apply text-6xl mb-12;
+
+  .anchor {
+    @apply hidden;
+  }
+}
+
+.blog-slide-col-body {
+  max-height: 700px;
+
+  pre.athl {
+    @apply my-6 overflow-x-auto text-[16px];
+  }
+
 }
