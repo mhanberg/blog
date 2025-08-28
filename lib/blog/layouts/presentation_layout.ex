@@ -51,17 +51,6 @@ defmodule Blog.PresentationLayout do
                   observeWindow: false
                 });
               });
-              //
-              // const codes = document.querySelectorAll(".blog-slide-col-body-content pre");
-              //
-              // codes.forEach(code => {
-              //   fitty(code, {
-              //     // minSize: 24,
-              //     // maxSize: 48,
-              //     observeMutations: false,
-              //     observeWindow: false
-              //   });
-              // });
             },
             nextSlide() {
               let nextSlide = this.slide + 1;
