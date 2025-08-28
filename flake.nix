@@ -24,6 +24,11 @@
       ];
       systems = ["x86_64-linux" "aarch64-linux" "aarch64-darwin" "x86_64-darwin"];
       agenix-shell = {
+        # identityPaths = [
+        #   "$HOME/.ssh/id_ed25519"
+        #   "$HOME/.ssh/id_rsa"
+        # ];
+
         secrets = {
           GOODREADS_KEY.file = ./secrets/GOODREADS_KEY.age;
           NETLIFY_AUTH_TOKEN.file = ./secrets/NETLIFY_AUTH_TOKEN.age;

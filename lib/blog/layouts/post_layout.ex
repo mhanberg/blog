@@ -76,7 +76,7 @@ defmodule Blog.PostLayout do
 
         if @page[:book] do
           ~MD"""
-          **Title**: [<%= @page.book.title %>](https://goodreads.com/book/show/<%= @page.book.goodreads_id %>)
+          **Title**: <a href="https://goodreads.com/book/show/<%= @page.book.goodreads_id %>"><%= @page.book.title %></a>
 
           **Author**: <%= @page.book.author %>
 

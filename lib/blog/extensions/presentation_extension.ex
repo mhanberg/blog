@@ -34,14 +34,14 @@ defmodule Blog.PresentationExtension do
           pre_convert_body: body
         } = entry
 
-        slides = extract_slides(body)
+        slides = extract_slides(body, token.site.config.markdown[:mdex])
 
         for {slide, idx} <- Enum.with_index(slides, 1) do
           body = MDEx.to_markdown!(slide)
 
-          build(path, front_matter, idx, body, config, fn assigns ->
+          build(path, front_matter, idx, Enum.count(slides), body, config, fn assigns ->
             cols =
-              for col <- extract_columns(slide) do
+              for col <- extract_columns(slide, assigns.site.config.markdown[:mdex]) do
                 separate_header_and_body(col)
               end
 
@@ -106,32 +106,33 @@ defmodule Blog.PresentationExtension do
     graph =
       Tableau.Graph.insert(
         token.graph,
-        Enum.map(token.presentations, fn page ->
+        for page <- token.presentations do
           %Tableau.Page{
             parent: page.layout,
             permalink: page.permalink,
             template: page.renderer,
             opts: page
           }
-        end)
+        end
       )
 
     {:ok, Map.put(token, :graph, graph)}
   end
 
-  defp build(filename, front_matter, slide, body, presentation_config, renderer) do
+  defp build(filename, front_matter, slide, length, body, presentation_config, renderer) do
     front_matter
     |> Map.put(:__tableau_presentation_extension__, true)
     |> Map.put(:body, body)
     |> Map.put(:slide, slide)
+    |> Map.put(:length, length)
     |> Map.put(:file, filename)
     |> Map.put(:renderer, renderer)
     |> Map.put(:layout, Module.concat([front_matter[:layout]]))
     |> Common.build_permalink(presentation_config)
   end
 
-  defp extract_slides(body) do
-    %MDEx.Document{nodes: nodes} = MDEx.parse_document!(body)
+  defp extract_slides(body, mdex_opts) do
+    %MDEx.Document{nodes: nodes} = MDEx.parse_document!(body, mdex_opts)
 
     for node <- nodes, reduce: [[]] do
       [page | rest] ->
@@ -151,12 +152,12 @@ defmodule Blog.PresentationExtension do
     |> Enum.reverse()
   end
 
-  defp extract_columns(%MDEx.Document{nodes: nodes}) do
+  defp extract_columns(%MDEx.Document{nodes: nodes}, _mdex_opts) do
     for node <- nodes, reduce: [[]] do
       [page | rest] ->
         case node do
           %MDEx.Paragraph{nodes: [%MDEx.Text{literal: "==="}]} ->
-            [[], MDEx.Document.wrap(Enum.reverse(page)) | rest]
+            [[], Enum.reverse(page) | rest]
 
           _ ->
             [[node | page] | rest]
