@@ -14,11 +14,19 @@ I am a member of the [Elixir Language Server team](https://elixir-lang.org/blog/
 
 ## Projects
 
+### Expert
+
+In 2025 we publicly released [Expert](https://github.com/elixir-lang/expert), the official language server protocol implementation for Elixir.
+
+This was a joint effort between myself (Next LS), Steve Cohen (Lexical), and Łukasz Samson (ElixirLS) to centralize the Elixir language server effort.
+
+If you'd like to support Expert, please find instructions on [https://expert-lsp.org](https://expert-lsp.org).
+
 ### elixir-tools
 
 [elixir-tools](https://github.com/elixir-tools) is a collection of editor extensions, language servers, and tooling for productive Elixir development.
 
-- [Next LS](https://github.com/elixir-tools/next-ls) - The language server for Elixir that _just_ works
+- [Next LS](https://github.com/elixir-tools/next-ls) - The language server for Elixir that _just_ works - superseded by [Expert](https://github.com/elixir-lang/expert)
 - [elixir-tools.nvim](https://github.com/elixir-tools/elixir-tools.nvim) - Neovim Plugin for Elixir
 - [elixir-tools.vscode](https://github.com/elixir-tools/elixir-tools.vscode) - VSCode Plugin for Elixir
 - [Credo Language Server](https://github.com/elixir-tools/credo-language-server) - LSP implementation for Credo
