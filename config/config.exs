@@ -5,7 +5,7 @@ config :temple,
   attributes: {Temple, :attributes}
 
 config :bun,
-  version: "1.2.4",
+  version: "1.2.20",
   install: [
     args: ~w(install)
   ],
