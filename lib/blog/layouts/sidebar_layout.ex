@@ -24,7 +24,7 @@ defmodule Blog.SidebarLayout do
       div class: "grid-rows-[auto_1fr_auto] grid-cols-[100%] min-h-[100dvh] grid" do
         div "x-data": "{open: false}",
             ":data-open": "open",
-            class: "group container sticky top-0 z-10" do
+            class: "group container max-w-4xl sticky top-0 z-10" do
           div class: "flex items-center justify-between bg-black py-4" do
             h2 class: "text-lg" do
               a href: "/" do
@@ -101,7 +101,7 @@ defmodule Blog.SidebarLayout do
 
   def footer assigns do
     temple do
-      footer class: "container" do
+      footer class: "container max-w-4xl" do
         hr class: "my-8"
 
         ul class: "list-disc pl-6" do
