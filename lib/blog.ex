@@ -2,7 +2,7 @@ defmodule Blog do
   def og_image_url(permalink) do
     file = Tableau.OgExtension.file_name(permalink)
 
-    Path.join("https://f005.backblazeb2.com/file/BlogOgImages/og", file)
+    Path.join("https://blogogimages.s3.us-east-005.backblazeb2.com/og", file)
   end
 
   def markdownify(markdown) do
