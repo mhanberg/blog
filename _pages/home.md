@@ -62,6 +62,7 @@ Thank you Chris!
 
 ## Conference Speaking
 
+- [Peeling Away Complexity](https://exmexconf.com/#speakers) at ExMex 2025
 - [Building Websites with Tableau](https://www.youtube.com/watch?v=B5e7M-Ogyho) at Elixir Conf 2025
 - [Your Official Elixir Expert](https://www.youtube.com/watch?v=2vIw2fb9DxA) at CodeBEAM America 2025
 - [OTP Process Abstractions with proc_lib](https://www.youtube.com/watch?v=Ug-SEozyG1A) at CodeBEAM America 2022
