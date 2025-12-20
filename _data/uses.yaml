@@ -68,8 +68,7 @@
   description: |
     My desktop computer (codename `nublar`) is my primary development machine for personal and open source projects.
 
-    It runs Ubuntu and I configure it completely with Nix, but I am interested in switching to NixOS. I basically only use it remotely via ssh,
-    in what I like to call "Darwin Subsystem for Linux."
+    It runs NixOS and I basically only use it remotely via ssh, in what I like to call "Darwin Subsystem for Linux."
   entries:
     - name: Intel Core i9-13900K 3 GHz 24-Core Processor
       link: https://www.amazon.com/gp/product/B0BCF54SR1/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1
@@ -176,6 +175,8 @@
     system for a homelab (or remote servers in general) as it allows you to declaratively enable and configure programs, as well as
     easily let you create new systemd units or start containers as units.
 
+    I also have a Raspberry Pi 4 running NixOS that acts as a [NUT server](https://networkupstools.org/) to shutdown the other computers when the UPS runs low on battery.
+
     I have a Digital Ocean droplet running a Caddy server (via NixOS and colmena) as ingress, and they are all clustered together via [Tailscale](https://tailscale.com/).
   entries:
     - name: Synology Dream Router
@@ -186,6 +187,12 @@
 
     - name: 4x Dell Optiplex 3050M 
       link: https://www.hardware-corner.net/desktop-models/Dell-OptiPlex-3050M/
+
+    - name: Digital Ocean Droplet
+      link: https://www.digitalocean.com/products/droplets
+
+    - name: Raspberry Pi 4
+      link: https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/
 
     - name: Bambu A1 Combo 3D Printer
       link: https://us.store.bambulab.com/products/a1

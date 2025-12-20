@@ -30,9 +30,13 @@ defmodule Blog.UsesPage do
           for entry <- category["entries"] do
             li do
               span class: "group inline-flex items-center gap-2 font-semibold text-white" do
-                a href: entry["link"],
-                  target: "_blank",
-                  do: entry["name"]
+                if entry["link"] do
+                  a href: entry["link"],
+                    target: "_blank",
+                    do: entry["name"]
+                else
+                  span do: entry["name"]
+                end
 
                 a id: Blog.slugify(entry["name"]),
                   href: "##{Blog.slugify(entry["name"])}",
