@@ -62,7 +62,7 @@
           devPackages = with pkgs; [
             just
             nodejs_20
-            nodePackages.typescript-language-server
+            typescript-language-server
             tailwindcss-language-server
             prettierd
             backblaze-b2
