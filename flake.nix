@@ -49,8 +49,8 @@
             languageServers.erlang = false;
           };
           versions = {
-            elixir = "1.18.4";
-            erlang = "28.0.1";
+            elixir = "1.19.5";
+            erlang = "28.4.2";
           };
         };
         devShells = let
