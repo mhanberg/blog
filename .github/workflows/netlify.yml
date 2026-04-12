@@ -2,10 +2,10 @@ name: Netlify Deploy
 
 on:
   push:
-  workflow_dispatch: 
+  workflow_dispatch:
   schedule:
-  # 6am ET, posts will publish if rebuilt after 1am ET
-  - cron: "0 10 * * *"
+    # 6am ET, posts will publish if rebuilt after 1am ET
+    - cron: "0 10 * * *"
 
 jobs:
   build:
@@ -14,12 +14,25 @@ jobs:
       MIX_ENV: prod
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-  
+
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: DeterminateSystems/nix-installer-action@main
-      - uses: actions/cache@v4
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: cachix/install-nix-action@96951a368ba55167b55f1c916f7d416bac6505fe # v31.10.3
+        with:
+          extra_nix_config: |
+            extra-substituters = https://mhanberg.cachix.org
+            extra-trusted-public-keys = mhanberg.cachix.org-1:tpHVw70kbGnO5mGv4rA3pjxpqeEiP/vWfJT4tVaK85o=
+            accept-flake-config = true
+      - uses: cachix/cachix-action@1eb2ef646ac0255473d23a5907ad7b04ce94065c # v17
+        with:
+          name: mhanberg
+          # If you chose API tokens for write access OR if you have a private cache
+          authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
+          useDaemon: false
+          cachixArgs: "--verbose"
+
+      - uses: actions/cache@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
         with:
           path: |
             deps
@@ -44,6 +57,3 @@ jobs:
       - name: Deploy Production
         if: ${{ github.ref_name == 'main' }}
         run: nix develop .#netlify --command bash -c 'netlify deploy --prod'
-
-
-
