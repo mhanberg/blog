@@ -7,6 +7,9 @@ clean:
 serve:
   mix tableau.server
 
+clean-books:
+  rm _build/books.bin
+
 prod-build: clean
   MIX_ENV=prod mix build
 
