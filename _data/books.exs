@@ -3,62 +3,91 @@ if File.exists?("_build/books.bin") do
   |> :erlang.binary_to_term()
 else
   get = fn shelf ->
-    Req.get!("https://www.goodreads.com/review/list/69703261.xml",
-      params: [
-        key: System.get_env("GOODREADS_KEY") || raise("GOODREADS_KEY is not set"),
-        v: 2,
-        shelf: shelf,
-        per_page: 200
-      ]
-    ).body
-    |> EasyXML.parse!()
+    "https://api.hardcover.app/v1/graphql"
+    |> Req.post!(
+      headers: [
+        {"Authorization", System.fetch_env!("HARDCOVER_TOKEN")}
+      ],
+      json: %{
+        query: """
+        query Shelf {
+          user_books(
+            where: {user_id: {_eq: 58924}, status_id: {_eq: #{shelf}}}
+            order_by: {last_read_date: desc_nulls_last}
+          ) {
+            id
+            rating
+            date_added
+            last_read_date
+            user_book_status {
+              status
+            }
+            book {
+              id
+              title
+              slug
+              contributions {
+                author {
+                  name
+                }
+              }
+              pages
+              image {
+                url
+              }
+            }
+            edition {
+              pages
+              isbn_10
+              isbn_13
+              asin
+            }
+          }
+        }
+        """,
+        operationName: "Shelf"
+      }
+    )
+    |> Map.fetch!(:body)
+    |> get_in(["data", "user_books"])
   end
 
   map = fn shelf, callback ->
     shelf
-    |> EasyXML.xpath("//reviews/review")
-    |> Enum.map(fn review ->
-      title = review["//book/title_without_series"]
+    |> Enum.map(fn item ->
+      book = item["book"]
+      title = book["title"]
 
-      callback.(review, %{
-        "id" => review["//book/id"],
+      callback.(item, %{
+        "id" => book["id"],
+        "status" => item["user_book_status"]["status"],
+        "pages" => item["edition"]["pages"] || book["pages"],
         "title" => title,
-        "isbn" =>
-          review[~s'//book/isbn[not(@nil="true")]/text()'] ||
-            review[~s'//book/isbn13[not(@nil="true")]'],
-        "asin" => review["//book/asin"],
-        "image" => review["//book/image_url"],
-        "author" => review["//book/authors/author/name"],
-        "link" => review["//book/link"]
+        "isbn" => book["edition"]["isbn13"] || book["edition"]["isbn10"],
+        "asin" => book["edition"]["asin"],
+        "image" => book["image"]["url"],
+        "author" => Enum.map_join(book["contributions"], ", ", & &1["author"]["name"]),
+        "link" => Path.join(["https://hardcover.app", "books", book["slug"]])
       })
     end)
   end
 
+  status_by_label = %{currently_reading: 2, read: 3}
+
   currently_reading =
-    get.("currently-reading")
+    status_by_label.currently_reading
+    |> get.()
     |> map.(fn _, b ->
       Map.put(b, "currently_reading", true)
     end)
 
   read =
-    get.("read")
-    |> map.(fn r, b ->
-      # Sat Jan 01 00:00:00 -0800 2011 
-      parts =
-        Regex.named_captures(
-          ~r/(?<weekday>\w+) (?<month>\w+) (?<day>\d{2}) (?<time>\d{2}:\d{2}:\d{2}) (?<offset>[-+]\d{4}) (?<year>\d{4})/,
-          r["//read_at"]
-        )
-
-      read_at =
-        DateTimeParser.parse_date!(
-          # piece back together in a normal format
-          "#{parts["month"]} #{parts["day"]} #{parts["year"]} #{parts["time"]} #{parts["offset"]}"
-        )
-
+    status_by_label.read
+    |> get.()
+    |> map.(fn item, b ->
       b
       |> Map.put("currently_reading", false)
-      |> Map.put("date_read", read_at)
+      |> Map.put("date_read", DateTimeParser.parse!(item["last_read_date"] || item["date_added"]))
     end)
     |> Enum.sort_by(& &1["date_read"], {:desc, Date})
 

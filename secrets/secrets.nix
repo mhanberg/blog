@@ -6,4 +6,5 @@ in {
   "GOODREADS_KEY.age".publicKeys = machines;
   "NETLIFY_AUTH_TOKEN.age".publicKeys = machines;
   "NETLIFY_SITE_ID.age".publicKeys = machines;
+  "HARDCOVER_TOKEN.age".publicKeys = machines;
 }

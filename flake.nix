@@ -31,6 +31,7 @@
 
         secrets = {
           GOODREADS_KEY.file = ./secrets/GOODREADS_KEY.age;
+          HARDCOVER_TOKEN.file = ./secrets/HARDCOVER_TOKEN.age;
           NETLIFY_AUTH_TOKEN.file = ./secrets/NETLIFY_AUTH_TOKEN.age;
           NETLIFY_SITE_ID.file = ./secrets/NETLIFY_SITE_ID.age;
         };
