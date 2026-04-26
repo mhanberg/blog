@@ -10,6 +10,7 @@ on:
 jobs:
   build:
     env:
+      HARDCOVER_TOKEN: ${{ secrets.HARDCOVER_TOKEN }}
       GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
       MIX_ENV: prod
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
