@@ -8,7 +8,10 @@ defmodule Blog.PresentationLayout do
           "x-data": "slide",
           "@keydown.h.window": "previousSlide",
           "@keydown.left.window": "previousSlide",
+          "@keydown.page-up.window": "previousSlide",
+          "@keydown.page-down.window": "nextSlide",
           "@keydown.l.window": "nextSlide",
+          "@keydown.space.window": "nextSlide",
           "@keydown.right.window": "nextSlide",
           "@keydown.space.window": "nextSlide" do
         div id: "slide" do
