@@ -1,220 +1,214 @@
-- name: Development
-  description: My dotfiles config and links to some of my favorite tools. I'm currently obsessed with [Nix](https://nixos.org) and have almost everything configured with it.
-  entries:
-    - name: .dotfiles
-      link: https://github.com/mhanberg/.dotfiles
+updated_at: 2026-05-12
+sections:
+  - name: Development
+    description: My dotfiles config and links to some of my favorite tools. I'm currently obsessed with [Nix](https://nixos.org) and have almost everything configured with it.
+    entries:
+      - name: .dotfiles
+        link: https://github.com/mhanberg/.dotfiles
 
-    - name: Neovim
-      link: https://neovim.io
+      - name: Neovim
+        link: https://neovim.io
 
-    - name: Rosé Pine 
-      link: https://github.com/rose-pine
+      - name: Rosé Pine
+        link: https://github.com/rose-pine
 
-    - name: JetBrains Mono font
-      link: https://www.jetbrains.com/lp/mono/
+      - name: JetBrains Mono font
+        link: https://www.jetbrains.com/lp/mono/
 
-    - name: Ghostty
-      link: https://mitchellh.com/ghostty
+      - name: Ghostty
+        link: https://mitchellh.com/ghostty
 
-    - name: Postico
-      link: https://eggerapps.at/postico/
+      - name: Postico
+        link: https://eggerapps.at/postico/
 
-    - name: Firefox
-      link: https://www.mozilla.org/en-US/firefox
+      - name: Firefox
+        link: https://www.mozilla.org/en-US/firefox
 
-    - name: lazygit
-      link: https://github.com/jesseduffield/lazygit
+      - name: lazygit
+        link: https://github.com/jesseduffield/lazygit
 
-    - name: zsh
-      link: https://www.zsh.org/
+      - name: zsh
+        link: https://www.zsh.org/
 
-    - name: Nix 
-      link: https://nixos.org
+      - name: Nix
+        link: https://nixos.org
 
-    - name: Home Manager 
-      link: https://nix-community.github.io/home-manager/
+      - name: Home Manager
+        link: https://nix-community.github.io/home-manager/
 
-    - name: nix-darwin
-      link: https://daiderd.com/nix-darwin/
+      - name: nix-darwin
+        link: https://daiderd.com/nix-darwin/
 
-    - name: tmux
-      link: https://github.com/tmux/tmux#welcome-to-tmux
+      - name: tmux
+        link: https://github.com/tmux/tmux#welcome-to-tmux
 
-    - name: fzf
-      link: https://github.com/junegunn/fzf
+      - name: fzf
+        link: https://github.com/junegunn/fzf
 
-    - name: gh
-      link: https://github.com/cli/cli
+      - name: gh
+        link: https://github.com/cli/cli
 
-    - name: ripgrep
-      link: https://github.com/BurntSushi/ripgrep
+      - name: ripgrep
+        link: https://github.com/BurntSushi/ripgrep
 
-- name: Productivity
-  description: These are some of the tools that I use countless times a day. The combination of Alfred and Dash is unbeatable.
-  entries:
-    - name: Alfred
-      link: https://www.alfredapp.com/
+  - name: Productivity
+    description: These are some of the tools that I use countless times a day. The combination of Alfred and Dash is unbeatable.
+    entries:
+      - name: Alfred
+        link: https://www.alfredapp.com/
 
-    - name: Dash
-      link: https://kapeli.com/dash
+      - name: Dash
+        link: https://kapeli.com/dash
 
-    - name: 1Password
-      link: https://1password.com/
+      - name: 1Password
+        link: https://1password.com/
 
-    - name: Supernote Nomad
-      link: https://supernote.com/products/supernote-nomad
+      - name: Supernote Nomad
+        link: https://supernote.com/products/supernote-nomad
 
-- name: PC
-  description: |
-    My desktop computer (codename `nublar`) is my primary development machine for personal and open source projects.
+  - name: PC
+    description: |
+      My desktop computer (codename `nublar`) is my primary development machine for personal and open source projects.
 
-    It runs NixOS and I basically only use it remotely via ssh, in what I like to call "Darwin Subsystem for Linux."
-  entries:
-    - name: Intel Core i9-13900K 3 GHz 24-Core Processor
-      link: https://www.amazon.com/gp/product/B0BCF54SR1/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1
+      It runs NixOS and I basically only use it remotely via ssh, in what I like to call "Darwin Subsystem for Linux."
+    entries:
+      - name: Intel Core i9-13900K 3 GHz 24-Core Processor
+        link: https://www.amazon.com/gp/product/B0BCF54SR1/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1
 
-    - name: DeepCool LT720 360mm AIO 4th Gen Dual-Chamber Pump 3100RPM
-      link: https://www.amazon.com/gp/product/B0B9SKBGFP/ref=ppx_yo_dt_b_asin_title_o01_s02?ie=UTF8&psc=1
+      - name: DeepCool LT720 360mm AIO 4th Gen Dual-Chamber Pump 3100RPM
+        link: https://www.amazon.com/gp/product/B0B9SKBGFP/ref=ppx_yo_dt_b_asin_title_o01_s02?ie=UTF8&psc=1
 
-    - name: MSI MAG Z790 TOMAHAWK WIFI ATX LGA1700 Motherboard
-      link: https://www.bhphotovideo.com/c/product/1790666-REG/msi_mag_z790_tomahawk_max.html
+      - name: MSI MAG Z790 TOMAHAWK WIFI ATX LGA1700 Motherboard
+        link: https://www.bhphotovideo.com/c/product/1790666-REG/msi_mag_z790_tomahawk_max.html
 
-    - name: G.SKILL Trident Z5 RGB Series (Intel XMP 3.0) DDR5 RAM 64GB (2x32GB) 6400MT/s
-      link: https://www.amazon.com/gp/product/B0BJ7X9P1W/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
+      - name: G.SKILL Trident Z5 RGB Series (Intel XMP 3.0) DDR5 RAM 64GB (2x32GB) 6400MT/s
+        link: https://www.amazon.com/gp/product/B0BJ7X9P1W/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
 
-    - name: (2) Samsung 990 Pro 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive
-      link: https://www.amazon.com/gp/product/B0BHJJ9Y77/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1
+      - name: (2) Samsung 990 Pro 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive
+        link: https://www.amazon.com/gp/product/B0BHJJ9Y77/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1
 
-    - name: MSI GeForce RTX 3060 Ventus 2X 12G GeForce RTX 3060 12GB 12 GB Video Card
-      link: https://www.amazon.com/gp/product/B08WPRMVWB/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&psc=1
+      - name: MSI GeForce RTX 3060 Ventus 2X 12G GeForce RTX 3060 12GB 12 GB Video Card
+        link: https://www.amazon.com/gp/product/B08WPRMVWB/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&psc=1
 
-    - name: Corsair 4000D Airflow ATX Mid Tower Case
-      link: https://www.amazon.com/gp/product/B08C7BGV3D/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&psc=1
+      - name: Corsair 4000D Airflow ATX Mid Tower Case
+        link: https://www.amazon.com/gp/product/B08C7BGV3D/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&psc=1
 
-    - name: Corsair RM850x (2021) 850 W 80+ Gold Certified Fully Modular ATX Power Supply
-      link: https://www.amazon.com/gp/product/B08R5JPTMZ/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
+      - name: Corsair RM850x (2021) 850 W 80+ Gold Certified Fully Modular ATX Power Supply
+        link: https://www.amazon.com/gp/product/B08R5JPTMZ/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
 
-- name: Apple Computers
-  entries:
-    - name: 2023 Mac mini Apple M2 Chip with 8‑Core CPU and 10‑Core GPU
-      link: https://support.apple.com/kb/SP825?locale=en_US
+  - name: Apple Computers
+    entries:
+      - name: 2023 Mac mini Apple M2 Chip with 8‑Core CPU and 10‑Core GPU
+        link: https://support.apple.com/kb/SP825?locale=en_US
 
-    - name: 2020 13" M1 MacBook Air
-      link: https://support.apple.com/kb/SP825?locale=en_US
+      - name: 2020 13" M1 MacBook Air
+        link: https://support.apple.com/kb/SP825?locale=en_US
 
-    - name: 2023 16" M3 Pro MacBook Pro (Work)
-      link: https://support.apple.com/en-us/117737
+      - name: 2026 16" M5 Mac MacBook Pro (Work)
+        link: https://support.apple.com/en-us/126319
 
-- name: Keyboards
-  description: |
-    I have been using mechanical keyboards since 2012 and split ergonomic keyboards since 2019 (starting with the Ergodox EZ).
+  - name: Keyboards
+    description: |
+      I have been using mechanical keyboards since 2012 and split ergonomic keyboards since 2019 (starting with the Ergodox EZ).
 
-    I eventually got the ZSA Voyager in an attempt to try a smaller keyboard, but ended up ordering a Corne v4 from JLCPCB and
-    3D printing its case and keycaps. I really am liking the low profile style of keyboards because they end up being shorter and
-    I don't need to use a wrist rest.
+      I eventually got the ZSA Voyager in an attempt to try a smaller keyboard, but ended up ordering a Corne v4 from JLCPCB and
+      3D printing its case and keycaps. I really am liking the low profile style of keyboards because they end up being shorter and
+      I don't need to use a wrist rest.
 
-  entries:
-    - name: Corne v4 (Daily Driver)
-      link: https://github.com/foostan/crkbd
+    entries:
+      - name: Corne v4 (Daily Driver)
+        link: https://github.com/foostan/crkbd
 
-    - name: ZSA Voyager
-      link: https://zsa.io/voyager
+      - name: ZSA Voyager
+        link: https://zsa.io/voyager
 
-    - name: Megalodon Triple Knob Macro Pad Programmable Designer Mini Keyboard 16 Keys
-      link: https://www.amazon.com/KEEBMONKEY-Megalodon-Programmable-Designer-Keyboard/dp/B0C1SW9KV1
+      - name: Ergodoz EZ
+        link: https://ergodox-ez.com/
 
-    - name: Ergodoz EZ
-      link: https://ergodox-ez.com/
+      - name: OLKB Preonic
+        link: https://drop.com/buy/preonic-mechanical-keyboard
 
-    - name: OLKB Preonic
-      link: https://drop.com/buy/preonic-mechanical-keyboard
+  - name: Keyboard Switches
+    entries:
+      - name: Linear Red Choc v1 (Daily Driver)
+        link: https://www.amazon.com/Profile-Mechanical-Switch-Split-Ergo-Mechanical-Keyboard/dp/B0BLC57T32?th=1
+      - name: Linear Red Choc v2
+        link: https://www.amazon.com/KAILH-Profile-Mechanical-Keyboard-Switches/dp/B0B462XK49
+      - name: Zilent v2 67g
+        link: https://zealpc.net/products/zilent?variant=5894832324646
+      - name: Zealio v2 78g
+        link: https://zealpc.net/collections/zealio?variant=6502846147
 
+  - name: Peripherals
+    entries:
+      - name: Apple Magic Trackpad
+        link: https://support.apple.com/en-us/121932
 
-- name: Keyboard Switches
-  entries:
-    - name: Linear Red Choc v1 (Daily Driver)
-      link: https://www.amazon.com/Profile-Mechanical-Switch-Split-Ergo-Mechanical-Keyboard/dp/B0BLC57T32?th=1
-    - name: Linear Red Choc v2
-      link: https://www.amazon.com/KAILH-Profile-Mechanical-Keyboard-Switches/dp/B0B462XK49
-    - name: Zilent v2 67g
-      link: https://zealpc.net/products/zilent?variant=5894832324646
-    - name: Zealio v2 78g
-      link: https://zealpc.net/collections/zealio?variant=6502846147
+      - name: CalDigit TS3 Plus
+        link: https://www.amazon.com/gp/product/B07CZPV8DF/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
 
-- name: Peripherals
-  entries:
-    - name: Apple Magic Trackpad
-      link: https://www.apple.com/shop/product/MMMP3AM/A/magic-trackpad-black-multi-touch-surface?fnode=4d0def805c6db6de0fbae9052cb831ea2c102e18ffb2aa987ed6c12e24b77a45ed729f921edb95f34249a492de8d99aef8cc2fc9b698d9ad5a6bf0d44fa4a3f9c9a55b7d7d09597b4d76d5537ce323b3071c18b0a987d19c4fee9ca45a9a7e36
+      - name: LG 40WP95C-W Ultrawide
+        link: https://www.amazon.com/gp/product/B09P1VLCQ4/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
 
-    - name: CalDigit TS3 Plus
-      link: https://www.amazon.com/gp/product/B07CZPV8DF/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
+      - name: PreSonus Eris E3.5-3.5" Near Field Studio Monitors
+        link: https://www.amazon.com/gp/product/B075QVMBT9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
 
-    - name: LG 40WP95C-W Ultrawide
-      link: https://www.amazon.com/gp/product/B09P1VLCQ4/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
+      - name: Fully Jarvis Standing Desk
+        link: https://www.fully.com/standing-desks/jarvis/jarvis-frame-only.html
 
-    - name: PreSonus Eris E3.5-3.5" Near Field Studio Monitors
-      link: https://www.amazon.com/gp/product/B075QVMBT9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
+      - name: Elgato Stream Deck MK.2
+        link: https://www.amazon.com/dp/B09738CV2G?ref=ppx_yo2_dt_b_product_details&th=1
 
-    - name: Fully Jarvis Standing Desk
-      link: https://www.fully.com/standing-desks/jarvis/jarvis-frame-only.html
+  - name: Audio/Video
+    description: A nerd with a remote job would be remiss to not have podcaster level gear to sit quietly in Zoom calls with your camera off.
+    entries:
+      - name: Audio-Technica AT2035PK
+        link: https://www.amazon.com/gp/product/B07JL8YRCV/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
-    - name: Elgato Stream Deck MK.2
-      link: https://www.amazon.com/dp/B09738CV2G?ref=ppx_yo2_dt_b_product_details&th=1
+      - name: FIFINE Microphone Boom Arm
+        link: https://www.amazon.com/FIFINE-Microphone-Management-Adjustable-Studio-BM88/dp/B0C45H4WG9
 
-    - name: Elgato Key Light
-      link: https://www.amazon.com/Elgato-Key-Light-Professional-App-Enabled/dp/B07L755X9G
+      - name: FIFINE 3D printed desktop mount
+        link: https://makerworld.com/en/models/90905-fifine-bm88-mic-arm-desktop-mount?from=search#profileId-97261
 
-    - name: Elgato Master Mount L
-      link: https://www.amazon.com/gp/product/B07X49967V/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+      - name: Focusrite Scarlett Solo (3rd Gen)
+        link: https://www.amazon.com/gp/product/B07QR6Z1JB/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
-- name: Home Lab
-  description: |
-    In 2024 I started to get into "home labbing", which basically just means having a NAS and a bunch of mini PCs.
+      - name: ATH-M20x Professional Monitor Headphones
+        link: https://www.amazon.com/Audio-Technica-ATH-M20x-Professional-Monitor-Headphones/dp/B00HVLUR18/ref=sr_1_2?dchild=1&keywords=ATH-M20x&qid=1635866818&s=musical-instruments&sr=1-2
 
-    I deploy each mini PC with NixOS and orchestrate them with [colmena](https://github.com/zhaofengli/colmena). I think NixOS is a great operating
-    system for a homelab (or remote servers in general) as it allows you to declaratively enable and configure programs, as well as
-    easily let you create new systemd units or start containers as units.
+      - name: Beats Studio Pro
+        link: https://www.beatsbydre.com/headphones/studio-pro-wireless-b
 
-    I also have a Raspberry Pi 4 running NixOS that acts as a [NUT server](https://networkupstools.org/) to shutdown the other computers when the UPS runs low on battery.
+      - name: Logitech MX Brio (Webcam)
+        link: https://www.logitech.com/en-us/shop/p/mx-brio-4k-webcam
 
-    I have a Digital Ocean droplet running a Caddy server (via NixOS and colmena) as ingress, and they are all clustered together via [Tailscale](https://tailscale.com/).
-  entries:
-    - name: Synology Dream Router
-      link: https://store.ui.com/us/en/products/udr7
+  - name: Home Lab
+    description: |
+      In 2024 I started to get into "home labbing", which basically just means having a NAS and a bunch of mini PCs.
 
-    - name: Synology 4-Bay DiskStation DS423+
-      link: https://www.amazon.com/gp/product/B0BXMS9GFF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+      I deploy each mini PC with NixOS and orchestrate them with [colmena](https://github.com/zhaofengli/colmena). I think NixOS is a great operating
+      system for a homelab (or remote servers in general) as it allows you to declaratively enable and configure programs, as well as
+      easily let you create new systemd units or start containers as units.
 
-    - name: 4x Dell Optiplex 3050M 
-      link: https://www.hardware-corner.net/desktop-models/Dell-OptiPlex-3050M/
+      I also have a Raspberry Pi 4 running NixOS that acts as a [NUT server](https://networkupstools.org/) to shutdown the other computers when the UPS runs low on battery.
 
-    - name: Digital Ocean Droplet
-      link: https://www.digitalocean.com/products/droplets
+      I have a Digital Ocean droplet running a Caddy server (via NixOS and colmena) as ingress, and they are all clustered together via [Tailscale](https://tailscale.com/).
+    entries:
+      - name: Synology Dream Router
+        link: https://store.ui.com/us/en/products/udr7
 
-    - name: Raspberry Pi 4
-      link: https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/
+      - name: Synology 4-Bay DiskStation DS423+
+        link: https://www.amazon.com/gp/product/B0BXMS9GFF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
-    - name: Bambu A1 Combo 3D Printer
-      link: https://us.store.bambulab.com/products/a1
+      - name: 4x Dell Optiplex 3050M
+        link: https://www.hardware-corner.net/desktop-models/Dell-OptiPlex-3050M/
 
+      - name: Digital Ocean Droplet
+        link: https://www.digitalocean.com/products/droplets
 
-- name: Audio/Video
-  description: A nerd with a remote job would be remiss to not have podcaster level gear to sit quietly in Zoom calls with your camera off.
-  entries:
-    - name: Audio-Technica AT2035PK
-      link: https://www.amazon.com/gp/product/B07JL8YRCV/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+      - name: Raspberry Pi 4
+        link: https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/
 
-    - name: Gator Frameworks Deluxe Boom Arm
-      link: https://www.amazon.com/gp/product/B07JL8YRCV/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
-
-    - name: Focusrite Scarlett Solo (3rd Gen)
-      link: https://www.amazon.com/gp/product/B07QR6Z1JB/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
-
-    - name: ATH-M20x Professional Monitor Headphones
-      link: https://www.amazon.com/Audio-Technica-ATH-M20x-Professional-Monitor-Headphones/dp/B00HVLUR18/ref=sr_1_2?dchild=1&keywords=ATH-M20x&qid=1635866818&s=musical-instruments&sr=1-2
-
-    - name: Beats Studio Pro
-      link: https://www.beatsbydre.com/headphones/studio-pro-wireless-b
-
-    - name: Logitech 1080p Webcam
-      link: https://www.amazon.com/Logitech-Stream-Webcam-Streaming-Recording/dp/B07661NX9M
+      - name: Bambu A1 Combo 3D Printer
+        link: https://us.store.bambulab.com/products/a1

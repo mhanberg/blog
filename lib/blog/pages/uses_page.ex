@@ -14,7 +14,11 @@ defmodule Blog.UsesPage do
         "No one ever asks me what font or syntax theme I use, but nevertheless here we are."
       end
 
-      for category <- @data["uses"] do
+      p do
+        "Last updated: " <> @data["uses"]["updated_at"]
+      end
+
+      for category <- @data["uses"]["sections"] do
         h2 do
           # this is a hack to get the whitespace correct. unclear if this can be improved in temple
           ~s|<a id="#{Blog.slugify(category["name"])}" class="anchor" href="##{Blog.slugify(category["name"])}" aria-hidden></a>#{category["name"]}|
