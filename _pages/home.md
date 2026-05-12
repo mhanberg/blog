@@ -4,9 +4,9 @@ permalink: /
 title: Mitchell Hanberg
 ---
 
-# Lead Software Engineer
+# Staff Software Engineer
 
-My name is Mitchell Hanberg and I am a lead software engineer from Indianapolis, IN.
+My name is Mitchell Hanberg and I am a staff software engineer from Indianapolis, IN.
 
 Lately I've been building backend distributed systems and Elixir developer tooling.
 
