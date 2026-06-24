@@ -25,7 +25,7 @@ jobs:
             extra-substituters = https://mhanberg.cachix.org
             extra-trusted-public-keys = mhanberg.cachix.org-1:tpHVw70kbGnO5mGv4rA3pjxpqeEiP/vWfJT4tVaK85o=
             accept-flake-config = true
-      - uses: cachix/cachix-action@1eb2ef646ac0255473d23a5907ad7b04ce94065c # v17
+      - uses: cachix/cachix-action@f495f3ffa2f3810a92e5cc0abc2c5d6a2a07ec82 # v17
         with:
           name: mhanberg
           # If you chose API tokens for write access OR if you have a private cache
